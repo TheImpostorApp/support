@@ -20,7 +20,9 @@ Impostor supports, all targeting the local mock API stack:
 - **Inheritance Demo** — folder-level auth/headers/settings inherited (and overridden)
   by child requests.
 - **TLS** — TLS and mutual-TLS (mTLS) using the bundled demo certs.
-- **Realtime** — WebSocket, Server-Sent Events (SSE), and gRPC.
+- **Realtime** — WebSocket, Server-Sent Events (SSE), gRPC, and MCP (spawns the
+  community `server-everything` over stdio via `npx` — the one example that needs no
+  mock stack, just Node.js).
 - **Scripting** — pre/post-request scripts via Impostor's native `im.*` API (with
   `pm.*` available as a Postman-compatible alias): setting variables, assertions
   (`im.test` / `im.expect`), and capturing a value in one request to reuse in another.

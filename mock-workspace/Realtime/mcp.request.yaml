@@ -1,0 +1,31 @@
+id: 7b3c9f2e-5a41-4d08-9f6c-2e8d1a4b7c50
+name: MCP
+protocol: mcp
+method: GET
+url: ''
+headers: []
+query: []
+body:
+  kind: none
+variables: []
+followRedirects: true
+timeoutMs: 0
+auth:
+  type: none
+tls:
+  caCertPath: ''
+  clientCertPath: ''
+  clientKeyPath: ''
+  clientCertPassword: ''
+  insecureSkipVerify: false
+preScript: ''
+postScript: ''
+mcp:
+  transport: stdio
+  command: npx
+  args:
+  - '-y'
+  - '@modelcontextprotocol/server-everything'
+  env: []
+  tool: echo
+  arguments: '{ "message": "hello from Impostor" }'

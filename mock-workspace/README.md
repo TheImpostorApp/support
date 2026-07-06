@@ -2,8 +2,8 @@
 
 A ready-to-open Impostor **workspace** demonstrating every protocol and feature
 against the local mock API stack: HTTP basics, auth (API key / Bearer / Basic /
-OAuth2), folder inheritance, TLS / mTLS, WebSocket, gRPC, raw / form / multipart
-request bodies, and pre/post-request scripting (`im.*`).
+OAuth2), folder inheritance, TLS / mTLS, WebSocket, gRPC, MCP, raw / form /
+multipart request bodies, and pre/post-request scripting (`im.*`).
 
 This folder is a self-contained, **relocatable** workspace — clone it anywhere and
 open it in Impostor (File → Open folder). It contains no machine-specific paths.
@@ -19,6 +19,11 @@ cd mock && docker compose up -d
 
 Then in Impostor: **Open folder** → select this `mock-workspace` directory, pick the
 **Local** environment, and send any request.
+
+**Exception:** `Realtime/MCP` doesn't use the mock stack at all — it spawns the
+community [`@modelcontextprotocol/server-everything`](https://github.com/modelcontextprotocol/servers)
+locally over the **stdio** transport via `npx` (Node.js required; the first Connect
+downloads the package). Hit **Connect**, pick a tool (`echo`, `add`, …), and **Call**.
 
 ## Scripting (pre/post-request `im.*`)
 
