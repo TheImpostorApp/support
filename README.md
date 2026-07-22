@@ -13,10 +13,12 @@ sending requests. The matching mock backend the requests target is bundled here 
 A self-contained, **relocatable** workspace that demonstrates every protocol and feature
 Impostor supports, all targeting the local mock API stack:
 
-- **HTTP Basics** — GET/POST, JSON / form / multipart bodies, query + headers, cookies,
-  gzip, redirects, delays, and non-2xx statuses.
+- **HTTP Basics** — GET/POST/PUT, JSON / form / multipart / binary-file bodies, query +
+  headers, cookies, gzip, redirects, delays, and non-2xx statuses.
 - **Auth** — API key (header & query), Bearer, Basic, Digest, AWS SigV4, and OAuth2
   client credentials.
+- **GraphQL** — GraphQL query bodies (with and without variables); targets the free
+  public Countries GraphQL API, so it needs no mock stack.
 - **Inheritance Demo** — folder-level auth/headers/settings inherited (and overridden)
   by child requests.
 - **TLS** — TLS and mutual-TLS (mTLS) using the bundled demo certs.
@@ -56,7 +58,7 @@ built-in **`{{workspaceDir}}`** variable — the absolute path of the opened wor
 they resolve wherever the folder is cloned:
 
 - `TLS/*` → `{{workspaceDir}}/.assets/certs/{ca.pem,client.p12}`
-- `HTTP Basics → POST multipart` → `{{workspaceDir}}/.assets/sample.txt`
+- `HTTP Basics → POST multipart` and `PUT binary` → `{{workspaceDir}}/.assets/sample.txt`
 
 `{{workspaceDir}}` is injected automatically; you never define it in an environment.
 
@@ -99,6 +101,7 @@ mock-workspace/               # the Impostor workspace — open this in the app
 ├── .assets/                  # certs + sample upload payload
 ├── HTTP Basics/              # *.request.yaml files, one per request
 ├── Auth/
+├── GraphQL/
 ├── Inheritance Demo/
 ├── TLS/
 ├── Realtime/

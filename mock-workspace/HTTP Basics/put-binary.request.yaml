@@ -1,0 +1,8 @@
+id: a6fc32bd-3e7f-48fb-a2d8-c14cef77a26b
+name: PUT binary
+method: PUT
+url: "{{baseUrl}}/put"
+body:
+  kind: file
+  path: "{{workspaceDir}}/.assets/sample.txt"
+  contentType: text/plain

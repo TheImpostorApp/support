@@ -39,7 +39,7 @@ bundle's `.assets/certs/` (the script prints this reminder).
 ### HTTP basics
 | Try in Impostor | Endpoint |
 |---------------|----------|
-| Methods / echo | `GET http://localhost:8080/get`, `POST …/post` (raw / form / multipart) |
+| Methods / echo | `GET http://localhost:8080/get`, `POST …/post` (raw / form / multipart), `PUT …/put` (binary file body) |
 | Status codes | `GET http://localhost:8080/status/418` |
 | Headers & query | `GET http://localhost:8080/headers`, `…/anything?foo=bar` |
 | Compression | `GET http://localhost:8080/gzip` · `/brotli` · `/deflate` |

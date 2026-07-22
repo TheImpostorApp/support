@@ -4,10 +4,7 @@ protocol: http
 method: GET
 url: '{{baseUrl}}/anything'
 headers: []
-query:
-- key: test
-  value: asd
-  enabled: true
+query: []
 body:
   kind: none
 variables: []

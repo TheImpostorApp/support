@@ -3,7 +3,7 @@
 A ready-to-open Impostor **workspace** demonstrating every protocol and feature
 against the local mock API stack: HTTP basics, auth (API key / Bearer / Basic /
 OAuth2), folder inheritance, TLS / mTLS, WebSocket, gRPC, MCP, raw / form /
-multipart request bodies, and pre/post-request scripting (`im.*`).
+multipart / binary-file / GraphQL request bodies, and pre/post-request scripting (`im.*`).
 
 This folder is a self-contained, **relocatable** workspace — clone it anywhere and
 open it in Impostor (File → Open folder). It contains no machine-specific paths.
@@ -24,6 +24,22 @@ Then in Impostor: **Open folder** → select this `mock-workspace` directory, pi
 community [`@modelcontextprotocol/server-everything`](https://github.com/modelcontextprotocol/servers)
 locally over the **stdio** transport via `npx` (Node.js required; the first Connect
 downloads the package). Hit **Connect**, pick a tool (`echo`, `add`, …), and **Call**.
+
+**Exception:** `GraphQL/*` doesn't use the mock stack either — the mock backend has no
+GraphQL service, so these target the free public [Countries GraphQL
+API](https://countries.trevorblades.com/) (no auth). Repoint them at any GraphQL endpoint
+by editing the **`gqlBaseUrl`** variable in the **Local** environment.
+
+## GraphQL
+
+The **`GraphQL/`** folder uses the **GraphQL** body mode — a query plus a JSON variables
+object, sent as an `application/json` POST of `{ "query": …, "variables": … }`.
+
+- **GraphQL query** — a plain query (no variables) listing the world's continents.
+- **GraphQL query with variables** — `country(code: $code)`, with the variables pane holding
+  `{ "code": "{{countryCode}}" }`. Note the `{{countryCode}}` — variables support the same
+  `{{variable}}` substitution as the rest of a request, so the value comes from the **Local**
+  environment (`US`); change it there (or override per-environment) to query another country.
 
 ## Scripting (pre/post-request `im.*`)
 
@@ -48,7 +64,7 @@ built-in **`{{workspaceDir}}`** variable — the absolute path of the opened wor
 so they resolve correctly wherever the folder is cloned:
 
 - `TLS/*` → `{{workspaceDir}}/.assets/certs/{ca.pem,client.p12}`
-- `HTTP Basics/POST multipart` → `{{workspaceDir}}/.assets/sample.txt`
+- `HTTP Basics/POST multipart` and `PUT binary` → `{{workspaceDir}}/.assets/sample.txt`
 
 `{{workspaceDir}}` is injected automatically; you don't define it in any environment.
 

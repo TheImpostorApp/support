@@ -1,0 +1,14 @@
+id: c4650172-a53c-4834-92a7-c30d9d8515da
+name: GraphQL query
+method: POST
+url: "{{gqlBaseUrl}}"
+body:
+  kind: graphql
+  query: |-
+    {
+      continents {
+        code
+        name
+      }
+    }
+  variables: ""
