@@ -1,8 +1,10 @@
-# Impostor — Sample Workspaces
+# Impostor — Support, Samples and Examples
 
-Ready-to-open example workspaces for [**Impostor**](https://impostor.uk/), a fast,
-local, cross-platform API client (a lightweight, native alternative to Postman built on
-Tauri v2 + SvelteKit, not Electron).
+The support home for [**Impostor**](https://impostor.uk/), a fast, local, cross-platform
+API client (a lightweight, native alternative to Postman built on Tauri v2 + SvelteKit,
+not Electron). It hosts the ready-to-open example workspaces below, and its
+[**issue tracker**](https://github.com/TheImpostorApp/support/issues) is where to report
+bugs or ask for help.
 
 Clone this repo, open a workspace folder in Impostor (**File → Open folder**), and start
 sending requests. The matching mock backend the requests target is bundled here too, in
