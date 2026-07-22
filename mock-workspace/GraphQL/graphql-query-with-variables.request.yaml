@@ -1,0 +1,19 @@
+id: 9049f56c-7e8e-43a6-b80d-f72ccfd6c56e
+name: GraphQL query with variables
+method: POST
+url: "{{gqlBaseUrl}}"
+body:
+  kind: graphql
+  query: |-
+    query CountryByCode($code: ID!) {
+      country(code: $code) {
+        name
+        capital
+        currency
+        emoji
+      }
+    }
+  variables: |-
+    {
+      "code": "{{countryCode}}"
+    }
