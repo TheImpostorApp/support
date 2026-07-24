@@ -53,6 +53,35 @@ Stop it with `docker compose down` (add `-v` to also drop the cert volume). See
 2. Pick the **Local** environment.
 3. Send any request.
 
+### Drive it from the command line or an AI
+
+The same `impostor` binary is also a headless CLI, so you can drive this workspace
+without the window (macOS path shown; on Windows use `impostor.exe`):
+
+```sh
+# List the requests, then resolve-and-send one (variables + folder inheritance applied):
+impostor ls  --workspace ./mock-workspace
+impostor run "GET / echo" --workspace ./mock-workspace --env Local
+impostor run "GET / echo" --workspace ./mock-workspace --json   # machine-readable
+```
+
+`impostor run` exits `0` on a 2xx response, non-zero otherwise, so it drops straight
+into scripts and CI. See the [CLI docs](https://docs.impostor.uk/cli).
+
+**Drive it from an AI.** Impostor is also an MCP **server** — a local AI agent (Claude
+Desktop/Code, Cursor, Copilot) can list, inspect, and run these requests. In Impostor,
+click **Connect AI** in the status bar for a ready-to-paste config, or point your host at:
+
+```json
+{ "mcpServers": { "impostor": {
+  "command": "/Applications/Impostor.app/Contents/MacOS/impostor",
+  "args": ["mcp", "--workspace", "<path-to>/mock-workspace"]
+}}}
+```
+
+Secrets are redacted and scripts don't run over MCP; authoring is opt-in
+(`--allow-write`). See the [MCP server docs](https://docs.impostor.uk/mcp-server).
+
 ### How paths stay relocatable
 
 Requests that reference on-disk files (TLS certs, the multipart upload payload) use the
