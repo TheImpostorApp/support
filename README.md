@@ -70,7 +70,7 @@ into scripts and CI. See the [CLI docs](https://docs.impostor.uk/cli).
 
 **Drive it from an AI.** Impostor is also an MCP **server** — a local AI agent (Claude
 Desktop/Code, Cursor, Copilot) can list, inspect, and run these requests. In Impostor,
-click **Connect AI** in the status bar for a ready-to-paste config, or point your host at:
+click **Connect MCP** in the status bar for a ready-to-paste config, or point your host at:
 
 ```json
 { "mcpServers": { "impostor": {
