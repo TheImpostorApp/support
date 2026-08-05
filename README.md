@@ -79,6 +79,16 @@ click **Connect MCP** in the status bar for a ready-to-paste config, or point yo
 }}}
 ```
 
+For Claude Code, the equivalent one-liner is:
+
+```sh
+claude mcp add impostor --scope user -- \
+  /Applications/Impostor.app/Contents/MacOS/impostor mcp --workspace <path-to>/mock-workspace
+```
+
+Keep `--scope user` — without it the server is registered for the current directory only,
+and `/mcp` will come up empty everywhere else.
+
 Secrets are redacted and scripts don't run over MCP; authoring is opt-in
 (`--allow-write`). See the [MCP server docs](https://docs.impostor.uk/mcp-server).
 

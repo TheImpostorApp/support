@@ -30,6 +30,30 @@ GraphQL service, so these target the free public [Countries GraphQL
 API](https://countries.trevorblades.com/) (no auth). Repoint them at any GraphQL endpoint
 by editing the **`gqlBaseUrl`** variable in the **Local** environment.
 
+## TLS / mTLS
+
+The **`TLS/`** folder targets the mock stack's mTLS listener (`https://localhost:8443`).
+
+- **Custom CA** — trusts the bundled mock CA, no client identity.
+- **mTLS (client cert)** — overrides on the request itself: its own CA + PKCS#12 client
+  identity, set on its **Cert** tab.
+- **Registered mTLS (host cert)** — sets *nothing*. It works once you register the client
+  identity against the host in the **☰ ▸ Certificates…** dialog:
+
+  | field | value |
+  |---|---|
+  | Host | `localhost:8443` |
+  | CA bundle | `<workspace>/.assets/certs/ca.pem` |
+  | Client cert | `<workspace>/.assets/certs/client.p12` |
+  | PKCS#12 password | `impostor` |
+
+  Certificates are keyed by host, not by folder, so that one entry covers every request
+  to `localhost:8443` wherever it lives in the tree. Open the request's **Cert** tab to
+  see the read-only **Registered certificate** panel naming the entry it matched.
+
+  The entry is stored on your machine (outside the workspace), which is why it isn't
+  shipped with these files — cert paths are machine-specific.
+
 ## GraphQL
 
 The **`GraphQL/`** folder uses the **GraphQL** body mode — a query plus a JSON variables
