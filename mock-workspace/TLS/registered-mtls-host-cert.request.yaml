@@ -1,0 +1,4 @@
+id: cf6ac17a-16d9-440f-85e9-983eedcbd0aa
+name: Registered mTLS (host cert)
+method: GET
+url: "https://localhost:8443/anything"
