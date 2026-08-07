@@ -1,0 +1,25 @@
+id: 920bf1f9-15a1-4e12-b691-1f26c910eaa0
+name: Create user 018
+method: POST
+url: "{{baseUrl}}/users"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Patricia Howell",
+      "username": "Patricia49",
+      "email": "patricia@howell.example",
+      "address": {
+        "street": "Nostrum laboriosam ut natus sint Street",
+        "suite": "Apt. 996",
+        "city": "South Christy",
+        "zipcode": "92584-9184"
+      },
+      "phone": "1-734-170-5853",
+      "website": "howell.example",
+      "company": {
+        "name": "Romaguera-Crona",
+        "catchPhrase": "Magnam provident vitae ut eos"
+      }
+    }

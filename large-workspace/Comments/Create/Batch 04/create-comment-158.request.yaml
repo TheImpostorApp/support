@@ -1,0 +1,14 @@
+id: 3b4764fa-7b3c-4c11-aad5-f5a8810b9864
+name: Create comment 158
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 58,
+      "name": "Maiores adipisci nemo cupidatat inventore veritatis occaecat",
+      "email": "clementina.graham@example.com",
+      "body": "explicabo porro est omnis suscipit qui tempora soluta cumque voluptas quia omnis.\naliquid totam ipsa aliquid fugiat qui distinctio ipsam quo nemo ipsa consequatur.\ndolorem est ipsa porro omnis aliquid distinctio sunt quia consequatur.\nvitae optio suscipit sint est architecto voluptatem ratione."
+    }

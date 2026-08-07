@@ -1,0 +1,13 @@
+id: 6eb5acdb-5694-4ff0-817f-7015cfe521db
+name: Create post 154
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Sunt optio natus occaecat",
+      "body": "sint ipsa vitae et odio esse deserunt ipsa provident est quos pariatur.\ntotam explicabo officia qui laboriosam veritatis distinctio magnam.\nfugiat quia eos numquam excepteur consequatur.\nminus minus excepteur totam pariatur voluptatem veritatis explicabo.",
+      "userId": 7
+    }

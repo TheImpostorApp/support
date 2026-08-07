@@ -1,0 +1,14 @@
+id: db53ebc2-3384-42e5-a34e-9c2af8284517
+name: Create album 050
+method: POST
+url: "{{baseUrl}}/albums"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 4,
+      "title": "Deserunt eligendi occaecat nemo inventore eaque"
+    }

@@ -1,0 +1,13 @@
+id: dece3f3b-0a72-4e48-850a-d5fc9722c732
+name: Create post 159
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Nemo fugiat veritatis sunt et nemo voluptatem veritatis",
+      "body": "officia suscipit distinctio dicta provident accusantium accusantium sunt sint.\ndolorem suscipit magnam vitae eligendi molestiae soluta beatae excepteur.\nimpedit eaque eligendi totam quo voluptatem veritatis molestiae odio optio placeat beatae.",
+      "userId": 6
+    }

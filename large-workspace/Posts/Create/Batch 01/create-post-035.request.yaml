@@ -1,0 +1,13 @@
+id: b0dbcbde-3dad-4e27-94ed-720c373aae7c
+name: Create post 035
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Dolorem dolore sunt ipsam adipisci quos architecto omnis",
+      "body": "aperiam fugiat natus nemo eius eligendi aperiam.\nquia quia quidem nemo occaecat autem quidem excepteur natus ut adipisci dolore.\nsuscipit provident aperiam dicta rerum repellendus.\nminus voluptas fugiat magnam dolore pariatur beatae fugiat eaque eligendi molestiae accusantium.",
+      "userId": 9
+    }

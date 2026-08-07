@@ -1,0 +1,12 @@
+id: f78cb161-40b5-47dc-a495-13690cb23de1
+name: Patch todo 001
+method: PATCH
+url: "{{baseUrl}}/todos/20"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 4,
+      "title": "Deserunt beatae autem autem"
+    }

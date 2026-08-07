@@ -1,0 +1,13 @@
+id: 7fd3ca8d-b016-44b5-9576-586f18d4466e
+name: Create post 144
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Cupidatat qui doloremque laboriosam beatae doloremque ipsam",
+      "body": "qui dolore nihil doloremque dolorem eligendi optio explicabo aliquid explicabo est.\nesse ipsa beatae accusantium quidem suscipit dolore rerum totam autem ut.",
+      "userId": 9
+    }

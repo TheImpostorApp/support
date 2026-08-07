@@ -1,0 +1,13 @@
+id: 94c676fb-b0fb-4ade-b01e-4d3bfa18f182
+name: Create post 044
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Architecto rerum natus accusantium impedit eaque fugiat inventore",
+      "body": "officia officia ipsa quos laboriosam suscipit.\nminus quo eaque aperiam sunt esse beatae voluptas eligendi.\neligendi explicabo adipisci minus rerum et vitae autem voluptas.",
+      "userId": 4
+    }

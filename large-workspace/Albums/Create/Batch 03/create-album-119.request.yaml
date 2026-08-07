@@ -1,0 +1,12 @@
+id: 6bb72ea1-227a-4274-b0c1-d08a031cb104
+name: Create album 119
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 3,
+      "title": "Adipisci rerum aperiam eius"
+    }

@@ -1,0 +1,13 @@
+id: 2f87badb-6b26-4697-aecf-e8ecb6533957
+name: Create post 157
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Veritatis eos esse ipsa consequatur distinctio nemo",
+      "body": "cupidatat explicabo maiores occaecat quos suscipit ratione dolore nihil eaque magnam accusantium.\nfugiat dolore cupidatat molestiae pariatur cupidatat maiores quo.\nut aliquid nulla ipsam fugiat autem ut.",
+      "userId": 3
+    }

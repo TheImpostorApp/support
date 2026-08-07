@@ -1,0 +1,13 @@
+id: d549d02f-c540-479b-bf74-96b1b967f1b0
+name: Create post 007
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Consequatur eos dicta quo eaque",
+      "body": "numquam ratione ipsa laboriosam quos maiores nihil occaecat quos consequatur deserunt.\nrerum distinctio quia tempora ipsam voluptas autem eius.\nquos magnam eos qui inventore maiores quidem impedit architecto quia accusantium.",
+      "userId": 10
+    }

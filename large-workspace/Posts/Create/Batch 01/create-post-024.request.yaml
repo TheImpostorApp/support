@@ -1,0 +1,15 @@
+id: 10027d61-fb10-44e6-b9e3-bf5638dec724
+name: Create post 024
+method: POST
+url: "{{baseUrl}}/posts"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Totam veritatis impedit eius ratione placeat",
+      "body": "voluptas explicabo architecto quo numquam est porro impedit fugiat quia.\naliquid ut accusantium nihil quidem inventore.\neaque placeat autem doloremque sint beatae.",
+      "userId": 10
+    }

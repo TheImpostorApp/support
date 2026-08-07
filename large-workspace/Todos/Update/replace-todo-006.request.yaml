@@ -1,0 +1,13 @@
+id: 4366b3ee-4d01-401f-b199-fb7384927b80
+name: Replace todo 006
+method: PUT
+url: "{{baseUrl}}/todos/{{todoId}}"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 1,
+      "title": "Tempora cumque laborum impedit nostrum ipsa est explicabo",
+      "completed": true
+    }

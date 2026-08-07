@@ -1,0 +1,14 @@
+id: 0c9d3f3c-31c4-4bf5-a773-50b4bcde1e97
+name: Create post 011
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: title, value: "Eligendi quia distinctio eligendi autem maiores autem qui", enabled: true }
+    - { key: body, value: "quos repellendus ut officia eos placeat adipisci odio natus quo.\nvitae nostrum quidem laborum animi distinctio porro.\ndolorem impedit ipsam consequatur cumque veritatis aperiam.\nexplicabo sint dolorem adipisci repellendus sunt numquam porro est deserunt accusantium autem.", enabled: true }
+    - { key: userId, value: "2", enabled: true }
+postScript: |-
+  im.test("post was created", function () {
+    im.expect(im.response.code).to.equal(201);
+  });

@@ -1,0 +1,4 @@
+id: 2054180b-d053-4513-a764-2207d5c21aed
+name: "Read posts 006 — nested"
+method: GET
+url: "{{baseUrl}}/users/9/posts"

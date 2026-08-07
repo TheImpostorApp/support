@@ -1,0 +1,12 @@
+id: 82473302-5c37-481f-8c23-62ff6dcd49ef
+name: Create album 010
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 8,
+      "title": "Animi minus ipsam ut architecto sint beatae"
+    }

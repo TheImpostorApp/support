@@ -1,0 +1,6 @@
+id: 911fb84b-7d63-481e-9a32-0a7aa2602d2d
+name: "Read posts 020 — nested"
+method: GET
+url: "{{baseUrl}}/users/4/posts"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }

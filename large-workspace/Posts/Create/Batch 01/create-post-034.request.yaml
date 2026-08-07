@@ -1,0 +1,12 @@
+id: c773edd1-0a73-43d2-99b4-2359d12a924c
+name: Create post 034
+method: POST
+url: "{{baseUrl}}/posts"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: multipart
+  fields:
+    - { kind: text, key: title, value: "Quia autem natus rerum" }
+    - { kind: text, key: body, value: "ipsa maiores accusantium voluptas accusantium occaecat veritatis voluptas laboriosam totam.\ndeserunt suscipit quidem doloremque voluptatem ipsa laboriosam laboriosam aliquid.\nanimi omnis accusantium officia quidem tempora quia minus.\naperiam accusantium animi doloremque nulla laboriosam dolorem." }
+    - { kind: text, key: userId, value: "7" }

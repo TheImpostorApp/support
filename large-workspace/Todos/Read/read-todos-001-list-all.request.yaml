@@ -1,0 +1,4 @@
+id: d4088145-bdc7-4832-8344-1a733a12f84d
+name: "Read todos 001 — list all"
+method: GET
+url: "{{baseUrl}}/todos"

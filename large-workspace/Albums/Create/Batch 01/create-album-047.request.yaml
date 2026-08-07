@@ -1,0 +1,13 @@
+id: ff678df3-ed0c-4465-a43d-7909d4574250
+name: Create album 047
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: multipart
+  fields:
+    - { kind: text, key: userId, value: "9" }
+    - { kind: text, key: title, value: "Quidem impedit aperiam" }
+postScript: |-
+  im.test("album was created", function () {
+    im.expect(im.response.code).to.equal(201);
+  });

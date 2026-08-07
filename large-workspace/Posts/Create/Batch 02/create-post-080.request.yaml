@@ -1,0 +1,13 @@
+id: e82ceb74-537e-4da9-9fe7-92bfcde84976
+name: Create post 080
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Ipsa dicta occaecat nulla aliquid ipsam animi ratione",
+      "body": "aperiam eius ipsam laboriosam voluptatem quia.\nsoluta soluta sunt quo consequatur voluptas dolorem laborum.",
+      "userId": 1
+    }

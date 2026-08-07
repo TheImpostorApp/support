@@ -1,0 +1,25 @@
+id: 20284e5a-5032-49a4-a05a-74e349a70229
+name: Replace user 003
+method: PUT
+url: "{{baseUrl}}/users/9"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Glenna Howell",
+      "username": "Glenna10",
+      "email": "glenna@howell.example",
+      "address": {
+        "street": "Officia doloremque eius Street",
+        "suite": "Apt. 882",
+        "city": "South Elvis",
+        "zipcode": "66099-1750"
+      },
+      "phone": "1-802-321-3042",
+      "website": "howell.example",
+      "company": {
+        "name": "Romaguera-Jacobson",
+        "catchPhrase": "Maiores inventore quos nihil aliquid nihil excepteur"
+      }
+    }

@@ -1,0 +1,7 @@
+id: 58e8089b-1fdb-4024-972f-6c7f5b8d35d5
+name: "Read photos 003 — page 2"
+method: GET
+url: "{{baseUrl}}/photos"
+query:
+  - { key: "_page", value: "2", enabled: true }
+  - { key: "_limit", value: "10", enabled: true }

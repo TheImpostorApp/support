@@ -1,0 +1,16 @@
+id: 2249fda6-8e15-40bc-8f17-6197795c005d
+name: Create photo 058
+method: POST
+url: "{{baseUrl}}/photos"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 57,
+      "title": "Rerum cupidatat eos",
+      "url": "https://via.placeholder.com/600/7c3",
+      "thumbnailUrl": "https://via.placeholder.com/150/7c3"
+    }

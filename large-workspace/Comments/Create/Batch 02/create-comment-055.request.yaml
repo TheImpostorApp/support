@@ -1,0 +1,14 @@
+id: 8613ce44-5157-44f3-b5ea-9627a342f266
+name: Create comment 055
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 92,
+      "name": "Pariatur rerum tempora officia ipsa nemo pariatur",
+      "email": "chelsey.bauch@example.com",
+      "body": "inventore eos magnam nostrum soluta rerum officia totam placeat adipisci omnis.\nofficia odio officia provident nulla dolorem maiores soluta.\nnihil explicabo natus numquam provident architecto omnis fugiat vitae.\nomnis voluptas eius dicta sunt placeat officia dicta adipisci porro."
+    }

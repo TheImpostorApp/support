@@ -1,0 +1,15 @@
+id: c8ccc108-7cab-474f-9215-64694d70e76e
+name: Create comment 102
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: postId, value: "12", enabled: true }
+    - { key: name, value: "Eaque esse porro provident deserunt impedit aliquid officia", enabled: true }
+    - { key: email, value: "glenna.dietrich@example.com", enabled: true }
+    - { key: body, value: "provident ut omnis doloremque repellendus natus suscipit repellendus ipsam animi qui fugiat.\net eaque placeat vitae ratione odio adipisci.", enabled: true }
+postScript: |-
+  im.test("comment was created", function () {
+    im.expect(im.response.code).to.equal(201);
+  });

@@ -1,0 +1,13 @@
+id: 9574030b-6628-43aa-b7f0-71ce2629a491
+name: Create post 129
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Cumque rerum totam adipisci cupidatat quidem dicta dolorem",
+      "body": "fugiat porro sint ipsam et nihil numquam provident quo.\neius eius porro et sint quia.\noccaecat excepteur soluta dolorem eaque est.\ntempora repellendus pariatur magnam architecto distinctio soluta aliquid distinctio.",
+      "userId": 2
+    }

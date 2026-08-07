@@ -1,0 +1,8 @@
+id: dc6c173c-a9d2-4e28-ae03-16cbb42abc6b
+name: "Read albums 002 — by id"
+method: GET
+url: "{{baseUrl}}/albums/{{albumId}}"
+postScript: |-
+  im.test("albums read ok", function () {
+    im.expect(im.response.code).to.equal(200);
+  });

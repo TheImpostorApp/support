@@ -1,0 +1,13 @@
+id: 6c16279a-bbf4-4384-bbde-a37895bac69c
+name: Create post 196
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Doloremque suscipit magnam esse",
+      "body": "aperiam esse autem vitae doloremque omnis aperiam.\nvoluptas aliquid aliquid eligendi impedit inventore nulla ipsa eaque dolorem.\nmolestiae aperiam quia inventore aperiam vitae occaecat.\nsunt laboriosam veritatis autem minus optio porro.",
+      "userId": 10
+    }

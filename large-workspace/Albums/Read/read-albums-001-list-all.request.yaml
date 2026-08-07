@@ -1,0 +1,6 @@
+id: bf5e00b8-9add-48ee-9f0e-1c1383b208b9
+name: "Read albums 001 — list all"
+method: GET
+url: "{{baseUrl}}/albums"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }

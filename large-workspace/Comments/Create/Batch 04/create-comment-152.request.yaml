@@ -1,0 +1,14 @@
+id: 759d13b0-eff2-40f4-867f-23e84776e296
+name: Create comment 152
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 14,
+      "name": "Optio et odio",
+      "email": "chelsey.weissnat@example.com",
+      "body": "doloremque voluptas natus voluptas quia animi officia et pariatur.\nodio pariatur nostrum excepteur maiores adipisci animi.\nveritatis cupidatat molestiae optio eligendi natus excepteur vitae."
+    }

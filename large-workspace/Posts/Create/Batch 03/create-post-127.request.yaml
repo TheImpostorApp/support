@@ -1,0 +1,13 @@
+id: ba1c9eb8-584c-45a3-8df7-f888330f5451
+name: Create post 127
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Ipsa quos laboriosam maiores nemo excepteur cupidatat deserunt",
+      "body": "voluptatem repellendus explicabo optio quos odio eius natus porro magnam.\ninventore nulla eius nemo veritatis animi ut ipsa placeat.",
+      "userId": 10
+    }

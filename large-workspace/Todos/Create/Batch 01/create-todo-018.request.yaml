@@ -1,0 +1,13 @@
+id: 66a5fd53-6075-40be-adce-6d25a0e1e4ea
+name: Create todo 018
+method: POST
+url: "{{baseUrl}}/todos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 10,
+      "title": "Voluptas cumque qui explicabo suscipit",
+      "completed": false
+    }

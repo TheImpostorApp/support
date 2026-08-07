@@ -1,0 +1,13 @@
+id: 87883778-6750-4d10-8bb1-1425a68d510c
+name: Create todo 014
+method: POST
+url: "{{baseUrl}}/todos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 8,
+      "title": "Ut vitae nemo nostrum",
+      "completed": true
+    }

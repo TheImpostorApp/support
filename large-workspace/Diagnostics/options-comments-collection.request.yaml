@@ -1,0 +1,4 @@
+id: de975515-f322-43c5-9f37-61f6a71e257e
+name: OPTIONS comments collection
+method: OPTIONS
+url: "{{baseUrl}}/comments"

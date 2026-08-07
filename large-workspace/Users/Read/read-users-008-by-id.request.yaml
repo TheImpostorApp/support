@@ -1,0 +1,6 @@
+id: 9831d75e-6669-40e1-a610-857d8bda1e0f
+name: "Read users 008 — by id"
+method: GET
+url: "{{baseUrl}}/users/5"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }

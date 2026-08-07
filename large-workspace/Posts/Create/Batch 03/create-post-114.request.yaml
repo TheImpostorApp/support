@@ -1,0 +1,13 @@
+id: 444a8de1-1569-4df7-8a3d-b3cf70b6836c
+name: Create post 114
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Aliquid architecto ratione dolore magnam adipisci nostrum",
+      "body": "repellendus consequatur dicta pariatur inventore quia nulla autem et aliquid.\nnatus architecto ipsam natus provident animi tempora.",
+      "userId": 3
+    }

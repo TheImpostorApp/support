@@ -1,0 +1,12 @@
+id: 74e0ae2e-b731-49ca-907b-1b9352a6147a
+name: Create album 114
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 9,
+      "title": "Occaecat animi optio beatae dolorem"
+    }

@@ -1,0 +1,14 @@
+id: 9803b5fc-66e1-491e-88bb-55e3e8bf831b
+name: Create photo 002
+method: POST
+url: "{{baseUrl}}/photos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 66,
+      "title": "Doloremque ratione natus nulla voluptas maiores nemo",
+      "url": "https://via.placeholder.com/600/1344",
+      "thumbnailUrl": "https://via.placeholder.com/150/1344"
+    }

@@ -1,0 +1,25 @@
+id: fabbedcf-7f2b-4848-800f-05f9993e15c1
+name: Create user 054
+method: POST
+url: "{{baseUrl}}/users"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Kurtis Lebsack",
+      "username": "Kurtis31",
+      "email": "kurtis@lebsack.example",
+      "address": {
+        "street": "Occaecat doloremque nostrum nostrum Street",
+        "suite": "Apt. 281",
+        "city": "Aliyaview",
+        "zipcode": "81565-8780"
+      },
+      "phone": "1-325-142-9846",
+      "website": "lebsack.example",
+      "company": {
+        "name": "Yost and Sons",
+        "catchPhrase": "Ipsa consequatur provident aliquid"
+      }
+    }

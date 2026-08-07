@@ -1,0 +1,13 @@
+id: 4ac1e248-4991-4539-bee8-ba6978b69554
+name: Create post 036
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Quo maiores nihil veritatis repellendus",
+      "body": "sunt distinctio minus vitae dolore et ipsa ipsam aperiam deserunt.\nquos nihil consequatur aperiam magnam suscipit dolorem sunt minus autem impedit.",
+      "userId": 10
+    }

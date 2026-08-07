@@ -1,0 +1,13 @@
+id: 17e67f3e-e330-4b71-a293-8cc8afe187ef
+name: Create todo 095
+method: POST
+url: "{{baseUrl}}/todos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 1,
+      "title": "Beatae inventore quidem consequatur molestiae quo",
+      "completed": true
+    }

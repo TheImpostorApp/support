@@ -1,0 +1,14 @@
+id: 085d6424-a419-44b3-acc8-505633c3d4e5
+name: Create comment 100
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 80,
+      "name": "Eius cumque natus",
+      "email": "clementine.dietrich@example.com",
+      "body": "aliquid cumque magnam officia vitae pariatur esse voluptas sint consequatur natus maiores.\nnihil aperiam animi eaque nemo consequatur.\ndistinctio esse minus et placeat inventore est veritatis nemo maiores inventore ut.\nest distinctio optio magnam architecto quo sunt distinctio."
+    }

@@ -1,0 +1,12 @@
+id: 2414f729-f450-48c0-84f3-eceb46e4fdfd
+name: Patch photo 002
+method: PATCH
+url: "{{baseUrl}}/photos/{{photoId}}"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 80,
+      "title": "Et architecto sint deserunt suscipit architecto autem"
+    }

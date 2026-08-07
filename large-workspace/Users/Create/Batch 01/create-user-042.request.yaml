@@ -1,0 +1,25 @@
+id: c03b8d38-3a86-4736-a518-455366e11ecc
+name: Create user 042
+method: POST
+url: "{{baseUrl}}/users"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Chelsey Schulist",
+      "username": "Chelsey93",
+      "email": "chelsey@schulist.example",
+      "address": {
+        "street": "Vitae doloremque sint provident distinctio maiores quos repellendus Street",
+        "suite": "Apt. 418",
+        "city": "Lebsackbury",
+        "zipcode": "17349-6836"
+      },
+      "phone": "1-952-496-9306",
+      "website": "schulist.example",
+      "company": {
+        "name": "Yost and Sons",
+        "catchPhrase": "Quo tempora dolorem esse veritatis"
+      }
+    }

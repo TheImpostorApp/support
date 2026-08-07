@@ -1,0 +1,15 @@
+id: f1938d27-5700-4763-b750-940025e92dc1
+name: Create post 088
+method: POST
+url: "{{baseUrl}}/posts"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Ipsa provident pariatur",
+      "body": "cupidatat ut omnis repellendus soluta animi nostrum.\naliquid animi eligendi et occaecat animi optio.\naperiam repellendus maiores totam optio eligendi laboriosam aperiam eaque soluta eaque.\ndicta fugiat quos eligendi distinctio adipisci ratione est.",
+      "userId": 9
+    }

@@ -1,0 +1,25 @@
+id: b25d42a3-601b-4b09-bd70-e3da3f68b986
+name: Replace user 005
+method: PUT
+url: "{{baseUrl}}/users/{{userId}}"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Glenna DuBuque",
+      "username": "Glenna42",
+      "email": "glenna@dubuque.example",
+      "address": {
+        "street": "Accusantium veritatis dolorem nemo est repellendus eligendi Street",
+        "suite": "Apt. 560",
+        "city": "South Elvis",
+        "zipcode": "75696-5621"
+      },
+      "phone": "1-779-415-7772",
+      "website": "dubuque.example",
+      "company": {
+        "name": "Considine-Lockman",
+        "catchPhrase": "Est odio explicabo natus provident autem"
+      }
+    }

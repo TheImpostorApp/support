@@ -1,0 +1,12 @@
+id: 3e535fd4-28fd-49fd-a88d-982725e539e6
+name: Create album 004
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 6,
+      "title": "Animi consequatur tempora rerum"
+    }

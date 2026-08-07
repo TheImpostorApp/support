@@ -1,0 +1,9 @@
+id: d3e914c4-1821-472f-91e4-327909e901e9
+name: Create album 116
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: multipart
+  fields:
+    - { kind: text, key: userId, value: "7" }
+    - { kind: text, key: title, value: "Cumque maiores dicta architecto distinctio" }

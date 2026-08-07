@@ -1,0 +1,14 @@
+id: f6e619a3-c9a0-466a-8ef6-f5126eeff37f
+name: Create comment 065
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 88,
+      "name": "Nemo sunt dolore",
+      "email": "patricia.graham@example.com",
+      "body": "eos maiores magnam qui et optio dolorem.\nmolestiae totam nemo ipsa aliquid repellendus aperiam est.\nofficia optio voluptas rerum est aliquid nemo et deserunt architecto aliquid."
+    }

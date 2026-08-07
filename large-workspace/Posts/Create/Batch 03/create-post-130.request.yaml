@@ -1,0 +1,13 @@
+id: 54554be6-45bb-4f96-9416-44e89ab366d3
+name: Create post 130
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Impedit ipsam omnis et rerum soluta aliquid excepteur",
+      "body": "cumque suscipit beatae sunt pariatur ipsam quia soluta consequatur omnis impedit totam.\nmagnam cumque eaque laboriosam voluptas dolore aperiam eligendi sunt.\nsint aliquid sunt consequatur odio et ipsa eligendi suscipit est eaque.",
+      "userId": 8
+    }

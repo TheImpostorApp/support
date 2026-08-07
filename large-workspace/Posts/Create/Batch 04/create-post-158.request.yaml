@@ -1,0 +1,13 @@
+id: 286ec39d-141e-4620-992f-7b0f89274396
+name: Create post 158
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Optio et placeat eos architecto quo",
+      "body": "vitae totam dicta consequatur accusantium ipsam cumque.\nplaceat aperiam porro ratione eius et eligendi ut.",
+      "userId": 4
+    }

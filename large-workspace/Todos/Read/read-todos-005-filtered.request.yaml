@@ -1,0 +1,8 @@
+id: 028a6f5b-1280-46b7-ab51-0d814d5c5ccd
+name: "Read todos 005 — filtered"
+method: GET
+url: "{{baseUrl}}/todos"
+query:
+  - { key: userId, value: "2", enabled: true }
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }

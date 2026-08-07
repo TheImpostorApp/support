@@ -1,0 +1,15 @@
+id: dc42d48a-3916-48c8-a96e-b3a697b173fb
+name: Create post 009
+method: POST
+url: "{{baseUrl}}/posts"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Aliquid nostrum natus fugiat inventore",
+      "body": "dicta fugiat quo soluta eligendi distinctio placeat dolore.\nnatus quia esse aliquid natus nihil minus pariatur aperiam nulla.",
+      "userId": 10
+    }

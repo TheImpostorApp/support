@@ -1,0 +1,14 @@
+id: a0980ff6-e6d6-4f8c-ae1d-2d98f6c459d2
+name: Create comment 172
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 61,
+      "name": "Impedit molestiae porro nemo molestiae",
+      "email": "leanne.reichert@example.com",
+      "body": "tempora aperiam eius tempora aliquid cupidatat esse ipsam molestiae.\ndistinctio suscipit aperiam provident occaecat quo vitae officia deserunt quia.\neaque nemo inventore dicta omnis soluta doloremque dicta laborum.\nquos provident impedit dolore suscipit dolorem eaque."
+    }

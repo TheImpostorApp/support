@@ -1,0 +1,14 @@
+id: 78522973-20d4-4107-aacd-cfbac066d91d
+name: Create album 048
+method: POST
+url: "{{baseUrl}}/albums"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 5,
+      "title": "Sunt placeat quos omnis aliquid"
+    }

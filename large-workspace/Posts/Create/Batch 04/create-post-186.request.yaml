@@ -1,0 +1,10 @@
+id: 0e8d7e2d-f6ad-4941-b959-7b344f8d26c4
+name: Create post 186
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: multipart
+  fields:
+    - { kind: text, key: title, value: "Tempora porro porro aperiam inventore deserunt cupidatat" }
+    - { kind: text, key: body, value: "maiores deserunt excepteur numquam sint accusantium et.\ndolorem vitae dolore autem ut ut ipsam cumque.\neaque maiores adipisci cumque eaque totam." }
+    - { kind: text, key: userId, value: "5" }

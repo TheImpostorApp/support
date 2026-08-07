@@ -1,0 +1,14 @@
+id: 735f9896-dca0-4704-9e5b-970beb01755f
+name: Create comment 117
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 1,
+      "name": "Quidem eos eos",
+      "email": "kurtis.weissnat@example.com",
+      "body": "minus consequatur voluptatem sunt animi eligendi omnis totam deserunt cumque omnis.\nimpedit distinctio soluta quos laborum qui quidem suscipit occaecat."
+    }

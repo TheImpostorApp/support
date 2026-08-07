@@ -1,0 +1,14 @@
+id: 1a03f6d7-3328-43d7-8903-3eb1f636ddba
+name: Replace comment 003
+method: PUT
+url: "{{baseUrl}}/comments/202"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 67,
+      "name": "Esse fugiat deserunt voluptatem tempora consequatur",
+      "email": "patricia.weissnat@example.com",
+      "body": "placeat nostrum veritatis placeat ipsam dicta.\nexplicabo minus ipsam occaecat totam consequatur magnam deserunt eaque voluptatem odio.\npariatur provident ipsam animi eligendi ratione qui laboriosam placeat esse."
+    }

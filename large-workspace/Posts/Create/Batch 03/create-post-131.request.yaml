@@ -1,0 +1,10 @@
+id: a0e153b7-082e-45d1-b398-a97eb70d1bba
+name: Create post 131
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: title, value: "Nihil deserunt dolorem eius", enabled: true }
+    - { key: body, value: "totam molestiae cupidatat adipisci aliquid cumque eaque laborum ipsam.\nmaiores explicabo totam occaecat porro quos laboriosam dolorem nemo magnam natus vitae.", enabled: true }
+    - { key: userId, value: "6", enabled: true }

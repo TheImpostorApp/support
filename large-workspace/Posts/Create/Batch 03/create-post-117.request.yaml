@@ -1,0 +1,13 @@
+id: 359282fc-91f8-4a8c-a901-d6e90bf1a50e
+name: Create post 117
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Provident eos placeat soluta porro vitae animi",
+      "body": "quos eius soluta sint qui suscipit doloremque totam veritatis porro excepteur quia.\nratione adipisci voluptatem nemo natus beatae eius odio.\nbeatae quo minus voluptas tempora animi optio sint minus architecto fugiat et.\nodio eaque eaque eius ut dicta ipsam inventore adipisci nemo.",
+      "userId": 4
+    }

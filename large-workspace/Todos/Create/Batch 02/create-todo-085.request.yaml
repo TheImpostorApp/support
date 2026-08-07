@@ -1,0 +1,10 @@
+id: 98a1c041-81da-4357-aaf9-898f0ced6cb7
+name: Create todo 085
+method: POST
+url: "{{baseUrl}}/todos"
+body:
+  kind: multipart
+  fields:
+    - { kind: text, key: userId, value: "6" }
+    - { kind: text, key: title, value: "Excepteur odio adipisci totam eos" }
+    - { kind: text, key: completed, value: "true" }

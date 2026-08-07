@@ -1,0 +1,16 @@
+id: 0f060042-2fba-42eb-a125-27b446b52d89
+name: Create album 054
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 5,
+      "title": "Voluptatem odio soluta sunt"
+    }
+postScript: |-
+  im.test("album was created", function () {
+    im.expect(im.response.code).to.equal(201);
+  });

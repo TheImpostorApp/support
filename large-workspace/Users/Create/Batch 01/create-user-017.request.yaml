@@ -1,0 +1,25 @@
+id: 0aa15c59-a204-4321-9e6d-d3142634612b
+name: Create user 017
+method: POST
+url: "{{baseUrl}}/users"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Kurtis DuBuque",
+      "username": "Kurtis67",
+      "email": "kurtis@dubuque.example",
+      "address": {
+        "street": "Eligendi occaecat quidem consequatur quia ut sunt Street",
+        "suite": "Apt. 844",
+        "city": "Gwenborough",
+        "zipcode": "73486-4693"
+      },
+      "phone": "1-746-911-9615",
+      "website": "dubuque.example",
+      "company": {
+        "name": "Romaguera-Crona",
+        "catchPhrase": "Eaque voluptatem distinctio distinctio totam adipisci occaecat deserunt"
+      }
+    }

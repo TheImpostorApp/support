@@ -1,0 +1,14 @@
+id: 1ef35d1b-0017-4282-b19c-3065fa9d9ca5
+name: Create comment 147
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 19,
+      "name": "Distinctio eius fugiat",
+      "email": "kurtis.runolfsdottir@example.com",
+      "body": "eligendi architecto veritatis fugiat suscipit fugiat dolore eius aperiam totam inventore distinctio.\noptio eos dicta numquam explicabo voluptatem.\ncumque voluptatem architecto ipsa eius eligendi.\nsoluta porro voluptatem adipisci autem esse distinctio ipsa doloremque omnis eaque est."
+    }

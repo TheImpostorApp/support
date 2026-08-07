@@ -1,0 +1,10 @@
+id: 42c58629-9e47-467f-aadc-9b8b4a99926f
+name: Create post 145
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: title, value: "Distinctio tempora natus cupidatat qui", enabled: true }
+    - { key: body, value: "dolorem omnis laborum officia ipsam doloremque cupidatat quidem voluptatem placeat impedit.\nnihil dolore ipsam magnam dolore molestiae architecto occaecat dolore.\ncupidatat quos cupidatat dicta sunt minus fugiat aliquid veritatis maiores inventore minus.", enabled: true }
+    - { key: userId, value: "6", enabled: true }

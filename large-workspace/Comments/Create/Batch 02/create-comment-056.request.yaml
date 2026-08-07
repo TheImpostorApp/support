@@ -1,0 +1,14 @@
+id: 5bb72271-c448-4eda-99be-55114a54f0a5
+name: Create comment 056
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 6,
+      "name": "Accusantium quidem optio odio",
+      "email": "kurtis.dietrich@example.com",
+      "body": "soluta esse cupidatat esse dolore laboriosam aliquid soluta ipsam repellendus sunt.\nbeatae voluptas sint ipsa soluta sint laboriosam et.\nsint totam eius nemo doloremque dicta maiores ratione excepteur est."
+    }

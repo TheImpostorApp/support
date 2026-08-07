@@ -1,0 +1,2 @@
+headers:
+  - { key: X-Impostor-Workspace, value: "large-workspace", enabled: true }

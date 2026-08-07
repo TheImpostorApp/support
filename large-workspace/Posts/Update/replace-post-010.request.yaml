@@ -1,0 +1,17 @@
+id: f62aa051-3f53-42db-90af-9a3ba19778f5
+name: Replace post 010
+method: PUT
+url: "{{baseUrl}}/posts/86"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Suscipit voluptatem inventore dolorem ratione",
+      "body": "inventore pariatur quidem aperiam pariatur ipsam odio minus dicta totam est inventore.\narchitecto ratione magnam distinctio et accusantium laborum.\nratione consequatur explicabo ipsa fugiat ut.",
+      "userId": 3
+    }
+postScript: |-
+  im.test("post was replaced", function () {
+    im.expect(im.response.code).to.equal(200);
+  });

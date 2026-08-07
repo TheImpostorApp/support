@@ -1,0 +1,13 @@
+id: 662dc286-f918-40d4-8cd2-7e55c37ad994
+name: Create post 178
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Suscipit nemo ratione porro eligendi laboriosam totam deserunt",
+      "body": "fugiat placeat nulla nulla vitae architecto.\nbeatae doloremque quia sint tempora omnis sunt animi tempora architecto quos nihil.\nratione qui officia nulla animi odio qui cumque eius veritatis architecto suscipit.",
+      "userId": 6
+    }

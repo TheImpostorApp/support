@@ -1,0 +1,13 @@
+id: 75b4b84a-13f1-486c-9a16-0ede1c2a3c2e
+name: Create post 171
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Eligendi ipsam adipisci laborum ipsa",
+      "body": "cupidatat quidem laboriosam aliquid explicabo sunt.\ncupidatat adipisci totam ipsam beatae autem sint.\ndolore suscipit explicabo aliquid aliquid deserunt voluptatem porro.\nodio excepteur minus eligendi quo explicabo maiores.",
+      "userId": 3
+    }

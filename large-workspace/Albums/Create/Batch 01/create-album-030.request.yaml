@@ -1,0 +1,12 @@
+id: 69626a65-9c6a-4e7f-ab20-abf8edd491ad
+name: Create album 030
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 8,
+      "title": "Ut rerum odio provident porro"
+    }

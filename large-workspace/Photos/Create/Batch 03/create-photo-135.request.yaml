@@ -1,0 +1,11 @@
+id: 843924ee-677f-4cbf-a78f-5209c4af3fee
+name: Create photo 135
+method: POST
+url: "{{baseUrl}}/photos"
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: albumId, value: "54", enabled: true }
+    - { key: title, value: "Optio nemo fugiat consequatur repellendus vitae", enabled: true }
+    - { key: url, value: "https://via.placeholder.com/600/d19", enabled: true }
+    - { key: thumbnailUrl, value: "https://via.placeholder.com/150/d19", enabled: true }

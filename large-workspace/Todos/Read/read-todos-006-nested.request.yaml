@@ -1,0 +1,6 @@
+id: 7d04a131-6b20-4610-a079-aa02ff7c8185
+name: "Read todos 006 — nested"
+method: GET
+url: "{{baseUrl}}/users/5/todos"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }

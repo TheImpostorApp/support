@@ -1,0 +1,11 @@
+id: 4e89f544-7306-4fe8-9b0a-e5de61e74272
+name: "Read photos 011 — sorted desc"
+method: GET
+url: "{{baseUrl}}/photos"
+query:
+  - { key: "_sort", value: "id", enabled: true }
+  - { key: "_order", value: "desc", enabled: true }
+postScript: |-
+  im.test("photos read ok", function () {
+    im.expect(im.response.code).to.equal(200);
+  });

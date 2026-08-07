@@ -1,0 +1,13 @@
+id: 18a294e1-1f13-4b94-8c01-8b186a0d2373
+name: Create post 073
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Sunt aperiam maiores nulla",
+      "body": "sint animi qui cupidatat odio numquam.\noccaecat nihil veritatis voluptas fugiat repellendus.\nsunt maiores ipsam qui quos minus cupidatat sint dolore sunt explicabo.",
+      "userId": 10
+    }

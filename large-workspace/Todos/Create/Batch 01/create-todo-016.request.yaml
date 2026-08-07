@@ -1,0 +1,13 @@
+id: f67d2700-0eea-4586-bc39-6f68054a7eeb
+name: Create todo 016
+method: POST
+url: "{{baseUrl}}/todos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 10,
+      "title": "Autem magnam doloremque eaque nulla beatae molestiae",
+      "completed": true
+    }

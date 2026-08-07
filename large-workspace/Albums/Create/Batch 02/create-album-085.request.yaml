@@ -1,0 +1,11 @@
+id: bf705ea1-ad0a-460a-b0f7-6d99873b259a
+name: Create album 085
+method: POST
+url: "{{baseUrl}}/albums"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: userId, value: "7", enabled: true }
+    - { key: title, value: "Voluptas vitae provident ipsam", enabled: true }

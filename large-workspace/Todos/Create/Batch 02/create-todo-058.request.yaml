@@ -1,0 +1,13 @@
+id: b983f05c-bbb6-49fb-b127-ae4667b1ea05
+name: Create todo 058
+method: POST
+url: "{{baseUrl}}/todos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 4,
+      "title": "Omnis nemo inventore repellendus ipsam aperiam",
+      "completed": true
+    }

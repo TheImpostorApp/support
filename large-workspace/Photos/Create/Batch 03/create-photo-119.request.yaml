@@ -1,0 +1,14 @@
+id: bf4b4147-95ca-490c-9326-7a6db2b2af54
+name: Create photo 119
+method: POST
+url: "{{baseUrl}}/photos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 15,
+      "title": "Nulla quos ratione sunt sunt rerum officia voluptatem",
+      "url": "https://via.placeholder.com/600/239b",
+      "thumbnailUrl": "https://via.placeholder.com/150/239b"
+    }

@@ -1,0 +1,11 @@
+id: 80690bfb-c477-4e63-a50c-044410149c1b
+name: Create comment 035
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: postId, value: "44", enabled: true }
+    - { key: name, value: "Placeat pariatur nulla vitae porro fugiat molestiae fugiat", enabled: true }
+    - { key: email, value: "leanne.schulist@example.com", enabled: true }
+    - { key: body, value: "provident deserunt soluta distinctio doloremque animi totam omnis laboriosam optio.\nvoluptatem nihil et voluptas cumque quia nihil beatae eligendi.\nmagnam vitae beatae eius officia nemo ipsa esse ipsam.", enabled: true }

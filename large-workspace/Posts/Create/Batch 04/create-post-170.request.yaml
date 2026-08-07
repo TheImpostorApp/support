@@ -1,0 +1,13 @@
+id: 04614607-8c9a-4682-9dd6-ebb167f4d262
+name: Create post 170
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Accusantium omnis veritatis explicabo adipisci",
+      "body": "provident quia animi voluptatem doloremque ipsam.\nnulla sunt tempora distinctio porro ipsam quia soluta minus.\nnulla explicabo dicta rerum excepteur voluptatem.",
+      "userId": 2
+    }

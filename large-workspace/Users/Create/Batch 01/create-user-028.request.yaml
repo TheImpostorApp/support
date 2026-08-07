@@ -1,0 +1,25 @@
+id: 66a243fe-ad6c-44d8-8dbb-1db732fe2e4b
+name: Create user 028
+method: POST
+url: "{{baseUrl}}/users"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Kurtis Bauch",
+      "username": "Kurtis99",
+      "email": "kurtis@bauch.example",
+      "address": {
+        "street": "Optio inventore vitae odio accusantium molestiae Street",
+        "suite": "Apt. 651",
+        "city": "South Christy",
+        "zipcode": "46163-8066"
+      },
+      "phone": "1-372-312-3682",
+      "website": "bauch.example",
+      "company": {
+        "name": "Deckow-Crist",
+        "catchPhrase": "Doloremque architecto esse quidem suscipit ratione dolorem"
+      }
+    }

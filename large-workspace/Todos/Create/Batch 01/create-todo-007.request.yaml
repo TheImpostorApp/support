@@ -1,0 +1,13 @@
+id: e1a2c6d1-fb04-4612-a3bc-74932389e574
+name: Create todo 007
+method: POST
+url: "{{baseUrl}}/todos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 10,
+      "title": "Cumque inventore accusantium",
+      "completed": true
+    }

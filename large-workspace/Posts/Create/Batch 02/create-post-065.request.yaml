@@ -1,0 +1,13 @@
+id: e10e309a-f619-4c17-88a7-325bef911ea5
+name: Create post 065
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Esse beatae nihil doloremque nihil animi",
+      "body": "aperiam minus esse cumque fugiat omnis.\nvoluptatem tempora nihil quia animi cumque adipisci totam numquam quo tempora.\nesse impedit dolore natus quidem eos autem odio nostrum fugiat autem omnis.\nnihil ipsa provident excepteur qui nihil.",
+      "userId": 8
+    }

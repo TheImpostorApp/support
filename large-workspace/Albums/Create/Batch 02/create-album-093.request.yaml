@@ -1,0 +1,12 @@
+id: 6e4761bb-3f83-4917-8ae6-fdcaa8477ad1
+name: Create album 093
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 9,
+      "title": "Porro numquam aperiam esse autem adipisci quo porro"
+    }

@@ -1,0 +1,6 @@
+id: d9d2d702-23ee-48b2-a0e9-924382ff53ca
+name: "Read posts 015 — list all"
+method: GET
+url: "{{baseUrl}}/posts"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }

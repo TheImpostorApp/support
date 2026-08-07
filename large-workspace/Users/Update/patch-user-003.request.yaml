@@ -1,0 +1,14 @@
+id: d97fefed-d9df-451e-8444-10be10e50e9e
+name: Patch user 003
+method: PATCH
+url: "{{baseUrl}}/users/{{userId}}"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Dennis Bauch",
+      "username": "Dennis55"
+    }

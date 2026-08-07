@@ -1,0 +1,18 @@
+id: 95b2164e-2b68-467e-94eb-8a170b73896a
+name: Create album 112
+method: POST
+url: "{{baseUrl}}/albums"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 6,
+      "title": "Dicta architecto beatae quidem excepteur magnam"
+    }
+postScript: |-
+  im.test("album was created", function () {
+    im.expect(im.response.code).to.equal(201);
+  });

@@ -1,0 +1,8 @@
+id: b2453b25-dff0-4278-bd36-e0c644dde031
+name: Delete post 004
+method: DELETE
+url: "{{baseUrl}}/posts/{{postId}}"
+postScript: |-
+  im.test("post was deleted", function () {
+    im.expect(im.response.code).to.equal(200);
+  });

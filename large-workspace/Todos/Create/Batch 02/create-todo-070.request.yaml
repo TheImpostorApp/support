@@ -1,0 +1,13 @@
+id: e502a70b-56e1-4088-90a2-15b1506b4e9b
+name: Create todo 070
+method: POST
+url: "{{baseUrl}}/todos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 5,
+      "title": "Impedit impedit beatae",
+      "completed": false
+    }

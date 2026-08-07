@@ -1,0 +1,25 @@
+id: 5c9d14f2-f8fc-41a7-931f-c90ac51c6161
+name: Create user 020
+method: POST
+url: "{{baseUrl}}/users"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Clementina Lebsack",
+      "username": "Clementina28",
+      "email": "clementina@lebsack.example",
+      "address": {
+        "street": "Adipisci dolorem ut suscipit voluptas vitae totam et Street",
+        "suite": "Apt. 701",
+        "city": "Wisokyburgh",
+        "zipcode": "36806-2139"
+      },
+      "phone": "1-802-895-4533",
+      "website": "lebsack.example",
+      "company": {
+        "name": "Keebler LLC",
+        "catchPhrase": "Consequatur ut omnis quidem ratione omnis"
+      }
+    }

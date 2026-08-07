@@ -1,0 +1,13 @@
+id: ca377a0a-7043-4e8f-bc89-488874cbd603
+name: Create comment 155
+method: POST
+url: "{{baseUrl}}/comments"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: postId, value: "65", enabled: true }
+    - { key: name, value: "Adipisci rerum eos excepteur", enabled: true }
+    - { key: email, value: "dennis.dubuque@example.com", enabled: true }
+    - { key: body, value: "est architecto deserunt eaque officia fugiat minus voluptatem quia.\neius vitae eaque ipsa aperiam dolore quos.\nrepellendus ipsam laborum maiores fugiat natus.\nesse quia aliquid odio pariatur nihil optio.", enabled: true }

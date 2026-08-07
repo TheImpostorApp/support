@@ -1,0 +1,13 @@
+id: 70973c98-d638-4d4c-bb6f-669c133160f7
+name: Create post 120
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Voluptas eius minus molestiae ut suscipit nulla",
+      "body": "nostrum explicabo adipisci ut laborum excepteur animi impedit.\nlaboriosam ut voluptatem sunt cupidatat veritatis adipisci placeat voluptatem.\nsoluta rerum voluptas eaque suscipit sunt inventore deserunt fugiat sunt nihil cumque.\nnihil ipsa excepteur tempora optio eos ipsam autem inventore sunt laborum.",
+      "userId": 6
+    }

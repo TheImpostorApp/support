@@ -1,0 +1,9 @@
+variables:
+- key: resource
+  value: "albums"
+  enabled: true
+  secret: false
+  script: false
+  reference: ''
+headers:
+  - { key: X-Resource, value: "albums", enabled: true }

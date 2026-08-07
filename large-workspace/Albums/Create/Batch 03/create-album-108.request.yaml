@@ -1,0 +1,9 @@
+id: b688310c-0e30-4374-a3dd-6a40c07701c2
+name: Create album 108
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: userId, value: "1", enabled: true }
+    - { key: title, value: "Excepteur ut impedit", enabled: true }

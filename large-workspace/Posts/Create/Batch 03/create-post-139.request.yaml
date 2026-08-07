@@ -1,0 +1,13 @@
+id: 7028b7f0-160c-4838-87df-7152b8689225
+name: Create post 139
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Maiores doloremque autem nostrum est",
+      "body": "animi adipisci laboriosam eligendi quo dolore numquam laborum autem fugiat dolore.\nsuscipit quia esse omnis est eligendi quia.\net quidem aperiam minus beatae voluptatem natus laboriosam totam odio vitae.",
+      "userId": 3
+    }

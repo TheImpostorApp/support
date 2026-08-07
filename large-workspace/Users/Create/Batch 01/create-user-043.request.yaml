@@ -1,0 +1,25 @@
+id: ae49202a-237c-4e75-a8a5-fbc0f7619280
+name: Create user 043
+method: POST
+url: "{{baseUrl}}/users"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Clementine Runolfsdottir",
+      "username": "Clementine29",
+      "email": "clementine@runolfsdottir.example",
+      "address": {
+        "street": "Minus nemo nostrum ipsa architecto suscipit aperiam molestiae Street",
+        "suite": "Apt. 129",
+        "city": "Roscoeview",
+        "zipcode": "24066-4176"
+      },
+      "phone": "1-704-514-7421",
+      "website": "runolfsdottir.example",
+      "company": {
+        "name": "Romaguera-Jacobson",
+        "catchPhrase": "Cupidatat nemo beatae"
+      }
+    }

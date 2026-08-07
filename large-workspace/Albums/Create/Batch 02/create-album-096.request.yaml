@@ -1,0 +1,12 @@
+id: 5e0e496b-beee-4c4a-9e15-9fd3cf31cfda
+name: Create album 096
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 10,
+      "title": "Veritatis vitae qui optio ipsam dolore ratione"
+    }

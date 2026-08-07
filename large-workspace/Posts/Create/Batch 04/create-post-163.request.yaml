@@ -1,0 +1,10 @@
+id: d4a80f69-786e-465e-97d5-1c9680aeb0b9
+name: Create post 163
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: title, value: "Eius veritatis totam aperiam explicabo", enabled: true }
+    - { key: body, value: "vitae ipsam laboriosam provident veritatis aperiam voluptatem numquam minus eos placeat.\nmolestiae officia adipisci sint soluta occaecat placeat.\nnihil voluptatem qui minus eos autem animi.", enabled: true }
+    - { key: userId, value: "8", enabled: true }

@@ -1,0 +1,11 @@
+id: 18f9d87d-affb-4321-823e-ed3065a7ccd3
+name: Create photo 129
+method: POST
+url: "{{baseUrl}}/photos"
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: albumId, value: "93", enabled: true }
+    - { key: title, value: "Provident adipisci aperiam quo esse voluptatem", enabled: true }
+    - { key: url, value: "https://via.placeholder.com/600/a69", enabled: true }
+    - { key: thumbnailUrl, value: "https://via.placeholder.com/150/a69", enabled: true }

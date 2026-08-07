@@ -1,0 +1,12 @@
+id: f2d54344-9ecb-4baf-b134-7f727e178559
+name: Create album 077
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 3,
+      "title": "Quo minus architecto eius dolore suscipit ut molestiae"
+    }

@@ -1,0 +1,9 @@
+id: f9d9bd1e-faf1-41ef-ad86-970c1fe38814
+name: Create album 049
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: userId, value: "1", enabled: true }
+    - { key: title, value: "Maiores nostrum adipisci animi numquam accusantium aperiam consequatur", enabled: true }

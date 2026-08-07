@@ -1,0 +1,17 @@
+id: fed527c3-6900-4d36-b178-73063d871a25
+name: Create post 142
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Natus soluta ut impedit sint accusantium odio ipsa",
+      "body": "eligendi et natus cumque qui vitae minus dolore eos ipsa veritatis vitae.\nipsam odio rerum veritatis excepteur odio voluptas laboriosam.\naccusantium deserunt minus veritatis nostrum nulla provident.",
+      "userId": 4
+    }
+postScript: |-
+  im.test("post was created", function () {
+    im.expect(im.response.code).to.equal(201);
+  });

@@ -1,0 +1,25 @@
+id: a2bb4528-3ec3-454b-9dd8-bd51edb39094
+name: Create user 038
+method: POST
+url: "{{baseUrl}}/users"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Leanne Reichert",
+      "username": "Leanne42",
+      "email": "leanne@reichert.example",
+      "address": {
+        "street": "Soluta suscipit eaque dolorem tempora est eius quos Street",
+        "suite": "Apt. 668",
+        "city": "Lebsackbury",
+        "zipcode": "61178-3112"
+      },
+      "phone": "1-279-644-7840",
+      "website": "reichert.example",
+      "company": {
+        "name": "Yost and Sons",
+        "catchPhrase": "Officia sunt ipsam explicabo voluptas deserunt quos"
+      }
+    }

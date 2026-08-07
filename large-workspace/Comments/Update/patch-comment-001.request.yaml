@@ -1,0 +1,14 @@
+id: 5a8f9ba9-47c1-4c5a-841b-9cc6de1eacc9
+name: Patch comment 001
+method: PATCH
+url: "{{baseUrl}}/comments/{{commentId}}"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 92,
+      "name": "Veritatis dolore quidem fugiat aliquid pariatur esse laboriosam"
+    }

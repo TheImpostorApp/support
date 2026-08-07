@@ -1,0 +1,13 @@
+id: eaf7c4ea-8805-4354-873e-671c2868c581
+name: Create todo 080
+method: POST
+url: "{{baseUrl}}/todos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 2,
+      "title": "Inventore esse nulla deserunt maiores deserunt ipsa qui",
+      "completed": false
+    }

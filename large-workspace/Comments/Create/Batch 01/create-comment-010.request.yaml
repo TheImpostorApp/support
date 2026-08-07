@@ -1,0 +1,14 @@
+id: cb1993ce-29cd-4f87-b4e1-090c4fa2928c
+name: Create comment 010
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 75,
+      "name": "Sunt eius veritatis",
+      "email": "nicholas.howell@example.com",
+      "body": "animi quia autem aliquid adipisci ut explicabo pariatur vitae dolore beatae numquam.\nmagnam esse veritatis molestiae et nemo veritatis veritatis nemo."
+    }

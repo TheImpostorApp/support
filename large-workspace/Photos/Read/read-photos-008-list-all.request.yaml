@@ -1,0 +1,10 @@
+id: 294f7f08-9c73-4e1a-8785-6c8ec09b1019
+name: "Read photos 008 — list all"
+method: GET
+url: "{{baseUrl}}/photos"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+postScript: |-
+  im.test("photos read ok", function () {
+    im.expect(im.response.code).to.equal(200);
+  });

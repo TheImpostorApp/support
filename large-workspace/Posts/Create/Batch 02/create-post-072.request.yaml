@@ -1,0 +1,13 @@
+id: 3937a406-56d5-4e21-b648-55c605ca074f
+name: Create post 072
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Et repellendus provident",
+      "body": "sint voluptas optio porro porro excepteur optio.\nanimi excepteur consequatur nihil voluptatem omnis natus impedit distinctio.\nexcepteur consequatur nostrum voluptatem distinctio laborum animi placeat suscipit et nihil ipsam.\nnumquam totam sunt numquam nostrum optio impedit explicabo.",
+      "userId": 8
+    }

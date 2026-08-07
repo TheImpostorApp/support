@@ -1,0 +1,13 @@
+id: 50836856-4050-43d5-aec1-879cd67ef603
+name: Create post 111
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Occaecat accusantium suscipit deserunt explicabo",
+      "body": "laborum laborum ratione doloremque ipsa laboriosam inventore nulla.\nnemo dicta placeat ipsa adipisci quo eaque suscipit impedit eaque.",
+      "userId": 2
+    }

@@ -1,0 +1,13 @@
+id: a1d94f05-6a54-438e-8280-95eef9d80133
+name: Create post 173
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Dolorem provident molestiae",
+      "body": "nulla nemo voluptas excepteur nihil nemo sint.\ncupidatat aperiam soluta ipsa doloremque ut placeat est.\naperiam porro cumque accusantium qui impedit sunt ut ratione inventore dicta officia.",
+      "userId": 2
+    }

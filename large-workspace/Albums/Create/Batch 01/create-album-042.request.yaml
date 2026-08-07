@@ -1,0 +1,12 @@
+id: acc24272-b3a6-4f40-a193-c541cc360e5f
+name: Create album 042
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 10,
+      "title": "Optio odio quidem quia deserunt odio occaecat"
+    }

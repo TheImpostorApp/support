@@ -1,0 +1,13 @@
+id: 5ecdade0-0caa-40e2-8916-fc66def75ad3
+name: Create photo 134
+method: POST
+url: "{{baseUrl}}/photos"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: multipart
+  fields:
+    - { kind: text, key: albumId, value: "27" }
+    - { kind: text, key: title, value: "Consequatur occaecat dolorem fugiat" }
+    - { kind: text, key: url, value: "https://via.placeholder.com/600/3f3" }
+    - { kind: text, key: thumbnailUrl, value: "https://via.placeholder.com/150/3f3" }

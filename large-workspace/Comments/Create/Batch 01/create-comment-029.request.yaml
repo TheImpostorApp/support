@@ -1,0 +1,20 @@
+id: 895c5c21-4fd1-407b-b173-fd1cc0b5751f
+name: Create comment 029
+method: POST
+url: "{{baseUrl}}/comments"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 15,
+      "name": "Doloremque architecto suscipit rerum nostrum ipsa vitae",
+      "email": "leanne.bauch@example.com",
+      "body": "occaecat ratione excepteur officia excepteur tempora laboriosam inventore.\neos tempora nihil nemo quia laboriosam voluptas ratione ut laboriosam molestiae.\neos nostrum qui impedit nulla aliquid.\ndolore nemo porro soluta excepteur voluptas."
+    }
+postScript: |-
+  im.test("comment was created", function () {
+    im.expect(im.response.code).to.equal(201);
+  });

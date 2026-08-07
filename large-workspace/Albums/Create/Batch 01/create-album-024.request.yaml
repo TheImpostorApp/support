@@ -1,0 +1,12 @@
+id: 275ae170-7ca3-4eb4-bbe1-847be2fd5600
+name: Create album 024
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 1,
+      "title": "Dicta qui quos dicta porro qui eligendi voluptatem"
+    }

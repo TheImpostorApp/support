@@ -1,0 +1,14 @@
+id: ce70f3a8-3369-4766-a520-dd6abf7b571d
+name: Create photo 047
+method: POST
+url: "{{baseUrl}}/photos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 21,
+      "title": "Placeat aperiam voluptas soluta quia laboriosam explicabo",
+      "url": "https://via.placeholder.com/600/1d9e",
+      "thumbnailUrl": "https://via.placeholder.com/150/1d9e"
+    }

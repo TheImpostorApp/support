@@ -1,0 +1,13 @@
+id: d6401a45-02c5-4d3a-bc84-c93192ee6ce6
+name: Create post 116
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Tempora placeat suscipit provident autem vitae distinctio",
+      "body": "ipsam ratione pariatur dolore ipsa eius aperiam deserunt.\nmaiores qui quos provident quo laboriosam impedit laborum.\ndoloremque qui repellendus maiores esse eligendi suscipit optio quidem.\nnihil cumque est architecto impedit placeat consequatur laboriosam ut eos dolorem.",
+      "userId": 8
+    }

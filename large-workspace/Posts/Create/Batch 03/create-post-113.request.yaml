@@ -1,0 +1,13 @@
+id: 0d9b7eba-e7a1-40be-a910-c8e946722a91
+name: Create post 113
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Rerum deserunt beatae placeat dicta",
+      "body": "repellendus sunt laborum voluptatem tempora magnam veritatis.\ndicta ipsa ipsa dolore sint dolorem ipsam laboriosam tempora cupidatat nostrum.\nest autem optio autem beatae occaecat autem eius ratione.",
+      "userId": 1
+    }

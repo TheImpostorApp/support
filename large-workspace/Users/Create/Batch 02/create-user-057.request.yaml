@@ -1,0 +1,25 @@
+id: 8e47e586-b898-4fbc-8d58-55e6d9067dca
+name: Create user 057
+method: POST
+url: "{{baseUrl}}/users"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Chelsey DuBuque",
+      "username": "Chelsey38",
+      "email": "chelsey@dubuque.example",
+      "address": {
+        "street": "Eaque laboriosam nihil Street",
+        "suite": "Apt. 759",
+        "city": "Bartholomebury",
+        "zipcode": "76824-2296"
+      },
+      "phone": "1-533-466-1504",
+      "website": "dubuque.example",
+      "company": {
+        "name": "Considine-Lockman",
+        "catchPhrase": "Vitae molestiae quo accusantium nemo aliquid fugiat"
+      }
+    }

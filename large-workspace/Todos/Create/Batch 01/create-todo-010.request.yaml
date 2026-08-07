@@ -1,0 +1,13 @@
+id: 62bdd9bb-1e1f-4ee4-8fcb-9ac9f79f8de0
+name: Create todo 010
+method: POST
+url: "{{baseUrl}}/todos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 8,
+      "title": "Beatae voluptatem officia",
+      "completed": false
+    }

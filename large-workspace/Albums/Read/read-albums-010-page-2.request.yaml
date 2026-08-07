@@ -1,0 +1,9 @@
+id: bf5eaec2-be2f-40a3-9577-e6872f5b56d4
+name: "Read albums 010 — page 2"
+method: GET
+url: "{{baseUrl}}/albums"
+query:
+  - { key: "_page", value: "2", enabled: true }
+  - { key: "_limit", value: "10", enabled: true }
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }

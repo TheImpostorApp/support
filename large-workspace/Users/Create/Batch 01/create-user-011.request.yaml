@@ -1,0 +1,25 @@
+id: b74e39bc-18f5-4214-b1a7-528600cd58c4
+name: Create user 011
+method: POST
+url: "{{baseUrl}}/users"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Ervin Bauch",
+      "username": "Ervin31",
+      "email": "ervin@bauch.example",
+      "address": {
+        "street": "Eligendi excepteur nihil ipsa optio dolore Street",
+        "suite": "Apt. 319",
+        "city": "South Elvis",
+        "zipcode": "91056-8627"
+      },
+      "phone": "1-471-434-6317",
+      "website": "bauch.example",
+      "company": {
+        "name": "Considine-Lockman",
+        "catchPhrase": "Occaecat porro eius laborum laborum repellendus dicta voluptatem"
+      }
+    }

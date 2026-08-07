@@ -1,0 +1,13 @@
+id: 95f628f8-33da-4000-9a67-ad8dad8204a1
+name: Create todo 036
+method: POST
+url: "{{baseUrl}}/todos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 1,
+      "title": "Quia numquam dicta sint autem sunt",
+      "completed": false
+    }

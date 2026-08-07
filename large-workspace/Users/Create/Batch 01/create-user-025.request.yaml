@@ -1,0 +1,25 @@
+id: 75361e64-5e4e-4856-ad5c-e8177a449801
+name: Create user 025
+method: POST
+url: "{{baseUrl}}/users"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Clementine Schulist",
+      "username": "Clementine51",
+      "email": "clementine@schulist.example",
+      "address": {
+        "street": "Suscipit soluta quo Street",
+        "suite": "Apt. 786",
+        "city": "McKenziehaven",
+        "zipcode": "26253-9585"
+      },
+      "phone": "1-782-888-5508",
+      "website": "schulist.example",
+      "company": {
+        "name": "Romaguera-Jacobson",
+        "catchPhrase": "Veritatis cupidatat quia"
+      }
+    }

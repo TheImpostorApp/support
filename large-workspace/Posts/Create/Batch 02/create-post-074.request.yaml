@@ -1,0 +1,15 @@
+id: b104d0f1-6ad3-4f8b-9fe3-af9fcc41b904
+name: Create post 074
+method: POST
+url: "{{baseUrl}}/posts"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Consequatur et autem vitae",
+      "body": "ratione quo fugiat officia optio cumque fugiat consequatur adipisci sunt.\nest nemo sint porro nihil autem omnis omnis repellendus tempora.\nmolestiae adipisci sunt natus sunt nostrum ratione eligendi.",
+      "userId": 5
+    }

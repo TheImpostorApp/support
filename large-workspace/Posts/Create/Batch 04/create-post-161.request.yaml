@@ -1,0 +1,13 @@
+id: 825bb7b4-43e6-45b9-a51d-051ad1f13d97
+name: Create post 161
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Porro dolore dolorem quidem",
+      "body": "soluta est officia maiores molestiae minus eos cupidatat ipsam beatae quo.\nut vitae voluptas quia est doloremque ipsam excepteur eaque occaecat pariatur.\nveritatis ipsam tempora quos cupidatat voluptatem beatae quia aperiam optio sint.",
+      "userId": 3
+    }

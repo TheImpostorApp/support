@@ -1,0 +1,17 @@
+id: e572bb01-3d8c-454e-9d60-b5be86fb10f3
+name: Create post 141
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Odio nemo architecto",
+      "body": "vitae repellendus maiores animi officia molestiae quo nulla.\nest quidem eligendi odio voluptatem aperiam.\ndistinctio officia laboriosam odio nemo ipsa soluta sint.",
+      "userId": 6
+    }
+postScript: |-
+  im.test("post was created", function () {
+    im.expect(im.response.code).to.equal(201);
+  });

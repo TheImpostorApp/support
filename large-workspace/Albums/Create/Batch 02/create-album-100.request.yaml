@@ -1,0 +1,14 @@
+id: 4cb56251-7c9f-443d-9836-3558e5ca1d75
+name: Create album 100
+method: POST
+url: "{{baseUrl}}/albums"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 3,
+      "title": "Laboriosam officia animi pariatur provident"
+    }

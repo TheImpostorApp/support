@@ -1,0 +1,18 @@
+id: 1473d370-33cb-4226-a8ae-285c9628dcd7
+name: Create comment 090
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 32,
+      "name": "Qui numquam nostrum ratione odio est magnam repellendus",
+      "email": "nicholas.graham@example.com",
+      "body": "eius adipisci nulla omnis nulla accusantium occaecat officia laboriosam nemo consequatur.\nvoluptas omnis occaecat officia cumque accusantium.\neos et nihil explicabo quo autem ratione nemo.\net dicta omnis omnis adipisci molestiae autem rerum."
+    }
+postScript: |-
+  im.test("comment was created", function () {
+    im.expect(im.response.code).to.equal(201);
+  });

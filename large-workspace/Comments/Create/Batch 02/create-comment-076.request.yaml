@@ -1,0 +1,14 @@
+id: b74aa5fd-fc94-4c13-8ae2-fd22cc77391e
+name: Create comment 076
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 41,
+      "name": "Magnam quia excepteur doloremque ipsa eos excepteur occaecat",
+      "email": "clementine.reichert@example.com",
+      "body": "rerum ut laboriosam pariatur quidem totam quos voluptatem est.\nut est sint nemo laboriosam dolorem dolorem."
+    }

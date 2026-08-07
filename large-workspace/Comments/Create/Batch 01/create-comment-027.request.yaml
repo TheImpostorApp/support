@@ -1,0 +1,14 @@
+id: 2df2682b-ae1c-483e-8ffa-39dd70a8e766
+name: Create comment 027
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 30,
+      "name": "Laboriosam magnam repellendus excepteur nemo esse veritatis",
+      "email": "chelsey.dietrich@example.com",
+      "body": "cupidatat et accusantium numquam nulla totam tempora vitae veritatis accusantium.\nminus et est voluptatem fugiat placeat eius qui pariatur officia inventore.\naccusantium provident veritatis dolore provident nihil autem est.\nnihil porro natus rerum qui architecto pariatur."
+    }

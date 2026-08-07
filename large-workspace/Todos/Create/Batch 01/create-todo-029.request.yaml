@@ -1,0 +1,13 @@
+id: 62dcc8bc-dad2-43b7-8821-6107c7963268
+name: Create todo 029
+method: POST
+url: "{{baseUrl}}/todos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 8,
+      "title": "Minus esse voluptatem explicabo",
+      "completed": false
+    }

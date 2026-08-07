@@ -1,0 +1,14 @@
+id: ad37b610-5b01-403d-aaf0-3d46432c33bc
+name: Create comment 066
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 83,
+      "name": "Aperiam eligendi suscipit occaecat odio totam laboriosam",
+      "email": "patricia.bauch@example.com",
+      "body": "ut aperiam maiores minus ut rerum eligendi nihil sunt.\ndolore dolorem aliquid natus impedit architecto ipsam ut qui dolore fugiat.\nomnis laborum porro laboriosam dicta dicta.\ndeserunt quidem laborum eaque quidem optio ratione."
+    }

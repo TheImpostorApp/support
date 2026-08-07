@@ -1,0 +1,6 @@
+id: f19d0970-93dc-4da3-9d25-e3535a870a04
+name: "Read comments 015 — list all"
+method: GET
+url: "{{baseUrl}}/comments"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }

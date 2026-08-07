@@ -1,0 +1,13 @@
+id: f24191f0-a964-4342-9de7-70f02b4998dc
+name: Create post 026
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Numquam impedit doloremque adipisci dicta",
+      "body": "totam adipisci quia est et accusantium natus.\nrerum ipsa dolore accusantium nemo quidem accusantium beatae explicabo.\nlaboriosam dolore excepteur aperiam porro architecto maiores laboriosam est doloremque ut sint.",
+      "userId": 7
+    }

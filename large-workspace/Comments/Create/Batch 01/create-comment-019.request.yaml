@@ -1,0 +1,14 @@
+id: 8f03bf0d-85dc-4721-8021-1bb0c1aa9897
+name: Create comment 019
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 67,
+      "name": "Laboriosam excepteur nihil maiores",
+      "email": "kurtis.graham@example.com",
+      "body": "minus consequatur totam repellendus accusantium soluta explicabo eligendi.\ncumque nostrum officia consequatur quos est.\nofficia nihil placeat placeat occaecat dolore optio esse laboriosam rerum natus."
+    }

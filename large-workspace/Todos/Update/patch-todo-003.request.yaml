@@ -1,0 +1,12 @@
+id: e89a8c66-97fc-4d19-9d7a-535bf28ac172
+name: Patch todo 003
+method: PATCH
+url: "{{baseUrl}}/todos/166"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 7,
+      "title": "Officia esse autem aperiam officia sint distinctio"
+    }

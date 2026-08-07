@@ -1,0 +1,6 @@
+id: a2820c44-b424-4219-80e8-4b1b4556aa83
+name: "Read users 005 — filtered"
+method: GET
+url: "{{baseUrl}}/users"
+query:
+  - { key: id, value: "1", enabled: true }

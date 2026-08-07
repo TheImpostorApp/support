@@ -1,0 +1,16 @@
+id: aed084f9-be8f-4a3b-8337-badf6843fba5
+name: Create photo 132
+method: POST
+url: "{{baseUrl}}/photos"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 14,
+      "title": "Explicabo eligendi eos molestiae inventore consequatur",
+      "url": "https://via.placeholder.com/600/1ec0",
+      "thumbnailUrl": "https://via.placeholder.com/150/1ec0"
+    }

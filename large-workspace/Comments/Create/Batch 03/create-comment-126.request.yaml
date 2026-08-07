@@ -1,0 +1,14 @@
+id: 08eff95e-200c-4b1a-ae6b-8ac9c5766b19
+name: Create comment 126
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 87,
+      "name": "Eligendi placeat cumque qui quia distinctio eos",
+      "email": "ervin.graham@example.com",
+      "body": "nemo inventore vitae nihil dicta cupidatat vitae veritatis est cupidatat minus sint.\ndolore quidem placeat deserunt sunt dolore quos nihil."
+    }

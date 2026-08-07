@@ -1,0 +1,25 @@
+id: f4284083-67e9-42ae-b3cd-07b75602c19c
+name: Create user 013
+method: POST
+url: "{{baseUrl}}/users"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Glenna Weissnat",
+      "username": "Glenna13",
+      "email": "glenna@weissnat.example",
+      "address": {
+        "street": "Beatae eligendi officia quo Street",
+        "suite": "Apt. 213",
+        "city": "McKenziehaven",
+        "zipcode": "54520-5294"
+      },
+      "phone": "1-309-282-4959",
+      "website": "weissnat.example",
+      "company": {
+        "name": "Robel-Corkery",
+        "catchPhrase": "Totam animi animi occaecat quidem doloremque accusantium optio"
+      }
+    }

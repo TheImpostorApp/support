@@ -1,0 +1,14 @@
+id: c7bae051-5180-4202-ac11-c9b09ca04bfb
+name: Create album 120
+method: POST
+url: "{{baseUrl}}/albums"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 10,
+      "title": "Occaecat beatae beatae sunt nostrum"
+    }

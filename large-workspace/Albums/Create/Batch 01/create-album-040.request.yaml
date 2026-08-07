@@ -1,0 +1,12 @@
+id: 75817d47-09bc-419f-be83-b0f21f54e9bd
+name: Create album 040
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 2,
+      "title": "Nulla pariatur occaecat nostrum"
+    }

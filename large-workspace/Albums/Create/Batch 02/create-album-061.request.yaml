@@ -1,0 +1,14 @@
+id: 36d02e17-a022-4991-bbe1-308a12abfe20
+name: Create album 061
+method: POST
+url: "{{baseUrl}}/albums"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 7,
+      "title": "Ut natus quos impedit quia ipsam"
+    }

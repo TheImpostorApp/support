@@ -1,0 +1,13 @@
+id: ef8701fd-814e-4138-9ffa-a68f051b9cac
+name: Create todo 091
+method: POST
+url: "{{baseUrl}}/todos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 9,
+      "title": "Occaecat nulla veritatis explicabo doloremque",
+      "completed": true
+    }

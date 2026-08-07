@@ -1,0 +1,14 @@
+id: 504b446c-5844-4604-b7cc-722d5d985236
+name: Replace photo 006
+method: PUT
+url: "{{baseUrl}}/photos/{{photoId}}"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 6,
+      "title": "Totam voluptatem et qui laboriosam qui vitae laboriosam",
+      "url": "https://via.placeholder.com/600/1015",
+      "thumbnailUrl": "https://via.placeholder.com/150/1015"
+    }

@@ -1,0 +1,25 @@
+id: b666d6d8-2a22-4570-ab1d-4ff6689dacb3
+name: Create user 005
+method: POST
+url: "{{baseUrl}}/users"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Ervin Lebsack",
+      "username": "Ervin49",
+      "email": "ervin@lebsack.example",
+      "address": {
+        "street": "Beatae eaque architecto Street",
+        "suite": "Apt. 326",
+        "city": "McKenziehaven",
+        "zipcode": "94685-3946"
+      },
+      "phone": "1-705-488-1813",
+      "website": "lebsack.example",
+      "company": {
+        "name": "Romaguera-Crona",
+        "catchPhrase": "Voluptas esse magnam dolore ipsa"
+      }
+    }

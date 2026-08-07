@@ -1,0 +1,13 @@
+id: 4047f751-a60a-4f1b-a163-d5af59100554
+name: Create post 013
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Adipisci ratione suscipit",
+      "body": "eius tempora rerum est sunt totam molestiae maiores doloremque qui doloremque architecto.\nratione impedit sint est provident minus molestiae.\neos voluptatem et doloremque animi nihil optio vitae.",
+      "userId": 1
+    }

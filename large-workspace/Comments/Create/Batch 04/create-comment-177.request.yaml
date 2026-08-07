@@ -1,0 +1,11 @@
+id: c55343b0-4633-49ef-8d87-04330a48ff37
+name: Create comment 177
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: postId, value: "81", enabled: true }
+    - { key: name, value: "Dicta nulla numquam doloremque eos eius cupidatat", enabled: true }
+    - { key: email, value: "glenna.reichert@example.com", enabled: true }
+    - { key: body, value: "excepteur odio sint distinctio nihil magnam sunt.\nexcepteur dolore explicabo impedit dicta odio voluptas animi nemo et.", enabled: true }

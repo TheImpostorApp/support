@@ -1,0 +1,4 @@
+id: fcf67423-5fdb-466f-8970-7968085e11b3
+name: "Read albums 008 — list all"
+method: GET
+url: "{{baseUrl}}/albums"

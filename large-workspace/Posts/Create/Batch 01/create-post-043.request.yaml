@@ -1,0 +1,13 @@
+id: 76be19a1-aea2-4b5a-8e2c-bf8cc113bc23
+name: Create post 043
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Qui porro aperiam architecto autem dolorem quo",
+      "body": "pariatur et optio ipsa totam suscipit suscipit architecto.\noptio autem nemo minus laborum quo laboriosam laboriosam ut.\nconsequatur impedit soluta inventore tempora magnam dolorem porro.",
+      "userId": 3
+    }

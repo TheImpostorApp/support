@@ -1,0 +1,25 @@
+id: 9c621c01-972e-4fb7-8cd8-72b43f48e1bf
+name: Create user 027
+method: POST
+url: "{{baseUrl}}/users"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Clementine Lebsack",
+      "username": "Clementine74",
+      "email": "clementine@lebsack.example",
+      "address": {
+        "street": "Optio animi eaque repellendus consequatur eaque quidem animi Street",
+        "suite": "Apt. 933",
+        "city": "Howemouth",
+        "zipcode": "85453-4236"
+      },
+      "phone": "1-742-254-3365",
+      "website": "lebsack.example",
+      "company": {
+        "name": "Johns Group",
+        "catchPhrase": "Explicabo adipisci molestiae excepteur accusantium natus nostrum inventore"
+      }
+    }

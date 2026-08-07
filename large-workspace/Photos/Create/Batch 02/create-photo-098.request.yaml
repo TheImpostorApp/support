@@ -1,0 +1,16 @@
+id: ab7662ec-dd0c-4729-a951-bef810391937
+name: Create photo 098
+method: POST
+url: "{{baseUrl}}/photos"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 35,
+      "title": "Dolorem dicta maiores adipisci et inventore",
+      "url": "https://via.placeholder.com/600/646",
+      "thumbnailUrl": "https://via.placeholder.com/150/646"
+    }

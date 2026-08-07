@@ -1,0 +1,13 @@
+id: ea0f29c2-e1ac-4403-8dff-b71efa4a355f
+name: Create post 188
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Natus natus odio nemo et explicabo odio",
+      "body": "suscipit suscipit numquam dolorem optio inventore optio beatae molestiae.\nvoluptatem magnam eos ipsa eius numquam cupidatat.",
+      "userId": 1
+    }

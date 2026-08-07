@@ -1,0 +1,13 @@
+id: df3fdcd0-c955-4ca5-b5fa-f9b495d2ce2e
+name: Replace todo 002
+method: PUT
+url: "{{baseUrl}}/todos/35"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 5,
+      "title": "Explicabo beatae laboriosam quo quos minus cupidatat",
+      "completed": true
+    }

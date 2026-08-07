@@ -1,0 +1,13 @@
+id: fa0c72cc-f8da-464a-8f06-0cdeee1a8a4f
+name: Create todo 099
+method: POST
+url: "{{baseUrl}}/todos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 7,
+      "title": "Sunt quos tempora esse cumque odio cumque",
+      "completed": false
+    }

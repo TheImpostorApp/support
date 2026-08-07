@@ -1,0 +1,13 @@
+id: 33bd352b-f53b-4ef6-a892-f4b2ce1a69b2
+name: Create todo 022
+method: POST
+url: "{{baseUrl}}/todos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 1,
+      "title": "Pariatur optio provident eos ut occaecat deserunt ut",
+      "completed": true
+    }

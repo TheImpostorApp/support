@@ -1,0 +1,13 @@
+id: a25b8c6b-c5c3-4278-81a7-f08ac70846bd
+name: Create post 124
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Tempora accusantium cumque",
+      "body": "quia consequatur provident magnam esse eligendi.\nvoluptas architecto dicta esse molestiae beatae odio aliquid rerum excepteur odio.\nratione officia laborum eius natus eaque occaecat maiores sint tempora.",
+      "userId": 1
+    }

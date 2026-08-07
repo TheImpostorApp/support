@@ -1,0 +1,12 @@
+id: bc69baab-b946-498b-a293-89d41cfe7ebb
+name: Patch post 004
+method: PATCH
+url: "{{baseUrl}}/posts/70"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Explicabo fugiat voluptas molestiae pariatur maiores dolorem",
+      "body": "totam deserunt officia veritatis totam inventore placeat accusantium.\ndoloremque nulla eos dicta officia laboriosam et ut.\neligendi ut vitae nemo impedit odio optio cumque pariatur dolorem.\naperiam occaecat voluptatem impedit dolorem architecto nostrum ratione."
+    }

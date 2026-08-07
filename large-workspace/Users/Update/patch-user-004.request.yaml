@@ -1,0 +1,12 @@
+id: 58d2b45d-2aed-4135-9e5a-348105fc38cc
+name: Patch user 004
+method: PATCH
+url: "{{baseUrl}}/users/10"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Leanne Schulist",
+      "username": "Leanne64"
+    }

@@ -1,0 +1,4 @@
+id: cc98d9b5-5eff-48e8-8404-8d77c9766484
+name: Delete album 003
+method: DELETE
+url: "{{baseUrl}}/albums/93"

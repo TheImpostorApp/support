@@ -1,0 +1,13 @@
+id: d9c1dd3c-469c-4197-8c13-f34f07ccac2e
+name: Create post 097
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Nemo ipsam molestiae adipisci quidem",
+      "body": "excepteur voluptas aperiam aperiam odio dicta dolore provident distinctio.\narchitecto dicta ut aliquid explicabo quos odio esse adipisci omnis quos.\nnostrum maiores omnis accusantium inventore porro excepteur provident suscipit eius.",
+      "userId": 4
+    }

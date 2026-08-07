@@ -1,0 +1,14 @@
+id: 81746935-5286-4ce4-958f-e63d5d57aaee
+name: Create comment 045
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 68,
+      "name": "Eius dicta eius laboriosam minus vitae",
+      "email": "chelsey.reichert@example.com",
+      "body": "cupidatat minus fugiat est provident repellendus cumque molestiae qui.\noccaecat quo sunt autem ratione beatae.\nmagnam excepteur eligendi distinctio pariatur qui architecto veritatis cupidatat eius aliquid numquam.\ncupidatat quos consequatur fugiat totam sunt voluptas natus aliquid cumque tempora."
+    }

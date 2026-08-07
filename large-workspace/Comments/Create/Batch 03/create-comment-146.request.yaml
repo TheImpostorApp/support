@@ -1,0 +1,14 @@
+id: c5c9ea04-ebb6-4da5-87f3-f7b350b69c47
+name: Create comment 146
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 51,
+      "name": "Pariatur placeat ipsam optio ut animi totam",
+      "email": "nicholas.schulist@example.com",
+      "body": "doloremque doloremque nemo minus repellendus excepteur aliquid ipsa animi tempora architecto.\naperiam ratione molestiae ipsa odio accusantium sunt numquam consequatur sint.\nlaboriosam quo odio rerum cupidatat doloremque dolorem cupidatat omnis animi distinctio.\nnemo quidem occaecat optio eos quidem magnam magnam soluta."
+    }

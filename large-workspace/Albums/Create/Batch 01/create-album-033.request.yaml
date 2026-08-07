@@ -1,0 +1,12 @@
+id: 8e571d5f-5135-41aa-b06f-18f97686ceff
+name: Create album 033
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 9,
+      "title": "Aperiam rerum molestiae eos eius sint rerum"
+    }

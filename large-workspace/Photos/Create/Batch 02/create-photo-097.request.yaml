@@ -1,0 +1,14 @@
+id: d785fe56-b3fb-4125-8185-751732261067
+name: Create photo 097
+method: POST
+url: "{{baseUrl}}/photos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 75,
+      "title": "Eius omnis animi",
+      "url": "https://via.placeholder.com/600/1b0a",
+      "thumbnailUrl": "https://via.placeholder.com/150/1b0a"
+    }

@@ -1,0 +1,16 @@
+id: 0455c4a0-70f8-4f84-8777-f7ce5a6801e0
+name: Patch album 002
+method: PATCH
+url: "{{baseUrl}}/albums/29"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 5,
+      "title": "Optio et deserunt eligendi odio autem ipsa architecto"
+    }
+postScript: |-
+  im.test("album was patched", function () {
+    im.expect(im.response.code).to.equal(200);
+  });

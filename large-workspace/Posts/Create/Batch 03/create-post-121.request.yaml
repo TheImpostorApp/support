@@ -1,0 +1,13 @@
+id: 90b50c83-b9dd-40f8-90ee-0b04ca5145ea
+name: Create post 121
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Eos vitae doloremque suscipit eius excepteur dicta",
+      "body": "qui ipsa nulla repellendus placeat eos omnis nulla rerum.\ndoloremque distinctio consequatur nihil est adipisci.",
+      "userId": 4
+    }

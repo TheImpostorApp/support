@@ -1,0 +1,13 @@
+id: ea0b278f-e4bc-49cd-b802-511d0d1b910a
+name: Create post 085
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Aliquid sunt eaque deserunt ipsam",
+      "body": "doloremque impedit consequatur nihil ipsam occaecat.\nsoluta aliquid beatae dolore voluptas eos veritatis eligendi.\nipsam laborum pariatur aperiam repellendus placeat quos maiores.",
+      "userId": 2
+    }

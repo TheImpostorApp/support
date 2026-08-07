@@ -1,0 +1,14 @@
+id: d5afb20f-3c33-4958-b3bb-3211bf2488d0
+name: Create comment 142
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 8,
+      "name": "Eligendi omnis vitae aliquid doloremque nihil deserunt inventore",
+      "email": "patricia.schulist@example.com",
+      "body": "provident excepteur impedit pariatur suscipit dolorem pariatur nihil numquam animi.\nvitae adipisci suscipit nihil nemo animi.\nnatus provident eligendi rerum repellendus impedit adipisci vitae voluptatem soluta vitae.\nvitae eligendi optio quo distinctio ratione vitae officia dolore fugiat adipisci."
+    }

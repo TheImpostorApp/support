@@ -1,0 +1,6 @@
+id: 164725b3-00ee-42df-93c5-7d190220e8d1
+name: Delete post 001
+method: DELETE
+url: "{{baseUrl}}/posts/45"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }

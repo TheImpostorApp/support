@@ -1,0 +1,20 @@
+id: 0f2e767a-9f43-4542-bbec-20d3983762e7
+name: Create photo 088
+method: POST
+url: "{{baseUrl}}/photos"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 45,
+      "title": "Laboriosam accusantium explicabo excepteur cupidatat animi",
+      "url": "https://via.placeholder.com/600/132d",
+      "thumbnailUrl": "https://via.placeholder.com/150/132d"
+    }
+postScript: |-
+  im.test("photo was created", function () {
+    im.expect(im.response.code).to.equal(201);
+  });

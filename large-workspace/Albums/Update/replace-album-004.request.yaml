@@ -1,0 +1,14 @@
+id: 07485074-92f6-4ce2-bf4f-82b6f986d8c1
+name: Replace album 004
+method: PUT
+url: "{{baseUrl}}/albums/11"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 8,
+      "title": "Sint optio officia laborum consequatur eius autem nihil"
+    }

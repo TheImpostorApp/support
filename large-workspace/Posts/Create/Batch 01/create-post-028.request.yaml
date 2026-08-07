@@ -1,0 +1,13 @@
+id: 02ae7d66-2f6d-4ee3-a35b-3b6404f77244
+name: Create post 028
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Vitae architecto omnis ipsam",
+      "body": "architecto voluptatem inventore vitae ut accusantium ratione soluta adipisci.\nsunt nostrum est dolore qui nostrum est explicabo et dolorem.\nmaiores ratione beatae animi eius eius autem excepteur excepteur cupidatat.",
+      "userId": 10
+    }

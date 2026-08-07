@@ -7,8 +7,11 @@ not Electron). It hosts the ready-to-open example workspaces below, and its
 bugs or ask for help.
 
 Clone this repo, open a workspace folder in Impostor (**File → Open folder**), and start
-sending requests. The matching mock backend the requests target is bundled here too, in
-[`mock-server/`](mock-server/) — so this repo is fully self-contained.
+sending requests. There are two:
+[`mock-workspace/`](mock-workspace/) for a tour of every feature (it needs the Docker mock
+backend bundled here in [`mock-server/`](mock-server/), so this repo is fully
+self-contained), and [`large-workspace/`](large-workspace/) for 1000 requests against a
+public API with no setup at all.
 
 ## `mock-workspace/`
 
@@ -114,6 +117,35 @@ copy the new `ca.pem`
 + `client.p12` into `.assets/certs/`; a mismatch shows up as a TLS/verify error on the
 mTLS example.
 
+## `large-workspace/`
+
+A **1000-request** workspace across **49 folders**, targeting
+[typicode's **JSONPlaceholder**](https://jsonplaceholder.typicode.com) — a free public fake
+REST API, so this one needs **no mock stack and no setup at all**. Open it, pick the
+**JSONPlaceholder** environment, and send.
+
+Where `mock-workspace/` is about *breadth* (every protocol and feature), this one is about
+*scale*: it's the fixture for seeing how the sidebar, search, and workspace scan behave at
+a realistic size. The method mix is deliberately POST-heavy:
+
+| POST | GET | PUT | PATCH | DELETE | HEAD | OPTIONS |
+|-----:|----:|----:|------:|-------:|-----:|--------:|
+| 800 (80%) | 80 | 45 | 35 | 30 | 5 | 5 |
+
+Organised as `Posts/`, `Comments/`, `Albums/`, `Photos/`, `Todos/`, `Users/` — each with
+`Create/` (batched 50 per folder), `Read/`, `Update/`, `Delete/` — plus a `Diagnostics/`
+folder for the HEAD/OPTIONS probes. Along the way it exercises raw JSON / urlencoded /
+multipart bodies, query filters and pagination, folder-inherited headers and variables,
+`{{$guid}}` dynamic variables, and `im.test` post-request assertions.
+
+A second **Local json-server** environment repoints everything at `http://localhost:3000`
+for offline or heavy use (`npx json-server db.json`) — unlike the hosted API, that one
+really persists the 800 creates.
+
+The workspace is **generated**, not hand-written; see
+[`large-workspace/README.md`](large-workspace/README.md) for the layout, the environments,
+and how to regenerate it.
+
 ## `mock-server/` — the mock API stack
 
 A one-command Docker backend (`docker compose up -d`) that exercises every Impostor
@@ -131,11 +163,11 @@ and gRPC. Built from pinned upstream images plus a small nginx for the mTLS endp
 Everything is throwaway and safe to run anywhere — no secrets or real data. See
 [`mock-server/README.md`](mock-server/README.md) for the complete endpoint → feature map.
 
-## Workspace layout
+## Repo layout
 
 ```
 mock-server/                  # bundled Docker mock backend (docker compose up -d)
-mock-workspace/               # the Impostor workspace — open this in the app
+mock-workspace/               # feature-tour workspace — open this in the app
 ├── impostor.workspace.yaml   # workspace name + global variables
 ├── settings.yaml             # workspace-level headers/settings
 ├── .env/Local.env.yaml       # the "Local" environment (baseUrl, etc.)
@@ -147,6 +179,13 @@ mock-workspace/               # the Impostor workspace — open this in the app
 ├── TLS/
 ├── Realtime/
 └── Scripting/
+large-workspace/              # 1000-request workspace (JSONPlaceholder, no setup)
+├── impostor.workspace.yaml
+├── settings.yaml
+├── .env/                     # JSONPlaceholder + Local json-server
+├── Posts/  Comments/  Albums/  Photos/  Todos/  Users/
+│   └── Create/ (Batch 01…) · Read/ · Update/ · Delete/
+└── Diagnostics/
 ```
 
 Each `*.request.yaml` is a single request (method, URL, headers, body, auth, scripts).

@@ -1,0 +1,13 @@
+id: 6fb36cd6-fe7e-4af9-9f2d-7af5d788de80
+name: Create post 066
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Adipisci quia sunt pariatur",
+      "body": "totam minus excepteur maiores adipisci distinctio quos accusantium autem provident.\nofficia omnis animi ipsam fugiat occaecat ut officia.\ntotam nulla fugiat laborum qui totam.",
+      "userId": 5
+    }

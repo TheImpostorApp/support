@@ -1,0 +1,14 @@
+id: 39482ab0-155e-4072-9fed-87b60b48b170
+name: Create comment 081
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 83,
+      "name": "Ut adipisci eligendi placeat sint tempora",
+      "email": "clementine.graham@example.com",
+      "body": "ratione nostrum ipsa omnis odio eos explicabo distinctio minus.\naperiam nihil impedit ut numquam veritatis sint accusantium molestiae.\nvoluptas provident natus aliquid quos deserunt aliquid numquam."
+    }

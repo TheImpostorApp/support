@@ -1,0 +1,14 @@
+id: e187dcca-f3e5-4597-b77b-18fd963f9217
+name: Create comment 161
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 40,
+      "name": "Beatae odio dolorem cupidatat cumque odio veritatis adipisci",
+      "email": "glenna.dubuque@example.com",
+      "body": "aliquid totam dolore quia ratione dolorem optio dicta laborum sint excepteur.\nodio autem accusantium aliquid laborum aperiam et laboriosam inventore voluptatem provident."
+    }

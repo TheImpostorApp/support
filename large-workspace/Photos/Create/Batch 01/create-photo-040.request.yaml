@@ -1,0 +1,14 @@
+id: 7d8dbc9d-4ce4-43b1-855c-c8a9e508ea97
+name: Create photo 040
+method: POST
+url: "{{baseUrl}}/photos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 5,
+      "title": "Pariatur dolorem dolore voluptas architecto nulla provident",
+      "url": "https://via.placeholder.com/600/25bf",
+      "thumbnailUrl": "https://via.placeholder.com/150/25bf"
+    }

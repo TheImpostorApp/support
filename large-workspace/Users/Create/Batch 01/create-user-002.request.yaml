@@ -1,0 +1,25 @@
+id: 1b5e11c8-6e29-4d3a-8b02-69af9d70c222
+name: Create user 002
+method: POST
+url: "{{baseUrl}}/users"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Dennis Schulist",
+      "username": "Dennis78",
+      "email": "dennis@schulist.example",
+      "address": {
+        "street": "Explicabo explicabo sint adipisci ut omnis minus tempora Street",
+        "suite": "Apt. 363",
+        "city": "Howemouth",
+        "zipcode": "89092-5034"
+      },
+      "phone": "1-711-907-8311",
+      "website": "schulist.example",
+      "company": {
+        "name": "Deckow-Crist",
+        "catchPhrase": "Architecto eos odio autem"
+      }
+    }

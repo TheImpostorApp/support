@@ -1,0 +1,4 @@
+id: e8b0a48f-537f-4e0d-9cd7-90cff8bfe03e
+name: Delete comment 004
+method: DELETE
+url: "{{baseUrl}}/comments/{{commentId}}"

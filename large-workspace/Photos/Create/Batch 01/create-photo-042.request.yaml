@@ -1,0 +1,14 @@
+id: af6c7498-5c55-45a6-8b98-3ce551757430
+name: Create photo 042
+method: POST
+url: "{{baseUrl}}/photos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 80,
+      "title": "Numquam adipisci sunt magnam tempora accusantium laborum",
+      "url": "https://via.placeholder.com/600/e91",
+      "thumbnailUrl": "https://via.placeholder.com/150/e91"
+    }

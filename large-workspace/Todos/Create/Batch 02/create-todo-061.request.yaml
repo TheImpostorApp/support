@@ -1,0 +1,12 @@
+id: a3406576-4cf2-4ddf-b4f2-2277d7249605
+name: Create todo 061
+method: POST
+url: "{{baseUrl}}/todos"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: multipart
+  fields:
+    - { kind: text, key: userId, value: "2" }
+    - { kind: text, key: title, value: "Dolorem natus quo omnis autem" }
+    - { kind: text, key: completed, value: "false" }

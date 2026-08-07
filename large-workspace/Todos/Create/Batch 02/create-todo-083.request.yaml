@@ -1,0 +1,13 @@
+id: cf1aba90-0bf7-4386-a088-6e560e223541
+name: Create todo 083
+method: POST
+url: "{{baseUrl}}/todos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 1,
+      "title": "Architecto qui rerum eaque eligendi",
+      "completed": false
+    }

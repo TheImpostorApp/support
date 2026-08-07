@@ -1,0 +1,12 @@
+id: 09cda6db-23ad-4242-9963-8d0c9e5ce2a4
+name: Patch todo 005
+method: PATCH
+url: "{{baseUrl}}/todos/38"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 9,
+      "title": "Nulla voluptatem inventore"
+    }

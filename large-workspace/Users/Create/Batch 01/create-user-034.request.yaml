@@ -1,0 +1,27 @@
+id: 0c0afd27-7e1f-457e-97de-b6228ad603d6
+name: Create user 034
+method: POST
+url: "{{baseUrl}}/users"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Glenna Dietrich",
+      "username": "Glenna77",
+      "email": "glenna@dietrich.example",
+      "address": {
+        "street": "Ut dolore excepteur porro accusantium Street",
+        "suite": "Apt. 414",
+        "city": "South Elvis",
+        "zipcode": "61007-4985"
+      },
+      "phone": "1-920-916-5186",
+      "website": "dietrich.example",
+      "company": {
+        "name": "Yost and Sons",
+        "catchPhrase": "Dicta adipisci fugiat accusantium"
+      }
+    }

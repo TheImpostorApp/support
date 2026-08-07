@@ -1,0 +1,13 @@
+id: 28829fc4-88d7-4f7e-bbcc-b720d7f36802
+name: Create comment 178
+method: POST
+url: "{{baseUrl}}/comments"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: postId, value: "42", enabled: true }
+    - { key: name, value: "Aperiam sint soluta eaque", enabled: true }
+    - { key: email, value: "kurtis.weissnat@example.com", enabled: true }
+    - { key: body, value: "odio repellendus quia voluptatem deserunt qui adipisci animi officia.\nquo inventore sint qui esse soluta cupidatat.", enabled: true }

@@ -1,0 +1,11 @@
+id: 84bc4957-98cf-4b96-867d-9085627ff8d2
+name: Create comment 014
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: multipart
+  fields:
+    - { kind: text, key: postId, value: "64" }
+    - { kind: text, key: name, value: "Soluta pariatur doloremque" }
+    - { kind: text, key: email, value: "glenna.schulist@example.com" }
+    - { kind: text, key: body, value: "voluptatem animi excepteur eos qui fugiat sint.\nminus nihil cupidatat numquam voluptas quidem autem cumque autem.\nautem et magnam aliquid nemo nemo soluta qui impedit pariatur." }

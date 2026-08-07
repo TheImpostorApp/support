@@ -1,0 +1,9 @@
+id: ea40508c-f208-4df5-8f77-81849a0f9511
+name: Create album 065
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: userId, value: "2", enabled: true }
+    - { key: title, value: "Placeat ut natus nihil", enabled: true }

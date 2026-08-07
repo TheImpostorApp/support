@@ -1,0 +1,12 @@
+id: 97ed8e66-5501-4f21-86b5-3840776d1694
+name: Patch comment 002
+method: PATCH
+url: "{{baseUrl}}/comments/439"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 78,
+      "name": "Laborum sunt fugiat autem veritatis doloremque"
+    }

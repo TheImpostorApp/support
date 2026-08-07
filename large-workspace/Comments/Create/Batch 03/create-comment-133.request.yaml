@@ -1,0 +1,14 @@
+id: 29dfd36c-70ed-4f35-936f-f14e1b6c8692
+name: Create comment 133
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 52,
+      "name": "Voluptas voluptas vitae deserunt cumque et voluptatem accusantium",
+      "email": "leanne.howell@example.com",
+      "body": "voluptatem sint ratione rerum aperiam numquam eius.\nnihil architecto quia dolorem laboriosam impedit impedit excepteur nihil accusantium odio.\nnumquam maiores quia sunt rerum nostrum dolorem eius sunt quia excepteur fugiat."
+    }

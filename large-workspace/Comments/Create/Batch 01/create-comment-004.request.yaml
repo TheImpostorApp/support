@@ -1,0 +1,14 @@
+id: d0d9d79b-3b96-4f27-bfc0-0118900060ad
+name: Create comment 004
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 41,
+      "name": "Dicta nihil ut voluptas rerum maiores",
+      "email": "glenna.bauch@example.com",
+      "body": "explicabo nemo voluptas dolore occaecat placeat optio cumque odio adipisci voluptatem.\nminus impedit numquam consequatur minus excepteur totam qui cumque autem.\nprovident ipsam ut omnis eaque suscipit distinctio veritatis esse nemo."
+    }

@@ -1,0 +1,13 @@
+id: 7d8c6693-6c59-4601-9d74-9904ca285b3f
+name: Create post 106
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Inventore beatae pariatur ipsa accusantium",
+      "body": "eligendi maiores laboriosam excepteur eaque provident nihil rerum laborum.\nsuscipit dicta ratione inventore numquam soluta.\neos ut ipsa soluta nostrum maiores nostrum totam occaecat aliquid.",
+      "userId": 10
+    }

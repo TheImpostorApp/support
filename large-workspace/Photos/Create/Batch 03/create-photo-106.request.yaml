@@ -1,0 +1,14 @@
+id: 85afea72-0e81-48aa-958e-6057ca1f48e9
+name: Create photo 106
+method: POST
+url: "{{baseUrl}}/photos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 32,
+      "title": "Provident veritatis rerum voluptatem aliquid accusantium architecto",
+      "url": "https://via.placeholder.com/600/198d",
+      "thumbnailUrl": "https://via.placeholder.com/150/198d"
+    }

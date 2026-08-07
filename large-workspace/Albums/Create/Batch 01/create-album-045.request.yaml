@@ -1,0 +1,12 @@
+id: 06a09f94-bdea-4f9d-9a42-0c7cc2957da4
+name: Create album 045
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 3,
+      "title": "Optio nihil laboriosam impedit laboriosam soluta"
+    }

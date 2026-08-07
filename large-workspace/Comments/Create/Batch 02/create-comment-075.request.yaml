@@ -1,0 +1,14 @@
+id: d23bac3e-3c1e-40c2-bdb0-405fd488ed96
+name: Create comment 075
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 26,
+      "name": "Fugiat nostrum vitae deserunt sint",
+      "email": "nicholas.reichert@example.com",
+      "body": "eius dicta eligendi consequatur nihil qui est.\nrepellendus nihil eos esse beatae ut dolorem laborum autem voluptatem porro.\nnihil voluptatem cupidatat excepteur ipsa dolore architecto quia et placeat nostrum cupidatat."
+    }

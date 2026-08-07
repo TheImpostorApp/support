@@ -1,0 +1,11 @@
+id: ee1425cd-7db7-4ddc-b6fb-0a463275446d
+name: Create photo 100
+method: POST
+url: "{{baseUrl}}/photos"
+body:
+  kind: multipart
+  fields:
+    - { kind: text, key: albumId, value: "47" }
+    - { kind: text, key: title, value: "Suscipit ipsam natus dolorem esse inventore quo nostrum" }
+    - { kind: text, key: url, value: "https://via.placeholder.com/600/1454" }
+    - { kind: text, key: thumbnailUrl, value: "https://via.placeholder.com/150/1454" }

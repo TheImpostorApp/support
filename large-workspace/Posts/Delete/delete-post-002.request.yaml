@@ -1,0 +1,10 @@
+id: 38513f51-0fbe-446d-8e73-caf299cba49e
+name: Delete post 002
+method: DELETE
+url: "{{baseUrl}}/posts/81"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+postScript: |-
+  im.test("post was deleted", function () {
+    im.expect(im.response.code).to.equal(200);
+  });

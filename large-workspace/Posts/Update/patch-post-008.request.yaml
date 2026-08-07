@@ -1,0 +1,12 @@
+id: aebcdde5-016a-4ca0-b27d-dae56f7dc22e
+name: Patch post 008
+method: PATCH
+url: "{{baseUrl}}/posts/{{postId}}"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Provident rerum vitae",
+      "body": "ipsam nostrum dolorem optio quidem adipisci ratione maiores sunt dolorem ratione.\noccaecat nulla molestiae consequatur numquam inventore cupidatat vitae odio vitae aliquid.\ninventore beatae eligendi omnis quidem eligendi.\ncumque molestiae cupidatat repellendus nihil et numquam optio."
+    }

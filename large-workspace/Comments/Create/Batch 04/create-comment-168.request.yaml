@@ -1,0 +1,18 @@
+id: 01e08675-7729-4981-b75e-8e1a7fbfc690
+name: Create comment 168
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 71,
+      "name": "Odio excepteur natus placeat maiores doloremque",
+      "email": "leanne.howell@example.com",
+      "body": "omnis voluptatem natus repellendus quos autem qui nihil ipsam ratione.\nratione numquam inventore soluta eaque animi adipisci omnis ut cupidatat.\nfugiat quia optio beatae deserunt veritatis sunt repellendus fugiat.\nveritatis deserunt placeat eligendi maiores quos minus consequatur tempora eius cumque."
+    }
+postScript: |-
+  im.test("comment was created", function () {
+    im.expect(im.response.code).to.equal(201);
+  });

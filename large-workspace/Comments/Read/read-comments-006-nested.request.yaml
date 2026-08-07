@@ -1,0 +1,4 @@
+id: a32ecce2-7ee7-4211-a19d-7f91fdf877e0
+name: "Read comments 006 — nested"
+method: GET
+url: "{{baseUrl}}/posts/27/comments"

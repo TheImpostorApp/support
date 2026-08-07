@@ -1,0 +1,13 @@
+id: 551c3961-90f9-4020-8874-65af0e3641c4
+name: Create post 165
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Vitae inventore laborum qui cumque eligendi",
+      "body": "nulla ipsa dolorem porro nostrum accusantium est doloremque placeat.\nsoluta totam autem laborum dicta nemo qui sint quo nihil voluptas.\nnumquam suscipit voluptas ipsam veritatis sint beatae.\nmagnam laboriosam accusantium porro totam dicta suscipit cupidatat.",
+      "userId": 3
+    }

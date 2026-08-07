@@ -1,0 +1,14 @@
+name: Large Workspace — JSONPlaceholder
+globals:
+- key: apiClient
+  value: "impostor"
+  enabled: true
+  secret: false
+  script: false
+  reference: ''
+- key: defaultLimit
+  value: "10"
+  enabled: true
+  secret: false
+  script: false
+  reference: ''

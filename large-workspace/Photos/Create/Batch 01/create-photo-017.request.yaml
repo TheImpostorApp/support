@@ -1,0 +1,14 @@
+id: 4f89a161-8f59-4992-976b-19fbf713eeae
+name: Create photo 017
+method: POST
+url: "{{baseUrl}}/photos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 4,
+      "title": "Deserunt est excepteur qui cumque",
+      "url": "https://via.placeholder.com/600/170e",
+      "thumbnailUrl": "https://via.placeholder.com/150/170e"
+    }

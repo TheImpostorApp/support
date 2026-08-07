@@ -1,0 +1,25 @@
+id: 490f07bc-24be-4177-9c7b-1c721cddf649
+name: Create user 029
+method: POST
+url: "{{baseUrl}}/users"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Kurtis Weissnat",
+      "username": "Kurtis25",
+      "email": "kurtis@weissnat.example",
+      "address": {
+        "street": "Dolore autem occaecat esse ut molestiae Street",
+        "suite": "Apt. 511",
+        "city": "Bartholomebury",
+        "zipcode": "76236-2250"
+      },
+      "phone": "1-600-851-1193",
+      "website": "weissnat.example",
+      "company": {
+        "name": "Robel-Corkery",
+        "catchPhrase": "Accusantium esse explicabo doloremque magnam provident"
+      }
+    }

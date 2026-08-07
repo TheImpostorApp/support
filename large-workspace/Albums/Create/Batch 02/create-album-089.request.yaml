@@ -1,0 +1,15 @@
+id: 4b9b5725-6212-4253-9768-030f2488144d
+name: Create album 089
+method: POST
+url: "{{baseUrl}}/albums"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: multipart
+  fields:
+    - { kind: text, key: userId, value: "3" }
+    - { kind: text, key: title, value: "Quos veritatis voluptatem" }
+postScript: |-
+  im.test("album was created", function () {
+    im.expect(im.response.code).to.equal(201);
+  });

@@ -1,0 +1,15 @@
+id: a7677537-64d9-43ae-887a-8d2b9affcad4
+name: Create todo 089
+method: POST
+url: "{{baseUrl}}/todos"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 1,
+      "title": "Occaecat impedit minus repellendus est aliquid",
+      "completed": true
+    }

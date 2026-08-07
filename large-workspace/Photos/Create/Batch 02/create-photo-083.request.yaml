@@ -1,0 +1,14 @@
+id: 3c408336-b9fa-47a6-bd60-f42217a52c2e
+name: Create photo 083
+method: POST
+url: "{{baseUrl}}/photos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 7,
+      "title": "Ratione veritatis eligendi quidem excepteur omnis voluptatem",
+      "url": "https://via.placeholder.com/600/1752",
+      "thumbnailUrl": "https://via.placeholder.com/150/1752"
+    }

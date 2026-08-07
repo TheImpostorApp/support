@@ -1,0 +1,10 @@
+id: daacbd4a-21ff-4da2-aa26-ecec859c54ef
+name: Create todo 092
+method: POST
+url: "{{baseUrl}}/todos"
+body:
+  kind: multipart
+  fields:
+    - { kind: text, key: userId, value: "2" }
+    - { kind: text, key: title, value: "Voluptatem beatae suscipit excepteur dicta" }
+    - { kind: text, key: completed, value: "true" }

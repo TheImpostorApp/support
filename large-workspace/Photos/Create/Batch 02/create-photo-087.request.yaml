@@ -1,0 +1,14 @@
+id: 2f50ff15-7b42-40dd-8791-4cf66a948684
+name: Create photo 087
+method: POST
+url: "{{baseUrl}}/photos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 29,
+      "title": "Sunt cumque placeat optio odio dolore voluptatem officia",
+      "url": "https://via.placeholder.com/600/1dee",
+      "thumbnailUrl": "https://via.placeholder.com/150/1dee"
+    }

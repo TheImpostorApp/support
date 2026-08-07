@@ -1,0 +1,13 @@
+id: 997176e9-4257-4009-98aa-4ffb5f6845b4
+name: Create post 118
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Vitae excepteur consequatur numquam eius soluta cupidatat",
+      "body": "vitae quos aperiam tempora dolorem tempora dolore provident ratione molestiae quidem consequatur.\noptio maiores porro soluta doloremque sunt laborum voluptatem ipsam.\nipsam ipsam excepteur odio nihil porro ut dolorem dicta.",
+      "userId": 1
+    }

@@ -1,0 +1,13 @@
+id: 40cb0e57-4e86-4003-80d8-0b80e5c88e9a
+name: Create post 187
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Magnam laborum ratione",
+      "body": "officia voluptas beatae qui eos odio.\nqui voluptas quo voluptatem ipsam totam explicabo provident impedit porro odio explicabo.\nconsequatur nulla magnam nihil magnam optio.\nplaceat quidem explicabo aperiam eius quidem.",
+      "userId": 6
+    }

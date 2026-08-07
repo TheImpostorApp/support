@@ -1,0 +1,14 @@
+id: 93854411-850a-4259-9ae8-d846dfb0e598
+name: Create photo 046
+method: POST
+url: "{{baseUrl}}/photos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 3,
+      "title": "Nulla laborum et provident",
+      "url": "https://via.placeholder.com/600/ede",
+      "thumbnailUrl": "https://via.placeholder.com/150/ede"
+    }

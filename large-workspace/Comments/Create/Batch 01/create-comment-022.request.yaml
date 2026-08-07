@@ -1,0 +1,13 @@
+id: 3fce1922-aa7d-45cc-9070-023305535021
+name: Create comment 022
+method: POST
+url: "{{baseUrl}}/comments"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: postId, value: "49", enabled: true }
+    - { key: name, value: "Nulla optio quia voluptas quia cupidatat molestiae eligendi", enabled: true }
+    - { key: email, value: "leanne.dietrich@example.com", enabled: true }
+    - { key: body, value: "consequatur totam molestiae veritatis voluptas numquam rerum ut architecto est.\ndolore impedit impedit porro beatae explicabo natus distinctio accusantium.", enabled: true }

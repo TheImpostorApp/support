@@ -1,0 +1,25 @@
+id: 57cb02a9-1e2e-4972-b0dd-ec376c31bed7
+name: Create user 055
+method: POST
+url: "{{baseUrl}}/users"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Clementine DuBuque",
+      "username": "Clementine74",
+      "email": "clementine@dubuque.example",
+      "address": {
+        "street": "Fugiat quo ut omnis molestiae Street",
+        "suite": "Apt. 149",
+        "city": "Lebsackbury",
+        "zipcode": "56878-1877"
+      },
+      "phone": "1-876-459-4758",
+      "website": "dubuque.example",
+      "company": {
+        "name": "Romaguera-Crona",
+        "catchPhrase": "Magnam optio quo dicta adipisci laborum"
+      }
+    }

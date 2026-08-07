@@ -1,0 +1,12 @@
+id: 28539019-f2b4-45ea-ba95-92cda36fd467
+name: Create album 095
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 5,
+      "title": "Est nulla dolore"
+    }

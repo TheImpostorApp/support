@@ -1,0 +1,6 @@
+id: 13861790-ae96-403a-af45-e929a913bb23
+name: Delete user 001
+method: DELETE
+url: "{{baseUrl}}/users/4"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }

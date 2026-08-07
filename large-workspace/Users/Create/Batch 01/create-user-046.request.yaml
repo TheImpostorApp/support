@@ -1,0 +1,27 @@
+id: 75011da9-bee4-4aa8-a505-493196a188a9
+name: Create user 046
+method: POST
+url: "{{baseUrl}}/users"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Kurtis Graham",
+      "username": "Kurtis41",
+      "email": "kurtis@graham.example",
+      "address": {
+        "street": "Omnis suscipit dolore optio Street",
+        "suite": "Apt. 327",
+        "city": "South Christy",
+        "zipcode": "39443-4718"
+      },
+      "phone": "1-743-721-3072",
+      "website": "graham.example",
+      "company": {
+        "name": "Abernathy Group",
+        "catchPhrase": "Inventore consequatur occaecat"
+      }
+    }

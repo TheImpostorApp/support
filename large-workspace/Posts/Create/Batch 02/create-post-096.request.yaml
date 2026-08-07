@@ -1,0 +1,10 @@
+id: 56fbe31f-73e4-4a42-bdbe-aef2f9195e23
+name: Create post 096
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: title, value: "Laboriosam provident quia odio numquam et officia laborum", enabled: true }
+    - { key: body, value: "minus sunt accusantium sint nulla provident eaque laborum eos.\nmagnam soluta provident placeat provident architecto eligendi ipsa eligendi sunt soluta qui.\neius porro laborum porro inventore impedit omnis animi nulla.", enabled: true }
+    - { key: userId, value: "6", enabled: true }

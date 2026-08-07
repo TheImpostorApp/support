@@ -1,0 +1,8 @@
+id: 0a5c3ce4-cc3e-40d2-9c7b-299cc5ea15b5
+name: "Read comments 013 — nested"
+method: GET
+url: "{{baseUrl}}/posts/19/comments"
+postScript: |-
+  im.test("comments read ok", function () {
+    im.expect(im.response.code).to.equal(200);
+  });

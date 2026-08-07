@@ -1,0 +1,10 @@
+id: c5be6c05-98ea-4280-b125-1a7278cb4e98
+name: Create todo 052
+method: POST
+url: "{{baseUrl}}/todos"
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: userId, value: "8", enabled: true }
+    - { key: title, value: "Molestiae animi sunt architecto doloremque ratione cupidatat", enabled: true }
+    - { key: completed, value: "false", enabled: true }

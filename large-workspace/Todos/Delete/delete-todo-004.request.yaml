@@ -1,0 +1,4 @@
+id: 7caac106-3b16-4829-a685-70f3d35be79b
+name: Delete todo 004
+method: DELETE
+url: "{{baseUrl}}/todos/54"

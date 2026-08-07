@@ -1,0 +1,12 @@
+id: eedf504a-55cb-4c08-b923-ea91e80d0e85
+name: Create post 198
+method: POST
+url: "{{baseUrl}}/posts"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: multipart
+  fields:
+    - { kind: text, key: title, value: "Deserunt voluptatem esse eligendi architecto totam porro odio" }
+    - { kind: text, key: body, value: "vitae impedit aperiam sint ipsa pariatur quidem fugiat nihil eius.\nquo quos adipisci eaque optio dicta sint cumque.\nipsa distinctio ipsa repellendus esse maiores nihil molestiae.\nsoluta nihil occaecat aliquid dolore numquam vitae." }
+    - { kind: text, key: userId, value: "5" }

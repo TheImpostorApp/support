@@ -1,0 +1,14 @@
+id: 97e6e028-faf2-4f8b-b462-3327c5748672
+name: Create photo 059
+method: POST
+url: "{{baseUrl}}/photos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 12,
+      "title": "Tempora ipsa dolorem occaecat accusantium",
+      "url": "https://via.placeholder.com/600/594",
+      "thumbnailUrl": "https://via.placeholder.com/150/594"
+    }

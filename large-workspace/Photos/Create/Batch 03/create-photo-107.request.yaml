@@ -1,0 +1,14 @@
+id: 33318c8c-cba2-436c-849f-b706a90945c0
+name: Create photo 107
+method: POST
+url: "{{baseUrl}}/photos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 70,
+      "title": "Architecto cupidatat vitae esse autem aliquid",
+      "url": "https://via.placeholder.com/600/1e79",
+      "thumbnailUrl": "https://via.placeholder.com/150/1e79"
+    }

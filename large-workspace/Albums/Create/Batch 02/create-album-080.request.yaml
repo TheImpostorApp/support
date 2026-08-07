@@ -1,0 +1,12 @@
+id: 6d83ffe1-a994-4f22-9039-3e830ba2c4e3
+name: Create album 080
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 6,
+      "title": "Totam vitae doloremque rerum esse impedit et"
+    }

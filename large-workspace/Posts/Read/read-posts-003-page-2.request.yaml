@@ -1,0 +1,11 @@
+id: 49acecfb-125f-46f2-a5c9-da90b44a4c6a
+name: "Read posts 003 — page 2"
+method: GET
+url: "{{baseUrl}}/posts"
+query:
+  - { key: "_page", value: "2", enabled: true }
+  - { key: "_limit", value: "10", enabled: true }
+postScript: |-
+  im.test("posts read ok", function () {
+    im.expect(im.response.code).to.equal(200);
+  });

@@ -1,0 +1,13 @@
+id: bf9de2f5-679a-4f42-8b59-503427d4ceb0
+name: Create post 041
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Ipsa laborum natus laboriosam nulla nulla omnis explicabo",
+      "body": "beatae aliquid aperiam omnis cumque voluptas.\nprovident omnis deserunt provident architecto magnam aliquid occaecat.\nvitae occaecat odio beatae provident nihil.",
+      "userId": 2
+    }

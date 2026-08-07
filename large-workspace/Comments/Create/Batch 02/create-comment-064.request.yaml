@@ -1,0 +1,14 @@
+id: aba14229-8777-4a23-9c45-88833f45f724
+name: Create comment 064
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 81,
+      "name": "Laboriosam sint cumque",
+      "email": "chelsey.runolfsdottir@example.com",
+      "body": "eaque repellendus tempora aperiam dolorem dolorem.\nrepellendus dicta consequatur occaecat occaecat distinctio provident beatae explicabo impedit cupidatat.\nveritatis est soluta animi esse sunt."
+    }

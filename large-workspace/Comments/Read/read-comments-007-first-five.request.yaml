@@ -1,0 +1,6 @@
+id: e1a93e34-5f5c-4d70-be63-d86c90963923
+name: "Read comments 007 — first five"
+method: GET
+url: "{{baseUrl}}/comments"
+query:
+  - { key: "_limit", value: "5", enabled: true }

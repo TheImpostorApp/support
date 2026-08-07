@@ -1,0 +1,13 @@
+id: 011f5881-16e4-4776-929f-f597cc7e5d74
+name: Create todo 056
+method: POST
+url: "{{baseUrl}}/todos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 8,
+      "title": "Quia quidem animi eligendi ut nostrum voluptas",
+      "completed": true
+    }

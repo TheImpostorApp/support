@@ -1,0 +1,13 @@
+id: e4eac59c-49a3-40ea-bece-bd8fd445f41a
+name: Create post 002
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Animi accusantium quia et natus",
+      "body": "et nemo cumque aliquid nemo placeat minus ipsa esse esse minus eligendi.\neligendi nemo tempora voluptas odio distinctio.\narchitecto animi autem odio pariatur autem doloremque voluptatem eaque ut animi.",
+      "userId": 5
+    }

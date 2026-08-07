@@ -1,0 +1,11 @@
+id: 074292be-272f-4fff-a8dc-409cca9c7bdd
+name: Create photo 014
+method: POST
+url: "{{baseUrl}}/photos"
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: albumId, value: "56", enabled: true }
+    - { key: title, value: "Impedit adipisci laboriosam aliquid", enabled: true }
+    - { key: url, value: "https://via.placeholder.com/600/15ca", enabled: true }
+    - { key: thumbnailUrl, value: "https://via.placeholder.com/150/15ca", enabled: true }

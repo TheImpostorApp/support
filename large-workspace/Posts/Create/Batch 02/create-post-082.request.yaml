@@ -1,0 +1,13 @@
+id: dbc96d74-8df9-4726-a23e-f8bdc6c62efb
+name: Create post 082
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Maiores pariatur officia est architecto",
+      "body": "explicabo pariatur nihil ut cumque porro dolorem maiores eaque.\nest dolore officia natus inventore sunt et consequatur animi eligendi sint aliquid.",
+      "userId": 6
+    }

@@ -1,0 +1,14 @@
+id: fb1d4f8d-4873-4e55-85d2-7b0673ded913
+name: Create album 107
+method: POST
+url: "{{baseUrl}}/albums"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 8,
+      "title": "Soluta eius ut"
+    }

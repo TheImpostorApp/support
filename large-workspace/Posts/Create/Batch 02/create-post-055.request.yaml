@@ -1,0 +1,13 @@
+id: 86d9776f-b779-44e7-a897-fef2bd5ce4fd
+name: Create post 055
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Impedit eius laboriosam eos est quos provident",
+      "body": "et tempora doloremque adipisci ipsa consequatur.\narchitecto eos quos accusantium qui cupidatat.\ntotam est inventore nostrum architecto totam totam qui dolore.\nmagnam nulla minus sunt eligendi adipisci soluta deserunt dicta explicabo suscipit.",
+      "userId": 6
+    }

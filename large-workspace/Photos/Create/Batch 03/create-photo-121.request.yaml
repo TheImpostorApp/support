@@ -1,0 +1,14 @@
+id: eabb6a64-b3d6-4c6b-aa8b-6e21bb4c4fef
+name: Create photo 121
+method: POST
+url: "{{baseUrl}}/photos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 11,
+      "title": "Dolorem adipisci aliquid occaecat optio placeat occaecat",
+      "url": "https://via.placeholder.com/600/7df",
+      "thumbnailUrl": "https://via.placeholder.com/150/7df"
+    }

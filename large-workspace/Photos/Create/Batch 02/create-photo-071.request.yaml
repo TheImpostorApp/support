@@ -1,0 +1,14 @@
+id: 4ab57b65-52a3-449a-9fd6-563a61fa06c8
+name: Create photo 071
+method: POST
+url: "{{baseUrl}}/photos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 13,
+      "title": "Quo sint architecto",
+      "url": "https://via.placeholder.com/600/1069",
+      "thumbnailUrl": "https://via.placeholder.com/150/1069"
+    }

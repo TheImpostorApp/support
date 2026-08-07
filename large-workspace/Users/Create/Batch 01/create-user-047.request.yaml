@@ -1,0 +1,27 @@
+id: 9b539b0d-38a8-492f-a877-54c300670fbf
+name: Create user 047
+method: POST
+url: "{{baseUrl}}/users"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Dennis Graham",
+      "username": "Dennis27",
+      "email": "dennis@graham.example",
+      "address": {
+        "street": "Nulla laborum ut eos inventore vitae sunt Street",
+        "suite": "Apt. 227",
+        "city": "South Christy",
+        "zipcode": "75881-7174"
+      },
+      "phone": "1-442-994-1171",
+      "website": "graham.example",
+      "company": {
+        "name": "Considine-Lockman",
+        "catchPhrase": "Ipsa ut totam cumque sint occaecat excepteur"
+      }
+    }

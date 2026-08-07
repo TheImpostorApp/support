@@ -1,0 +1,13 @@
+id: d5777e5b-02b7-42f3-8c38-67b75d1ccc91
+name: Create post 184
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Dolore distinctio vitae animi quo rerum accusantium",
+      "body": "adipisci nostrum nostrum voluptatem beatae dicta nulla laborum aliquid doloremque molestiae tempora.\nipsam architecto consequatur qui animi ut laborum dolore sunt qui.\nnostrum fugiat nihil voluptatem officia odio nulla occaecat adipisci adipisci architecto quidem.\nminus accusantium nulla eos voluptas eaque nostrum magnam pariatur sint repellendus eaque.",
+      "userId": 5
+    }

@@ -1,0 +1,15 @@
+id: cb87f7db-fc11-4ab8-b68d-5128a86a453d
+name: Create post 010
+method: POST
+url: "{{baseUrl}}/posts"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Autem quidem nulla eos consequatur cumque et nihil",
+      "body": "tempora distinctio suscipit suscipit soluta et dolorem autem magnam.\nrerum laboriosam eligendi et aperiam tempora architecto eligendi occaecat ratione.\nest repellendus nemo distinctio natus deserunt.\nfugiat ipsam eligendi cumque animi omnis tempora suscipit qui.",
+      "userId": 5
+    }

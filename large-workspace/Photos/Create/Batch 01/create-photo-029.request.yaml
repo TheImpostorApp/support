@@ -1,0 +1,14 @@
+id: 77188669-5a36-4724-b226-0808eb7a8ee9
+name: Create photo 029
+method: POST
+url: "{{baseUrl}}/photos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 51,
+      "title": "Quidem aperiam nostrum optio",
+      "url": "https://via.placeholder.com/600/c03",
+      "thumbnailUrl": "https://via.placeholder.com/150/c03"
+    }

@@ -1,0 +1,14 @@
+id: b7849fdc-54a8-4443-9db9-e37ca16237d7
+name: Create comment 072
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 73,
+      "name": "Qui cupidatat sunt veritatis porro nulla architecto nulla",
+      "email": "dennis.bauch@example.com",
+      "body": "quia sunt voluptatem optio autem consequatur suscipit autem fugiat quia.\ndeserunt autem qui ut dolore autem qui cumque excepteur.\nsint inventore et ratione ipsa molestiae aperiam maiores omnis nihil ut odio.\ndolore officia doloremque distinctio adipisci et."
+    }

@@ -1,0 +1,31 @@
+id: bb930f04-3273-445d-a545-8a02c68f7d29
+name: Create user 044
+method: POST
+url: "{{baseUrl}}/users"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Clementine DuBuque",
+      "username": "Clementine31",
+      "email": "clementine@dubuque.example",
+      "address": {
+        "street": "Molestiae nostrum laboriosam qui soluta ipsa Street",
+        "suite": "Apt. 450",
+        "city": "Roscoeview",
+        "zipcode": "45048-3360"
+      },
+      "phone": "1-376-399-2479",
+      "website": "dubuque.example",
+      "company": {
+        "name": "Abernathy Group",
+        "catchPhrase": "Veritatis eos inventore laboriosam consequatur minus nemo laborum"
+      }
+    }
+postScript: |-
+  im.test("user was created", function () {
+    im.expect(im.response.code).to.equal(201);
+  });

@@ -1,0 +1,9 @@
+variables:
+- key: resource
+  value: "users"
+  enabled: true
+  secret: false
+  script: false
+  reference: ''
+headers:
+  - { key: X-Resource, value: "users", enabled: true }

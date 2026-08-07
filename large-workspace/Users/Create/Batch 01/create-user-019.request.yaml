@@ -1,0 +1,25 @@
+id: e9a0fea5-4a81-4826-8230-da2cfafad656
+name: Create user 019
+method: POST
+url: "{{baseUrl}}/users"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Ervin Dietrich",
+      "username": "Ervin20",
+      "email": "ervin@dietrich.example",
+      "address": {
+        "street": "Dolorem pariatur dolore Street",
+        "suite": "Apt. 572",
+        "city": "Roscoeview",
+        "zipcode": "13621-8489"
+      },
+      "phone": "1-497-924-2375",
+      "website": "dietrich.example",
+      "company": {
+        "name": "Yost and Sons",
+        "catchPhrase": "Autem ut et tempora numquam omnis officia eligendi"
+      }
+    }

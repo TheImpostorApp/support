@@ -1,0 +1,11 @@
+id: 5cb9aa0a-728e-4b9e-970d-e0b24e784ea0
+name: Create comment 123
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: postId, value: "94", enabled: true }
+    - { key: name, value: "Inventore quo ut nostrum", enabled: true }
+    - { key: email, value: "clementina.weissnat@example.com", enabled: true }
+    - { key: body, value: "autem ratione qui repellendus sint impedit ipsam ratione ut nemo.\nmaiores veritatis pariatur autem sunt animi inventore laborum quo numquam quo minus.\nquos numquam omnis molestiae molestiae pariatur impedit molestiae odio impedit omnis.\ndeserunt inventore cupidatat molestiae autem veritatis maiores.", enabled: true }

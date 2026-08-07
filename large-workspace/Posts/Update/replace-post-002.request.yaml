@@ -1,0 +1,13 @@
+id: 74a021b1-4d86-4510-90b6-2fc40fde19ab
+name: Replace post 002
+method: PUT
+url: "{{baseUrl}}/posts/{{postId}}"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Distinctio aliquid aperiam maiores nihil minus",
+      "body": "quia numquam cupidatat deserunt vitae adipisci.\nest consequatur architecto distinctio totam deserunt repellendus.",
+      "userId": 10
+    }

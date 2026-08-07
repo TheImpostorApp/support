@@ -1,0 +1,16 @@
+id: 8e504c30-d3ab-4014-94c4-f922c4cc34eb
+name: Patch album 004
+method: PATCH
+url: "{{baseUrl}}/albums/{{albumId}}"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 6,
+      "title": "Repellendus rerum quia eaque vitae deserunt"
+    }
+postScript: |-
+  im.test("album was patched", function () {
+    im.expect(im.response.code).to.equal(200);
+  });

@@ -1,0 +1,11 @@
+id: 0930fcc1-81c0-4aaf-8226-215f17c2ae10
+name: Create album 020
+method: POST
+url: "{{baseUrl}}/albums"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: userId, value: "10", enabled: true }
+    - { key: title, value: "Quidem architecto voluptatem inventore", enabled: true }

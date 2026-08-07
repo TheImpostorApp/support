@@ -1,0 +1,15 @@
+id: 329f1557-3260-4a9f-857a-efffa7ed87a6
+name: Create todo 064
+method: POST
+url: "{{baseUrl}}/todos"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 9,
+      "title": "Fugiat deserunt eaque autem distinctio",
+      "completed": true
+    }

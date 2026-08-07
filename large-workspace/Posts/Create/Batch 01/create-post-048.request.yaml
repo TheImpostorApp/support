@@ -1,0 +1,13 @@
+id: d6e30231-f2bc-4106-bf16-6f3b220e0915
+name: Create post 048
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Fugiat omnis sint nulla",
+      "body": "ratione adipisci maiores minus cumque quia excepteur sunt aperiam.\nsoluta sint magnam deserunt excepteur fugiat aperiam placeat placeat doloremque animi.\nnulla repellendus eos sunt excepteur et deserunt nihil fugiat.\noptio minus quo aperiam laborum dolorem voluptatem nemo excepteur laboriosam repellendus.",
+      "userId": 2
+    }

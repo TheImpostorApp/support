@@ -1,0 +1,6 @@
+id: a01978e5-45e2-4648-966d-06b7b22353ba
+name: Delete album 005
+method: DELETE
+url: "{{baseUrl}}/albums/12"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }

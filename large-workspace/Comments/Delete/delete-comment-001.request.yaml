@@ -1,0 +1,8 @@
+id: 1a896fb9-1ecf-484a-854c-fa54c5970beb
+name: Delete comment 001
+method: DELETE
+url: "{{baseUrl}}/comments/411"
+postScript: |-
+  im.test("comment was deleted", function () {
+    im.expect(im.response.code).to.equal(200);
+  });

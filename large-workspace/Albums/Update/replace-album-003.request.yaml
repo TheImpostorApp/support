@@ -1,0 +1,14 @@
+id: 53d5173c-4e0f-43b5-a4f6-17d3fd1da628
+name: Replace album 003
+method: PUT
+url: "{{baseUrl}}/albums/19"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 1,
+      "title": "Et occaecat repellendus provident pariatur accusantium repellendus aliquid"
+    }

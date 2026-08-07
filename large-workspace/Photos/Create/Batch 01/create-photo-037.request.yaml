@@ -1,0 +1,14 @@
+id: 5c5cb6e5-0baf-4987-8188-7432a9ec4a6b
+name: Create photo 037
+method: POST
+url: "{{baseUrl}}/photos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 58,
+      "title": "Autem omnis laborum",
+      "url": "https://via.placeholder.com/600/730",
+      "thumbnailUrl": "https://via.placeholder.com/150/730"
+    }

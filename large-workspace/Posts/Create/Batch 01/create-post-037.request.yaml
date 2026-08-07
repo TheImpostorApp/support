@@ -1,0 +1,13 @@
+id: b38bb6d8-2c35-41e9-b9fd-071cfc995a52
+name: Create post 037
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Distinctio natus ipsam cumque explicabo placeat omnis molestiae",
+      "body": "sint impedit veritatis esse nemo aliquid optio est quo autem.\ntempora autem sunt explicabo impedit eos dolorem aperiam excepteur provident.",
+      "userId": 4
+    }

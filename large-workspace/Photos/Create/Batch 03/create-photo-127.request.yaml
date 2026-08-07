@@ -1,0 +1,14 @@
+id: 7c26ccc7-2fb3-4d8d-9c1c-a2cd9b4be759
+name: Create photo 127
+method: POST
+url: "{{baseUrl}}/photos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 25,
+      "title": "Soluta magnam magnam animi dicta esse",
+      "url": "https://via.placeholder.com/600/1866",
+      "thumbnailUrl": "https://via.placeholder.com/150/1866"
+    }

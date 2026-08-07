@@ -1,0 +1,14 @@
+id: b90c8214-a09f-431d-b908-8034be2f65d5
+name: Create photo 024
+method: POST
+url: "{{baseUrl}}/photos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 36,
+      "title": "Explicabo inventore optio minus quidem nemo",
+      "url": "https://via.placeholder.com/600/ad7",
+      "thumbnailUrl": "https://via.placeholder.com/150/ad7"
+    }

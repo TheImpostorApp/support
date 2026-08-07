@@ -1,0 +1,13 @@
+id: 309f7e91-0d3a-4d56-a34b-a24e0bf9d3b5
+name: Create post 052
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Doloremque eius inventore",
+      "body": "optio qui vitae excepteur accusantium rerum autem veritatis.\nomnis cupidatat cupidatat ipsa tempora animi minus deserunt.\nmagnam quia distinctio quidem tempora fugiat laboriosam numquam ipsa.\nnatus laboriosam tempora nostrum molestiae deserunt tempora.",
+      "userId": 10
+    }

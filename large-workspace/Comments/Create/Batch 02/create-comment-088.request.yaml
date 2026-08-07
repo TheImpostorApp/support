@@ -1,0 +1,14 @@
+id: 808702d5-618f-4c03-984d-7140b6976dec
+name: Create comment 088
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 90,
+      "name": "Excepteur ipsam impedit placeat nostrum totam sint",
+      "email": "nicholas.weissnat@example.com",
+      "body": "laborum nihil quia tempora nulla tempora et cupidatat tempora beatae inventore minus.\nminus distinctio eos vitae aliquid quos tempora aperiam.\nquo magnam adipisci nihil beatae est suscipit sunt doloremque tempora tempora eius."
+    }

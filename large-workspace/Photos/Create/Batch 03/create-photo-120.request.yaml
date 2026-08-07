@@ -1,0 +1,14 @@
+id: a8e227a1-fc6c-42e9-8cd1-a3a9dd29c27a
+name: Create photo 120
+method: POST
+url: "{{baseUrl}}/photos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 51,
+      "title": "Sint qui natus dolore esse officia",
+      "url": "https://via.placeholder.com/600/1e44",
+      "thumbnailUrl": "https://via.placeholder.com/150/1e44"
+    }

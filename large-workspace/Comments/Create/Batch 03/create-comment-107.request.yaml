@@ -1,0 +1,14 @@
+id: 202101bd-7e93-4cb3-8732-2ff9181bf6c8
+name: Create comment 107
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 22,
+      "name": "Distinctio aperiam eos",
+      "email": "glenna.lebsack@example.com",
+      "body": "accusantium provident accusantium voluptas nemo sunt nemo provident veritatis architecto numquam animi.\nmagnam optio porro occaecat molestiae beatae.\noptio maiores adipisci laborum ratione suscipit doloremque doloremque impedit.\noptio inventore eius et ut impedit porro."
+    }

@@ -1,0 +1,4 @@
+id: dfa7f213-a9ee-42f4-a598-9d8341fc8524
+name: Delete comment 005
+method: DELETE
+url: "{{baseUrl}}/comments/190"

@@ -1,0 +1,16 @@
+id: 1474f4b8-e9c8-41f2-a889-2e000d50cb5d
+name: Create photo 043
+method: POST
+url: "{{baseUrl}}/photos"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 100,
+      "title": "Maiores pariatur beatae consequatur inventore quos",
+      "url": "https://via.placeholder.com/600/1011",
+      "thumbnailUrl": "https://via.placeholder.com/150/1011"
+    }

@@ -1,0 +1,16 @@
+id: 946d2519-dce0-4bb8-b8ca-e37feb17286c
+name: Create album 055
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 5,
+      "title": "Consequatur numquam distinctio"
+    }
+postScript: |-
+  im.test("album was created", function () {
+    im.expect(im.response.code).to.equal(201);
+  });

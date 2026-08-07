@@ -1,0 +1,12 @@
+id: 3cc695c7-7bc5-4c38-8a17-16971ca81fad
+name: Patch album 001
+method: PATCH
+url: "{{baseUrl}}/albums/41"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 3,
+      "title": "Ut excepteur distinctio"
+    }

@@ -1,0 +1,13 @@
+id: 39ead79c-5e5e-4310-bd3f-0ec5807a5040
+name: Create post 103
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Optio quidem soluta eaque quidem",
+      "body": "repellendus vitae sunt magnam quia autem veritatis.\nfugiat nostrum architecto quidem et deserunt rerum excepteur odio dolorem maiores.",
+      "userId": 10
+    }

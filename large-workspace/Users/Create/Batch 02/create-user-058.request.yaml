@@ -1,0 +1,29 @@
+id: 5ac05c4f-4cf6-45e2-a504-acc6de12224a
+name: Create user 058
+method: POST
+url: "{{baseUrl}}/users"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Patricia Runolfsdottir",
+      "username": "Patricia48",
+      "email": "patricia@runolfsdottir.example",
+      "address": {
+        "street": "Doloremque quos nihil officia Street",
+        "suite": "Apt. 980",
+        "city": "Roscoeview",
+        "zipcode": "33179-5370"
+      },
+      "phone": "1-898-212-8366",
+      "website": "runolfsdottir.example",
+      "company": {
+        "name": "Considine-Lockman",
+        "catchPhrase": "Et molestiae ipsam officia qui"
+      }
+    }
+postScript: |-
+  im.test("user was created", function () {
+    im.expect(im.response.code).to.equal(201);
+  });

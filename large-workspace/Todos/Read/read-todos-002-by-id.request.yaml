@@ -1,0 +1,6 @@
+id: fd1c96ed-b41c-4fcf-bc64-59151c96ef91
+name: "Read todos 002 — by id"
+method: GET
+url: "{{baseUrl}}/todos/10"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }

@@ -1,0 +1,9 @@
+id: 347c5e16-4103-4fe3-90ae-cbb1a2bf71c3
+name: Create album 044
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: userId, value: "7", enabled: true }
+    - { key: title, value: "Explicabo vitae odio est animi", enabled: true }

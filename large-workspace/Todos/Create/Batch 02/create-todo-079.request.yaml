@@ -1,0 +1,13 @@
+id: b2d7712e-9438-4156-a9ae-27455f20abe2
+name: Create todo 079
+method: POST
+url: "{{baseUrl}}/todos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 10,
+      "title": "Ut ratione maiores rerum fugiat voluptas officia",
+      "completed": true
+    }

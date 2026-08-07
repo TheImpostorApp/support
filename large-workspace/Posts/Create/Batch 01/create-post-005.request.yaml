@@ -1,0 +1,10 @@
+id: e97ca2c4-ecdc-44ed-8588-ffefac22336b
+name: Create post 005
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: title, value: "Provident vitae qui", enabled: true }
+    - { key: body, value: "voluptas eaque eius architecto sint qui.\nnemo porro rerum voluptas natus eligendi eius adipisci distinctio inventore.", enabled: true }
+    - { key: userId, value: "4", enabled: true }

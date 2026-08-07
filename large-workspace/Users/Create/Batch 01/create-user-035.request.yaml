@@ -1,0 +1,27 @@
+id: b60e70e2-bbc4-41a1-baf8-7858d02296d9
+name: Create user 035
+method: POST
+url: "{{baseUrl}}/users"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Chelsey Howell",
+      "username": "Chelsey87",
+      "email": "chelsey@howell.example",
+      "address": {
+        "street": "Nemo dolorem molestiae nostrum Street",
+        "suite": "Apt. 946",
+        "city": "Wisokyburgh",
+        "zipcode": "63567-3968"
+      },
+      "phone": "1-933-996-6632",
+      "website": "howell.example",
+      "company": {
+        "name": "Abernathy Group",
+        "catchPhrase": "Totam nihil autem"
+      }
+    }

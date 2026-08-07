@@ -1,0 +1,20 @@
+id: c8d85c13-b3d5-4cea-b98f-8f29d1be9c71
+name: Create user 003
+method: POST
+url: "{{baseUrl}}/users"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: name, value: "Dennis Bauch", enabled: true }
+    - { key: username, value: "Dennis10", enabled: true }
+    - { key: email, value: "dennis@bauch.example", enabled: true }
+    - { key: "address[street]", value: "Laborum eos eligendi ipsam accusantium autem officia dolorem Street", enabled: true }
+    - { key: "address[suite]", value: "Apt. 977", enabled: true }
+    - { key: "address[city]", value: "Howemouth", enabled: true }
+    - { key: "address[zipcode]", value: "76793-1789", enabled: true }
+    - { key: phone, value: "1-643-286-1467", enabled: true }
+    - { key: website, value: "bauch.example", enabled: true }
+    - { key: "company[name]", value: "Keebler LLC", enabled: true }
+    - { key: "company[catchPhrase]", value: "Cupidatat eaque eius optio", enabled: true }

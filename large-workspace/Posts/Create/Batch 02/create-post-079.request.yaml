@@ -1,0 +1,13 @@
+id: 2dd08a1f-062d-41a1-a873-a36ff519eaaa
+name: Create post 079
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Cumque ipsa minus doloremque laboriosam",
+      "body": "accusantium totam quia ratione eius ipsa ipsa occaecat suscipit minus.\nveritatis laboriosam ipsam beatae eius minus.\neius sunt cupidatat quia sint ratione beatae magnam veritatis provident repellendus magnam.\nplaceat porro cumque esse aperiam nulla pariatur.",
+      "userId": 4
+    }

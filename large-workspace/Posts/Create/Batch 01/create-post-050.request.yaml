@@ -1,0 +1,12 @@
+id: 57d87947-4657-48c7-bc7a-87830e5bc4a5
+name: Create post 050
+method: POST
+url: "{{baseUrl}}/posts"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: multipart
+  fields:
+    - { kind: text, key: title, value: "Omnis deserunt ratione ipsa natus eligendi" }
+    - { kind: text, key: body, value: "beatae aliquid rerum totam omnis est.\nquidem optio officia ipsa numquam natus tempora qui magnam nulla distinctio.\neaque totam rerum dolore molestiae veritatis tempora maiores eos nihil." }
+    - { kind: text, key: userId, value: "2" }

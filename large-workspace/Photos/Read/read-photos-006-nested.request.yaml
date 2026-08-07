@@ -1,0 +1,6 @@
+id: 6b6ec805-2d68-4f0f-9da2-29114490cf2a
+name: "Read photos 006 — nested"
+method: GET
+url: "{{baseUrl}}/albums/26/photos"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }

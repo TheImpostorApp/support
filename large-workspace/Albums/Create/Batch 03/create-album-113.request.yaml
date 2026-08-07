@@ -1,0 +1,12 @@
+id: 5551f3a6-2353-4322-a0b3-05fa4dcbb42a
+name: Create album 113
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 7,
+      "title": "Numquam qui cumque"
+    }

@@ -1,0 +1,15 @@
+id: 5c0fe4cc-e05b-4dd5-a291-05dec5d4efbe
+name: Replace todo 005
+method: PUT
+url: "{{baseUrl}}/todos/{{todoId}}"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 5,
+      "title": "Animi nihil nulla fugiat consequatur cupidatat",
+      "completed": false
+    }

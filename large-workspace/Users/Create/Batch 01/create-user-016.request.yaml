@@ -1,0 +1,25 @@
+id: e2aa7a16-84eb-4e5b-9e5f-0f67836214f9
+name: Create user 016
+method: POST
+url: "{{baseUrl}}/users"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Chelsey Graham",
+      "username": "Chelsey49",
+      "email": "chelsey@graham.example",
+      "address": {
+        "street": "Aperiam voluptatem vitae quo repellendus nemo eligendi quo Street",
+        "suite": "Apt. 482",
+        "city": "Roscoeview",
+        "zipcode": "60518-6452"
+      },
+      "phone": "1-588-205-1440",
+      "website": "graham.example",
+      "company": {
+        "name": "Abernathy Group",
+        "catchPhrase": "Esse optio esse quia esse excepteur esse"
+      }
+    }

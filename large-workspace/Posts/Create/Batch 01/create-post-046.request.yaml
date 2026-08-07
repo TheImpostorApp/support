@@ -1,0 +1,13 @@
+id: eb0424a5-63e2-4e33-9b8e-fb5425c1331a
+name: Create post 046
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Quos dolorem natus",
+      "body": "provident doloremque excepteur cumque quo aperiam fugiat odio totam voluptas placeat.\nanimi dolore pariatur adipisci accusantium eaque eligendi sunt ut veritatis.",
+      "userId": 1
+    }

@@ -1,0 +1,13 @@
+id: 2ea64293-5d9d-4275-ac32-85ea8414bc47
+name: Create todo 075
+method: POST
+url: "{{baseUrl}}/todos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 2,
+      "title": "Sint doloremque placeat natus",
+      "completed": false
+    }

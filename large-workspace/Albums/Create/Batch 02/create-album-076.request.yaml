@@ -1,0 +1,16 @@
+id: 82006f7d-02e1-4b83-8637-8f164b9eef6b
+name: Create album 076
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 9,
+      "title": "Magnam laboriosam vitae"
+    }
+postScript: |-
+  im.test("album was created", function () {
+    im.expect(im.response.code).to.equal(201);
+  });

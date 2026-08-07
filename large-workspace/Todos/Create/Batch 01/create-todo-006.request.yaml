@@ -1,0 +1,13 @@
+id: caff373d-4728-4b46-909c-d01494d65d1e
+name: Create todo 006
+method: POST
+url: "{{baseUrl}}/todos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 1,
+      "title": "Et eius animi quia eius",
+      "completed": false
+    }

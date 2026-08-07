@@ -1,0 +1,14 @@
+id: f1bd2ba3-041c-4841-87c0-00b7cce9b192
+name: Create photo 074
+method: POST
+url: "{{baseUrl}}/photos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 63,
+      "title": "Aperiam autem dicta qui autem occaecat placeat",
+      "url": "https://via.placeholder.com/600/1a21",
+      "thumbnailUrl": "https://via.placeholder.com/150/1a21"
+    }

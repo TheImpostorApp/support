@@ -1,0 +1,12 @@
+id: 071b1c59-fc64-4150-87cc-7d70a4149314
+name: Patch album 003
+method: PATCH
+url: "{{baseUrl}}/albums/89"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 1,
+      "title": "Dolore nemo placeat eligendi"
+    }

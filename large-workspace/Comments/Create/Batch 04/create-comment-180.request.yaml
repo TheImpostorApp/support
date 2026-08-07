@@ -1,0 +1,14 @@
+id: ed2f2deb-d2d9-45e7-a015-f2fa9e077779
+name: Create comment 180
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 48,
+      "name": "Fugiat ipsa nemo deserunt soluta",
+      "email": "ervin.bauch@example.com",
+      "body": "aliquid autem quo quo maiores voluptas quidem totam.\nmolestiae laboriosam ut ut veritatis laborum consequatur architecto est.\nexcepteur odio eius veritatis eius dicta numquam aperiam placeat cupidatat quos.\nsint est maiores totam accusantium doloremque."
+    }

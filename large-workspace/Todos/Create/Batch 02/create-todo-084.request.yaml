@@ -1,0 +1,13 @@
+id: 537e2930-7d16-48a2-b999-a9d180b4882a
+name: Create todo 084
+method: POST
+url: "{{baseUrl}}/todos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 8,
+      "title": "Minus numquam architecto et",
+      "completed": true
+    }

@@ -1,0 +1,8 @@
+id: fb7f9e21-4263-48e4-b154-72d108ff3f12
+name: "Read posts 014 — first five"
+method: GET
+url: "{{baseUrl}}/posts"
+query:
+  - { key: "_limit", value: "5", enabled: true }
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }

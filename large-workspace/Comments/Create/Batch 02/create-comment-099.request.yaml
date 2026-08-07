@@ -1,0 +1,13 @@
+id: 2e647ec2-5947-4efd-a184-1087916214be
+name: Create comment 099
+method: POST
+url: "{{baseUrl}}/comments"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: multipart
+  fields:
+    - { kind: text, key: postId, value: "25" }
+    - { kind: text, key: name, value: "Quo impedit ut consequatur provident eligendi autem" }
+    - { kind: text, key: email, value: "patricia.dietrich@example.com" }
+    - { kind: text, key: body, value: "fugiat distinctio cupidatat impedit veritatis explicabo sunt consequatur laborum eligendi veritatis.\ndeserunt quidem voluptas tempora sint aliquid et natus natus.\ntempora distinctio aliquid provident ipsa consequatur animi tempora." }

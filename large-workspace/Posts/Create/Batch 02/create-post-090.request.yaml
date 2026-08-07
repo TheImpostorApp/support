@@ -1,0 +1,10 @@
+id: 0860bcf8-7f59-4eb8-8c2d-35bad73673c4
+name: Create post 090
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: multipart
+  fields:
+    - { kind: text, key: title, value: "Laborum soluta natus natus soluta" }
+    - { kind: text, key: body, value: "qui consequatur provident laboriosam impedit voluptatem sint.\nveritatis minus veritatis porro quos porro optio sint.\nadipisci impedit cupidatat molestiae repellendus ratione doloremque ut." }
+    - { kind: text, key: userId, value: "7" }

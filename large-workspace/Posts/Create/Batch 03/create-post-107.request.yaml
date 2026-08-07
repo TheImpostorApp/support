@@ -1,0 +1,10 @@
+id: 66bc8189-6122-43cc-9a5e-4d6d636bca8e
+name: Create post 107
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: title, value: "Laboriosam eius impedit occaecat nihil qui soluta", enabled: true }
+    - { key: body, value: "aliquid fugiat adipisci dolorem porro numquam natus.\nofficia dolore cumque tempora porro nihil eaque architecto.", enabled: true }
+    - { key: userId, value: "2", enabled: true }

@@ -1,0 +1,11 @@
+id: 21b0fc84-fc5a-4e6e-a205-1098d5031b61
+name: Create comment 134
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: multipart
+  fields:
+    - { kind: text, key: postId, value: "23" }
+    - { kind: text, key: name, value: "Omnis porro et ipsa doloremque cumque et quos" }
+    - { kind: text, key: email, value: "patricia.dubuque@example.com" }
+    - { kind: text, key: body, value: "est vitae animi veritatis officia distinctio.\ndistinctio voluptatem quidem molestiae dolore totam.\nquidem esse veritatis cumque vitae explicabo eligendi nemo deserunt quia dolore totam." }

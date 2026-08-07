@@ -1,0 +1,14 @@
+id: 2aa2553e-71f2-4cc5-a7dc-cdfacbfc3142
+name: Create photo 086
+method: POST
+url: "{{baseUrl}}/photos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 52,
+      "title": "Molestiae vitae laboriosam sint esse sint",
+      "url": "https://via.placeholder.com/600/1d93",
+      "thumbnailUrl": "https://via.placeholder.com/150/1d93"
+    }

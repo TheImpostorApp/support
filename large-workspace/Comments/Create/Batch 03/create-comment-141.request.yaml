@@ -1,0 +1,14 @@
+id: 7743d763-fe78-4f5b-b4bb-5b33e8056e8d
+name: Create comment 141
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 83,
+      "name": "Impedit laborum dolorem dolorem accusantium",
+      "email": "clementine.schulist@example.com",
+      "body": "pariatur vitae nihil beatae cupidatat porro voluptas accusantium quia et suscipit quos.\ndeserunt porro omnis occaecat sunt esse."
+    }

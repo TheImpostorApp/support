@@ -1,0 +1,10 @@
+id: dcfa4adb-e91f-4f58-9c73-4cbf92ce5a97
+name: Create todo 066
+method: POST
+url: "{{baseUrl}}/todos"
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: userId, value: "9", enabled: true }
+    - { key: title, value: "Impedit ratione eaque qui et qui", enabled: true }
+    - { key: completed, value: "true", enabled: true }

@@ -1,0 +1,18 @@
+id: 77a2f9d1-1c7a-4f72-a549-6ff5ed1cbcfc
+name: Create photo 060
+method: POST
+url: "{{baseUrl}}/photos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 9,
+      "title": "Totam aperiam tempora qui",
+      "url": "https://via.placeholder.com/600/1517",
+      "thumbnailUrl": "https://via.placeholder.com/150/1517"
+    }
+postScript: |-
+  im.test("photo was created", function () {
+    im.expect(im.response.code).to.equal(201);
+  });

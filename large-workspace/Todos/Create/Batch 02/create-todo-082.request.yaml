@@ -1,0 +1,19 @@
+id: 83c3b5cb-d59e-4d62-a7f7-952810cf3a91
+name: Create todo 082
+method: POST
+url: "{{baseUrl}}/todos"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 8,
+      "title": "Animi numquam minus deserunt officia veritatis quos dolore",
+      "completed": false
+    }
+postScript: |-
+  im.test("todo was created", function () {
+    im.expect(im.response.code).to.equal(201);
+  });

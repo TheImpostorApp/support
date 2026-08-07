@@ -1,0 +1,11 @@
+id: 7554e1fb-36f5-45a0-9a52-ac379641607d
+name: Create album 013
+method: POST
+url: "{{baseUrl}}/albums"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: multipart
+  fields:
+    - { kind: text, key: userId, value: "2" }
+    - { kind: text, key: title, value: "Nostrum doloremque quo" }

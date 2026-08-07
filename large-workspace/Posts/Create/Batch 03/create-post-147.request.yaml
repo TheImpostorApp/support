@@ -1,0 +1,13 @@
+id: 788f0986-13f7-4eb9-ad21-6f2440dca569
+name: Create post 147
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Adipisci repellendus officia ipsa minus officia quidem",
+      "body": "nemo aperiam voluptatem animi dolore maiores.\nsint vitae est quidem nemo dolore doloremque natus omnis.\npariatur cumque magnam explicabo fugiat architecto animi inventore deserunt accusantium.\ncumque dolorem et cumque esse autem dolore accusantium soluta quia omnis.",
+      "userId": 1
+    }

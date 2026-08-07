@@ -1,0 +1,27 @@
+id: 193d94cb-2f7a-476a-b9d3-2eee268149e8
+name: Create user 004
+method: POST
+url: "{{baseUrl}}/users"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Kurtis Runolfsdottir",
+      "username": "Kurtis98",
+      "email": "kurtis@runolfsdottir.example",
+      "address": {
+        "street": "Ratione ut natus Street",
+        "suite": "Apt. 990",
+        "city": "Wisokyburgh",
+        "zipcode": "12125-4734"
+      },
+      "phone": "1-445-732-3832",
+      "website": "runolfsdottir.example",
+      "company": {
+        "name": "Romaguera-Jacobson",
+        "catchPhrase": "Minus veritatis minus molestiae"
+      }
+    }

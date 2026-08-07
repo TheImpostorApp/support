@@ -1,0 +1,25 @@
+id: ece19e8a-2893-42c0-b193-e72f9fef3a55
+name: Create user 015
+method: POST
+url: "{{baseUrl}}/users"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Kurtis Lebsack",
+      "username": "Kurtis25",
+      "email": "kurtis@lebsack.example",
+      "address": {
+        "street": "Beatae occaecat nostrum Street",
+        "suite": "Apt. 369",
+        "city": "South Elvis",
+        "zipcode": "21304-6524"
+      },
+      "phone": "1-365-522-8393",
+      "website": "lebsack.example",
+      "company": {
+        "name": "Robel-Corkery",
+        "catchPhrase": "Totam dicta dolore"
+      }
+    }

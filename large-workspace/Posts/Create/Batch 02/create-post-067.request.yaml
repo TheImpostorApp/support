@@ -1,0 +1,13 @@
+id: 13509b1e-1036-4e95-b88e-ee41348c6982
+name: Create post 067
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Et provident odio laborum quo architecto nihil quos",
+      "body": "officia officia eos esse porro doloremque consequatur.\nratione fugiat ratione eligendi sint cupidatat totam aperiam veritatis nulla est placeat.",
+      "userId": 5
+    }

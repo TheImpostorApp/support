@@ -1,0 +1,14 @@
+id: 266f99fa-5413-4c8f-a33d-6d10ea2883f8
+name: Create photo 092
+method: POST
+url: "{{baseUrl}}/photos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 68,
+      "title": "Distinctio quo vitae consequatur provident cupidatat provident repellendus",
+      "url": "https://via.placeholder.com/600/62d",
+      "thumbnailUrl": "https://via.placeholder.com/150/62d"
+    }

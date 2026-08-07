@@ -1,0 +1,14 @@
+id: 610db449-ba2e-4e77-99f4-2ac367c3cf6f
+name: Create comment 173
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 22,
+      "name": "Et minus voluptas",
+      "email": "clementina.schulist@example.com",
+      "body": "deserunt eaque doloremque vitae tempora fugiat.\nnostrum ratione qui beatae quo suscipit officia quia eius doloremque odio.\nexplicabo laboriosam sunt aperiam accusantium beatae laborum eaque esse eos.\net tempora accusantium fugiat suscipit ut est eligendi doloremque."
+    }

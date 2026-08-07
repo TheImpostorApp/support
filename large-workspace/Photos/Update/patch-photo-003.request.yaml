@@ -1,0 +1,12 @@
+id: 14161dce-af69-4005-99d6-6bd57d1bb539
+name: Patch photo 003
+method: PATCH
+url: "{{baseUrl}}/photos/4636"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 30,
+      "title": "Et optio dolore tempora vitae"
+    }

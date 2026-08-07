@@ -1,0 +1,25 @@
+id: 247c15ea-acd5-4776-830b-a59110001946
+name: Create user 026
+method: POST
+url: "{{baseUrl}}/users"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Dennis Howell",
+      "username": "Dennis68",
+      "email": "dennis@howell.example",
+      "address": {
+        "street": "Magnam fugiat nostrum Street",
+        "suite": "Apt. 259",
+        "city": "Wisokyburgh",
+        "zipcode": "80660-6003"
+      },
+      "phone": "1-748-917-4608",
+      "website": "howell.example",
+      "company": {
+        "name": "Romaguera-Crona",
+        "catchPhrase": "Occaecat eos impedit sunt nemo"
+      }
+    }

@@ -1,0 +1,14 @@
+id: a26251cf-78f7-42e4-a964-4b6be8c7f424
+name: Create photo 130
+method: POST
+url: "{{baseUrl}}/photos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 70,
+      "title": "Odio nemo porro natus",
+      "url": "https://via.placeholder.com/600/f91",
+      "thumbnailUrl": "https://via.placeholder.com/150/f91"
+    }

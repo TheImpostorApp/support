@@ -1,0 +1,25 @@
+id: 37924f36-a4ce-43e2-9a94-c4433935e479
+name: Replace user 004
+method: PUT
+url: "{{baseUrl}}/users/3"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Kurtis Schulist",
+      "username": "Kurtis25",
+      "email": "kurtis@schulist.example",
+      "address": {
+        "street": "Veritatis repellendus ipsa Street",
+        "suite": "Apt. 495",
+        "city": "Lebsackbury",
+        "zipcode": "67633-9855"
+      },
+      "phone": "1-336-907-7176",
+      "website": "schulist.example",
+      "company": {
+        "name": "Robel-Corkery",
+        "catchPhrase": "Deserunt voluptas pariatur nulla totam nostrum"
+      }
+    }

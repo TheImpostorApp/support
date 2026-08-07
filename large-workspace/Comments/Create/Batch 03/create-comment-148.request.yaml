@@ -1,0 +1,16 @@
+id: 8c24d120-af31-4890-aea6-e9b725328c19
+name: Create comment 148
+method: POST
+url: "{{baseUrl}}/comments"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 42,
+      "name": "Excepteur et eius maiores cumque",
+      "email": "kurtis.reichert@example.com",
+      "body": "totam quidem provident nulla rerum dolore vitae porro laboriosam.\neligendi eaque maiores nulla quidem ut optio pariatur quo dicta ipsam."
+    }

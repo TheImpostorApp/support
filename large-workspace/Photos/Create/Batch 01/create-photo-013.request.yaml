@@ -1,0 +1,18 @@
+id: 3f5d2d60-6a5c-4db8-a04e-5f3ea50e640a
+name: Create photo 013
+method: POST
+url: "{{baseUrl}}/photos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 83,
+      "title": "Cupidatat autem dicta",
+      "url": "https://via.placeholder.com/600/1a59",
+      "thumbnailUrl": "https://via.placeholder.com/150/1a59"
+    }
+postScript: |-
+  im.test("photo was created", function () {
+    im.expect(im.response.code).to.equal(201);
+  });

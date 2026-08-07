@@ -1,0 +1,9 @@
+id: 7940b108-d9ed-4c58-a17f-ee1d0b1e2c95
+name: Create album 086
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: multipart
+  fields:
+    - { kind: text, key: userId, value: "6" }
+    - { kind: text, key: title, value: "Distinctio eaque placeat deserunt" }

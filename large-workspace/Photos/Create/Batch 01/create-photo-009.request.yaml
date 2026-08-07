@@ -1,0 +1,14 @@
+id: 54accc82-b883-4a37-b004-c9b6666423ba
+name: Create photo 009
+method: POST
+url: "{{baseUrl}}/photos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 58,
+      "title": "Soluta nemo nostrum dicta doloremque",
+      "url": "https://via.placeholder.com/600/d84",
+      "thumbnailUrl": "https://via.placeholder.com/150/d84"
+    }

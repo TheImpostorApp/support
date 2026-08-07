@@ -1,0 +1,17 @@
+id: 217bbdeb-c91a-4cd6-97ac-034c18732a49
+name: Replace post 004
+method: PUT
+url: "{{baseUrl}}/posts/49"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Repellendus inventore occaecat nihil voluptas numquam",
+      "body": "soluta nihil doloremque provident et deserunt eaque.\nest porro deserunt eos molestiae omnis eius deserunt.",
+      "userId": 5
+    }
+postScript: |-
+  im.test("post was replaced", function () {
+    im.expect(im.response.code).to.equal(200);
+  });

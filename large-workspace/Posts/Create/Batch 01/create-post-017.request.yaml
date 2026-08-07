@@ -1,0 +1,13 @@
+id: ef124dbc-b05d-4a1c-b355-10a06aaad29a
+name: Create post 017
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Cupidatat cupidatat nulla quia rerum ratione odio ratione",
+      "body": "deserunt nulla numquam aliquid veritatis magnam ipsam sunt suscipit laboriosam autem.\nquos eius fugiat aperiam voluptas doloremque voluptas natus.\ndeserunt repellendus nostrum optio quia distinctio occaecat consequatur totam eos.",
+      "userId": 1
+    }

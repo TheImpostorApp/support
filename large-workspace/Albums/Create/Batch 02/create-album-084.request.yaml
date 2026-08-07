@@ -1,0 +1,12 @@
+id: 8ebf105b-21c9-4a63-b7dc-b7cc5092e2c1
+name: Create album 084
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 4,
+      "title": "Molestiae sint deserunt esse"
+    }

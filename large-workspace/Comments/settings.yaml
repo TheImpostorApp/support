@@ -1,0 +1,9 @@
+variables:
+- key: resource
+  value: "comments"
+  enabled: true
+  secret: false
+  script: false
+  reference: ''
+headers:
+  - { key: X-Resource, value: "comments", enabled: true }

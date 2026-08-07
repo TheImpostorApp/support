@@ -1,0 +1,9 @@
+id: f63b5051-2722-4358-b554-8488f7ed6f88
+name: Create album 007
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: userId, value: "6", enabled: true }
+    - { key: title, value: "Placeat ratione aperiam voluptatem quidem quia", enabled: true }

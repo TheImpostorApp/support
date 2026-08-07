@@ -1,0 +1,14 @@
+id: 66bbf743-87bb-4bf8-a121-b45602e171e2
+name: Create photo 063
+method: POST
+url: "{{baseUrl}}/photos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 51,
+      "title": "Ut officia cumque sint eligendi magnam suscipit laborum",
+      "url": "https://via.placeholder.com/600/612",
+      "thumbnailUrl": "https://via.placeholder.com/150/612"
+    }

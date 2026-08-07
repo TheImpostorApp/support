@@ -1,0 +1,25 @@
+id: c86e2725-8137-4ca3-96fc-0877a17a8d5a
+name: Create user 041
+method: POST
+url: "{{baseUrl}}/users"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Ervin Runolfsdottir",
+      "username": "Ervin41",
+      "email": "ervin@runolfsdottir.example",
+      "address": {
+        "street": "Minus eligendi quia eius repellendus Street",
+        "suite": "Apt. 619",
+        "city": "Wisokyburgh",
+        "zipcode": "21807-6663"
+      },
+      "phone": "1-848-220-6991",
+      "website": "runolfsdottir.example",
+      "company": {
+        "name": "Johns Group",
+        "catchPhrase": "Eaque adipisci optio excepteur"
+      }
+    }

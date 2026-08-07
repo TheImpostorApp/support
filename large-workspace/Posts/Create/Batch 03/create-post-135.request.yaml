@@ -1,0 +1,13 @@
+id: bd04b2dc-a50d-4227-9eae-0cc552e840b6
+name: Create post 135
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Et nemo numquam autem",
+      "body": "nemo animi quo eius impedit minus vitae minus.\ndeserunt impedit ipsa animi deserunt nulla et distinctio nihil sunt placeat sint.\neius omnis est adipisci pariatur natus occaecat excepteur occaecat totam doloremque.\nqui est tempora quidem esse magnam cumque laborum quia autem soluta odio.",
+      "userId": 8
+    }

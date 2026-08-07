@@ -1,0 +1,17 @@
+id: e7a846ac-1bdd-470a-afd4-f21de5811980
+name: Create post 030
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Pariatur odio nemo quia voluptas eaque",
+      "body": "voluptatem laboriosam excepteur occaecat eligendi repellendus ipsa.\ndolore autem quos ipsa architecto officia eos ut.\nexcepteur odio maiores cupidatat aperiam placeat nihil occaecat nostrum.",
+      "userId": 4
+    }
+postScript: |-
+  im.test("post was created", function () {
+    im.expect(im.response.code).to.equal(201);
+  });

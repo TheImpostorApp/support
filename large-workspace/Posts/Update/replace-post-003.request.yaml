@@ -1,0 +1,13 @@
+id: b51cd33e-a40b-4dbc-8162-ea43d2565b19
+name: Replace post 003
+method: PUT
+url: "{{baseUrl}}/posts/91"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Dolorem ipsam repellendus adipisci est pariatur omnis distinctio",
+      "body": "eligendi eius porro aliquid placeat deserunt quo maiores odio pariatur.\nporro et omnis accusantium cumque explicabo odio nostrum ut aperiam.\nanimi vitae nihil eaque placeat nihil provident ipsa quia inventore officia accusantium.",
+      "userId": 3
+    }

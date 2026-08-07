@@ -1,0 +1,19 @@
+id: 9569e315-1cef-4ee4-822b-79bdceede6f2
+name: Replace post 005
+method: PUT
+url: "{{baseUrl}}/posts/49"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Eligendi ut numquam ut eligendi",
+      "body": "tempora odio eaque quos eaque aperiam voluptatem placeat ratione cupidatat esse maiores.\npariatur impedit natus quia magnam laborum dolorem.\neaque ipsa aperiam nostrum quos eos nulla esse occaecat beatae placeat autem.\naperiam deserunt cupidatat sint dolore vitae optio.",
+      "userId": 1
+    }
+postScript: |-
+  im.test("post was replaced", function () {
+    im.expect(im.response.code).to.equal(200);
+  });

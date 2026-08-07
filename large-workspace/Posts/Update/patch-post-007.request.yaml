@@ -1,0 +1,12 @@
+id: 333334a0-d4f0-4852-bab3-058f2f5b3b81
+name: Patch post 007
+method: PATCH
+url: "{{baseUrl}}/posts/47"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Porro molestiae explicabo minus deserunt laboriosam consequatur veritatis",
+      "body": "doloremque inventore distinctio aliquid nemo veritatis vitae voluptas.\nadipisci excepteur animi eius inventore distinctio vitae maiores voluptas.\narchitecto occaecat est nemo odio minus accusantium voluptatem adipisci totam vitae."
+    }

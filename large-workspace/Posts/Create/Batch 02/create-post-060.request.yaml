@@ -1,0 +1,13 @@
+id: 92410b16-06f7-43e2-8823-2317eb938e23
+name: Create post 060
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Numquam autem ut aperiam optio voluptas laborum",
+      "body": "repellendus vitae ipsa ratione soluta repellendus natus eius.\nvitae nostrum sint ut consequatur consequatur repellendus.\nbeatae sint provident provident minus tempora cumque maiores.",
+      "userId": 10
+    }

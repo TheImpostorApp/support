@@ -1,0 +1,13 @@
+id: 60a91cd1-39a0-4830-b9d8-d0b8af427a18
+name: Create todo 023
+method: POST
+url: "{{baseUrl}}/todos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 10,
+      "title": "Aperiam sunt nemo cumque sint dolorem",
+      "completed": false
+    }

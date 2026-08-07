@@ -1,0 +1,13 @@
+id: c8c5878e-9745-48c2-b959-244ae62fe110
+name: Create post 108
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Dolore veritatis qui animi porro",
+      "body": "aliquid deserunt molestiae esse autem vitae natus quidem.\nsuscipit suscipit consequatur excepteur omnis magnam nulla officia natus porro porro.\ndoloremque nostrum soluta eaque laboriosam sint deserunt porro.\nest rerum voluptas quos deserunt impedit inventore officia et voluptas eius provident.",
+      "userId": 1
+    }

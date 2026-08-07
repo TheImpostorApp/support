@@ -1,0 +1,14 @@
+id: b2f87e97-ebc6-457d-8abd-d17309f2df9a
+name: Patch comment 003
+method: PATCH
+url: "{{baseUrl}}/comments/128"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 18,
+      "name": "Repellendus nostrum nihil provident cumque totam ut"
+    }

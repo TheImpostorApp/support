@@ -1,0 +1,4 @@
+id: 8fb0c4e4-624d-47c3-86fd-02aaf092e91c
+name: Delete photo 001
+method: DELETE
+url: "{{baseUrl}}/photos/1667"

@@ -1,0 +1,13 @@
+id: f1cd5c49-759c-45fd-8b9f-e82007ac3557
+name: Create post 021
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Distinctio impedit sint molestiae laborum",
+      "body": "officia magnam nulla ut vitae quidem natus numquam voluptatem vitae molestiae.\nomnis numquam rerum veritatis esse distinctio eos suscipit quo.\narchitecto quo inventore totam minus placeat aperiam ut quidem accusantium ut ratione.\nofficia cumque doloremque dicta porro impedit beatae sint minus officia.",
+      "userId": 1
+    }

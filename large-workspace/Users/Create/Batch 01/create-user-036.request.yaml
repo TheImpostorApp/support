@@ -1,0 +1,22 @@
+id: deb10977-782a-49b4-ac86-209b17199c4c
+name: Create user 036
+method: POST
+url: "{{baseUrl}}/users"
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: name, value: "Clementina Weissnat", enabled: true }
+    - { key: username, value: "Clementina15", enabled: true }
+    - { key: email, value: "clementina@weissnat.example", enabled: true }
+    - { key: "address[street]", value: "Esse vitae officia eos nulla et sunt officia Street", enabled: true }
+    - { key: "address[suite]", value: "Apt. 533", enabled: true }
+    - { key: "address[city]", value: "Roscoeview", enabled: true }
+    - { key: "address[zipcode]", value: "42290-3696", enabled: true }
+    - { key: phone, value: "1-237-205-3127", enabled: true }
+    - { key: website, value: "weissnat.example", enabled: true }
+    - { key: "company[name]", value: "Hoeger LLC", enabled: true }
+    - { key: "company[catchPhrase]", value: "Eligendi odio deserunt distinctio est", enabled: true }
+postScript: |-
+  im.test("user was created", function () {
+    im.expect(im.response.code).to.equal(201);
+  });

@@ -1,0 +1,11 @@
+id: b5230342-1565-4c98-9275-c77bf2aa24b8
+name: Create comment 028
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: multipart
+  fields:
+    - { kind: text, key: postId, value: "59" }
+    - { kind: text, key: name, value: "Explicabo totam fugiat laborum impedit excepteur" }
+    - { kind: text, key: email, value: "leanne.weissnat@example.com" }
+    - { kind: text, key: body, value: "sint numquam dolorem aliquid totam minus voluptatem consequatur accusantium.\nimpedit minus maiores veritatis sunt est provident.\nimpedit laboriosam optio omnis adipisci laboriosam." }

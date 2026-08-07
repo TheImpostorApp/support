@@ -1,0 +1,11 @@
+id: 9ba0303d-dc58-4284-b940-26af3d25aad9
+name: Create comment 047
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: multipart
+  fields:
+    - { kind: text, key: postId, value: "32" }
+    - { kind: text, key: name, value: "Voluptas autem repellendus eius molestiae" }
+    - { kind: text, key: email, value: "chelsey.lebsack@example.com" }
+    - { kind: text, key: body, value: "deserunt accusantium doloremque eos architecto odio esse maiores numquam suscipit nihil optio.\nlaboriosam omnis ut eius laborum odio sunt cupidatat dicta." }

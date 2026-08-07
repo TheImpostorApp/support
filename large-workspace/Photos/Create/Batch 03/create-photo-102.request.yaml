@@ -1,0 +1,14 @@
+id: 474ca6d9-372b-48e0-8407-ea059b78446b
+name: Create photo 102
+method: POST
+url: "{{baseUrl}}/photos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 33,
+      "title": "Dolorem architecto totam quos autem omnis repellendus suscipit",
+      "url": "https://via.placeholder.com/600/94c",
+      "thumbnailUrl": "https://via.placeholder.com/150/94c"
+    }

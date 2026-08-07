@@ -1,0 +1,12 @@
+id: 07a46880-368c-4a14-b3f1-3317e9b3cb48
+name: Patch comment 005
+method: PATCH
+url: "{{baseUrl}}/comments/{{commentId}}"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 69,
+      "name": "Dolorem accusantium distinctio"
+    }

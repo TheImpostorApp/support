@@ -1,0 +1,10 @@
+id: 0b285847-5a97-46ac-87e9-2c062a5773af
+name: Create todo 041
+method: POST
+url: "{{baseUrl}}/todos"
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: userId, value: "10", enabled: true }
+    - { key: title, value: "Maiores officia eos adipisci dolorem nemo inventore", enabled: true }
+    - { key: completed, value: "false", enabled: true }

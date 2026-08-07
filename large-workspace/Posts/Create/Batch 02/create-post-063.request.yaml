@@ -1,0 +1,15 @@
+id: 9daf283d-930a-48bb-b14a-af9c8218d600
+name: Create post 063
+method: POST
+url: "{{baseUrl}}/posts"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Tempora voluptatem animi quo qui",
+      "body": "adipisci dolore nostrum nemo eos suscipit placeat minus magnam.\nporro aliquid sunt vitae beatae nihil voluptatem esse numquam eaque.",
+      "userId": 3
+    }

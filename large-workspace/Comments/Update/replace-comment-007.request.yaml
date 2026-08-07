@@ -1,0 +1,14 @@
+id: faa75f5b-2c5d-41e5-9301-6a130f8de785
+name: Replace comment 007
+method: PUT
+url: "{{baseUrl}}/comments/71"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 71,
+      "name": "Provident animi explicabo architecto",
+      "email": "kurtis.schulist@example.com",
+      "body": "ut totam laborum qui maiores molestiae excepteur laborum.\nimpedit doloremque porro suscipit eligendi minus nulla vitae quos pariatur ratione.\net sunt veritatis vitae maiores nihil autem totam adipisci dolorem provident."
+    }

@@ -1,0 +1,14 @@
+id: 452c25a0-2764-4296-a1cd-b2736b300a6f
+name: Create comment 078
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 94,
+      "name": "Consequatur quidem magnam consequatur aperiam placeat nemo occaecat",
+      "email": "kurtis.schulist@example.com",
+      "body": "ut quia sunt numquam aliquid fugiat natus officia natus.\nmolestiae optio voluptatem veritatis excepteur impedit architecto odio impedit.\nmaiores veritatis pariatur sunt totam porro inventore eius pariatur.\nratione odio distinctio et veritatis ipsa."
+    }

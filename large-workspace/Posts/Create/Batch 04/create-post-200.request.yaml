@@ -1,0 +1,13 @@
+id: de5bd519-adf2-4ca6-b6b0-65faa000f2cc
+name: Create post 200
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Explicabo cupidatat dolorem tempora nemo et voluptas dolorem",
+      "body": "est architecto et quo inventore eligendi occaecat adipisci odio laborum magnam.\ntempora quia suscipit impedit beatae consequatur aliquid laboriosam aperiam totam.\noccaecat explicabo dolorem voluptas quos placeat aliquid officia suscipit molestiae quo.",
+      "userId": 3
+    }

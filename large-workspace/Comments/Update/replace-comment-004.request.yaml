@@ -1,0 +1,18 @@
+id: 270b481d-9d40-43a7-bb27-fc77b5688f95
+name: Replace comment 004
+method: PUT
+url: "{{baseUrl}}/comments/{{commentId}}"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 10,
+      "name": "Provident eos laboriosam ipsam cupidatat tempora deserunt animi",
+      "email": "chelsey.weissnat@example.com",
+      "body": "dicta vitae dicta ratione esse esse deserunt occaecat omnis ipsa.\nnatus distinctio dolore aliquid laborum dicta placeat voluptatem nihil maiores impedit."
+    }
+postScript: |-
+  im.test("comment was replaced", function () {
+    im.expect(im.response.code).to.equal(200);
+  });

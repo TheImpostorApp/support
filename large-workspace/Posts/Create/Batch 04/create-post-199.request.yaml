@@ -1,0 +1,17 @@
+id: 533ca785-f8c5-425f-9da3-dd8210980449
+name: Create post 199
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Autem nulla rerum ratione sunt",
+      "body": "provident officia porro porro architecto esse quidem.\nsuscipit nulla occaecat veritatis voluptatem deserunt qui soluta voluptas eius eligendi.",
+      "userId": 9
+    }
+postScript: |-
+  im.test("post was created", function () {
+    im.expect(im.response.code).to.equal(201);
+  });

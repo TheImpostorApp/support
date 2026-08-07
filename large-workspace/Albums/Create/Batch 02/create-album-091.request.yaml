@@ -1,0 +1,14 @@
+id: 8f941d3d-3c60-429a-a4ac-78bfff34d7ad
+name: Create album 091
+method: POST
+url: "{{baseUrl}}/albums"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 2,
+      "title": "Laboriosam sint excepteur quia porro aperiam cumque"
+    }

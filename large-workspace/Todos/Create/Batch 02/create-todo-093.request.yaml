@@ -1,0 +1,10 @@
+id: 26dd5cfe-90a5-4adc-9e56-2475ae54e014
+name: Create todo 093
+method: POST
+url: "{{baseUrl}}/todos"
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: userId, value: "3", enabled: true }
+    - { key: title, value: "Laboriosam beatae voluptas omnis ratione", enabled: true }
+    - { key: completed, value: "true", enabled: true }

@@ -1,0 +1,14 @@
+id: 2ca3b169-e7d9-4a0d-a528-168ad69fccd1
+name: Create comment 077
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 84,
+      "name": "Esse quidem pariatur esse",
+      "email": "leanne.lebsack@example.com",
+      "body": "cumque rerum cupidatat dicta nulla animi minus architecto voluptatem tempora doloremque soluta.\nporro laborum omnis veritatis beatae est explicabo pariatur veritatis.\narchitecto nostrum magnam dicta tempora excepteur nihil veritatis sunt eligendi."
+    }

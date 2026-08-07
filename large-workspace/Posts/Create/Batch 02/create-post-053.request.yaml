@@ -1,0 +1,10 @@
+id: 2a31aae7-bb18-4b06-b0f1-91737e9a2c9f
+name: Create post 053
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: title, value: "Consequatur odio est beatae explicabo", enabled: true }
+    - { key: body, value: "natus eius occaecat laboriosam beatae numquam explicabo sunt architecto numquam ipsam ipsa.\nodio provident cupidatat doloremque dicta totam quos.\nmolestiae veritatis nostrum porro adipisci ipsam deserunt nihil cumque molestiae ipsam.", enabled: true }
+    - { key: userId, value: "5", enabled: true }
