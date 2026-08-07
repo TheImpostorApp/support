@@ -1,0 +1,18 @@
+id: 4c010928-e8cd-4dd7-95c6-9a46147d484b
+name: Patch album 006
+method: PATCH
+url: "{{baseUrl}}/albums/18"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 2,
+      "title": "Consequatur eos vitae sint voluptatem"
+    }
+postScript: |-
+  im.test("album was patched", function () {
+    im.expect(im.response.code).to.equal(200);
+  });

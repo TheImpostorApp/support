@@ -1,0 +1,13 @@
+id: aaea9f75-a68e-45d1-98a0-7e3d234421f3
+name: Create post 027
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Et minus distinctio tempora aperiam veritatis ut numquam",
+      "body": "porro est quia eius numquam deserunt officia officia rerum cumque consequatur voluptatem.\nquidem distinctio omnis dolorem quos qui.\npariatur accusantium architecto inventore maiores nihil beatae dicta provident qui totam.",
+      "userId": 5
+    }

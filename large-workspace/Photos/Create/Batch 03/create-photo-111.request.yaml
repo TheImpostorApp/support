@@ -1,0 +1,14 @@
+id: a64a73b8-6c4e-46dd-9639-dcb5fc606ced
+name: Create photo 111
+method: POST
+url: "{{baseUrl}}/photos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 73,
+      "title": "Quidem fugiat magnam esse inventore autem autem laboriosam",
+      "url": "https://via.placeholder.com/600/e50",
+      "thumbnailUrl": "https://via.placeholder.com/150/e50"
+    }

@@ -1,0 +1,11 @@
+id: aebeb096-2617-4a18-9ba7-96f06784b1eb
+name: Create photo 140
+method: POST
+url: "{{baseUrl}}/photos"
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: albumId, value: "24", enabled: true }
+    - { key: title, value: "Adipisci beatae doloremque maiores qui excepteur aliquid vitae", enabled: true }
+    - { key: url, value: "https://via.placeholder.com/600/141e", enabled: true }
+    - { key: thumbnailUrl, value: "https://via.placeholder.com/150/141e", enabled: true }

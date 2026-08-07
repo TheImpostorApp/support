@@ -1,0 +1,15 @@
+id: d7ee75b6-2570-41d0-bbeb-2512ae6958ec
+name: Create post 179
+method: POST
+url: "{{baseUrl}}/posts"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Excepteur odio provident nemo ipsam odio consequatur",
+      "body": "numquam eos sunt odio optio fugiat omnis.\ndeserunt porro sint porro nihil esse officia numquam adipisci ipsam.\ncupidatat quos rerum nostrum eius rerum officia quidem.\ntempora molestiae dolorem ut totam eos soluta numquam rerum ut.",
+      "userId": 6
+    }

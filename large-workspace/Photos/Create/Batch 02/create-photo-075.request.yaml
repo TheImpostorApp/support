@@ -1,0 +1,11 @@
+id: 6909cbcc-0e3b-4881-9efa-1753e00f5ffb
+name: Create photo 075
+method: POST
+url: "{{baseUrl}}/photos"
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: albumId, value: "30", enabled: true }
+    - { key: title, value: "Numquam cumque nulla tempora quo", enabled: true }
+    - { key: url, value: "https://via.placeholder.com/600/184e", enabled: true }
+    - { key: thumbnailUrl, value: "https://via.placeholder.com/150/184e", enabled: true }

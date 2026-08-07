@@ -1,0 +1,11 @@
+id: d26c1d29-2b01-4ef4-b7b8-01a3da44f8c8
+name: Create comment 129
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: multipart
+  fields:
+    - { kind: text, key: postId, value: "34" }
+    - { kind: text, key: name, value: "Sunt dolore adipisci est tempora" }
+    - { kind: text, key: email, value: "dennis.dubuque@example.com" }
+    - { kind: text, key: body, value: "provident eligendi eligendi molestiae distinctio quidem consequatur dolore aperiam occaecat.\nut placeat ipsam porro distinctio placeat voluptas ipsam.\neligendi ratione repellendus nostrum eos ipsam minus.\ninventore eius eius nihil veritatis consequatur provident consequatur laboriosam eius et aperiam." }

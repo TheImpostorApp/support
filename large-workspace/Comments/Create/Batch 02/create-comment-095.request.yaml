@@ -1,0 +1,14 @@
+id: af44eafd-ea42-4943-b28f-57e2ddfae563
+name: Create comment 095
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 23,
+      "name": "Vitae nostrum aliquid",
+      "email": "kurtis.howell@example.com",
+      "body": "voluptas repellendus explicabo fugiat veritatis inventore ut accusantium.\nanimi nemo beatae autem qui inventore tempora consequatur."
+    }

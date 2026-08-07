@@ -1,0 +1,6 @@
+id: 785c6b7a-a697-4e19-9005-bc06636634b4
+name: OPTIONS posts collection
+method: OPTIONS
+url: "{{baseUrl}}/posts"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }

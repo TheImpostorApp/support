@@ -1,0 +1,13 @@
+id: 4424163b-1f8a-4e91-9862-053415b74221
+name: Create todo 096
+method: POST
+url: "{{baseUrl}}/todos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 1,
+      "title": "Minus esse eaque soluta deserunt optio soluta esse",
+      "completed": true
+    }

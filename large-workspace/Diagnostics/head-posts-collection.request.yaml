@@ -1,0 +1,4 @@
+id: 0bf40fa9-8d59-43d3-8d4f-40a8b041330d
+name: HEAD posts collection
+method: HEAD
+url: "{{baseUrl}}/posts"

@@ -1,0 +1,16 @@
+id: c38eb66b-1dd3-4ce5-9cae-5233ea51a69a
+name: Create post 191
+method: POST
+url: "{{baseUrl}}/posts"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: title, value: "Accusantium suscipit nulla odio explicabo omnis soluta est", enabled: true }
+    - { key: body, value: "qui ipsam accusantium tempora provident magnam vitae maiores eius accusantium magnam eos.\noccaecat natus quidem beatae voluptatem dolore qui et eaque natus veritatis nihil.", enabled: true }
+    - { key: userId, value: "10", enabled: true }
+postScript: |-
+  im.test("post was created", function () {
+    im.expect(im.response.code).to.equal(201);
+  });

@@ -1,0 +1,14 @@
+id: c5ece608-0ce9-44b6-bcc7-2e92a6139eff
+name: Replace comment 006
+method: PUT
+url: "{{baseUrl}}/comments/{{commentId}}"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 70,
+      "name": "Provident nostrum est",
+      "email": "leanne.graham@example.com",
+      "body": "animi voluptas minus laborum repellendus pariatur inventore.\nlaborum animi nihil ratione architecto quidem.\ndeserunt consequatur quia consequatur voluptatem soluta impedit.\ncumque vitae aperiam distinctio sunt dolorem fugiat occaecat molestiae aperiam cupidatat."
+    }

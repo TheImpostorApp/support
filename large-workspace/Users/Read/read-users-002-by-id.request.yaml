@@ -1,0 +1,4 @@
+id: ca4fe3ea-7d3b-442f-891f-a45df46f0c3e
+name: "Read users 002 — by id"
+method: GET
+url: "{{baseUrl}}/users/{{userId}}"

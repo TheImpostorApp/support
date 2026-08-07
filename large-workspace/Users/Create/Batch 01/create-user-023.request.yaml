@@ -1,0 +1,25 @@
+id: 6621a775-09bd-4bc4-b25b-d9a55220d85a
+name: Create user 023
+method: POST
+url: "{{baseUrl}}/users"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Chelsey Lebsack",
+      "username": "Chelsey15",
+      "email": "chelsey@lebsack.example",
+      "address": {
+        "street": "Eius eligendi sint provident accusantium suscipit ipsa rerum Street",
+        "suite": "Apt. 936",
+        "city": "Roscoeview",
+        "zipcode": "20460-3352"
+      },
+      "phone": "1-372-497-1905",
+      "website": "lebsack.example",
+      "company": {
+        "name": "Romaguera-Crona",
+        "catchPhrase": "Nostrum architecto deserunt omnis"
+      }
+    }

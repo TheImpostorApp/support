@@ -1,0 +1,13 @@
+id: 19b7a713-581d-405b-95e2-a0fe4b8d9b60
+name: Create todo 039
+method: POST
+url: "{{baseUrl}}/todos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 10,
+      "title": "Numquam fugiat cumque odio deserunt",
+      "completed": true
+    }

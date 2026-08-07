@@ -1,0 +1,10 @@
+id: 9f1ff38a-deac-4be5-8ab6-8bb387519155
+name: Create todo 015
+method: POST
+url: "{{baseUrl}}/todos"
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: userId, value: "7", enabled: true }
+    - { key: title, value: "Ratione ipsam veritatis suscipit sint pariatur ipsam", enabled: true }
+    - { key: completed, value: "true", enabled: true }

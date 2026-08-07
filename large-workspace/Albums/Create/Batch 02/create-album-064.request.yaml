@@ -1,0 +1,12 @@
+id: 1134f700-0741-4935-8a1b-e7d0b1fe8e7d
+name: Create album 064
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 8,
+      "title": "Cupidatat consequatur esse quidem totam"
+    }

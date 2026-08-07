@@ -1,0 +1,12 @@
+id: da99cc94-836d-42bb-bd50-44e7ebed8d76
+name: Create album 029
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 3,
+      "title": "Magnam animi laborum"
+    }

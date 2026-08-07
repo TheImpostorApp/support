@@ -1,0 +1,12 @@
+id: 736cc15c-20fe-4e34-a5e0-7449d7f89cbd
+name: Create post 059
+method: POST
+url: "{{baseUrl}}/posts"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: title, value: "Magnam esse esse architecto veritatis", enabled: true }
+    - { key: body, value: "accusantium architecto pariatur omnis veritatis adipisci natus nostrum distinctio ipsa nulla.\nadipisci nulla numquam qui porro inventore provident pariatur voluptatem omnis.\neaque architecto dolore eos numquam animi ratione doloremque laboriosam qui eius maiores.", enabled: true }
+    - { key: userId, value: "3", enabled: true }

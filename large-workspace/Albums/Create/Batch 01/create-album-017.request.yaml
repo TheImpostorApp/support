@@ -1,0 +1,12 @@
+id: 387d91ad-d812-4e85-9242-788a173304eb
+name: Create album 017
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 8,
+      "title": "Provident nemo explicabo beatae doloremque adipisci explicabo eos"
+    }

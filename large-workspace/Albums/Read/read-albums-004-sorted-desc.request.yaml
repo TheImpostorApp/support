@@ -1,0 +1,9 @@
+id: 95fa6839-c208-4398-b0f8-64cd1ed63f72
+name: "Read albums 004 — sorted desc"
+method: GET
+url: "{{baseUrl}}/albums"
+query:
+  - { key: "_sort", value: "id", enabled: true }
+  - { key: "_order", value: "desc", enabled: true }
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }

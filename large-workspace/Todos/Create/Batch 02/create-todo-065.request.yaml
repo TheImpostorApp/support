@@ -1,0 +1,15 @@
+id: 629dbf71-5025-400c-b7ca-a09618a2c0bd
+name: Create todo 065
+method: POST
+url: "{{baseUrl}}/todos"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 1,
+      "title": "Voluptas nulla sint",
+      "completed": true
+    }

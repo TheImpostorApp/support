@@ -1,0 +1,25 @@
+id: 794ed85d-f923-43e1-8318-70dad52b5b2b
+name: Create user 031
+method: POST
+url: "{{baseUrl}}/users"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Leanne Dietrich",
+      "username": "Leanne54",
+      "email": "leanne@dietrich.example",
+      "address": {
+        "street": "Nemo explicabo soluta accusantium dolorem Street",
+        "suite": "Apt. 632",
+        "city": "Lebsackbury",
+        "zipcode": "62163-5291"
+      },
+      "phone": "1-372-922-4131",
+      "website": "dietrich.example",
+      "company": {
+        "name": "Deckow-Crist",
+        "catchPhrase": "Laboriosam est deserunt"
+      }
+    }

@@ -1,0 +1,8 @@
+id: c766c66e-5c1e-4c39-9816-bc4a97779b01
+name: "Read posts 012 — filtered"
+method: GET
+url: "{{baseUrl}}/posts"
+query:
+  - { key: userId, value: "2", enabled: true }
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }

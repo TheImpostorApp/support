@@ -1,0 +1,7 @@
+id: a2363f5c-b764-4f05-a197-d6c8d4df5063
+name: "Read todos 011 — sorted desc"
+method: GET
+url: "{{baseUrl}}/todos"
+query:
+  - { key: "_sort", value: "id", enabled: true }
+  - { key: "_order", value: "desc", enabled: true }

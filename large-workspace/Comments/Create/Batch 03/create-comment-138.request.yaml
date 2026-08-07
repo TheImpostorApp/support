@@ -1,0 +1,15 @@
+id: 56ef1ba1-3e21-45d1-aad3-cecfa0c2b5c2
+name: Create comment 138
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: postId, value: "18", enabled: true }
+    - { key: name, value: "Veritatis ratione eius quia inventore", enabled: true }
+    - { key: email, value: "leanne.weissnat@example.com", enabled: true }
+    - { key: body, value: "dolore tempora distinctio rerum nihil occaecat autem eius est beatae.\nminus et minus tempora et nostrum beatae distinctio dolore deserunt aliquid nostrum.", enabled: true }
+postScript: |-
+  im.test("comment was created", function () {
+    im.expect(im.response.code).to.equal(201);
+  });

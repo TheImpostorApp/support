@@ -1,0 +1,15 @@
+id: b8032766-eed0-4edc-aa0c-ec45a9155546
+name: Replace post 007
+method: PUT
+url: "{{baseUrl}}/posts/26"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Eaque doloremque deserunt suscipit",
+      "body": "nulla magnam aliquid natus quia ipsa voluptas beatae nulla fugiat tempora.\nexplicabo occaecat eaque nostrum provident nemo tempora est eius officia molestiae.",
+      "userId": 3
+    }

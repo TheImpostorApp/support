@@ -1,0 +1,13 @@
+id: 786409aa-317a-4e77-97b9-fb940edea789
+name: Create post 136
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Doloremque nihil excepteur",
+      "body": "beatae ipsa soluta esse cumque cumque veritatis natus.\nlaborum nihil totam quos aperiam architecto adipisci totam optio sint officia.\nminus nemo aliquid repellendus aperiam fugiat autem natus beatae ipsa.",
+      "userId": 2
+    }

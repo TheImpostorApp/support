@@ -1,0 +1,14 @@
+id: 9617a1fc-bc5d-4e81-be66-b634f12a8a0e
+name: Create comment 111
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 61,
+      "name": "Dicta est magnam maiores inventore et eos",
+      "email": "leanne.schulist@example.com",
+      "body": "et impedit sunt optio explicabo nemo quia qui esse.\nut maiores eligendi suscipit et pariatur laborum natus ipsam eligendi nulla numquam.\nnumquam pariatur animi veritatis placeat eius nostrum dicta accusantium voluptas."
+    }

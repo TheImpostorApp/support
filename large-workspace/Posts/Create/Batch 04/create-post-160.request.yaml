@@ -1,0 +1,13 @@
+id: dce2ee9a-7104-4c27-b742-6b8b4e92398f
+name: Create post 160
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Impedit veritatis dolorem aliquid laborum magnam",
+      "body": "nostrum sint occaecat esse explicabo sunt impedit molestiae placeat eius.\nvoluptas nemo optio laborum animi omnis ratione.\ninventore porro sint ratione quos accusantium rerum voluptatem architecto.",
+      "userId": 2
+    }

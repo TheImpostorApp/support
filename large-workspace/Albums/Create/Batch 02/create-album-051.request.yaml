@@ -1,0 +1,12 @@
+id: 1bf95323-d157-4737-8dbc-296546a83011
+name: Create album 051
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 5,
+      "title": "Ipsam magnam distinctio quo esse vitae rerum"
+    }

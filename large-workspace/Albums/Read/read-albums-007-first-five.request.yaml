@@ -1,0 +1,6 @@
+id: ed47e525-6311-4d8f-8093-85717457494f
+name: "Read albums 007 — first five"
+method: GET
+url: "{{baseUrl}}/albums"
+query:
+  - { key: "_limit", value: "5", enabled: true }

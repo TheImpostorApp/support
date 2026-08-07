@@ -1,0 +1,13 @@
+id: 9b0094d2-d78e-47d5-82cf-ea6e5c1af6d5
+name: Create post 092
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Nemo odio porro soluta nihil",
+      "body": "consequatur dicta doloremque veritatis officia ut autem et.\nminus dicta inventore natus esse sunt est ipsam suscipit aliquid deserunt impedit.\nanimi consequatur et esse provident excepteur animi ut.\ncupidatat beatae occaecat dolorem pariatur excepteur.",
+      "userId": 7
+    }

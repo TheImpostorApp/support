@@ -1,0 +1,13 @@
+id: 7321e048-933f-42fc-b20e-be7a737470bb
+name: Create post 156
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Pariatur beatae odio consequatur excepteur",
+      "body": "autem tempora omnis beatae autem laboriosam adipisci.\nnihil nemo sunt est officia minus voluptatem sunt adipisci quo quidem.\nimpedit magnam quo pariatur laboriosam omnis molestiae veritatis numquam.",
+      "userId": 6
+    }

@@ -1,0 +1,16 @@
+id: f1af0d46-47b0-41ca-89eb-2df337d79e30
+name: Create album 069
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 5,
+      "title": "Eos quia eos"
+    }
+postScript: |-
+  im.test("album was created", function () {
+    im.expect(im.response.code).to.equal(201);
+  });

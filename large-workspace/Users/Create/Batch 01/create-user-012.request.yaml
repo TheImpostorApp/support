@@ -1,0 +1,25 @@
+id: ccf6f6b4-ed01-4c5f-a532-ea384eb684b0
+name: Create user 012
+method: POST
+url: "{{baseUrl}}/users"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Chelsey Dietrich",
+      "username": "Chelsey21",
+      "email": "chelsey@dietrich.example",
+      "address": {
+        "street": "Quidem magnam dolorem soluta officia soluta dicta Street",
+        "suite": "Apt. 348",
+        "city": "Howemouth",
+        "zipcode": "18730-8039"
+      },
+      "phone": "1-789-371-5871",
+      "website": "dietrich.example",
+      "company": {
+        "name": "Deckow-Crist",
+        "catchPhrase": "Pariatur esse ratione minus"
+      }
+    }

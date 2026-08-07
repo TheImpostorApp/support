@@ -1,0 +1,12 @@
+id: 00222856-5f10-40d5-a889-82ea7918a43b
+name: Patch post 001
+method: PATCH
+url: "{{baseUrl}}/posts/{{postId}}"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Veritatis sunt ipsa accusantium maiores eius autem dicta",
+      "body": "quidem et magnam eaque adipisci occaecat doloremque distinctio repellendus.\nquos aliquid nulla aperiam sint excepteur cumque.\nvoluptas beatae dolore repellendus inventore magnam aliquid ut.\nnemo aliquid odio aperiam occaecat nemo."
+    }

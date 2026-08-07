@@ -1,0 +1,13 @@
+id: 7e7e1b56-93ac-4e74-b07c-af430715c23c
+name: Create todo 013
+method: POST
+url: "{{baseUrl}}/todos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 1,
+      "title": "Qui voluptas officia eligendi doloremque voluptatem",
+      "completed": true
+    }

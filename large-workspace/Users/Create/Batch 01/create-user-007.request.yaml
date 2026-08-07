@@ -1,0 +1,25 @@
+id: fe9b6dc3-183e-470b-87fc-24e03b650c56
+name: Create user 007
+method: POST
+url: "{{baseUrl}}/users"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Glenna Lebsack",
+      "username": "Glenna94",
+      "email": "glenna@lebsack.example",
+      "address": {
+        "street": "Omnis dicta pariatur doloremque repellendus Street",
+        "suite": "Apt. 532",
+        "city": "Lebsackbury",
+        "zipcode": "99126-6519"
+      },
+      "phone": "1-538-815-4846",
+      "website": "lebsack.example",
+      "company": {
+        "name": "Romaguera-Jacobson",
+        "catchPhrase": "Veritatis explicabo eaque cumque"
+      }
+    }

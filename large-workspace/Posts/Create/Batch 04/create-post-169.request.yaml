@@ -1,0 +1,13 @@
+id: 974cdfc7-95f4-431b-b450-f6ed3e22cf95
+name: Create post 169
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Dolore ipsam beatae numquam",
+      "body": "aperiam laboriosam fugiat occaecat accusantium dolore eaque magnam esse voluptas officia.\nmolestiae architecto voluptatem explicabo impedit inventore inventore dolorem occaecat.\neaque aperiam distinctio ut quia ipsa.\nlaborum placeat vitae esse numquam occaecat rerum eligendi repellendus porro.",
+      "userId": 10
+    }

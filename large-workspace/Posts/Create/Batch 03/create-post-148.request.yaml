@@ -1,0 +1,15 @@
+id: ca478142-0584-4a43-b322-5032a53952a9
+name: Create post 148
+method: POST
+url: "{{baseUrl}}/posts"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Pariatur eligendi excepteur quia cupidatat doloremque",
+      "body": "dolorem aperiam vitae quo cupidatat dicta natus nulla nostrum.\nratione adipisci nemo eligendi voluptatem quo.",
+      "userId": 5
+    }

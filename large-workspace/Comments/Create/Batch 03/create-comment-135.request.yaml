@@ -1,0 +1,14 @@
+id: c7e22c09-502c-4160-ae5a-9f2481d9e5f6
+name: Create comment 135
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 21,
+      "name": "Cumque quidem minus impedit explicabo",
+      "email": "glenna.howell@example.com",
+      "body": "sunt excepteur tempora explicabo explicabo rerum consequatur qui sint eligendi aperiam.\net quo odio doloremque numquam aperiam ut natus.\nnumquam sunt maiores rerum numquam voluptas architecto distinctio distinctio.\neligendi aperiam repellendus laboriosam odio quidem laborum eaque laborum molestiae."
+    }

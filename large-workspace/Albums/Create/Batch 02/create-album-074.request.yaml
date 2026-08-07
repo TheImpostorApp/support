@@ -1,0 +1,12 @@
+id: 168375ad-ecad-48d3-90a8-3aae040d5603
+name: Create album 074
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 6,
+      "title": "Natus ipsa aperiam ipsa cumque repellendus repellendus"
+    }

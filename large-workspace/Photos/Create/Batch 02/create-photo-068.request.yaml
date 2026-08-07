@@ -1,0 +1,14 @@
+id: cb38eb5d-58a4-4ebb-9c97-5154c45d1341
+name: Create photo 068
+method: POST
+url: "{{baseUrl}}/photos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 29,
+      "title": "Qui esse suscipit rerum",
+      "url": "https://via.placeholder.com/600/22da",
+      "thumbnailUrl": "https://via.placeholder.com/150/22da"
+    }

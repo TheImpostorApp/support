@@ -1,0 +1,11 @@
+id: ff2fcf46-7cc4-484e-90b5-7e8ec5701fc8
+name: Create photo 064
+method: POST
+url: "{{baseUrl}}/photos"
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: albumId, value: "82", enabled: true }
+    - { key: title, value: "Est repellendus ratione", enabled: true }
+    - { key: url, value: "https://via.placeholder.com/600/152e", enabled: true }
+    - { key: thumbnailUrl, value: "https://via.placeholder.com/150/152e", enabled: true }

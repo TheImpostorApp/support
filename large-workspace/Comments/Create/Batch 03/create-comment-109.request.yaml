@@ -1,0 +1,14 @@
+id: 0caa074a-218f-486a-bb1e-337e23a04e95
+name: Create comment 109
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 23,
+      "name": "Dolore dolore quia voluptas deserunt totam tempora",
+      "email": "clementine.lebsack@example.com",
+      "body": "deserunt cumque quo deserunt quia quo.\nut fugiat doloremque beatae aperiam aperiam nostrum quidem sint soluta.\nnatus occaecat eos quia ut qui architecto voluptas laboriosam deserunt placeat.\nautem quia aperiam aliquid optio est eos."
+    }

@@ -1,0 +1,14 @@
+id: b76df414-f112-44d7-be1c-d2804dec2144
+name: Create comment 034
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 42,
+      "name": "Cupidatat numquam optio",
+      "email": "nicholas.dubuque@example.com",
+      "body": "laborum eaque impedit provident beatae vitae omnis distinctio odio optio quos.\nut eligendi quia odio omnis autem et."
+    }

@@ -1,0 +1,14 @@
+id: bbbd74e6-a145-4c65-8ed0-47011ac7a4ca
+name: Create comment 132
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 13,
+      "name": "Eaque omnis pariatur",
+      "email": "kurtis.dubuque@example.com",
+      "body": "ipsam minus esse architecto est veritatis dolorem aliquid cumque architecto soluta tempora.\ndeserunt optio veritatis et adipisci nemo."
+    }

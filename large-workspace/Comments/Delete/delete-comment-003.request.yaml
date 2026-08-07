@@ -1,0 +1,6 @@
+id: 2bfdd917-ee81-4aaf-9e17-6bd926ea8b11
+name: Delete comment 003
+method: DELETE
+url: "{{baseUrl}}/comments/{{commentId}}"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }

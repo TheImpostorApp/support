@@ -1,0 +1,29 @@
+id: cffd7b77-f94a-48f1-8fe3-c122b7e9ea5b
+name: Create user 039
+method: POST
+url: "{{baseUrl}}/users"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Dennis Bauch",
+      "username": "Dennis10",
+      "email": "dennis@bauch.example",
+      "address": {
+        "street": "Numquam dicta occaecat sint Street",
+        "suite": "Apt. 482",
+        "city": "Gwenborough",
+        "zipcode": "33916-8015"
+      },
+      "phone": "1-319-931-6434",
+      "website": "bauch.example",
+      "company": {
+        "name": "Considine-Lockman",
+        "catchPhrase": "Quos tempora laborum distinctio minus autem"
+      }
+    }
+postScript: |-
+  im.test("user was created", function () {
+    im.expect(im.response.code).to.equal(201);
+  });

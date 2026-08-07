@@ -1,0 +1,13 @@
+id: e8dc437c-e0cc-488a-a9a4-a3a82abecd55
+name: Create post 104
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Inventore excepteur occaecat explicabo",
+      "body": "occaecat ut quidem quo dicta placeat maiores officia aperiam.\nsint laborum repellendus minus laborum fugiat odio fugiat soluta tempora dicta.\nofficia quia nostrum architecto qui nostrum omnis voluptatem aliquid.\naccusantium cupidatat ratione ut ipsam minus vitae voluptatem animi animi nemo.",
+      "userId": 4
+    }

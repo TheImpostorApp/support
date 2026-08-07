@@ -1,0 +1,7 @@
+id: 0d0e5df4-b4d5-4648-89d5-e6d6d13c49ea
+name: "Read posts 010 — page 2"
+method: GET
+url: "{{baseUrl}}/posts"
+query:
+  - { key: "_page", value: "2", enabled: true }
+  - { key: "_limit", value: "10", enabled: true }

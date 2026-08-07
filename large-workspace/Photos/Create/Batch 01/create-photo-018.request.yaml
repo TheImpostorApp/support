@@ -1,0 +1,16 @@
+id: 20cb6bb4-d5e6-4156-a1d2-1f6e04563736
+name: Create photo 018
+method: POST
+url: "{{baseUrl}}/photos"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 60,
+      "title": "Pariatur odio sunt soluta aliquid",
+      "url": "https://via.placeholder.com/600/1f4c",
+      "thumbnailUrl": "https://via.placeholder.com/150/1f4c"
+    }

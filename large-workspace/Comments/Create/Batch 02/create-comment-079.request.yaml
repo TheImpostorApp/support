@@ -1,0 +1,14 @@
+id: 3d1ad49e-2e62-4e38-954c-a7eb588fe827
+name: Create comment 079
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 34,
+      "name": "Placeat ipsa provident fugiat magnam repellendus",
+      "email": "ervin.reichert@example.com",
+      "body": "nostrum excepteur dicta impedit minus consequatur deserunt laboriosam dicta.\nimpedit minus vitae doloremque omnis ipsa excepteur porro nemo eaque."
+    }

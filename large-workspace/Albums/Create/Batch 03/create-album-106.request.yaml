@@ -1,0 +1,14 @@
+id: 7b53256d-04f1-4cfb-8c67-bd6671c6c166
+name: Create album 106
+method: POST
+url: "{{baseUrl}}/albums"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 7,
+      "title": "Totam beatae eaque placeat est"
+    }

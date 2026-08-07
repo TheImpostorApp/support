@@ -1,0 +1,6 @@
+id: aa3aedaf-bf8a-4762-b862-abb536e23168
+name: "Read posts 007 — first five"
+method: GET
+url: "{{baseUrl}}/posts"
+query:
+  - { key: "_limit", value: "5", enabled: true }

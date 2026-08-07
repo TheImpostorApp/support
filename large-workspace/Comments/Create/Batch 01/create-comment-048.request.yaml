@@ -1,0 +1,14 @@
+id: 4c47c62d-ccab-4c3f-a868-bdb266c963c7
+name: Create comment 048
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 22,
+      "name": "Animi magnam laboriosam et occaecat provident",
+      "email": "leanne.schulist@example.com",
+      "body": "eos deserunt officia totam pariatur molestiae.\nipsa repellendus explicabo eaque laborum distinctio ipsa rerum maiores inventore provident rerum."
+    }

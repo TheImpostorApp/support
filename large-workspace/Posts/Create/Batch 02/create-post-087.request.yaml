@@ -1,0 +1,13 @@
+id: 8e2e717b-ded4-4d76-861a-d3694c1058ca
+name: Create post 087
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Excepteur qui veritatis",
+      "body": "architecto distinctio accusantium nemo maiores esse.\ntempora ratione animi ipsa et ut occaecat quos.",
+      "userId": 10
+    }

@@ -1,0 +1,13 @@
+id: f0b94a77-b5ac-4e10-b1f1-d9a2eadcf6e9
+name: Replace post 006
+method: PUT
+url: "{{baseUrl}}/posts/77"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Ratione aliquid voluptas",
+      "body": "quia maiores totam ipsa magnam et et consequatur explicabo veritatis nulla.\nquo eaque nostrum laborum voluptas minus numquam optio dolore suscipit provident.",
+      "userId": 7
+    }

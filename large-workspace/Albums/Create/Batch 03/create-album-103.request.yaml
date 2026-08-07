@@ -1,0 +1,12 @@
+id: d8e03a99-a84a-44a7-a312-014f4399b774
+name: Create album 103
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 3,
+      "title": "Quia quia autem maiores qui esse esse"
+    }

@@ -1,0 +1,4 @@
+id: 8562e5ff-5fa5-489e-8cd6-50e3c4482d18
+name: Delete post 007
+method: DELETE
+url: "{{baseUrl}}/posts/94"

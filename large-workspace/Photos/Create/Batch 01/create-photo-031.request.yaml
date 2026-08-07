@@ -1,0 +1,11 @@
+id: f9b1baea-fbc4-42a6-aa6f-00597f8991e4
+name: Create photo 031
+method: POST
+url: "{{baseUrl}}/photos"
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: albumId, value: "75", enabled: true }
+    - { key: title, value: "Occaecat impedit quo rerum sunt molestiae adipisci distinctio", enabled: true }
+    - { key: url, value: "https://via.placeholder.com/600/4c2", enabled: true }
+    - { key: thumbnailUrl, value: "https://via.placeholder.com/150/4c2", enabled: true }

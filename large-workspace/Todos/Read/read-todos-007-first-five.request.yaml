@@ -1,0 +1,6 @@
+id: a9c92d12-f67a-498b-bf05-c58ded736a9a
+name: "Read todos 007 — first five"
+method: GET
+url: "{{baseUrl}}/todos"
+query:
+  - { key: "_limit", value: "5", enabled: true }

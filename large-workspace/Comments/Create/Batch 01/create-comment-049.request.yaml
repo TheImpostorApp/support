@@ -1,0 +1,11 @@
+id: e45d1366-87de-43bf-9b3f-7de8bc2a764a
+name: Create comment 049
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: postId, value: "94", enabled: true }
+    - { key: name, value: "Omnis autem natus magnam laborum", enabled: true }
+    - { key: email, value: "clementina.lebsack@example.com", enabled: true }
+    - { key: body, value: "placeat explicabo et quo cumque ipsam nemo cumque doloremque.\nmolestiae sunt explicabo natus aperiam laboriosam nihil sunt ratione ratione.\nest beatae nihil molestiae ipsa occaecat.", enabled: true }

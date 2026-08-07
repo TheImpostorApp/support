@@ -1,0 +1,8 @@
+id: 934878a4-4323-4ec7-a6cc-1364afa6401d
+name: "Read posts 008 — list all"
+method: GET
+url: "{{baseUrl}}/posts"
+postScript: |-
+  im.test("posts read ok", function () {
+    im.expect(im.response.code).to.equal(200);
+  });

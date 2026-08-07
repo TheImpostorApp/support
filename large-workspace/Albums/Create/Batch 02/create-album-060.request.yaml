@@ -1,0 +1,9 @@
+id: e7638b9e-74c8-4d9b-90f8-e1e8361a527d
+name: Create album 060
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: userId, value: "9", enabled: true }
+    - { key: title, value: "Voluptatem quo quos excepteur laborum architecto", enabled: true }

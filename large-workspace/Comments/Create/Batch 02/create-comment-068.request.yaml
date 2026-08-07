@@ -1,0 +1,11 @@
+id: 6e10faa5-8323-4a67-a61d-0597331b02fd
+name: Create comment 068
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: postId, value: "15", enabled: true }
+    - { key: name, value: "Accusantium aliquid natus quia", enabled: true }
+    - { key: email, value: "clementine.howell@example.com", enabled: true }
+    - { key: body, value: "inventore soluta sunt eos sint quo optio optio.\nsoluta cupidatat accusantium beatae et cupidatat consequatur.", enabled: true }

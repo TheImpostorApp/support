@@ -1,0 +1,14 @@
+id: b023d7f9-d445-453e-b3ea-ce202f6b96a5
+name: Create comment 149
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 99,
+      "name": "Ratione placeat laboriosam quos ipsa esse dolorem",
+      "email": "chelsey.howell@example.com",
+      "body": "voluptatem rerum ipsam repellendus repellendus optio suscipit dolorem ut minus dolore aperiam.\nvitae optio impedit molestiae dicta et cumque quidem."
+    }

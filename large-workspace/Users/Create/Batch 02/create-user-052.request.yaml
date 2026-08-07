@@ -1,0 +1,29 @@
+id: a2d627b1-e700-4c80-9f0c-b6134cbca7d3
+name: Create user 052
+method: POST
+url: "{{baseUrl}}/users"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Patricia Reichert",
+      "username": "Patricia56",
+      "email": "patricia@reichert.example",
+      "address": {
+        "street": "Ut minus distinctio dolore voluptatem suscipit odio inventore Street",
+        "suite": "Apt. 637",
+        "city": "Lebsackbury",
+        "zipcode": "48512-5339"
+      },
+      "phone": "1-277-442-6647",
+      "website": "reichert.example",
+      "company": {
+        "name": "Yost and Sons",
+        "catchPhrase": "Nemo eius et"
+      }
+    }
+postScript: |-
+  im.test("user was created", function () {
+    im.expect(im.response.code).to.equal(201);
+  });

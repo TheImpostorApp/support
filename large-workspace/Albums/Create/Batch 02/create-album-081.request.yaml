@@ -1,0 +1,18 @@
+id: 54be2ba1-0639-49b3-9bd2-257128f21489
+name: Create album 081
+method: POST
+url: "{{baseUrl}}/albums"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 7,
+      "title": "Tempora ratione optio"
+    }
+postScript: |-
+  im.test("album was created", function () {
+    im.expect(im.response.code).to.equal(201);
+  });

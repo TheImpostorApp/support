@@ -1,0 +1,13 @@
+id: fcf5a147-71d5-4ba0-ad8a-290355ec92a6
+name: Create post 049
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Voluptatem veritatis eos rerum magnam voluptas natus tempora",
+      "body": "laboriosam ipsa maiores quos placeat esse distinctio eaque excepteur voluptatem aliquid.\nrepellendus odio provident nihil voluptatem distinctio.\nqui quia aliquid excepteur animi ipsam sunt adipisci suscipit.\nnemo aperiam quos molestiae ut et tempora odio cupidatat occaecat occaecat dolorem.",
+      "userId": 3
+    }

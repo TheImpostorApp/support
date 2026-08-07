@@ -1,0 +1,13 @@
+id: d3a885cf-e233-40ec-85f0-8eb9b624e46e
+name: Create post 146
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Voluptas aperiam distinctio minus optio odio magnam",
+      "body": "accusantium vitae aperiam repellendus sint totam qui.\ncupidatat veritatis odio esse deserunt cupidatat cupidatat.\ninventore autem optio doloremque ipsam officia cumque cumque.",
+      "userId": 2
+    }

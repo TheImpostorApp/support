@@ -1,0 +1,14 @@
+id: aff0b74d-f90f-4912-bf85-fb5ad092c1d7
+name: Create album 034
+method: POST
+url: "{{baseUrl}}/albums"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 4,
+      "title": "Esse suscipit repellendus ratione sint deserunt occaecat"
+    }

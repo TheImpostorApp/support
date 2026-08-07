@@ -1,0 +1,15 @@
+id: 53664ca7-9e56-41f0-8383-22101c19e0df
+name: Create photo 015
+method: POST
+url: "{{baseUrl}}/photos"
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: albumId, value: "82", enabled: true }
+    - { key: title, value: "Officia quidem ut animi rerum ipsam nemo", enabled: true }
+    - { key: url, value: "https://via.placeholder.com/600/23cc", enabled: true }
+    - { key: thumbnailUrl, value: "https://via.placeholder.com/150/23cc", enabled: true }
+postScript: |-
+  im.test("photo was created", function () {
+    im.expect(im.response.code).to.equal(201);
+  });

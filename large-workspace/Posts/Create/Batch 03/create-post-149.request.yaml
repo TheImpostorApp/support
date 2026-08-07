@@ -1,0 +1,13 @@
+id: a5f82442-94e5-41d9-829c-95ddc80ba7b6
+name: Create post 149
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Autem eius eaque tempora vitae suscipit",
+      "body": "molestiae ratione soluta cumque laborum provident et et ratione eos.\nsint fugiat eligendi quo quo animi voluptas officia molestiae veritatis explicabo cupidatat.\ntotam dolorem nostrum ipsa inventore dolore accusantium.\nmaiores optio nihil sint aliquid numquam dicta fugiat dicta animi animi totam.",
+      "userId": 3
+    }

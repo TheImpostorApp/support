@@ -1,0 +1,12 @@
+id: 069aa186-d490-4c19-afe4-7154ba943f8e
+name: Create album 118
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 3,
+      "title": "Minus repellendus accusantium rerum numquam soluta cumque inventore"
+    }

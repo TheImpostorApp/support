@@ -1,0 +1,13 @@
+id: c073d2f4-6e04-4952-9bbc-b1c4cef9ffa8
+name: Create post 086
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Dicta soluta eos laborum numquam nulla eius",
+      "body": "quidem eaque inventore inventore maiores dolorem odio inventore consequatur.\nipsa suscipit architecto inventore vitae impedit animi aperiam.\nvoluptatem cupidatat animi consequatur dolore cupidatat odio consequatur totam provident.\nadipisci vitae esse esse dicta placeat.",
+      "userId": 6
+    }

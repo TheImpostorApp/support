@@ -1,0 +1,14 @@
+id: af7acdea-941c-4c1d-b16e-7abefacb0471
+name: Create comment 145
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 14,
+      "name": "Provident suscipit ipsam natus laboriosam deserunt",
+      "email": "dennis.weissnat@example.com",
+      "body": "dicta ipsam quo nostrum nulla explicabo veritatis.\nquos laborum nihil pariatur eos ratione minus doloremque optio.\nnulla eaque nulla qui et distinctio tempora natus nemo porro."
+    }

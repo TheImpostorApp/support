@@ -1,0 +1,15 @@
+id: 4248f2ca-d11e-4118-a15b-98503d64ba45
+name: Create photo 038
+method: POST
+url: "{{baseUrl}}/photos"
+body:
+  kind: multipart
+  fields:
+    - { kind: text, key: albumId, value: "28" }
+    - { kind: text, key: title, value: "Vitae ipsam impedit repellendus sunt accusantium et" }
+    - { kind: text, key: url, value: "https://via.placeholder.com/600/2518" }
+    - { kind: text, key: thumbnailUrl, value: "https://via.placeholder.com/150/2518" }
+postScript: |-
+  im.test("photo was created", function () {
+    im.expect(im.response.code).to.equal(201);
+  });

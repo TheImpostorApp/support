@@ -1,0 +1,6 @@
+id: 0ce3998f-29e5-443d-a5b3-20fcbe6de19f
+name: HEAD albums collection
+method: HEAD
+url: "{{baseUrl}}/albums"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }

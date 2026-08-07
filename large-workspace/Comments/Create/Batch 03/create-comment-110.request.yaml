@@ -1,0 +1,14 @@
+id: 57a4606e-9578-411b-8f16-1c5bb007943f
+name: Create comment 110
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 40,
+      "name": "Quos ipsam esse",
+      "email": "ervin.lebsack@example.com",
+      "body": "rerum inventore quos tempora optio totam adipisci laborum veritatis doloremque distinctio ratione.\nexcepteur adipisci sunt laboriosam porro inventore beatae optio maiores."
+    }

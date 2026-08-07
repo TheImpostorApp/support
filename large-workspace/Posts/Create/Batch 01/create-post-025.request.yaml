@@ -1,0 +1,13 @@
+id: 1ef57159-2c2d-4849-bab1-95ddfbcc07ef
+name: Create post 025
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Aliquid vitae sint minus",
+      "body": "eius cupidatat ipsa tempora nulla accusantium ipsa natus maiores qui.\ndicta dicta doloremque est voluptatem inventore nulla eos tempora odio voluptas explicabo.\nnumquam suscipit nostrum cupidatat nemo totam accusantium nulla fugiat provident.\ndolorem est nulla veritatis cumque eos pariatur deserunt pariatur eius.",
+      "userId": 8
+    }

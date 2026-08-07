@@ -1,0 +1,12 @@
+id: 6fa3ed09-737a-4f17-b4cd-08a27481f74d
+name: Replace album 002
+method: PUT
+url: "{{baseUrl}}/albums/85"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 2,
+      "title": "Omnis voluptatem occaecat quia"
+    }

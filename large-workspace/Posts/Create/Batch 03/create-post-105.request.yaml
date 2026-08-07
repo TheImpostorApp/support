@@ -1,0 +1,17 @@
+id: a7126ee4-18d7-42f3-b4da-5fd3fbc7e27d
+name: Create post 105
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Optio nostrum nemo nihil occaecat explicabo",
+      "body": "nemo numquam beatae optio ratione laboriosam rerum eius quidem.\neaque optio minus nemo ut ipsam voluptatem repellendus et suscipit.\nipsa voluptas voluptas voluptas ut consequatur natus eaque qui laborum rerum.",
+      "userId": 3
+    }
+postScript: |-
+  im.test("post was created", function () {
+    im.expect(im.response.code).to.equal(201);
+  });

@@ -1,0 +1,8 @@
+id: 260cdec9-16a1-4799-81ce-426568073a9f
+name: Delete todo 001
+method: DELETE
+url: "{{baseUrl}}/todos/28"
+postScript: |-
+  im.test("todo was deleted", function () {
+    im.expect(im.response.code).to.equal(200);
+  });

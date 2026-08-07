@@ -1,0 +1,15 @@
+id: 6e5da60d-223e-4f2d-bdaa-f23640ef8cd5
+name: Replace post 008
+method: PUT
+url: "{{baseUrl}}/posts/64"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Suscipit explicabo numquam repellendus repellendus odio ipsam",
+      "body": "suscipit fugiat ut accusantium accusantium quia pariatur.\nexplicabo qui animi sunt optio quos totam soluta maiores est.\ntempora occaecat voluptas laborum animi nulla quidem laboriosam placeat.\nadipisci qui ut consequatur impedit ratione consequatur dolorem animi eligendi omnis.",
+      "userId": 1
+    }

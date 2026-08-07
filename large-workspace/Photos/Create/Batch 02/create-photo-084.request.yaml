@@ -1,0 +1,18 @@
+id: b7fa69a7-cabd-404c-9297-b2eba246e6c6
+name: Create photo 084
+method: POST
+url: "{{baseUrl}}/photos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 34,
+      "title": "Explicabo dolorem quos",
+      "url": "https://via.placeholder.com/600/e10",
+      "thumbnailUrl": "https://via.placeholder.com/150/e10"
+    }
+postScript: |-
+  im.test("photo was created", function () {
+    im.expect(im.response.code).to.equal(201);
+  });

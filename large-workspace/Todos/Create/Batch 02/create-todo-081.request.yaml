@@ -1,0 +1,13 @@
+id: b234ec98-90c9-404b-ad65-380865a0d8a3
+name: Create todo 081
+method: POST
+url: "{{baseUrl}}/todos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 1,
+      "title": "Animi qui architecto impedit minus",
+      "completed": false
+    }

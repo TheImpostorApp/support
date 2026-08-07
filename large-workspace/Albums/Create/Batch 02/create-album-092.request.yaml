@@ -1,0 +1,14 @@
+id: 315ece7e-8b93-48b3-a251-24ecfb772e54
+name: Create album 092
+method: POST
+url: "{{baseUrl}}/albums"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 10,
+      "title": "Explicabo ipsa maiores quos placeat ut"
+    }

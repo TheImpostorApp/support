@@ -1,0 +1,16 @@
+id: 300965e7-8e49-4892-99de-439e73e894f5
+name: Create photo 080
+method: POST
+url: "{{baseUrl}}/photos"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 53,
+      "title": "Placeat architecto dicta eaque",
+      "url": "https://via.placeholder.com/600/1230",
+      "thumbnailUrl": "https://via.placeholder.com/150/1230"
+    }

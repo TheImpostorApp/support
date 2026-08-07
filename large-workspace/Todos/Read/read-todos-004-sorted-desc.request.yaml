@@ -1,0 +1,9 @@
+id: 55654bed-bddf-41ae-91ee-bdfbeb0eea0b
+name: "Read todos 004 — sorted desc"
+method: GET
+url: "{{baseUrl}}/todos"
+query:
+  - { key: "_sort", value: "id", enabled: true }
+  - { key: "_order", value: "desc", enabled: true }
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }

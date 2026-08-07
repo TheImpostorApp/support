@@ -1,0 +1,10 @@
+id: df938c9d-2d78-419c-8560-e9dd6cb8090f
+name: "Read posts 019 — filtered"
+method: GET
+url: "{{baseUrl}}/posts"
+query:
+  - { key: userId, value: "5", enabled: true }
+postScript: |-
+  im.test("posts read ok", function () {
+    im.expect(im.response.code).to.equal(200);
+  });

@@ -1,0 +1,15 @@
+id: 02d3cc74-b774-4a9a-a2b4-74927ff7b7c7
+name: Create comment 136
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: postId, value: "69", enabled: true }
+    - { key: name, value: "Aliquid pariatur aperiam", enabled: true }
+    - { key: email, value: "clementine.reichert@example.com", enabled: true }
+    - { key: body, value: "architecto ipsam quidem odio sint dicta minus.\nimpedit animi vitae porro explicabo nihil voluptas placeat omnis.\nadipisci placeat dolorem sunt eligendi eius rerum pariatur placeat impedit eos sunt.", enabled: true }
+postScript: |-
+  im.test("comment was created", function () {
+    im.expect(im.response.code).to.equal(201);
+  });

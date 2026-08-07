@@ -1,0 +1,9 @@
+id: f96ca559-e202-4077-93e6-57fa86bfae29
+name: Create album 023
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: userId, value: "8", enabled: true }
+    - { key: title, value: "Omnis vitae nostrum esse vitae aliquid", enabled: true }

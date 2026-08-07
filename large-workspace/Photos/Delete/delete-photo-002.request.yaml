@@ -1,0 +1,6 @@
+id: ed03a1e9-5e98-49ae-ac39-3c16ccb15648
+name: Delete photo 002
+method: DELETE
+url: "{{baseUrl}}/photos/{{photoId}}"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }

@@ -1,0 +1,13 @@
+id: 5ced66db-7fa6-48c7-8bdc-e5a029f83552
+name: Replace todo 004
+method: PUT
+url: "{{baseUrl}}/todos/84"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 7,
+      "title": "Laborum explicabo nostrum eligendi nulla inventore aperiam",
+      "completed": true
+    }

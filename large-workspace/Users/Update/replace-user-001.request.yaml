@@ -1,0 +1,27 @@
+id: a0e35c3c-d901-484b-85b9-512175aa7130
+name: Replace user 001
+method: PUT
+url: "{{baseUrl}}/users/{{userId}}"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Nicholas Schulist",
+      "username": "Nicholas99",
+      "email": "nicholas@schulist.example",
+      "address": {
+        "street": "Distinctio ipsam beatae repellendus quos est dicta excepteur Street",
+        "suite": "Apt. 927",
+        "city": "Lebsackbury",
+        "zipcode": "53169-1458"
+      },
+      "phone": "1-869-488-8201",
+      "website": "schulist.example",
+      "company": {
+        "name": "Abernathy Group",
+        "catchPhrase": "Soluta beatae autem beatae omnis consequatur deserunt occaecat"
+      }
+    }

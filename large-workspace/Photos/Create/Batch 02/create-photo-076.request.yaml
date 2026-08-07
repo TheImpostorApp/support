@@ -1,0 +1,18 @@
+id: 4026c1f8-a411-4f70-9e63-129eabd76904
+name: Create photo 076
+method: POST
+url: "{{baseUrl}}/photos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 48,
+      "title": "Explicabo provident et",
+      "url": "https://via.placeholder.com/600/20ec",
+      "thumbnailUrl": "https://via.placeholder.com/150/20ec"
+    }
+postScript: |-
+  im.test("photo was created", function () {
+    im.expect(im.response.code).to.equal(201);
+  });

@@ -1,0 +1,14 @@
+id: 09d55368-8a01-4375-94e1-c76fecbba525
+name: Create comment 036
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 30,
+      "name": "Eligendi omnis eos",
+      "email": "patricia.howell@example.com",
+      "body": "nihil officia minus laborum inventore esse explicabo impedit distinctio.\ndolorem porro et numquam explicabo excepteur.\neligendi eos repellendus laborum consequatur magnam nulla sunt ipsa."
+    }

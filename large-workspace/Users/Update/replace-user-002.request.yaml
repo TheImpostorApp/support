@@ -1,0 +1,25 @@
+id: 58e0ed9a-5b9b-48af-9865-25136c2dd45d
+name: Replace user 002
+method: PUT
+url: "{{baseUrl}}/users/9"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Ervin Howell",
+      "username": "Ervin42",
+      "email": "ervin@howell.example",
+      "address": {
+        "street": "Molestiae tempora accusantium ratione quia optio accusantium Street",
+        "suite": "Apt. 789",
+        "city": "Bartholomebury",
+        "zipcode": "52157-8819"
+      },
+      "phone": "1-992-678-8648",
+      "website": "howell.example",
+      "company": {
+        "name": "Romaguera-Crona",
+        "catchPhrase": "Minus numquam sint quos quo fugiat quo explicabo"
+      }
+    }

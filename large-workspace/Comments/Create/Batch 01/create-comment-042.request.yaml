@@ -1,0 +1,11 @@
+id: 1e7bbf77-9f78-4787-aa94-46d9b7e92068
+name: Create comment 042
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: multipart
+  fields:
+    - { kind: text, key: postId, value: "46" }
+    - { kind: text, key: name, value: "Molestiae placeat inventore quos" }
+    - { kind: text, key: email, value: "chelsey.bauch@example.com" }
+    - { kind: text, key: body, value: "provident placeat adipisci laboriosam ipsam doloremque quos eos odio architecto cumque natus.\net laborum maiores adipisci aperiam soluta sint minus." }

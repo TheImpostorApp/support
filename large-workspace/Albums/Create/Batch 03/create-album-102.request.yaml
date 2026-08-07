@@ -1,0 +1,12 @@
+id: d024f6cd-8294-47b7-8a50-8a47ff7f0c2a
+name: Create album 102
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 2,
+      "title": "Ut nulla quidem beatae adipisci"
+    }

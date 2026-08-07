@@ -1,0 +1,13 @@
+id: 8d81c037-f4d5-4735-8184-dbb9f7b592a6
+name: Create todo 005
+method: POST
+url: "{{baseUrl}}/todos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 5,
+      "title": "Deserunt excepteur quo officia minus",
+      "completed": false
+    }

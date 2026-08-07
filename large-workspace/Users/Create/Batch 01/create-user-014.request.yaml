@@ -1,0 +1,25 @@
+id: 5dd89c0f-65a7-470a-9cd9-4290fd2bced9
+name: Create user 014
+method: POST
+url: "{{baseUrl}}/users"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Clementina Schulist",
+      "username": "Clementina82",
+      "email": "clementina@schulist.example",
+      "address": {
+        "street": "Aliquid excepteur molestiae laborum nemo placeat accusantium autem Street",
+        "suite": "Apt. 920",
+        "city": "Lebsackbury",
+        "zipcode": "75372-5679"
+      },
+      "phone": "1-538-599-8080",
+      "website": "schulist.example",
+      "company": {
+        "name": "Yost and Sons",
+        "catchPhrase": "Doloremque est aliquid laborum ipsa quo accusantium"
+      }
+    }

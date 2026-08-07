@@ -1,0 +1,11 @@
+id: fe286a2f-9bb4-4371-9440-07675589e4ec
+name: Create comment 039
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: multipart
+  fields:
+    - { kind: text, key: postId, value: "73" }
+    - { kind: text, key: name, value: "Pariatur tempora odio cupidatat nemo" }
+    - { kind: text, key: email, value: "clementina.weissnat@example.com" }
+    - { kind: text, key: body, value: "dolore fugiat accusantium aliquid accusantium qui excepteur doloremque animi ut.\nqui accusantium inventore eligendi quos aliquid dolore quia molestiae dolore qui." }

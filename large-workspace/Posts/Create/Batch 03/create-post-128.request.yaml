@@ -1,0 +1,13 @@
+id: d8803bf6-57d7-4458-b470-7b1fbf929a18
+name: Create post 128
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Dolorem inventore doloremque explicabo beatae maiores cupidatat repellendus",
+      "body": "provident placeat aliquid eaque ratione rerum fugiat laboriosam impedit consequatur.\nlaborum autem doloremque maiores nostrum laboriosam cupidatat provident officia occaecat ratione.",
+      "userId": 1
+    }

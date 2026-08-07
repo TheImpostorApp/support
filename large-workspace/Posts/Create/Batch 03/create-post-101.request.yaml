@@ -1,0 +1,15 @@
+id: 69a1b815-b2ec-4828-9f72-91a02a9142e5
+name: Create post 101
+method: POST
+url: "{{baseUrl}}/posts"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Est animi beatae optio veritatis distinctio dolore officia",
+      "body": "placeat quia occaecat natus provident sunt laboriosam minus ipsa veritatis occaecat.\nnumquam qui esse magnam provident omnis distinctio autem ut.\neius aliquid eos suscipit officia quo quia quo ut sint.\nipsam nihil quos maiores numquam ut et accusantium explicabo soluta esse consequatur.",
+      "userId": 6
+    }

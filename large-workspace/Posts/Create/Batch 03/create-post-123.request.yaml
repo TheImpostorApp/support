@@ -1,0 +1,10 @@
+id: 5cb7af1e-5887-4f32-a98c-f74bf79efb2f
+name: Create post 123
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: title, value: "Quia optio eos magnam", enabled: true }
+    - { key: body, value: "cupidatat beatae consequatur eligendi nemo qui.\nmaiores nihil et sunt ratione quos animi ipsa eius aperiam.", enabled: true }
+    - { key: userId, value: "10", enabled: true }

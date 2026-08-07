@@ -1,0 +1,14 @@
+id: 29cb56ed-af10-4d2b-a351-d95ea34385d4
+name: Patch post 006
+method: PATCH
+url: "{{baseUrl}}/posts/{{postId}}"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Explicabo provident quia dolore qui",
+      "body": "et autem cumque natus molestiae nihil quia eligendi.\nut maiores rerum dicta vitae inventore maiores repellendus.\nsint inventore occaecat quo laborum nulla.\nvoluptas esse porro officia sint numquam sunt."
+    }

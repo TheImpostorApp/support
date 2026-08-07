@@ -1,0 +1,18 @@
+id: 1c5757ff-9728-430c-b320-e54735e832b9
+name: Create photo 039
+method: POST
+url: "{{baseUrl}}/photos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 4,
+      "title": "Accusantium cupidatat voluptatem est distinctio repellendus",
+      "url": "https://via.placeholder.com/600/26ba",
+      "thumbnailUrl": "https://via.placeholder.com/150/26ba"
+    }
+postScript: |-
+  im.test("photo was created", function () {
+    im.expect(im.response.code).to.equal(201);
+  });

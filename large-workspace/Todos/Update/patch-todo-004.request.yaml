@@ -1,0 +1,12 @@
+id: cba0ec42-5389-4182-856f-b807760afc78
+name: Patch todo 004
+method: PATCH
+url: "{{baseUrl}}/todos/20"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 4,
+      "title": "Nostrum adipisci distinctio eius voluptatem quidem nemo"
+    }

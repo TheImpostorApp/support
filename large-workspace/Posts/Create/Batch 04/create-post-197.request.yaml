@@ -1,0 +1,15 @@
+id: ad9ec245-e702-4a2c-b81b-d2a827e63ad7
+name: Create post 197
+method: POST
+url: "{{baseUrl}}/posts"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Nostrum impedit nostrum et excepteur impedit soluta soluta",
+      "body": "doloremque minus provident magnam architecto veritatis voluptatem accusantium dolore esse voluptatem.\ntotam porro excepteur eos architecto nulla architecto quidem.\nquidem architecto cupidatat molestiae dolore laborum vitae minus consequatur placeat tempora.",
+      "userId": 10
+    }

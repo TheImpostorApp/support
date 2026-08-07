@@ -1,0 +1,12 @@
+id: b5b4d518-4052-43ca-aeb7-ad8852dbac4b
+name: Create album 014
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 6,
+      "title": "Laborum esse tempora"
+    }

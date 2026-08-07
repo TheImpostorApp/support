@@ -1,0 +1,16 @@
+id: f9d414a7-d565-4189-b557-c486add6fe87
+name: Create photo 062
+method: POST
+url: "{{baseUrl}}/photos"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 89,
+      "title": "Nihil rerum officia maiores nostrum",
+      "url": "https://via.placeholder.com/600/16e7",
+      "thumbnailUrl": "https://via.placeholder.com/150/16e7"
+    }

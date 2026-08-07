@@ -1,0 +1,13 @@
+id: ec1120f4-7b2b-4eb4-804d-f13dcec47ae8
+name: Create post 176
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Occaecat cumque cupidatat numquam pariatur impedit rerum",
+      "body": "porro quia quo voluptatem magnam rerum tempora beatae pariatur.\nautem cupidatat ratione dolore dolorem suscipit omnis et eius optio cupidatat.\nbeatae aliquid suscipit soluta animi architecto maiores eligendi explicabo ut quo.\nnihil eaque explicabo omnis molestiae numquam odio esse totam occaecat.",
+      "userId": 1
+    }

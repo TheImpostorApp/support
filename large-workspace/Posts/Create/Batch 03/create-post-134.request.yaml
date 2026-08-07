@@ -1,0 +1,13 @@
+id: 988153ef-d7c0-4b8a-a55b-863722708250
+name: Create post 134
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Accusantium ut dolorem animi dolorem",
+      "body": "eaque veritatis nemo nihil impedit repellendus quidem ratione.\nquos vitae nemo rerum voluptas ipsam odio autem repellendus cumque.",
+      "userId": 9
+    }

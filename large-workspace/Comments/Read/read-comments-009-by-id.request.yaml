@@ -1,0 +1,4 @@
+id: ef61ef7d-758b-4575-b244-ca59b70408fc
+name: "Read comments 009 — by id"
+method: GET
+url: "{{baseUrl}}/comments/392"

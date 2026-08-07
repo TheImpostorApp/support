@@ -1,0 +1,16 @@
+id: 4693601a-0f18-4a09-a61e-7012954054ef
+name: Replace photo 005
+method: PUT
+url: "{{baseUrl}}/photos/{{photoId}}"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 75,
+      "title": "Natus aliquid voluptatem eaque et sunt minus",
+      "url": "https://via.placeholder.com/600/21f1",
+      "thumbnailUrl": "https://via.placeholder.com/150/21f1"
+    }

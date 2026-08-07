@@ -1,0 +1,12 @@
+id: b59dc49b-9e00-48a4-bdda-a835060fe717
+name: Create album 087
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 10,
+      "title": "Soluta eos impedit minus sint"
+    }

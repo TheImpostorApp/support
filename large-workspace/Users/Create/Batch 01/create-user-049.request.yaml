@@ -1,0 +1,27 @@
+id: 5b4e31b6-fba5-488e-9f0e-f42eae4c3627
+name: Create user 049
+method: POST
+url: "{{baseUrl}}/users"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Leanne Bauch",
+      "username": "Leanne38",
+      "email": "leanne@bauch.example",
+      "address": {
+        "street": "Ipsam ut autem adipisci eos eligendi Street",
+        "suite": "Apt. 467",
+        "city": "Wisokyburgh",
+        "zipcode": "94201-3939"
+      },
+      "phone": "1-812-309-9908",
+      "website": "bauch.example",
+      "company": {
+        "name": "Hoeger LLC",
+        "catchPhrase": "Dicta laborum dolore inventore adipisci doloremque dolore cupidatat"
+      }
+    }

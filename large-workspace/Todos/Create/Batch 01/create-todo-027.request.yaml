@@ -1,0 +1,13 @@
+id: 0d0d841f-cf61-4f5f-8ed3-b87f45e9d33e
+name: Create todo 027
+method: POST
+url: "{{baseUrl}}/todos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 7,
+      "title": "Aperiam omnis dolore maiores est",
+      "completed": true
+    }

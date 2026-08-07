@@ -1,0 +1,14 @@
+id: b5e78118-fdc3-4430-b54a-b6e1f39b48a4
+name: Create comment 030
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 10,
+      "name": "Occaecat numquam pariatur ut officia esse",
+      "email": "dennis.dietrich@example.com",
+      "body": "voluptatem excepteur ut ipsam totam maiores quo pariatur.\nvoluptatem soluta eaque nostrum suscipit provident."
+    }

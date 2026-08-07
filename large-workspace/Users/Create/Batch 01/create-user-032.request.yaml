@@ -1,0 +1,25 @@
+id: 3d29b9f4-c1ac-4592-99bf-b8620871b1e6
+name: Create user 032
+method: POST
+url: "{{baseUrl}}/users"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Clementine Runolfsdottir",
+      "username": "Clementine50",
+      "email": "clementine@runolfsdottir.example",
+      "address": {
+        "street": "Deserunt inventore soluta Street",
+        "suite": "Apt. 236",
+        "city": "Lebsackbury",
+        "zipcode": "36946-3176"
+      },
+      "phone": "1-818-210-7974",
+      "website": "runolfsdottir.example",
+      "company": {
+        "name": "Robel-Corkery",
+        "catchPhrase": "Ipsam quo cumque"
+      }
+    }

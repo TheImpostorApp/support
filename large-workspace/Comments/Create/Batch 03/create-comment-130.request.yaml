@@ -1,0 +1,11 @@
+id: 8f971578-e97a-4710-a76d-ed4cfbd5cbca
+name: Create comment 130
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: postId, value: "61", enabled: true }
+    - { key: name, value: "Totam quo ipsam", enabled: true }
+    - { key: email, value: "nicholas.dubuque@example.com", enabled: true }
+    - { key: body, value: "et quo explicabo eius ipsam eligendi.\nprovident quia eaque suscipit nihil suscipit voluptas fugiat nostrum maiores.\naperiam quos quia optio placeat natus aliquid dolorem repellendus.", enabled: true }

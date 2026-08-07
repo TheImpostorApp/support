@@ -1,0 +1,17 @@
+id: 27bda707-08ab-484c-b041-fe8d0f09db68
+name: Create post 132
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Cupidatat provident suscipit esse accusantium cumque accusantium nemo",
+      "body": "totam excepteur consequatur laborum nemo eius repellendus ipsam ut placeat.\naliquid dicta optio magnam laborum ratione maiores pariatur qui.\nvoluptatem quo magnam officia suscipit dolore laborum placeat qui nihil.",
+      "userId": 10
+    }
+postScript: |-
+  im.test("post was created", function () {
+    im.expect(im.response.code).to.equal(201);
+  });

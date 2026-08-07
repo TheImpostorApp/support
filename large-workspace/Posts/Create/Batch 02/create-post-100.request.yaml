@@ -1,0 +1,13 @@
+id: c6a1f845-0a37-4eed-abb3-93a809ac9646
+name: Create post 100
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Eos maiores ipsam cumque architecto veritatis",
+      "body": "nostrum consequatur vitae veritatis doloremque nihil dolorem fugiat.\nnihil beatae officia maiores dolorem pariatur voluptatem natus.\naliquid voluptas rerum suscipit odio aliquid sunt quidem nostrum optio laboriosam.",
+      "userId": 2
+    }

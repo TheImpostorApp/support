@@ -1,0 +1,14 @@
+id: 262bee9e-04fb-42bd-8986-1beb70db67c1
+name: Patch post 002
+method: PATCH
+url: "{{baseUrl}}/posts/7"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Officia inventore sint ut sunt placeat",
+      "body": "quos voluptatem pariatur aliquid provident porro ipsa dolore omnis.\nsint beatae ut rerum occaecat adipisci omnis molestiae.\nadipisci odio rerum beatae pariatur repellendus impedit ipsam ipsa deserunt.\nsunt ratione et rerum animi dicta laboriosam architecto qui voluptas."
+    }

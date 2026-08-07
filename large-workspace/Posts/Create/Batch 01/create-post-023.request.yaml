@@ -1,0 +1,13 @@
+id: b9b07d48-9547-4424-9017-637e0c0433f9
+name: Create post 023
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Totam numquam omnis quo laboriosam",
+      "body": "maiores nemo rerum dicta sunt accusantium beatae architecto eaque veritatis porro porro.\nplaceat porro explicabo eos ut laborum.",
+      "userId": 8
+    }

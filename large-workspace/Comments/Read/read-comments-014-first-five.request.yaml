@@ -1,0 +1,8 @@
+id: 2b8b5862-4f2b-462a-813e-c77d32a4bacd
+name: "Read comments 014 — first five"
+method: GET
+url: "{{baseUrl}}/comments"
+query:
+  - { key: "_limit", value: "5", enabled: true }
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }

@@ -1,0 +1,13 @@
+id: 06f3a554-4135-4a17-9c97-b36c5770700b
+name: Create post 056
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Distinctio nostrum minus et",
+      "body": "veritatis tempora animi soluta laboriosam eligendi ipsam consequatur repellendus distinctio distinctio ut.\nquidem inventore natus inventore ipsam magnam consequatur excepteur eligendi.",
+      "userId": 9
+    }

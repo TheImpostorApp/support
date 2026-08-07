@@ -1,0 +1,14 @@
+id: 637ff31d-ede5-48b9-88df-cd3590477e6c
+name: Replace comment 008
+method: PUT
+url: "{{baseUrl}}/comments/221"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 21,
+      "name": "Officia dolorem sunt nemo magnam placeat occaecat",
+      "email": "clementine.dietrich@example.com",
+      "body": "nihil impedit aliquid ut voluptatem animi sint nulla adipisci inventore animi ut.\nexcepteur inventore nostrum provident fugiat architecto totam quo laboriosam omnis.\naperiam soluta quo accusantium omnis suscipit dolorem aliquid quo.\nsint quo minus magnam minus repellendus consequatur doloremque natus."
+    }

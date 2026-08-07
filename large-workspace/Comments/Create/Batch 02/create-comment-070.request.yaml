@@ -1,0 +1,14 @@
+id: dfd86755-fde3-4114-81b8-fe7a4a008211
+name: Create comment 070
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 21,
+      "name": "Accusantium odio optio",
+      "email": "patricia.runolfsdottir@example.com",
+      "body": "consequatur magnam molestiae autem cumque cumque quo accusantium.\nporro veritatis sint provident eius dolorem eius eos cupidatat autem.\nbeatae ipsam cupidatat cumque minus magnam quia."
+    }

@@ -1,0 +1,27 @@
+id: c1ebeb8c-43e2-4bbf-acac-9e371d4b3ca0
+name: Create user 060
+method: POST
+url: "{{baseUrl}}/users"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Leanne Schulist",
+      "username": "Leanne27",
+      "email": "leanne@schulist.example",
+      "address": {
+        "street": "Ratione ratione rerum laboriosam nihil tempora Street",
+        "suite": "Apt. 348",
+        "city": "Roscoeview",
+        "zipcode": "78067-9018"
+      },
+      "phone": "1-234-926-5039",
+      "website": "schulist.example",
+      "company": {
+        "name": "Considine-Lockman",
+        "catchPhrase": "Cumque vitae inventore totam omnis"
+      }
+    }

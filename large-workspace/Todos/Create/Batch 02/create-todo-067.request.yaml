@@ -1,0 +1,10 @@
+id: 84fd36c3-c35c-47f5-b3e3-9414d362d10c
+name: Create todo 067
+method: POST
+url: "{{baseUrl}}/todos"
+body:
+  kind: multipart
+  fields:
+    - { kind: text, key: userId, value: "4" }
+    - { kind: text, key: title, value: "Molestiae vitae molestiae" }
+    - { kind: text, key: completed, value: "false" }

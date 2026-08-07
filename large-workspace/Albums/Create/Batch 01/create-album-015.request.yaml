@@ -1,0 +1,12 @@
+id: f27c0a6e-950d-45d4-b756-74b422b336b4
+name: Create album 015
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 10,
+      "title": "Molestiae sunt accusantium accusantium esse ratione tempora"
+    }

@@ -1,0 +1,25 @@
+id: 1834d159-4aeb-4ac8-bdf6-9938f1b7033c
+name: Create user 024
+method: POST
+url: "{{baseUrl}}/users"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Glenna Graham",
+      "username": "Glenna14",
+      "email": "glenna@graham.example",
+      "address": {
+        "street": "Explicabo ipsa eaque Street",
+        "suite": "Apt. 282",
+        "city": "South Elvis",
+        "zipcode": "59355-9728"
+      },
+      "phone": "1-867-190-1239",
+      "website": "graham.example",
+      "company": {
+        "name": "Hoeger LLC",
+        "catchPhrase": "Molestiae voluptatem aperiam soluta suscipit veritatis"
+      }
+    }

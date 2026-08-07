@@ -1,0 +1,12 @@
+id: 2318065f-86ce-4e01-886c-a5c5082587a9
+name: Create album 056
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 4,
+      "title": "Laborum impedit nemo voluptas animi architecto animi"
+    }

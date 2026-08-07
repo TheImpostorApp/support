@@ -1,0 +1,17 @@
+id: 38b519c7-b8d2-4886-9b38-e736296f229d
+name: Create post 016
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Sint ipsam sint ipsam omnis magnam",
+      "body": "omnis autem impedit pariatur deserunt nemo nostrum.\ndoloremque qui sint magnam deserunt dolore magnam magnam est sint vitae totam.",
+      "userId": 7
+    }
+postScript: |-
+  im.test("post was created", function () {
+    im.expect(im.response.code).to.equal(201);
+  });

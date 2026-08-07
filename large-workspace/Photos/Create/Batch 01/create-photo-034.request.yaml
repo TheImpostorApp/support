@@ -1,0 +1,16 @@
+id: dcbd5b2c-8fb3-4850-8c31-6d3b639488ba
+name: Create photo 034
+method: POST
+url: "{{baseUrl}}/photos"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 16,
+      "title": "Eius vitae ipsam nihil pariatur",
+      "url": "https://via.placeholder.com/600/81a",
+      "thumbnailUrl": "https://via.placeholder.com/150/81a"
+    }

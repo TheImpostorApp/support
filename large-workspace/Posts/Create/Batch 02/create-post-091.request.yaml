@@ -1,0 +1,13 @@
+id: 4a2fd0be-eef4-4fd5-aff7-7d0da6534a2d
+name: Create post 091
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Voluptas voluptatem doloremque animi soluta aliquid",
+      "body": "quos quia natus aliquid nostrum doloremque sint architecto laborum magnam impedit.\nnihil deserunt porro autem cupidatat veritatis esse laboriosam pariatur tempora dolore.\nminus molestiae vitae sint rerum quidem autem optio.\ninventore totam natus tempora fugiat provident.",
+      "userId": 9
+    }

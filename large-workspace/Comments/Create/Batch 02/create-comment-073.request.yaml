@@ -1,0 +1,14 @@
+id: 5979eeb6-35f2-41ff-b1dd-2d588f82b24f
+name: Create comment 073
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 60,
+      "name": "Sunt inventore architecto molestiae qui vitae omnis",
+      "email": "clementine.runolfsdottir@example.com",
+      "body": "optio numquam esse fugiat dicta animi eligendi quidem.\nnemo excepteur repellendus consequatur pariatur rerum fugiat rerum et beatae nihil."
+    }

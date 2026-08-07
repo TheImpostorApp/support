@@ -1,0 +1,13 @@
+id: 4a9f0b48-61d2-47d5-9411-f77fa44bb288
+name: Create post 001
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Molestiae accusantium sint minus",
+      "body": "quidem ipsam minus laborum voluptatem eius ratione laboriosam rerum ratione nihil.\ntotam dicta sunt architecto beatae animi maiores.\nrerum sunt placeat eligendi magnam quos distinctio ipsa sint natus.\nporro voluptas nulla omnis voluptatem natus maiores et.",
+      "userId": 6
+    }

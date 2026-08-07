@@ -1,0 +1,4 @@
+id: 799adf12-11ad-4756-9d4c-0a476cc54a0a
+name: "Read photos 001 — list all"
+method: GET
+url: "{{baseUrl}}/photos"

@@ -1,0 +1,13 @@
+id: 8075ff72-3971-4610-95df-5cc79eecf05a
+name: Create post 032
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Doloremque dicta autem aperiam laborum eligendi distinctio",
+      "body": "doloremque accusantium ratione magnam quos nemo beatae quos quos vitae aperiam voluptas.\nrepellendus doloremque architecto ipsam dolorem inventore nihil occaecat.\nlaboriosam pariatur magnam tempora sunt deserunt laborum.\nesse ipsam sunt repellendus occaecat eaque.",
+      "userId": 7
+    }

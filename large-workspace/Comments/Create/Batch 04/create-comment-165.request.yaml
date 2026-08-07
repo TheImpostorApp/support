@@ -1,0 +1,16 @@
+id: dde81f58-c127-4daf-8dde-d3efe4a36630
+name: Create comment 165
+method: POST
+url: "{{baseUrl}}/comments"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 89,
+      "name": "Suscipit et quidem vitae vitae voluptas nihil",
+      "email": "leanne.dietrich@example.com",
+      "body": "deserunt repellendus placeat esse ipsa distinctio nostrum.\nnostrum dolore ipsam animi distinctio provident vitae quia inventore tempora odio."
+    }

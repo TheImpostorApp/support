@@ -1,0 +1,11 @@
+id: 771aea22-9e69-4c38-9e3e-6cf3f319e4c2
+name: Create comment 057
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: postId, value: "30", enabled: true }
+    - { key: name, value: "Nihil ipsa nulla", enabled: true }
+    - { key: email, value: "ervin.graham@example.com", enabled: true }
+    - { key: body, value: "ut fugiat dicta nulla suscipit consequatur.\nautem fugiat rerum et molestiae nihil animi sint.", enabled: true }

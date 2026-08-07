@@ -1,0 +1,15 @@
+id: abab6c3c-02ab-43b6-97b5-938d1fc7c594
+name: Create post 150
+method: POST
+url: "{{baseUrl}}/posts"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Quos dicta quos cumque qui",
+      "body": "provident nemo natus beatae cumque suscipit voluptas excepteur odio laboriosam.\nvitae ratione veritatis ratione suscipit laborum cumque dolore quos nihil minus optio.\nconsequatur tempora numquam numquam quo pariatur totam.\nfugiat impedit omnis eos quos quo voluptas pariatur dolore ut nulla cumque.",
+      "userId": 1
+    }

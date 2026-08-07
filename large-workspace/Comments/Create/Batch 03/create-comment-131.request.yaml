@@ -1,0 +1,16 @@
+id: fd7ca2ed-f06d-4e70-a9b0-a7263c2a1cc5
+name: Create comment 131
+method: POST
+url: "{{baseUrl}}/comments"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 9,
+      "name": "Tempora ipsa officia architecto totam",
+      "email": "dennis.reichert@example.com",
+      "body": "odio veritatis accusantium aperiam distinctio cumque.\nvoluptas adipisci placeat cupidatat laboriosam ipsa.\nporro eaque autem molestiae ipsam dolore cupidatat qui.\nnulla tempora maiores cupidatat veritatis porro esse."
+    }

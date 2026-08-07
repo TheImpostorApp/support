@@ -1,0 +1,14 @@
+id: 01185fe1-f295-4414-a445-5dac89a0b0b1
+name: Create photo 139
+method: POST
+url: "{{baseUrl}}/photos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 88,
+      "title": "Suscipit magnam beatae voluptatem fugiat deserunt placeat maiores",
+      "url": "https://via.placeholder.com/600/6e4",
+      "thumbnailUrl": "https://via.placeholder.com/150/6e4"
+    }

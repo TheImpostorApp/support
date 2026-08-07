@@ -1,0 +1,25 @@
+id: 015b738a-4348-4b24-9cec-aa9640651900
+name: Create user 059
+method: POST
+url: "{{baseUrl}}/users"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Clementina Howell",
+      "username": "Clementina40",
+      "email": "clementina@howell.example",
+      "address": {
+        "street": "Nihil doloremque sint numquam occaecat quo animi repellendus Street",
+        "suite": "Apt. 765",
+        "city": "McKenziehaven",
+        "zipcode": "25570-3022"
+      },
+      "phone": "1-393-247-5080",
+      "website": "howell.example",
+      "company": {
+        "name": "Romaguera-Crona",
+        "catchPhrase": "Pariatur quidem excepteur distinctio"
+      }
+    }

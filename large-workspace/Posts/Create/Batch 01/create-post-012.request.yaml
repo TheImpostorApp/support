@@ -1,0 +1,13 @@
+id: f9770ff5-53ea-414d-a356-3994990856d9
+name: Create post 012
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Ratione eos laborum eligendi cumque dolore",
+      "body": "voluptatem architecto rerum aperiam animi animi cumque sint dolore deserunt nemo quos.\nipsam adipisci voluptatem ipsa aperiam beatae omnis consequatur esse.\nqui magnam veritatis optio ipsam eligendi eaque dicta aperiam ratione repellendus.",
+      "userId": 8
+    }

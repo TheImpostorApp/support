@@ -1,0 +1,12 @@
+id: ed38e252-af02-4a8f-8004-055a8bf4c07a
+name: Patch user 002
+method: PATCH
+url: "{{baseUrl}}/users/5"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Chelsey Dietrich",
+      "username": "Chelsey96"
+    }

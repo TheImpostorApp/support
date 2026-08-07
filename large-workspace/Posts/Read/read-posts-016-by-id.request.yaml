@@ -1,0 +1,8 @@
+id: 697e7857-32d7-4e09-8f66-032f1ce6c760
+name: "Read posts 016 — by id"
+method: GET
+url: "{{baseUrl}}/posts/14"
+postScript: |-
+  im.test("posts read ok", function () {
+    im.expect(im.response.code).to.equal(200);
+  });

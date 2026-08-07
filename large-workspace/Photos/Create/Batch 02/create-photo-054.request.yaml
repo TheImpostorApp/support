@@ -1,0 +1,14 @@
+id: e04f6d9a-33fc-4bb2-92ca-838d04d23b2e
+name: Create photo 054
+method: POST
+url: "{{baseUrl}}/photos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 4,
+      "title": "Dolorem aliquid nostrum eaque esse optio",
+      "url": "https://via.placeholder.com/600/104f",
+      "thumbnailUrl": "https://via.placeholder.com/150/104f"
+    }

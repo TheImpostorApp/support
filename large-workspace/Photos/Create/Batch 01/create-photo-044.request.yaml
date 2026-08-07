@@ -1,0 +1,14 @@
+id: 022e7a05-c271-437a-8d91-88986735cec0
+name: Create photo 044
+method: POST
+url: "{{baseUrl}}/photos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 14,
+      "title": "Dolorem doloremque tempora accusantium",
+      "url": "https://via.placeholder.com/600/1da9",
+      "thumbnailUrl": "https://via.placeholder.com/150/1da9"
+    }

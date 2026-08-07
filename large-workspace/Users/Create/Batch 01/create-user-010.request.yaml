@@ -1,0 +1,27 @@
+id: aa539aee-1f63-4714-a2f8-0936fa489baf
+name: Create user 010
+method: POST
+url: "{{baseUrl}}/users"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Patricia Dietrich",
+      "username": "Patricia78",
+      "email": "patricia@dietrich.example",
+      "address": {
+        "street": "Doloremque quos impedit Street",
+        "suite": "Apt. 850",
+        "city": "McKenziehaven",
+        "zipcode": "91113-1251"
+      },
+      "phone": "1-846-196-1470",
+      "website": "dietrich.example",
+      "company": {
+        "name": "Robel-Corkery",
+        "catchPhrase": "Deserunt impedit sint eaque"
+      }
+    }

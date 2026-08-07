@@ -1,0 +1,6 @@
+id: dd630058-f540-4bf6-a473-80cbe8aed48b
+name: HEAD photos collection
+method: HEAD
+url: "{{baseUrl}}/photos"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }

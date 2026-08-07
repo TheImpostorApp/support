@@ -1,0 +1,13 @@
+id: 4d22ecc6-f85a-48b8-8787-be914f32feba
+name: Create todo 030
+method: POST
+url: "{{baseUrl}}/todos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 1,
+      "title": "Ratione animi nulla cupidatat repellendus",
+      "completed": false
+    }

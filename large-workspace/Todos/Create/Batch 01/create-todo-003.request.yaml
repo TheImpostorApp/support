@@ -1,0 +1,13 @@
+id: dd9f9990-f5f6-4ee3-bc84-9b42d679e3c9
+name: Create todo 003
+method: POST
+url: "{{baseUrl}}/todos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 6,
+      "title": "Eaque consequatur excepteur impedit distinctio omnis pariatur quia",
+      "completed": false
+    }

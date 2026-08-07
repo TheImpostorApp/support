@@ -1,0 +1,14 @@
+id: d06b4ecf-6f85-428b-b1e3-e4e1b9e86e0d
+name: Create comment 074
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 63,
+      "name": "Veritatis eos dolore eligendi sint cupidatat officia eaque",
+      "email": "chelsey.lebsack@example.com",
+      "body": "sint laboriosam nihil dolorem beatae cumque ut provident.\nporro adipisci porro autem quos cumque eos excepteur minus.\ncumque eaque dicta occaecat et eligendi accusantium ipsam nihil.\nexplicabo dicta quidem provident quos nihil beatae voluptas."
+    }

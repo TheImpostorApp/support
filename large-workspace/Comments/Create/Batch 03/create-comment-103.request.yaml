@@ -1,0 +1,14 @@
+id: 376a6a4e-deee-432b-9186-662017294f81
+name: Create comment 103
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 23,
+      "name": "Nemo cumque nemo numquam voluptatem",
+      "email": "clementina.howell@example.com",
+      "body": "eius voluptas nostrum consequatur est soluta eius deserunt distinctio aperiam odio.\nquidem occaecat numquam officia veritatis vitae architecto quo.\nrepellendus placeat quo dolorem et repellendus omnis nihil porro."
+    }

@@ -1,0 +1,17 @@
+id: 845fbba4-d9c3-4072-b98c-14b15e7551ae
+name: Replace post 001
+method: PUT
+url: "{{baseUrl}}/posts/72"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Ut quos provident sint",
+      "body": "odio rerum porro ipsam distinctio quo occaecat cumque repellendus.\nexplicabo eius repellendus est cumque dicta ipsa adipisci suscipit rerum fugiat natus.",
+      "userId": 10
+    }
+postScript: |-
+  im.test("post was replaced", function () {
+    im.expect(im.response.code).to.equal(200);
+  });

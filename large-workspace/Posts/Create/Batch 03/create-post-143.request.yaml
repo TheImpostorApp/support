@@ -1,0 +1,13 @@
+id: d9f390ba-1bf3-47b0-ab3a-13ebaa9aa67c
+name: Create post 143
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Accusantium repellendus excepteur dolore optio laboriosam soluta officia",
+      "body": "rerum doloremque magnam excepteur accusantium cupidatat distinctio ratione doloremque autem nulla.\noccaecat maiores soluta explicabo magnam magnam beatae porro autem fugiat explicabo.\nexplicabo magnam explicabo aliquid aperiam placeat placeat soluta ipsa.",
+      "userId": 1
+    }

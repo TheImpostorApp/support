@@ -1,0 +1,9 @@
+variables:
+- key: resource
+  value: "posts"
+  enabled: true
+  secret: false
+  script: false
+  reference: ''
+headers:
+  - { key: X-Resource, value: "posts", enabled: true }

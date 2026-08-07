@@ -1,0 +1,13 @@
+id: e3f822c0-3182-48c4-bcc3-9d633f05b9e8
+name: Create post 094
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Minus eligendi fugiat qui",
+      "body": "sint adipisci nihil nostrum ut officia fugiat esse quidem.\nodio aliquid cupidatat aliquid minus soluta occaecat beatae nulla omnis.",
+      "userId": 1
+    }

@@ -1,0 +1,15 @@
+id: 03c15eb0-6039-4d57-a1e9-6e2b3e5b0a7b
+name: Create post 133
+method: POST
+url: "{{baseUrl}}/posts"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Officia quos rerum eos",
+      "body": "impedit nostrum veritatis vitae nulla nostrum voluptas eaque.\nomnis soluta architecto inventore tempora dolorem esse eaque.\neligendi dolorem qui qui explicabo sunt quia omnis autem explicabo inventore est.",
+      "userId": 2
+    }

@@ -1,0 +1,14 @@
+id: a3ff5dd9-f104-4b83-b955-6c60c07ecc8e
+name: Create photo 117
+method: POST
+url: "{{baseUrl}}/photos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 23,
+      "title": "Consequatur cupidatat architecto inventore ratione pariatur cupidatat",
+      "url": "https://via.placeholder.com/600/1b76",
+      "thumbnailUrl": "https://via.placeholder.com/150/1b76"
+    }

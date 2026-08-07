@@ -1,0 +1,13 @@
+id: 8b540b25-e1fe-4a39-a07e-93c223e2be17
+name: Create post 168
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Magnam minus eos deserunt repellendus fugiat",
+      "body": "totam quo pariatur eaque ipsa natus vitae cupidatat animi provident.\ninventore esse aliquid animi deserunt est distinctio omnis eius optio.",
+      "userId": 8
+    }

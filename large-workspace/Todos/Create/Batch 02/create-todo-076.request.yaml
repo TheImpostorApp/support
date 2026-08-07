@@ -1,0 +1,13 @@
+id: ead0e882-33ec-42cd-ac45-7d276fb3df59
+name: Create todo 076
+method: POST
+url: "{{baseUrl}}/todos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 3,
+      "title": "Ipsam quo ut ut aperiam tempora",
+      "completed": true
+    }

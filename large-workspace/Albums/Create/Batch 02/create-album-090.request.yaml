@@ -1,0 +1,16 @@
+id: 6a62b82c-bb99-41ab-be65-f5bbf2d6e62d
+name: Create album 090
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 9,
+      "title": "Porro magnam beatae architecto suscipit"
+    }
+postScript: |-
+  im.test("album was created", function () {
+    im.expect(im.response.code).to.equal(201);
+  });

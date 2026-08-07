@@ -1,0 +1,17 @@
+id: 28e236ff-de45-478b-a1c8-9a3eb02a621e
+name: Create post 006
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Rerum explicabo doloremque ipsa distinctio voluptatem sint ipsa",
+      "body": "pariatur doloremque provident explicabo adipisci omnis deserunt nemo occaecat odio impedit.\nanimi eaque officia sunt porro nemo sunt aperiam.",
+      "userId": 9
+    }
+postScript: |-
+  im.test("post was created", function () {
+    im.expect(im.response.code).to.equal(201);
+  });

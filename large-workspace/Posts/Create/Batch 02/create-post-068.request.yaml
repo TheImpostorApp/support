@@ -1,0 +1,13 @@
+id: 2d067529-2400-4f5d-ba00-fbd8dd85b75c
+name: Create post 068
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Cupidatat fugiat maiores laboriosam eaque",
+      "body": "porro soluta deserunt doloremque dolore magnam doloremque.\noccaecat omnis omnis sunt esse provident.\noccaecat architecto eaque vitae sunt doloremque.\nsunt laboriosam cumque numquam architecto numquam voluptatem omnis aliquid explicabo optio optio.",
+      "userId": 7
+    }

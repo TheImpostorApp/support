@@ -1,0 +1,13 @@
+id: 90cc3705-5dce-4c72-b985-2e282b59c197
+name: Create post 181
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Eius qui et placeat qui esse",
+      "body": "est ratione adipisci tempora occaecat sint soluta suscipit.\nsunt pariatur est porro maiores officia laboriosam inventore officia suscipit omnis.\neos nihil rerum dolore deserunt sunt officia eos impedit voluptatem fugiat aperiam.",
+      "userId": 6
+    }

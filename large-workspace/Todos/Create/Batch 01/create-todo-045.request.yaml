@@ -1,0 +1,13 @@
+id: 827abb7f-25f1-409d-b247-f71240619033
+name: Create todo 045
+method: POST
+url: "{{baseUrl}}/todos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 7,
+      "title": "Voluptatem optio veritatis pariatur quidem eligendi voluptatem",
+      "completed": true
+    }

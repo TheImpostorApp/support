@@ -1,0 +1,10 @@
+id: 7e2576d5-05f5-4350-a3f1-39ad6f8ca1c4
+name: Create todo 034
+method: POST
+url: "{{baseUrl}}/todos"
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: userId, value: "6", enabled: true }
+    - { key: title, value: "Omnis fugiat pariatur eius", enabled: true }
+    - { key: completed, value: "true", enabled: true }

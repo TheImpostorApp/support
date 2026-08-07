@@ -1,0 +1,20 @@
+id: a3faf790-d366-4f0a-8b77-3907784a6cea
+name: Create photo 081
+method: POST
+url: "{{baseUrl}}/photos"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 75,
+      "title": "Autem dolore maiores placeat",
+      "url": "https://via.placeholder.com/600/908",
+      "thumbnailUrl": "https://via.placeholder.com/150/908"
+    }
+postScript: |-
+  im.test("photo was created", function () {
+    im.expect(im.response.code).to.equal(201);
+  });

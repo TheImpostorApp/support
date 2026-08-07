@@ -1,0 +1,9 @@
+id: bb219be7-f5a4-4fbf-a1a6-e4ee576b4a2e
+name: Create album 105
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: multipart
+  fields:
+    - { kind: text, key: userId, value: "9" }
+    - { kind: text, key: title, value: "Deserunt consequatur sunt animi soluta architecto qui" }

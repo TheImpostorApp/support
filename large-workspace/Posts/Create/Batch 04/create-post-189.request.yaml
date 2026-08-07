@@ -1,0 +1,13 @@
+id: b81afa7f-e1e9-4abb-a136-9e2c1ded93ca
+name: Create post 189
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Odio nostrum quidem ut quia",
+      "body": "quos nulla eligendi porro animi veritatis pariatur maiores quos.\nanimi fugiat deserunt repellendus numquam cupidatat eius animi architecto ratione ratione nihil.\nratione repellendus deserunt architecto beatae ratione voluptas voluptas magnam aperiam.",
+      "userId": 9
+    }

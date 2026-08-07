@@ -1,0 +1,12 @@
+id: 55830b67-8ee9-4adb-b195-509716478dd2
+name: Create album 063
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 6,
+      "title": "Eius repellendus officia natus natus explicabo ipsam architecto"
+    }

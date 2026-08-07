@@ -1,0 +1,13 @@
+id: 46b6edd1-4f28-43f7-8593-1144c40f6bec
+name: Create post 138
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Placeat deserunt eos inventore eligendi adipisci",
+      "body": "qui autem pariatur ipsam quia excepteur laborum occaecat porro voluptatem deserunt magnam.\nsuscipit inventore officia repellendus consequatur distinctio.\ninventore minus quidem ratione nemo fugiat laborum.\nomnis autem consequatur quidem nulla sint inventore animi provident.",
+      "userId": 3
+    }

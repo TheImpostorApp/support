@@ -1,0 +1,13 @@
+id: e61238ef-5c96-450b-ab08-d0272c8d36e0
+name: Replace todo 007
+method: PUT
+url: "{{baseUrl}}/todos/57"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 5,
+      "title": "Eaque et nemo nihil eos dicta",
+      "completed": true
+    }

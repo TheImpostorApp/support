@@ -1,0 +1,13 @@
+id: 167ed842-5fe4-409a-a7ec-972c5dd250e4
+name: Create todo 028
+method: POST
+url: "{{baseUrl}}/todos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 3,
+      "title": "Autem laborum distinctio inventore",
+      "completed": false
+    }

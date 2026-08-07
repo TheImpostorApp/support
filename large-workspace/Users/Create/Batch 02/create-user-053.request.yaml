@@ -1,0 +1,25 @@
+id: ce024b4e-9f46-41cd-9afa-4650b7fa223c
+name: Create user 053
+method: POST
+url: "{{baseUrl}}/users"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Nicholas Weissnat",
+      "username": "Nicholas59",
+      "email": "nicholas@weissnat.example",
+      "address": {
+        "street": "Quo qui soluta suscipit animi Street",
+        "suite": "Apt. 866",
+        "city": "Lebsackbury",
+        "zipcode": "69106-2092"
+      },
+      "phone": "1-575-947-5054",
+      "website": "weissnat.example",
+      "company": {
+        "name": "Considine-Lockman",
+        "catchPhrase": "Animi inventore suscipit dolore quo"
+      }
+    }

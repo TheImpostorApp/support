@@ -1,0 +1,25 @@
+id: b479569b-3fbc-4d21-954b-359ef3e35f42
+name: Create user 048
+method: POST
+url: "{{baseUrl}}/users"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Nicholas Lebsack",
+      "username": "Nicholas35",
+      "email": "nicholas@lebsack.example",
+      "address": {
+        "street": "Explicabo ipsam nemo ut nihil architecto Street",
+        "suite": "Apt. 128",
+        "city": "McKenziehaven",
+        "zipcode": "18118-8700"
+      },
+      "phone": "1-974-696-7148",
+      "website": "lebsack.example",
+      "company": {
+        "name": "Considine-Lockman",
+        "catchPhrase": "Sunt suscipit dicta eligendi excepteur"
+      }
+    }

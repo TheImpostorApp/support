@@ -1,0 +1,14 @@
+id: fd0998ff-a41d-46d6-a3c2-d1894461545b
+name: Create photo 021
+method: POST
+url: "{{baseUrl}}/photos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 89,
+      "title": "Vitae quidem dolorem ipsam",
+      "url": "https://via.placeholder.com/600/d0b",
+      "thumbnailUrl": "https://via.placeholder.com/150/d0b"
+    }

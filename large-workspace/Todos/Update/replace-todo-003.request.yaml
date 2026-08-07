@@ -1,0 +1,15 @@
+id: 40bd000a-a430-4fb8-87a6-fa14f4b6dd34
+name: Replace todo 003
+method: PUT
+url: "{{baseUrl}}/todos/156"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 2,
+      "title": "Dicta esse occaecat qui fugiat tempora ratione voluptas",
+      "completed": false
+    }

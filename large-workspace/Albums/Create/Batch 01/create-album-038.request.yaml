@@ -1,0 +1,12 @@
+id: 3538a812-729f-4c64-a6e0-fad40e658c70
+name: Create album 038
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 8,
+      "title": "Totam odio accusantium"
+    }

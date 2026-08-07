@@ -1,0 +1,16 @@
+id: 0f9d0902-148f-456b-a32f-9cd755b4a293
+name: Create photo 010
+method: POST
+url: "{{baseUrl}}/photos"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 88,
+      "title": "Porro ipsam aliquid pariatur",
+      "url": "https://via.placeholder.com/600/239d",
+      "thumbnailUrl": "https://via.placeholder.com/150/239d"
+    }

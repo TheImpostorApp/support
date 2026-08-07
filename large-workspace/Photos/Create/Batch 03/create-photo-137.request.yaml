@@ -1,0 +1,13 @@
+id: e48f823d-ed76-4916-a5f7-7632e19ff05e
+name: Create photo 137
+method: POST
+url: "{{baseUrl}}/photos"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: multipart
+  fields:
+    - { kind: text, key: albumId, value: "5" }
+    - { kind: text, key: title, value: "Sint quo sint explicabo porro quia" }
+    - { kind: text, key: url, value: "https://via.placeholder.com/600/431" }
+    - { kind: text, key: thumbnailUrl, value: "https://via.placeholder.com/150/431" }

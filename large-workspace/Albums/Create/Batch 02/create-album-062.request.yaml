@@ -1,0 +1,12 @@
+id: 0d81bb73-2ce8-46da-a05e-5bdbe9cedaf3
+name: Create album 062
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 5,
+      "title": "Numquam numquam animi fugiat voluptas"
+    }

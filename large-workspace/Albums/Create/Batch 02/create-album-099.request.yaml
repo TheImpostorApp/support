@@ -1,0 +1,12 @@
+id: 75e8e2f1-8263-4a93-bf36-cbecfb4d3d1e
+name: Create album 099
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 1,
+      "title": "Magnam repellendus inventore odio optio porro"
+    }

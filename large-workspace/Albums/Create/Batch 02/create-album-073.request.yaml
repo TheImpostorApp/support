@@ -1,0 +1,12 @@
+id: bde44882-2aab-40b4-9bfc-d7b4c0ca1088
+name: Create album 073
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 5,
+      "title": "Voluptas suscipit porro sunt suscipit porro"
+    }

@@ -1,0 +1,14 @@
+id: 8f0f7977-0839-4754-a6a5-0f0e7a22215b
+name: Create comment 021
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 14,
+      "name": "Dolorem laboriosam provident sint animi totam suscipit officia",
+      "email": "leanne.weissnat@example.com",
+      "body": "esse eligendi quo numquam animi impedit numquam qui adipisci nihil esse.\ndoloremque nulla porro placeat animi cupidatat nostrum voluptatem inventore numquam molestiae.\nofficia quia laborum molestiae voluptatem laboriosam."
+    }

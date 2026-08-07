@@ -1,0 +1,11 @@
+id: 143193fb-1354-4df1-95e0-71b633bbcdfe
+name: Create comment 043
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: postId, value: "87", enabled: true }
+    - { key: name, value: "Excepteur dicta numquam nulla", enabled: true }
+    - { key: email, value: "kurtis.reichert@example.com", enabled: true }
+    - { key: body, value: "qui suscipit quidem molestiae porro omnis numquam voluptatem.\nqui odio voluptatem odio eligendi vitae.\nofficia natus rerum placeat autem nemo eaque animi.", enabled: true }

@@ -1,0 +1,14 @@
+id: 27326461-3c40-479b-9788-d6d71f201e8b
+name: Replace photo 003
+method: PUT
+url: "{{baseUrl}}/photos/{{photoId}}"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 8,
+      "title": "Minus consequatur quos aliquid eius voluptatem dolore",
+      "url": "https://via.placeholder.com/600/264b",
+      "thumbnailUrl": "https://via.placeholder.com/150/264b"
+    }

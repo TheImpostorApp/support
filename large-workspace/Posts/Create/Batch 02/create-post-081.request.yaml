@@ -1,0 +1,17 @@
+id: 15fa7f57-047d-488b-95be-aa7419ed1aa1
+name: Create post 081
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Doloremque eligendi aliquid sint porro placeat",
+      "body": "ratione officia dolore aperiam consequatur accusantium omnis voluptatem.\neaque totam natus nihil odio eligendi laborum soluta rerum.\nquia provident fugiat pariatur cumque officia laboriosam vitae.\nest aperiam consequatur totam provident voluptatem.",
+      "userId": 3
+    }
+postScript: |-
+  im.test("post was created", function () {
+    im.expect(im.response.code).to.equal(201);
+  });

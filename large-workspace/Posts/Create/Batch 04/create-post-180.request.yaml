@@ -1,0 +1,19 @@
+id: 7611fdd9-6c7f-40d9-954b-05ea76cbd25e
+name: Create post 180
+method: POST
+url: "{{baseUrl}}/posts"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Consequatur rerum rerum eaque beatae cumque excepteur magnam",
+      "body": "laboriosam ratione dicta eius ipsam accusantium optio pariatur inventore consequatur adipisci.\nvoluptas provident optio optio dolore molestiae quia laborum nemo autem voluptatem.\nest occaecat est dolorem voluptas maiores quo.\ncupidatat quo adipisci optio minus natus sunt autem architecto minus quos.",
+      "userId": 10
+    }
+postScript: |-
+  im.test("post was created", function () {
+    im.expect(im.response.code).to.equal(201);
+  });

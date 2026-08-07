@@ -1,0 +1,4 @@
+id: 877a9466-f358-46bc-ab6a-be25fa449455
+name: "Read photos 009 — by id"
+method: GET
+url: "{{baseUrl}}/photos/3621"

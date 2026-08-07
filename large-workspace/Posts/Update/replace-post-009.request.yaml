@@ -1,0 +1,13 @@
+id: 6d87a919-c0cf-44bc-b4de-6977af5d4212
+name: Replace post 009
+method: PUT
+url: "{{baseUrl}}/posts/15"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Eius ut est qui animi adipisci",
+      "body": "accusantium eaque molestiae omnis officia tempora nulla distinctio eligendi cupidatat beatae.\narchitecto nostrum odio impedit quos quos.\ndeserunt voluptatem pariatur optio odio esse odio inventore aliquid odio.\nvitae impedit distinctio molestiae eaque excepteur nulla odio beatae soluta nulla omnis.",
+      "userId": 1
+    }

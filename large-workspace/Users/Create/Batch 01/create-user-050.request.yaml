@@ -1,0 +1,25 @@
+id: 27513230-5a3d-4c55-8476-1e2fd051c204
+name: Create user 050
+method: POST
+url: "{{baseUrl}}/users"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Leanne Graham",
+      "username": "Leanne37",
+      "email": "leanne@graham.example",
+      "address": {
+        "street": "Magnam totam eius porro explicabo Street",
+        "suite": "Apt. 116",
+        "city": "South Elvis",
+        "zipcode": "96103-1444"
+      },
+      "phone": "1-723-232-7807",
+      "website": "graham.example",
+      "company": {
+        "name": "Hoeger LLC",
+        "catchPhrase": "Deserunt porro optio explicabo sunt dolorem"
+      }
+    }

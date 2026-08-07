@@ -1,0 +1,14 @@
+id: bcd0d947-9ff6-4414-aa7a-3d56cb99d83f
+name: Create comment 001
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 67,
+      "name": "Deserunt maiores suscipit cumque",
+      "email": "clementine.dubuque@example.com",
+      "body": "officia excepteur magnam sunt natus provident.\nplaceat ut suscipit laboriosam nemo qui ipsam adipisci placeat omnis."
+    }

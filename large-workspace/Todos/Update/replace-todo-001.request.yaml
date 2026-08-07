@@ -1,0 +1,15 @@
+id: 294277bf-f000-4304-bda3-392f677708d1
+name: Replace todo 001
+method: PUT
+url: "{{baseUrl}}/todos/96"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 2,
+      "title": "Autem ipsam maiores sint suscipit tempora dolore cumque",
+      "completed": true
+    }

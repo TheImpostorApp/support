@@ -1,0 +1,13 @@
+id: 15cd588c-4cac-4cde-9310-7801bc91a2da
+name: Create post 166
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Ut laboriosam voluptatem provident qui",
+      "body": "inventore explicabo nihil eius soluta odio optio voluptas provident ut eius.\nrerum architecto ut occaecat dicta cumque quia dolore dolorem.\nesse eaque voluptatem pariatur esse quo natus officia excepteur nulla totam beatae.",
+      "userId": 4
+    }

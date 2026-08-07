@@ -1,0 +1,6 @@
+id: 2b4413f1-f1f5-4b75-a205-3dcd9d50e265
+name: "Read albums 005 — filtered"
+method: GET
+url: "{{baseUrl}}/albums"
+query:
+  - { key: userId, value: "7", enabled: true }

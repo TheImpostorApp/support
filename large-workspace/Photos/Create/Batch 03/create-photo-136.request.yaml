@@ -1,0 +1,14 @@
+id: 3f2a0406-0af1-4e11-9c4f-9c82c57254c6
+name: Create photo 136
+method: POST
+url: "{{baseUrl}}/photos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 27,
+      "title": "Aperiam qui voluptas beatae porro",
+      "url": "https://via.placeholder.com/600/f55",
+      "thumbnailUrl": "https://via.placeholder.com/150/f55"
+    }

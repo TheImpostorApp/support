@@ -1,0 +1,11 @@
+id: 44b5bd78-d1c4-4ad9-aa83-0e9cc5eb9919
+name: Create comment 063
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: postId, value: "25", enabled: true }
+    - { key: name, value: "Voluptas omnis cupidatat eius impedit", enabled: true }
+    - { key: email, value: "clementine.bauch@example.com", enabled: true }
+    - { key: body, value: "voluptas excepteur porro beatae et nostrum quos cumque.\naccusantium ipsa laboriosam nulla ipsa aliquid.\nsunt numquam quidem quos nihil nulla eaque nulla eius.", enabled: true }

@@ -1,0 +1,25 @@
+id: 79e94192-1063-4617-85cf-fce60436421d
+name: Create user 040
+method: POST
+url: "{{baseUrl}}/users"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Kurtis Graham",
+      "username": "Kurtis19",
+      "email": "kurtis@graham.example",
+      "address": {
+        "street": "Eaque consequatur doloremque inventore rerum autem ipsam cupidatat Street",
+        "suite": "Apt. 510",
+        "city": "Gwenborough",
+        "zipcode": "17562-3225"
+      },
+      "phone": "1-284-169-3504",
+      "website": "graham.example",
+      "company": {
+        "name": "Considine-Lockman",
+        "catchPhrase": "Eligendi tempora molestiae omnis maiores"
+      }
+    }

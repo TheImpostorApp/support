@@ -1,0 +1,12 @@
+id: e6267c9b-b5d5-4bf0-bbe8-ed8100ced9c2
+name: Patch comment 006
+method: PATCH
+url: "{{baseUrl}}/comments/29"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 64,
+      "name": "Eos deserunt accusantium rerum deserunt"
+    }

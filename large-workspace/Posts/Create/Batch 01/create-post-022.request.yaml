@@ -1,0 +1,13 @@
+id: 16873daa-6d70-4752-b5f5-72ffd69bbaac
+name: Create post 022
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Ut accusantium excepteur rerum omnis vitae",
+      "body": "architecto explicabo explicabo et deserunt odio ut odio esse dicta.\naliquid optio doloremque sint beatae ut sint.\nbeatae aperiam excepteur deserunt adipisci ratione ratione autem ipsa odio eaque explicabo.\npariatur molestiae placeat molestiae porro suscipit et doloremque voluptas autem.",
+      "userId": 3
+    }

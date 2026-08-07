@@ -1,0 +1,12 @@
+id: f20fb951-c9be-4c07-ac7f-96c079315c33
+name: Create album 111
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 8,
+      "title": "Esse quos officia molestiae eligendi pariatur veritatis"
+    }

@@ -1,0 +1,27 @@
+id: cc18cde0-16b6-4fb8-acdf-ab3f2ee86ddc
+name: Create user 045
+method: POST
+url: "{{baseUrl}}/users"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Kurtis Howell",
+      "username": "Kurtis72",
+      "email": "kurtis@howell.example",
+      "address": {
+        "street": "Ipsam distinctio eligendi est distinctio placeat beatae doloremque Street",
+        "suite": "Apt. 681",
+        "city": "Bartholomebury",
+        "zipcode": "84771-3880"
+      },
+      "phone": "1-455-736-7398",
+      "website": "howell.example",
+      "company": {
+        "name": "Johns Group",
+        "catchPhrase": "Pariatur ratione sunt voluptatem voluptas repellendus omnis"
+      }
+    }

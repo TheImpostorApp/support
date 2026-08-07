@@ -1,0 +1,15 @@
+id: f65d7bb3-5440-43df-85eb-1a972d2db9b5
+name: Create post 126
+method: POST
+url: "{{baseUrl}}/posts"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Veritatis excepteur explicabo excepteur",
+      "body": "accusantium quos qui optio eligendi animi ipsam odio aperiam.\nnulla doloremque eos consequatur dicta quo beatae explicabo natus.\nsint et aliquid ut laboriosam inventore sunt autem repellendus pariatur dicta.",
+      "userId": 1
+    }

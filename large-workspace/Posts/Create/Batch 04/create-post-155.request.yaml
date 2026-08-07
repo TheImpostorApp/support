@@ -1,0 +1,13 @@
+id: 73e657cb-d9e7-4692-ad85-5415fe69c765
+name: Create post 155
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Distinctio nemo placeat maiores ipsa fugiat sunt maiores",
+      "body": "adipisci quos excepteur repellendus eos optio dolorem optio dolorem.\nmolestiae rerum rerum quos molestiae sint quidem ipsa impedit excepteur.",
+      "userId": 5
+    }

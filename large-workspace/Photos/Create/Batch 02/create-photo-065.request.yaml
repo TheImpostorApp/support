@@ -1,0 +1,14 @@
+id: 1e6df5c2-ce6a-40a2-aec5-c9c1fcf8e521
+name: Create photo 065
+method: POST
+url: "{{baseUrl}}/photos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 10,
+      "title": "Rerum qui natus doloremque",
+      "url": "https://via.placeholder.com/600/241c",
+      "thumbnailUrl": "https://via.placeholder.com/150/241c"
+    }

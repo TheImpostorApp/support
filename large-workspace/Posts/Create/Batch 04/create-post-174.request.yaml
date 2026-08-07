@@ -1,0 +1,19 @@
+id: 21bc433d-7d07-4538-92ad-e53186684e39
+name: Create post 174
+method: POST
+url: "{{baseUrl}}/posts"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Ipsam eaque quo",
+      "body": "vitae cupidatat beatae ipsam numquam deserunt suscipit veritatis accusantium.\nqui odio repellendus voluptatem nostrum totam.\ntotam esse natus sunt dolore ut est ipsa occaecat.\nipsam nostrum voluptas aliquid inventore nemo.",
+      "userId": 1
+    }
+postScript: |-
+  im.test("post was created", function () {
+    im.expect(im.response.code).to.equal(201);
+  });

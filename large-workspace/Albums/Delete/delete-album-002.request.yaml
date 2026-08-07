@@ -1,0 +1,10 @@
+id: f64d420c-3712-44f7-8e84-f5b86c78c20f
+name: Delete album 002
+method: DELETE
+url: "{{baseUrl}}/albums/74"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+postScript: |-
+  im.test("album was deleted", function () {
+    im.expect(im.response.code).to.equal(200);
+  });

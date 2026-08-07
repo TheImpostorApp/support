@@ -1,0 +1,14 @@
+id: 2a6e1ec1-665a-4c74-b8a4-a7b87ebdce72
+name: Create comment 032
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 39,
+      "name": "Suscipit natus animi rerum",
+      "email": "dennis.reichert@example.com",
+      "body": "esse consequatur inventore et provident animi magnam deserunt deserunt.\nanimi magnam minus cupidatat quos officia.\nminus eaque natus laborum quos eius eos fugiat ratione."
+    }

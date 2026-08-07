@@ -1,0 +1,25 @@
+id: dcd6ba19-e0e6-4e98-b949-82802ab2dab1
+name: Create user 051
+method: POST
+url: "{{baseUrl}}/users"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Ervin Bauch",
+      "username": "Ervin12",
+      "email": "ervin@bauch.example",
+      "address": {
+        "street": "Aliquid impedit soluta et Street",
+        "suite": "Apt. 696",
+        "city": "Lebsackbury",
+        "zipcode": "39403-5176"
+      },
+      "phone": "1-530-645-3821",
+      "website": "bauch.example",
+      "company": {
+        "name": "Considine-Lockman",
+        "catchPhrase": "Rerum voluptatem vitae"
+      }
+    }

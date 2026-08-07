@@ -1,0 +1,13 @@
+id: 034c4c04-5d7e-4474-99ae-671a109fc569
+name: Create post 062
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Nulla rerum laboriosam",
+      "body": "inventore aperiam veritatis tempora et autem aliquid.\nvoluptas placeat sint maiores voluptatem architecto sint impedit voluptas.\nconsequatur esse autem provident qui cupidatat impedit.",
+      "userId": 4
+    }

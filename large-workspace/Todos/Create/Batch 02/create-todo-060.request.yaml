@@ -1,0 +1,12 @@
+id: cc8fab92-e090-44a3-a6cf-d1dc441f06a7
+name: Create todo 060
+method: POST
+url: "{{baseUrl}}/todos"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: multipart
+  fields:
+    - { kind: text, key: userId, value: "6" }
+    - { kind: text, key: title, value: "Porro aliquid esse sunt dolorem ipsa" }
+    - { kind: text, key: completed, value: "true" }

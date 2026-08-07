@@ -1,0 +1,12 @@
+id: e2ce5ba1-f196-4566-8691-b6d93b97b672
+name: Create album 094
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 8,
+      "title": "Totam autem sint pariatur optio dicta aperiam"
+    }

@@ -1,0 +1,10 @@
+id: 8607f142-50c2-4140-b937-82b27604ed61
+name: Create post 164
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: title, value: "Quia eos eligendi", enabled: true }
+    - { key: body, value: "cumque eos soluta voluptas nostrum quo aliquid eaque quidem laboriosam aperiam.\neius cupidatat suscipit nemo tempora eius nemo excepteur.", enabled: true }
+    - { key: userId, value: "8", enabled: true }

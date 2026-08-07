@@ -1,0 +1,14 @@
+id: 3d4f6bc1-6754-4f31-aa52-39fd0c62df19
+name: Replace comment 002
+method: PUT
+url: "{{baseUrl}}/comments/447"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 10,
+      "name": "Quos architecto minus occaecat sint accusantium omnis aperiam",
+      "email": "ervin.howell@example.com",
+      "body": "ipsam porro ipsa dolore eaque repellendus autem accusantium laborum ratione.\ncumque soluta adipisci nemo repellendus beatae occaecat animi molestiae.\neos adipisci nulla nostrum aliquid vitae.\nquo nostrum accusantium cumque eaque beatae dolore beatae nihil eligendi."
+    }

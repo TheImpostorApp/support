@@ -1,0 +1,13 @@
+id: 957ae2de-262b-41f6-a135-850b03c6d5ae
+name: Create post 095
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Impedit nulla dolore cupidatat",
+      "body": "optio optio dolore distinctio nihil tempora animi fugiat quia.\nanimi qui laborum voluptas veritatis fugiat esse excepteur occaecat.\nomnis fugiat porro totam laboriosam deserunt animi aperiam.",
+      "userId": 9
+    }

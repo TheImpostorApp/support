@@ -1,0 +1,9 @@
+id: 19ed841c-601b-44f9-a924-89ffecd49958
+name: Create album 053
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: userId, value: "1", enabled: true }
+    - { key: title, value: "Optio aliquid deserunt nulla dolore soluta dolorem", enabled: true }

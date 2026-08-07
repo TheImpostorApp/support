@@ -1,0 +1,13 @@
+id: 9368e92e-3b07-4b2a-9b15-3f0799e64897
+name: Create post 078
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Et suscipit eaque eius qui nostrum voluptatem",
+      "body": "ut laboriosam eius repellendus laboriosam excepteur.\nsuscipit accusantium quos eius provident excepteur totam.",
+      "userId": 3
+    }

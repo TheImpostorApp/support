@@ -1,0 +1,14 @@
+id: 9ed23178-c57b-4495-9ddd-7fae054b0b4e
+name: Create photo 138
+method: POST
+url: "{{baseUrl}}/photos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 52,
+      "title": "Omnis repellendus omnis beatae odio ipsam natus impedit",
+      "url": "https://via.placeholder.com/600/cb9",
+      "thumbnailUrl": "https://via.placeholder.com/150/cb9"
+    }

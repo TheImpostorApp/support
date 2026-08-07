@@ -1,0 +1,16 @@
+id: d12f2acf-cf5a-4816-8fb2-75c62ee2baf6
+name: Create comment 018
+method: POST
+url: "{{baseUrl}}/comments"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 79,
+      "name": "Pariatur accusantium natus magnam dolorem dolorem animi",
+      "email": "chelsey.runolfsdottir@example.com",
+      "body": "animi maiores quidem magnam molestiae sint aperiam doloremque eaque quo.\nquos quia impedit explicabo vitae accusantium accusantium quos rerum tempora.\nadipisci eos beatae esse ipsam ipsa.\nnostrum sunt ut totam deserunt dolorem natus."
+    }

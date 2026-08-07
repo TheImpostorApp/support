@@ -1,0 +1,12 @@
+id: 07c40cfc-8df2-4689-ad65-237338f2c69f
+name: Create album 057
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 1,
+      "title": "Minus fugiat excepteur quo excepteur inventore"
+    }

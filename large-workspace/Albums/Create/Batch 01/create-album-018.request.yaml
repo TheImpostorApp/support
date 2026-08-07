@@ -1,0 +1,9 @@
+id: 5e239651-a442-4712-bb69-ee6bc3d55e2f
+name: Create album 018
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: multipart
+  fields:
+    - { kind: text, key: userId, value: "5" }
+    - { kind: text, key: title, value: "Architecto aperiam ratione soluta autem nihil tempora" }

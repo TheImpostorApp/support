@@ -1,0 +1,11 @@
+id: d9a359ef-5048-4027-8fd2-9d9fca07bb83
+name: Create comment 026
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: postId, value: "75", enabled: true }
+    - { key: name, value: "Molestiae molestiae nihil soluta veritatis", enabled: true }
+    - { key: email, value: "nicholas.bauch@example.com", enabled: true }
+    - { key: body, value: "eius quidem ratione nostrum eius autem consequatur quidem provident qui totam.\nfugiat ut nulla soluta dolorem beatae nihil dicta officia.", enabled: true }

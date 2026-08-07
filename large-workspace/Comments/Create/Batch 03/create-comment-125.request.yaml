@@ -1,0 +1,14 @@
+id: 1a6fa2da-22d4-4506-b53f-1626ef7d6141
+name: Create comment 125
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 77,
+      "name": "Eos placeat distinctio eius maiores ratione",
+      "email": "clementina.bauch@example.com",
+      "body": "inventore nostrum beatae cupidatat molestiae explicabo.\nprovident ratione suscipit ratione eligendi inventore quos omnis minus quo dolorem."
+    }

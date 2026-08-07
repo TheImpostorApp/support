@@ -1,0 +1,14 @@
+id: 3b0444aa-fc17-4897-a2a8-babd9768048c
+name: Create photo 061
+method: POST
+url: "{{baseUrl}}/photos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 100,
+      "title": "Veritatis distinctio natus officia nostrum",
+      "url": "https://via.placeholder.com/600/163f",
+      "thumbnailUrl": "https://via.placeholder.com/150/163f"
+    }

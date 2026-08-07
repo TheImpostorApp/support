@@ -1,0 +1,25 @@
+id: 30751b6b-1fd7-4700-bd57-50d7df269cc7
+name: Create user 037
+method: POST
+url: "{{baseUrl}}/users"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Glenna Dietrich",
+      "username": "Glenna17",
+      "email": "glenna@dietrich.example",
+      "address": {
+        "street": "Excepteur laboriosam autem Street",
+        "suite": "Apt. 244",
+        "city": "Gwenborough",
+        "zipcode": "65181-7060"
+      },
+      "phone": "1-356-934-2326",
+      "website": "dietrich.example",
+      "company": {
+        "name": "Keebler LLC",
+        "catchPhrase": "Pariatur tempora nulla molestiae numquam nemo"
+      }
+    }

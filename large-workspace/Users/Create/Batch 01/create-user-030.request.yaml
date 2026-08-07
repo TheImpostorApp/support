@@ -1,0 +1,25 @@
+id: a35e419e-5939-423e-9aa6-adc24c21bac2
+name: Create user 030
+method: POST
+url: "{{baseUrl}}/users"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Dennis Reichert",
+      "username": "Dennis76",
+      "email": "dennis@reichert.example",
+      "address": {
+        "street": "Optio aperiam provident Street",
+        "suite": "Apt. 198",
+        "city": "Aliyaview",
+        "zipcode": "90482-2054"
+      },
+      "phone": "1-644-235-4609",
+      "website": "reichert.example",
+      "company": {
+        "name": "Keebler LLC",
+        "catchPhrase": "Excepteur fugiat aperiam voluptas ut"
+      }
+    }

@@ -1,0 +1,18 @@
+id: 17c19c81-33d3-4734-9605-7f87db0bcb76
+name: Create photo 095
+method: POST
+url: "{{baseUrl}}/photos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 24,
+      "title": "Quidem excepteur numquam animi voluptatem",
+      "url": "https://via.placeholder.com/600/1d52",
+      "thumbnailUrl": "https://via.placeholder.com/150/1d52"
+    }
+postScript: |-
+  im.test("photo was created", function () {
+    im.expect(im.response.code).to.equal(201);
+  });

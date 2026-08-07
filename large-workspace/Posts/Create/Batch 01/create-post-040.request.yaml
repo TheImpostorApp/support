@@ -1,0 +1,13 @@
+id: 51882584-c51d-4fb9-8fee-0931ac7c68af
+name: Create post 040
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Nulla minus tempora suscipit",
+      "body": "rerum nihil occaecat ipsa voluptas sint.\nbeatae beatae eaque optio aperiam doloremque laborum.\npariatur magnam cumque qui aliquid cupidatat.\nqui quidem occaecat accusantium eligendi dicta inventore ratione voluptatem cupidatat aliquid.",
+      "userId": 4
+    }

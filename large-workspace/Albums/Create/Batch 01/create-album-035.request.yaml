@@ -1,0 +1,12 @@
+id: a3a8fe38-4019-46bf-b9af-66c3e3f7f9f5
+name: Create album 035
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 3,
+      "title": "Cupidatat dolorem animi numquam"
+    }

@@ -1,0 +1,13 @@
+id: 49979c01-a8db-411b-bf6f-1f94f9741237
+name: Create post 051
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Nostrum quia animi quia sunt rerum officia veritatis",
+      "body": "placeat laborum laboriosam dolorem cupidatat eos dicta est dolorem voluptas pariatur.\nanimi rerum numquam animi explicabo nulla impedit.\ncupidatat quia ipsam sunt omnis dolorem vitae.\ndolore optio ipsam quos est ut animi quia nostrum.",
+      "userId": 2
+    }

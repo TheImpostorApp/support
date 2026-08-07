@@ -1,0 +1,14 @@
+id: 3168c69d-ba8a-4c5a-90b3-a5b2a8ce1c32
+name: Patch photo 005
+method: PATCH
+url: "{{baseUrl}}/photos/3524"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 13,
+      "title": "Tempora consequatur sunt nulla"
+    }

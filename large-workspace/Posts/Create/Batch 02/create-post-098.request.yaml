@@ -1,0 +1,10 @@
+id: edec5021-04b2-435c-a51b-6a9fdfe4ffc9
+name: Create post 098
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: title, value: "Laborum tempora quia ipsa architecto", enabled: true }
+    - { key: body, value: "laboriosam et optio consequatur autem ut omnis adipisci cupidatat porro dolorem sunt.\nvoluptatem eius odio architecto et impedit animi sunt deserunt omnis.\nmagnam laboriosam doloremque nemo aperiam ipsam impedit molestiae et.", enabled: true }
+    - { key: userId, value: "9", enabled: true }

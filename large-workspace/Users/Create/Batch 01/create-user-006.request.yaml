@@ -1,0 +1,25 @@
+id: 6b3c8852-e43c-483f-bea3-ba2f631de373
+name: Create user 006
+method: POST
+url: "{{baseUrl}}/users"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Clementina Bauch",
+      "username": "Clementina10",
+      "email": "clementina@bauch.example",
+      "address": {
+        "street": "Ipsa deserunt magnam optio Street",
+        "suite": "Apt. 960",
+        "city": "South Christy",
+        "zipcode": "12586-5006"
+      },
+      "phone": "1-407-110-6411",
+      "website": "bauch.example",
+      "company": {
+        "name": "Johns Group",
+        "catchPhrase": "Eaque laborum quos doloremque laborum tempora dicta ipsam"
+      }
+    }

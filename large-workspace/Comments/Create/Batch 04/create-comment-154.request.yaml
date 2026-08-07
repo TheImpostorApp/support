@@ -1,0 +1,13 @@
+id: fd555998-cc58-4031-a6c5-f1fa7d94bd75
+name: Create comment 154
+method: POST
+url: "{{baseUrl}}/comments"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: postId, value: "86", enabled: true }
+    - { key: name, value: "Accusantium suscipit quidem fugiat voluptatem minus animi dolorem", enabled: true }
+    - { key: email, value: "patricia.reichert@example.com", enabled: true }
+    - { key: body, value: "beatae quo est voluptatem totam et.\ndeserunt quia laborum distinctio qui quidem placeat.\nexcepteur cupidatat molestiae nostrum voluptas provident.", enabled: true }

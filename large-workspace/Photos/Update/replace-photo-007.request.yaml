@@ -1,0 +1,20 @@
+id: 28736a86-637b-4235-a3ac-17aff50c286a
+name: Replace photo 007
+method: PUT
+url: "{{baseUrl}}/photos/3980"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 50,
+      "title": "Placeat est eligendi porro eius architecto",
+      "url": "https://via.placeholder.com/600/1d3f",
+      "thumbnailUrl": "https://via.placeholder.com/150/1d3f"
+    }
+postScript: |-
+  im.test("photo was replaced", function () {
+    im.expect(im.response.code).to.equal(200);
+  });

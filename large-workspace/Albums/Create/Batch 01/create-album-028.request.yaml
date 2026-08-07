@@ -1,0 +1,9 @@
+id: 368485a2-e9a9-458f-a865-668c2147562d
+name: Create album 028
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: userId, value: "1", enabled: true }
+    - { key: title, value: "Dicta quia autem", enabled: true }

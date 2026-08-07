@@ -1,0 +1,13 @@
+id: 36b1c862-0c06-40c7-817f-7ba4758142d2
+name: Create todo 011
+method: POST
+url: "{{baseUrl}}/todos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 10,
+      "title": "Doloremque deserunt voluptas",
+      "completed": false
+    }

@@ -1,0 +1,16 @@
+id: 20530722-96bd-48e1-be20-419e658d72fb
+name: Create album 011
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 1,
+      "title": "Ipsa nulla autem quidem suscipit deserunt"
+    }
+postScript: |-
+  im.test("album was created", function () {
+    im.expect(im.response.code).to.equal(201);
+  });

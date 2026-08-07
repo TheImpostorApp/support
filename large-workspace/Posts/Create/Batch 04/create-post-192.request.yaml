@@ -1,0 +1,17 @@
+id: 5204cd13-4761-4d36-8965-c750c471c1cb
+name: Create post 192
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Sint cumque minus",
+      "body": "ratione est laboriosam eligendi ipsa eos rerum adipisci magnam suscipit consequatur.\nveritatis officia dicta excepteur animi voluptas nemo voluptatem nulla molestiae nemo minus.\nnihil dolorem eos tempora est dolore eligendi distinctio ipsa distinctio distinctio eligendi.\nodio aperiam nulla voluptatem nemo provident quia et.",
+      "userId": 9
+    }
+postScript: |-
+  im.test("post was created", function () {
+    im.expect(im.response.code).to.equal(201);
+  });

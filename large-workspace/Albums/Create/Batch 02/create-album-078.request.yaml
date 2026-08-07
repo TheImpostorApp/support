@@ -1,0 +1,14 @@
+id: dee6ecd5-2484-4e95-b782-bde3877ee615
+name: Create album 078
+method: POST
+url: "{{baseUrl}}/albums"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 4,
+      "title": "Consequatur totam cupidatat repellendus omnis"
+    }

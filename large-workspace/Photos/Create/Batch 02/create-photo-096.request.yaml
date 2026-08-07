@@ -1,0 +1,18 @@
+id: 07abd4f3-d27c-46b8-b107-1849fab2b3d8
+name: Create photo 096
+method: POST
+url: "{{baseUrl}}/photos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 59,
+      "title": "Quia voluptatem vitae molestiae occaecat",
+      "url": "https://via.placeholder.com/600/1e92",
+      "thumbnailUrl": "https://via.placeholder.com/150/1e92"
+    }
+postScript: |-
+  im.test("photo was created", function () {
+    im.expect(im.response.code).to.equal(201);
+  });

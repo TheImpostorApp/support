@@ -1,0 +1,13 @@
+id: 2f690ac5-11ca-48d3-84e5-eda96a8b9fd3
+name: Create post 058
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Laborum vitae qui",
+      "body": "doloremque accusantium minus provident eligendi quia eius.\ndistinctio soluta natus molestiae placeat adipisci.\nlaboriosam eius impedit porro sunt nostrum adipisci aperiam.",
+      "userId": 8
+    }

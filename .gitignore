@@ -7,9 +7,11 @@
 # Per-workspace run history / local-only state (mock-workspace/.impostor/history.jsonl)
 .impostor/
 
-# Secrets — but keep the bundled workspace's environment, which holds only localhost
-# vars (no secrets) and would otherwise be swallowed by the broad rules below.
+# Secrets — but keep the bundled workspaces' environments, which hold only localhost /
+# public-API vars (no secrets) and would otherwise be swallowed by the broad rules below.
 .env
 .env.*
 !mock-workspace/.env/
 !mock-workspace/.env/**
+!large-workspace/.env/
+!large-workspace/.env/**

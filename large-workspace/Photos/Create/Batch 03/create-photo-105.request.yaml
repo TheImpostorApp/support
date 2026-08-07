@@ -1,0 +1,14 @@
+id: 4ca41963-3621-48c2-90df-f964ce314376
+name: Create photo 105
+method: POST
+url: "{{baseUrl}}/photos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 3,
+      "title": "Consequatur deserunt tempora totam beatae omnis",
+      "url": "https://via.placeholder.com/600/7fa",
+      "thumbnailUrl": "https://via.placeholder.com/150/7fa"
+    }

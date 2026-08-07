@@ -1,0 +1,13 @@
+id: e55b2e92-a0b9-4474-9317-4fd4ac64a03e
+name: Create post 122
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Quia placeat nulla",
+      "body": "optio est vitae dolore quidem quos.\neaque excepteur porro nemo quia magnam tempora adipisci architecto eos.\neius est ratione consequatur excepteur voluptatem.",
+      "userId": 3
+    }

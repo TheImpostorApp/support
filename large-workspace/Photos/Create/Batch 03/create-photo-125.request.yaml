@@ -1,0 +1,16 @@
+id: 1d74dec9-def2-439f-ac9f-070e571dc9a9
+name: Create photo 125
+method: POST
+url: "{{baseUrl}}/photos"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 19,
+      "title": "Pariatur dolore laboriosam",
+      "url": "https://via.placeholder.com/600/1e4e",
+      "thumbnailUrl": "https://via.placeholder.com/150/1e4e"
+    }

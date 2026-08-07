@@ -1,0 +1,12 @@
+id: 3f3f49ab-1518-4e72-96d2-6d5ab71ba80c
+name: Create album 005
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 4,
+      "title": "Nostrum qui ratione nihil"
+    }

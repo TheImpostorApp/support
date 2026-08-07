@@ -1,0 +1,17 @@
+id: ef5b95a7-fd27-4578-b704-57d70abbeecf
+name: Create post 038
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Nulla distinctio totam ipsam",
+      "body": "magnam optio provident nostrum repellendus est eaque magnam.\nquia aliquid laboriosam omnis repellendus cupidatat nulla cupidatat.\nminus ratione beatae dicta laborum natus pariatur placeat cupidatat autem.\nnumquam aperiam est architecto molestiae ipsam quia odio tempora ipsam dolorem.",
+      "userId": 1
+    }
+postScript: |-
+  im.test("post was created", function () {
+    im.expect(im.response.code).to.equal(201);
+  });

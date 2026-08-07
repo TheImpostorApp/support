@@ -1,0 +1,11 @@
+id: a60b72a4-b71e-45b4-acb5-464fe3f668f5
+name: Create comment 140
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: postId, value: "28", enabled: true }
+    - { key: name, value: "Autem laboriosam nulla cupidatat", enabled: true }
+    - { key: email, value: "leanne.runolfsdottir@example.com", enabled: true }
+    - { key: body, value: "voluptatem dolore quo et ut dolore.\neos architecto adipisci eius vitae totam eius eligendi esse.\nipsa eligendi voluptatem maiores cupidatat doloremque.", enabled: true }

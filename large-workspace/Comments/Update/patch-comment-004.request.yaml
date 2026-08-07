@@ -1,0 +1,12 @@
+id: dfa1825f-77a1-4c02-a15f-ce43b6973c27
+name: Patch comment 004
+method: PATCH
+url: "{{baseUrl}}/comments/9"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 66,
+      "name": "Soluta cumque veritatis ipsam"
+    }

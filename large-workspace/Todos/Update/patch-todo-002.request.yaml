@@ -1,0 +1,14 @@
+id: 879df0e4-586f-4d68-bd4f-412d7862f91c
+name: Patch todo 002
+method: PATCH
+url: "{{baseUrl}}/todos/146"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 4,
+      "title": "Maiores excepteur repellendus"
+    }

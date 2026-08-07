@@ -1,0 +1,12 @@
+id: b00699df-46ee-4b76-88bc-86aa1af74984
+name: Replace album 006
+method: PUT
+url: "{{baseUrl}}/albums/{{albumId}}"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 5,
+      "title": "Nemo ut quos"
+    }

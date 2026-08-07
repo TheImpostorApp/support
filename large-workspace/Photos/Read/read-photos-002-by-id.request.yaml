@@ -1,0 +1,8 @@
+id: 7cca1d2f-54d9-4a40-ac86-8a33401ba779
+name: "Read photos 002 — by id"
+method: GET
+url: "{{baseUrl}}/photos/116"
+postScript: |-
+  im.test("photos read ok", function () {
+    im.expect(im.response.code).to.equal(200);
+  });

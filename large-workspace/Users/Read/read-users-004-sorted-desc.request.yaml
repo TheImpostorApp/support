@@ -1,0 +1,7 @@
+id: ff69786a-e0a1-4abe-8ab9-ddabd473889c
+name: "Read users 004 — sorted desc"
+method: GET
+url: "{{baseUrl}}/users"
+query:
+  - { key: "_sort", value: "id", enabled: true }
+  - { key: "_order", value: "desc", enabled: true }

@@ -1,0 +1,7 @@
+id: f567816e-fbbd-4bbd-ac23-13a6175173a3
+name: "Read posts 011 — sorted desc"
+method: GET
+url: "{{baseUrl}}/posts"
+query:
+  - { key: "_sort", value: "id", enabled: true }
+  - { key: "_order", value: "desc", enabled: true }

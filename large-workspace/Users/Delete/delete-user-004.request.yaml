@@ -1,0 +1,4 @@
+id: 4dfc6a1d-7d12-4bb1-b61a-7b5712c2a032
+name: Delete user 004
+method: DELETE
+url: "{{baseUrl}}/users/2"

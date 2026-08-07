@@ -1,0 +1,13 @@
+id: 4911a46e-92f9-48ea-89b9-7a089be294eb
+name: Create post 019
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Sunt eligendi quidem ipsam suscipit occaecat aliquid dolore",
+      "body": "soluta magnam odio magnam distinctio minus et numquam provident autem qui inventore.\ndolorem omnis repellendus porro esse cupidatat.\nveritatis occaecat optio explicabo voluptas inventore maiores ipsa.",
+      "userId": 10
+    }

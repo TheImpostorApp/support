@@ -1,0 +1,13 @@
+id: 31197ffb-5811-4372-a93d-dc4f46cf63be
+name: Create todo 069
+method: POST
+url: "{{baseUrl}}/todos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 8,
+      "title": "Dicta eius veritatis occaecat laborum",
+      "completed": true
+    }

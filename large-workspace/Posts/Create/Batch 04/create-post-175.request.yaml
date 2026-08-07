@@ -1,0 +1,13 @@
+id: 10d04c80-77fe-4fc5-a41d-d35fe12f0c68
+name: Create post 175
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Dicta dolorem laborum laboriosam suscipit",
+      "body": "inventore consequatur pariatur ipsa ut explicabo deserunt cupidatat molestiae maiores animi.\nadipisci excepteur natus magnam ut nulla ipsa ipsa placeat.",
+      "userId": 10
+    }

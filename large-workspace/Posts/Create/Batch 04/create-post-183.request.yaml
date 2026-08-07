@@ -1,0 +1,13 @@
+id: fb7702f0-129a-4895-a1c4-a0a828408879
+name: Create post 183
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Excepteur numquam tempora vitae ipsa",
+      "body": "eaque ratione provident dolore sunt tempora.\ntotam consequatur nihil provident eligendi et nemo eos beatae cupidatat animi dolore.\nexplicabo laborum sint distinctio consequatur fugiat excepteur excepteur nostrum rerum et.",
+      "userId": 2
+    }

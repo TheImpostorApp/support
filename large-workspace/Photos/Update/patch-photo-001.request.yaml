@@ -1,0 +1,12 @@
+id: 040693e6-9c64-4a52-a4cd-aa408c8f1e4b
+name: Patch photo 001
+method: PATCH
+url: "{{baseUrl}}/photos/2407"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 13,
+      "title": "Eaque accusantium quidem minus ratione nihil sint inventore"
+    }

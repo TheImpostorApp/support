@@ -1,0 +1,14 @@
+id: 0b0cd2cd-38ac-4d75-8972-f703c1096425
+name: Create comment 162
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 42,
+      "name": "Maiores aliquid veritatis autem totam officia eaque sunt",
+      "email": "ervin.dubuque@example.com",
+      "body": "architecto autem cumque excepteur qui totam suscipit sint quos distinctio quos.\nmagnam impedit suscipit totam nulla eaque quos."
+    }

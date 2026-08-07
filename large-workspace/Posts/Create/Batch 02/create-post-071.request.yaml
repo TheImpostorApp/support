@@ -1,0 +1,13 @@
+id: e309f4c5-3ea1-4085-b9f0-00970fd21387
+name: Create post 071
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Distinctio nihil vitae et nostrum",
+      "body": "explicabo tempora placeat molestiae cupidatat consequatur tempora voluptas nemo inventore.\nquidem doloremque consequatur nostrum maiores explicabo natus.",
+      "userId": 10
+    }

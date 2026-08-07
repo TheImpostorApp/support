@@ -1,0 +1,4 @@
+id: 6998905a-dc6f-4230-a9ca-eea3c066ca45
+name: "Read photos 013 — nested"
+method: GET
+url: "{{baseUrl}}/albums/23/photos"

@@ -1,0 +1,8 @@
+id: f506c87d-f8aa-4caf-a233-ec58296f647b
+name: "Read users 006 — first five"
+method: GET
+url: "{{baseUrl}}/users"
+query:
+  - { key: "_limit", value: "5", enabled: true }
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }

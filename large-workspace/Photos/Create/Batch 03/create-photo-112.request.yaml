@@ -1,0 +1,11 @@
+id: 06085e2d-175d-42eb-892b-b08e085d28a6
+name: Create photo 112
+method: POST
+url: "{{baseUrl}}/photos"
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: albumId, value: "32", enabled: true }
+    - { key: title, value: "Voluptatem optio laborum provident aperiam optio", enabled: true }
+    - { key: url, value: "https://via.placeholder.com/600/14a1", enabled: true }
+    - { key: thumbnailUrl, value: "https://via.placeholder.com/150/14a1", enabled: true }

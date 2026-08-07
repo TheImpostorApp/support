@@ -1,0 +1,6 @@
+id: ac0c9205-a9d8-4a86-b40c-6875b9c11232
+name: "Read posts 005 — filtered"
+method: GET
+url: "{{baseUrl}}/posts"
+query:
+  - { key: userId, value: "9", enabled: true }

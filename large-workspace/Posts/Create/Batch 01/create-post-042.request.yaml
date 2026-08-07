@@ -1,0 +1,13 @@
+id: 2729910e-0da5-4851-89dc-6e92be9b8375
+name: Create post 042
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Quia dolorem fugiat porro inventore placeat",
+      "body": "totam laborum nulla autem ipsa provident placeat totam.\nnemo veritatis architecto animi ratione minus consequatur.\nanimi distinctio natus aperiam deserunt totam soluta nihil qui quos.\nnihil nulla nulla animi quo ipsam qui placeat porro.",
+      "userId": 10
+    }

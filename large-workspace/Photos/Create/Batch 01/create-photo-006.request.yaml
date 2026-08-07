@@ -1,0 +1,14 @@
+id: cb6fa9bc-5bc4-486d-b2b2-620aa8c65dfe
+name: Create photo 006
+method: POST
+url: "{{baseUrl}}/photos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 34,
+      "title": "Occaecat doloremque voluptas sint nulla eaque",
+      "url": "https://via.placeholder.com/600/b4d",
+      "thumbnailUrl": "https://via.placeholder.com/150/b4d"
+    }

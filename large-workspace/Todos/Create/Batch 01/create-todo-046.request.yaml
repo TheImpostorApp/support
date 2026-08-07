@@ -1,0 +1,13 @@
+id: e6689634-ea98-45c7-8a31-93c75e1de9b8
+name: Create todo 046
+method: POST
+url: "{{baseUrl}}/todos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 3,
+      "title": "Deserunt dicta magnam cupidatat qui distinctio architecto",
+      "completed": true
+    }

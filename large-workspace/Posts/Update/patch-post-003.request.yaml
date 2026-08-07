@@ -1,0 +1,14 @@
+id: 5f06e972-89c1-4149-8076-d68ebcf39e2a
+name: Patch post 003
+method: PATCH
+url: "{{baseUrl}}/posts/{{postId}}"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Magnam minus impedit ipsa animi optio suscipit",
+      "body": "eos esse numquam qui laborum rerum adipisci accusantium molestiae qui.\nlaborum sint pariatur optio occaecat repellendus dolore ipsam.\ndoloremque minus sunt inventore ipsa inventore odio provident."
+    }

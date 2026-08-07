@@ -1,0 +1,6 @@
+id: 4ae8c4fb-506f-4c01-a3af-780b38a12430
+name: "Read photos 007 — first five"
+method: GET
+url: "{{baseUrl}}/photos"
+query:
+  - { key: "_limit", value: "5", enabled: true }

@@ -1,0 +1,13 @@
+id: 85e486ce-8767-4ac2-bed2-c4bdc6d0ef52
+name: Create post 045
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Molestiae dolore molestiae explicabo ipsam sint beatae laborum",
+      "body": "minus animi maiores fugiat dolore minus quo inventore.\nqui eligendi quos eaque occaecat dolorem eius odio numquam consequatur esse.\noccaecat doloremque laboriosam cupidatat et ipsa vitae provident aperiam esse magnam.\naccusantium aliquid dicta aperiam rerum officia.",
+      "userId": 2
+    }

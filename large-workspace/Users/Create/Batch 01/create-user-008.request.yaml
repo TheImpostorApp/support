@@ -1,0 +1,25 @@
+id: ef5470e2-ce2d-4048-9974-8ed25303ea07
+name: Create user 008
+method: POST
+url: "{{baseUrl}}/users"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Dennis Reichert",
+      "username": "Dennis46",
+      "email": "dennis@reichert.example",
+      "address": {
+        "street": "Eaque ratione natus dolore consequatur est numquam Street",
+        "suite": "Apt. 489",
+        "city": "Aliyaview",
+        "zipcode": "59463-4643"
+      },
+      "phone": "1-470-733-8072",
+      "website": "reichert.example",
+      "company": {
+        "name": "Hoeger LLC",
+        "catchPhrase": "Optio aliquid veritatis"
+      }
+    }

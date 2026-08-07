@@ -1,0 +1,12 @@
+id: a8a7fd00-f52f-4efc-8acf-32c974458443
+name: Create album 039
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 7,
+      "title": "Pariatur numquam distinctio dicta eaque"
+    }

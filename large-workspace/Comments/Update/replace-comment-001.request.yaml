@@ -1,0 +1,16 @@
+id: 9771d829-87c0-48a2-90f7-36816c65cbed
+name: Replace comment 001
+method: PUT
+url: "{{baseUrl}}/comments/140"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 64,
+      "name": "Soluta magnam occaecat aperiam",
+      "email": "chelsey.runolfsdottir@example.com",
+      "body": "nostrum maiores aperiam quidem sunt ipsam suscipit laborum quos architecto nostrum.\neius soluta tempora nostrum tempora et.\nratione animi veritatis eius excepteur impedit accusantium suscipit adipisci tempora esse."
+    }

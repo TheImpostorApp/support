@@ -1,0 +1,15 @@
+id: 42c03208-a619-48ca-966e-3a27f18ac91d
+name: Create todo 009
+method: POST
+url: "{{baseUrl}}/todos"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 5,
+      "title": "Natus vitae nemo voluptatem laborum",
+      "completed": true
+    }

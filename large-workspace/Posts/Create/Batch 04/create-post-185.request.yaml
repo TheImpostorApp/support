@@ -1,0 +1,15 @@
+id: e31667fb-df5a-419e-b485-98ddf93e8358
+name: Create post 185
+method: POST
+url: "{{baseUrl}}/posts"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Quidem quia tempora magnam nemo ut beatae",
+      "body": "consequatur eos provident impedit dicta soluta suscipit eos.\nmolestiae impedit eligendi odio impedit eius doloremque nostrum ratione veritatis officia.\nquos sunt excepteur totam architecto laboriosam totam repellendus quos inventore totam quos.",
+      "userId": 4
+    }

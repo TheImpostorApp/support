@@ -1,0 +1,12 @@
+id: 211d7e1e-e7f2-4b4e-86eb-8dfe2e2ba16e
+name: Create album 019
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 2,
+      "title": "Natus veritatis maiores voluptatem eaque ratione soluta porro"
+    }

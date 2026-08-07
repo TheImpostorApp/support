@@ -1,0 +1,12 @@
+id: 3e1f8939-9f3e-4fe9-a86f-56017b754ee8
+name: Create todo 087
+method: POST
+url: "{{baseUrl}}/todos"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: userId, value: "4", enabled: true }
+    - { key: title, value: "Rerum vitae tempora soluta magnam officia", enabled: true }
+    - { key: completed, value: "false", enabled: true }

@@ -1,0 +1,7 @@
+id: f798da08-cb43-4d41-946f-15449481bccd
+name: "Read comments 004 — sorted desc"
+method: GET
+url: "{{baseUrl}}/comments"
+query:
+  - { key: "_sort", value: "id", enabled: true }
+  - { key: "_order", value: "desc", enabled: true }

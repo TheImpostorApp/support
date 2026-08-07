@@ -1,0 +1,13 @@
+id: 7f8400e5-852c-4318-b690-881d77c02d70
+name: Create post 031
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Rerum eos omnis consequatur",
+      "body": "totam doloremque doloremque laboriosam veritatis sunt maiores eos.\nsuscipit omnis impedit dolore excepteur occaecat distinctio tempora.",
+      "userId": 2
+    }

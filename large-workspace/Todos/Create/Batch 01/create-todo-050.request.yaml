@@ -1,0 +1,17 @@
+id: 7ce571ff-0dc8-4eae-9046-087f8d83fec7
+name: Create todo 050
+method: POST
+url: "{{baseUrl}}/todos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 9,
+      "title": "Officia beatae quos distinctio",
+      "completed": true
+    }
+postScript: |-
+  im.test("todo was created", function () {
+    im.expect(im.response.code).to.equal(201);
+  });

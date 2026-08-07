@@ -1,0 +1,10 @@
+id: 556660e0-7b7d-431b-b008-d111585cf145
+name: Create todo 042
+method: POST
+url: "{{baseUrl}}/todos"
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: userId, value: "6", enabled: true }
+    - { key: title, value: "Suscipit dicta pariatur cumque", enabled: true }
+    - { key: completed, value: "false", enabled: true }

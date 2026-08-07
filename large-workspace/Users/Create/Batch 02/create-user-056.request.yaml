@@ -1,0 +1,18 @@
+id: b5816972-15c0-4d37-8a12-bf85df1effd8
+name: Create user 056
+method: POST
+url: "{{baseUrl}}/users"
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: name, value: "Clementina Bauch", enabled: true }
+    - { key: username, value: "Clementina60", enabled: true }
+    - { key: email, value: "clementina@bauch.example", enabled: true }
+    - { key: "address[street]", value: "Ipsam ratione ipsam Street", enabled: true }
+    - { key: "address[suite]", value: "Apt. 196", enabled: true }
+    - { key: "address[city]", value: "South Christy", enabled: true }
+    - { key: "address[zipcode]", value: "97968-8554", enabled: true }
+    - { key: phone, value: "1-944-656-2482", enabled: true }
+    - { key: website, value: "bauch.example", enabled: true }
+    - { key: "company[name]", value: "Abernathy Group", enabled: true }
+    - { key: "company[catchPhrase]", value: "Nihil animi eaque dolorem", enabled: true }

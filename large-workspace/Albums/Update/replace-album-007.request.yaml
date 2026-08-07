@@ -1,0 +1,16 @@
+id: 3afb8845-d41a-4932-bbfa-c8c07a3d6fa2
+name: Replace album 007
+method: PUT
+url: "{{baseUrl}}/albums/{{albumId}}"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 2,
+      "title": "Totam aliquid maiores nemo rerum veritatis"
+    }
+postScript: |-
+  im.test("album was replaced", function () {
+    im.expect(im.response.code).to.equal(200);
+  });

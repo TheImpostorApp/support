@@ -1,0 +1,11 @@
+id: 886179b4-0876-4b7c-b44f-4e55fbeaf829
+name: Create comment 094
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: postId, value: "3", enabled: true }
+    - { key: name, value: "Beatae repellendus excepteur laboriosam pariatur placeat optio", enabled: true }
+    - { key: email, value: "nicholas.bauch@example.com", enabled: true }
+    - { key: body, value: "occaecat rerum placeat provident ipsam aliquid impedit ut nemo excepteur.\nmagnam nemo aliquid rerum est numquam et repellendus dicta.\nquos tempora veritatis nulla eaque ratione odio.\nest suscipit vitae numquam sunt esse ipsam doloremque beatae esse sunt.", enabled: true }

@@ -1,0 +1,16 @@
+id: 71e13f64-2e1d-4dd2-9c66-b225308d5268
+name: Patch post 005
+method: PATCH
+url: "{{baseUrl}}/posts/{{postId}}"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Et maiores porro maiores",
+      "body": "voluptas totam eius fugiat occaecat porro voluptas nulla vitae.\nporro maiores voluptas quo eligendi voluptas est quidem officia eaque beatae.\ndeserunt quidem esse inventore excepteur doloremque soluta pariatur.\npariatur inventore voluptatem impedit sunt omnis adipisci."
+    }
+postScript: |-
+  im.test("post was patched", function () {
+    im.expect(im.response.code).to.equal(200);
+  });

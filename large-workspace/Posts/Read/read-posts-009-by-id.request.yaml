@@ -1,0 +1,4 @@
+id: 1c617805-bcf3-4d5f-af6d-3283a03a30d0
+name: "Read posts 009 — by id"
+method: GET
+url: "{{baseUrl}}/posts/81"

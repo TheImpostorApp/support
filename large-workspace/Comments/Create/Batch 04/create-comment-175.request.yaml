@@ -1,0 +1,13 @@
+id: 6be56466-ecb7-48e8-8b59-8b7b04fc321b
+name: Create comment 175
+method: POST
+url: "{{baseUrl}}/comments"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: postId, value: "23", enabled: true }
+    - { key: name, value: "Architecto nulla molestiae ipsa maiores omnis", enabled: true }
+    - { key: email, value: "ervin.graham@example.com", enabled: true }
+    - { key: body, value: "quos totam explicabo sunt excepteur vitae omnis ratione ut accusantium.\nsint numquam nostrum et distinctio laborum dolore nulla vitae.", enabled: true }

@@ -1,0 +1,8 @@
+id: c3d8f41e-5cfd-4f57-8579-42220eb497a2
+name: "Read comments 012 — filtered"
+method: GET
+url: "{{baseUrl}}/comments"
+query:
+  - { key: postId, value: "98", enabled: true }
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }

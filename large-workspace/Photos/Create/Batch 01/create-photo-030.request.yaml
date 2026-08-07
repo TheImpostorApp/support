@@ -1,0 +1,20 @@
+id: cacbdca7-1029-4b6c-9d70-328fdefb514f
+name: Create photo 030
+method: POST
+url: "{{baseUrl}}/photos"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 28,
+      "title": "Doloremque fugiat porro distinctio ipsam",
+      "url": "https://via.placeholder.com/600/b8e",
+      "thumbnailUrl": "https://via.placeholder.com/150/b8e"
+    }
+postScript: |-
+  im.test("photo was created", function () {
+    im.expect(im.response.code).to.equal(201);
+  });

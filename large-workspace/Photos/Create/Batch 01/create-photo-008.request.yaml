@@ -1,0 +1,16 @@
+id: 03fff3c1-a9a9-49fd-921a-0a186e405a05
+name: Create photo 008
+method: POST
+url: "{{baseUrl}}/photos"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 100,
+      "title": "Doloremque aperiam ratione voluptas numquam dolorem voluptatem",
+      "url": "https://via.placeholder.com/600/198c",
+      "thumbnailUrl": "https://via.placeholder.com/150/198c"
+    }

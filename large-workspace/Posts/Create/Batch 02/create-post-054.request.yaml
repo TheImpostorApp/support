@@ -1,0 +1,13 @@
+id: 842669e3-319a-4c7b-9084-7457f596a880
+name: Create post 054
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Laborum occaecat cupidatat est distinctio natus",
+      "body": "eos cupidatat rerum ipsa porro doloremque odio dicta eligendi dolorem maiores.\nrerum laboriosam omnis nihil distinctio excepteur ratione.",
+      "userId": 6
+    }

@@ -1,0 +1,12 @@
+id: decbe429-e6f5-4908-86d9-785eabeb65dc
+name: Create album 079
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 3,
+      "title": "Fugiat et autem quidem"
+    }

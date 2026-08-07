@@ -1,0 +1,6 @@
+id: 8eb50aa2-ea13-4da1-98b2-8a39ad478bfb
+name: OPTIONS photos collection
+method: OPTIONS
+url: "{{baseUrl}}/photos"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }

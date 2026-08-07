@@ -1,0 +1,11 @@
+id: 7bf3b0e8-7b84-4180-a1e1-0b48d9fdcd24
+name: "Read todos 003 — page 2"
+method: GET
+url: "{{baseUrl}}/todos"
+query:
+  - { key: "_page", value: "2", enabled: true }
+  - { key: "_limit", value: "10", enabled: true }
+postScript: |-
+  im.test("todos read ok", function () {
+    im.expect(im.response.code).to.equal(200);
+  });

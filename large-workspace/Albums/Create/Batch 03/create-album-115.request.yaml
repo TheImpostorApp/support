@@ -1,0 +1,12 @@
+id: 9cbedca2-5ab1-48de-806d-2a8e3212bb92
+name: Create album 115
+method: POST
+url: "{{baseUrl}}/albums"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 1,
+      "title": "Accusantium aliquid quidem"
+    }

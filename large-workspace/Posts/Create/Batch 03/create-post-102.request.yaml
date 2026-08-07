@@ -1,0 +1,10 @@
+id: faf5c3e4-b152-4c66-8118-a2e4a82ce134
+name: Create post 102
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: title, value: "Laborum nihil porro natus nihil dolore inventore", enabled: true }
+    - { key: body, value: "aperiam magnam placeat cupidatat eos cumque beatae eius magnam.\ndicta magnam eius consequatur eaque officia doloremque adipisci consequatur quidem.\nimpedit laboriosam quia est ratione ipsa excepteur distinctio beatae.", enabled: true }
+    - { key: userId, value: "9", enabled: true }

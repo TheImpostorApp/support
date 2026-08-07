@@ -1,0 +1,13 @@
+id: df0fa9a4-6fdc-4de1-adce-e6ac42dec9d2
+name: Create post 084
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Impedit laboriosam accusantium qui placeat vitae",
+      "body": "doloremque dolore nihil sint soluta voluptas ipsa.\nqui ratione rerum optio excepteur ratione vitae distinctio sunt laboriosam.\nmagnam molestiae accusantium aliquid eligendi magnam pariatur soluta dolore.",
+      "userId": 10
+    }

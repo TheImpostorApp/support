@@ -1,0 +1,4 @@
+id: d3b4e768-664d-43dc-b6ab-6f848b4031cd
+name: OPTIONS albums collection
+method: OPTIONS
+url: "{{baseUrl}}/albums"

@@ -1,0 +1,4 @@
+id: b1634ad4-e722-4106-a8bf-16e8d8f794d4
+name: "Read comments 008 — list all"
+method: GET
+url: "{{baseUrl}}/comments"

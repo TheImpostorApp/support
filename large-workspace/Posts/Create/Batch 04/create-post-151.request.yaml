@@ -1,0 +1,13 @@
+id: e0498949-1f40-403d-a70b-4b2cf6c55984
+name: Create post 151
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Autem laboriosam voluptas cupidatat eos",
+      "body": "omnis aperiam officia consequatur eaque est magnam.\nmolestiae accusantium dolorem dolorem aperiam eligendi pariatur fugiat porro optio.\nmaiores numquam voluptatem repellendus cumque dicta.",
+      "userId": 6
+    }

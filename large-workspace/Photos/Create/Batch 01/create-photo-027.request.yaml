@@ -1,0 +1,14 @@
+id: ae61e2ce-855f-4a05-bc9d-2fd4029c5f45
+name: Create photo 027
+method: POST
+url: "{{baseUrl}}/photos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 47,
+      "title": "Magnam repellendus quia dolorem tempora adipisci",
+      "url": "https://via.placeholder.com/600/237c",
+      "thumbnailUrl": "https://via.placeholder.com/150/237c"
+    }

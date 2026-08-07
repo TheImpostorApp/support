@@ -1,0 +1,16 @@
+id: b8a75aad-0a7f-4612-b057-45c32107367e
+name: Patch user 001
+method: PATCH
+url: "{{baseUrl}}/users/3"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Leanne Howell",
+      "username": "Leanne94"
+    }
+postScript: |-
+  im.test("user was patched", function () {
+    im.expect(im.response.code).to.equal(200);
+  });

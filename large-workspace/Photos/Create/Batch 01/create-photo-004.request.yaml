@@ -1,0 +1,11 @@
+id: 1a76d361-775b-41b4-a1ef-dd1994049134
+name: Create photo 004
+method: POST
+url: "{{baseUrl}}/photos"
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: albumId, value: "77", enabled: true }
+    - { key: title, value: "Officia tempora aperiam molestiae nihil", enabled: true }
+    - { key: url, value: "https://via.placeholder.com/600/1c26", enabled: true }
+    - { key: thumbnailUrl, value: "https://via.placeholder.com/150/1c26", enabled: true }

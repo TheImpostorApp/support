@@ -1,0 +1,25 @@
+id: 28ed47ee-85d9-4bad-8257-75953b1da0be
+name: Create user 022
+method: POST
+url: "{{baseUrl}}/users"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Glenna Dietrich",
+      "username": "Glenna88",
+      "email": "glenna@dietrich.example",
+      "address": {
+        "street": "Cupidatat dolorem eligendi consequatur totam accusantium animi Street",
+        "suite": "Apt. 171",
+        "city": "Lebsackbury",
+        "zipcode": "31359-6907"
+      },
+      "phone": "1-607-604-8082",
+      "website": "dietrich.example",
+      "company": {
+        "name": "Yost and Sons",
+        "catchPhrase": "Rerum provident quos laborum explicabo molestiae soluta"
+      }
+    }

@@ -1,0 +1,13 @@
+id: bb6a2d1b-2d8b-466d-82a4-60265252763c
+name: Create post 140
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Eius veritatis quia magnam quos",
+      "body": "rerum dicta numquam pariatur explicabo dicta et pariatur ratione pariatur fugiat.\nsuscipit ipsam tempora deserunt totam optio aperiam optio eaque.\nmagnam explicabo laborum occaecat occaecat ipsam aliquid ut suscipit placeat laboriosam.",
+      "userId": 1
+    }

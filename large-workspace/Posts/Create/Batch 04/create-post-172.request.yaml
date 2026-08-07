@@ -1,0 +1,13 @@
+id: cece564f-95fb-4478-9c6a-c127097f93e7
+name: Create post 172
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Omnis occaecat est esse",
+      "body": "nihil autem tempora beatae voluptatem voluptatem eaque doloremque.\nnostrum quidem occaecat omnis deserunt qui porro.",
+      "userId": 6
+    }

@@ -1,0 +1,14 @@
+id: 7b9c5733-2476-4373-9e29-0603f08d2fce
+name: Create photo 094
+method: POST
+url: "{{baseUrl}}/photos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 24,
+      "title": "Eos nostrum dolore placeat totam nulla provident",
+      "url": "https://via.placeholder.com/600/b19",
+      "thumbnailUrl": "https://via.placeholder.com/150/b19"
+    }

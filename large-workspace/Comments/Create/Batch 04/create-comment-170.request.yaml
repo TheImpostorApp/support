@@ -1,0 +1,14 @@
+id: 1b130fcd-9b10-4baf-b817-20ef7d4f7641
+name: Create comment 170
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 30,
+      "name": "Fugiat optio repellendus impedit nihil voluptatem",
+      "email": "ervin.schulist@example.com",
+      "body": "repellendus doloremque vitae ut minus sint excepteur consequatur.\nquo odio impedit suscipit architecto placeat.\ntotam beatae minus soluta aperiam soluta eos occaecat."
+    }

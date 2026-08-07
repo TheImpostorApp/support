@@ -1,0 +1,14 @@
+id: 8383bf29-f013-4811-bce5-4069abeed664
+name: Create photo 026
+method: POST
+url: "{{baseUrl}}/photos"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 32,
+      "title": "Laborum fugiat doloremque tempora natus",
+      "url": "https://via.placeholder.com/600/21d2",
+      "thumbnailUrl": "https://via.placeholder.com/150/21d2"
+    }

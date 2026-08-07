@@ -1,0 +1,6 @@
+id: 82a25f4a-3cd5-4c0a-9801-a05e6fef3914
+name: HEAD comments collection
+method: HEAD
+url: "{{baseUrl}}/comments"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }

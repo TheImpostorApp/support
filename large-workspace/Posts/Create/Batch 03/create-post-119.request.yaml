@@ -1,0 +1,15 @@
+id: 0f47a163-1ad2-4941-b1f2-124a18240156
+name: Create post 119
+method: POST
+url: "{{baseUrl}}/posts"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Quia soluta suscipit minus dicta fugiat ipsa",
+      "body": "optio nostrum qui molestiae nostrum est sunt.\nsuscipit dolore voluptas animi occaecat optio.\nodio fugiat minus occaecat beatae ratione suscipit quos totam.",
+      "userId": 3
+    }

@@ -1,0 +1,11 @@
+id: cce74825-a53b-4360-87ef-abc798fdd606
+name: Create comment 105
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: postId, value: "85", enabled: true }
+    - { key: name, value: "Quidem ipsam quo autem dolore", enabled: true }
+    - { key: email, value: "ervin.bauch@example.com", enabled: true }
+    - { key: body, value: "ratione molestiae voluptatem deserunt aliquid distinctio fugiat nulla.\nbeatae aliquid beatae quia quo voluptatem esse.\nnulla deserunt esse architecto totam autem pariatur.", enabled: true }

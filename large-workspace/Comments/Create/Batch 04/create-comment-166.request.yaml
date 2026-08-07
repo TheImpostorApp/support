@@ -1,0 +1,14 @@
+id: 0ba915d6-f61f-4bfb-b130-8725abc87bc7
+name: Create comment 166
+method: POST
+url: "{{baseUrl}}/comments"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "postId": 40,
+      "name": "Repellendus occaecat soluta",
+      "email": "dennis.bauch@example.com",
+      "body": "tempora quo numquam qui numquam aperiam nihil nulla architecto natus eaque.\nimpedit quos ut cumque et tempora magnam."
+    }

@@ -1,0 +1,7 @@
+id: eacd9ab3-10c8-4fa8-a07e-2e0f1fd7d4ea
+name: "Read albums 003 — page 2"
+method: GET
+url: "{{baseUrl}}/albums"
+query:
+  - { key: "_page", value: "2", enabled: true }
+  - { key: "_limit", value: "10", enabled: true }

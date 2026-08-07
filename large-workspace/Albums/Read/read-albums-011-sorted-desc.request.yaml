@@ -1,0 +1,7 @@
+id: 94e7756b-114d-4dfc-8b05-c83c7d8101e7
+name: "Read albums 011 — sorted desc"
+method: GET
+url: "{{baseUrl}}/albums"
+query:
+  - { key: "_sort", value: "id", enabled: true }
+  - { key: "_order", value: "desc", enabled: true }

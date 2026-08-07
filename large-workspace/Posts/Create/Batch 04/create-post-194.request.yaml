@@ -1,0 +1,10 @@
+id: f15fe503-d7ee-42e2-81ce-82a918700743
+name: Create post 194
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: title, value: "Qui inventore occaecat explicabo eaque occaecat explicabo dicta", enabled: true }
+    - { key: body, value: "architecto omnis soluta eaque impedit fugiat impedit fugiat dicta cupidatat nulla.\nquo pariatur minus eius eligendi totam placeat odio.\noccaecat voluptatem totam natus veritatis ut omnis.", enabled: true }
+    - { key: userId, value: "7", enabled: true }

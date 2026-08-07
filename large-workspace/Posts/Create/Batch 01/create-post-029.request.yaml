@@ -1,0 +1,15 @@
+id: 9223708e-a648-46be-9194-71f679348be3
+name: Create post 029
+method: POST
+url: "{{baseUrl}}/posts"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Eius nemo animi architecto",
+      "body": "sint deserunt cumque minus officia repellendus accusantium voluptas beatae.\nnihil cumque occaecat cupidatat ipsam quidem omnis dolore beatae veritatis soluta voluptatem.\nimpedit eaque veritatis minus et eaque minus.",
+      "userId": 1
+    }

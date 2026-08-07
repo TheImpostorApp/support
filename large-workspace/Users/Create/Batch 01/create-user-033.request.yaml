@@ -1,0 +1,27 @@
+id: 0702082f-0bf1-4b0c-ab96-7e1bb196a1e7
+name: Create user 033
+method: POST
+url: "{{baseUrl}}/users"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Leanne Howell",
+      "username": "Leanne84",
+      "email": "leanne@howell.example",
+      "address": {
+        "street": "Consequatur esse ratione Street",
+        "suite": "Apt. 961",
+        "city": "South Christy",
+        "zipcode": "66125-7935"
+      },
+      "phone": "1-665-848-1421",
+      "website": "howell.example",
+      "company": {
+        "name": "Deckow-Crist",
+        "catchPhrase": "Inventore inventore dolore architecto"
+      }
+    }

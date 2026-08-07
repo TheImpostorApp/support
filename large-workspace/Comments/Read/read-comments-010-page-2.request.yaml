@@ -1,0 +1,7 @@
+id: 34c87643-4a6f-41c9-9bb7-7465ae6e12b0
+name: "Read comments 010 — page 2"
+method: GET
+url: "{{baseUrl}}/comments"
+query:
+  - { key: "_page", value: "2", enabled: true }
+  - { key: "_limit", value: "10", enabled: true }

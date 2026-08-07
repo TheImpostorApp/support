@@ -1,0 +1,27 @@
+id: 656f1ab9-d921-43f0-bb30-d03710a80dd6
+name: Create user 009
+method: POST
+url: "{{baseUrl}}/users"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "name": "Leanne Runolfsdottir",
+      "username": "Leanne16",
+      "email": "leanne@runolfsdottir.example",
+      "address": {
+        "street": "Cupidatat cumque soluta quia quos ipsam explicabo Street",
+        "suite": "Apt. 980",
+        "city": "Aliyaview",
+        "zipcode": "62611-4184"
+      },
+      "phone": "1-562-162-3460",
+      "website": "runolfsdottir.example",
+      "company": {
+        "name": "Hoeger LLC",
+        "catchPhrase": "Rerum accusantium omnis cumque optio doloremque quidem tempora"
+      }
+    }

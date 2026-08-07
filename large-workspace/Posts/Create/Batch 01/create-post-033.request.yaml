@@ -1,0 +1,16 @@
+id: 786ff620-b7e3-466b-a4ea-b5ad20200f49
+name: Create post 033
+method: POST
+url: "{{baseUrl}}/posts"
+headers:
+  - { key: X-Trace-Id, value: "{{$guid}}", enabled: true }
+body:
+  kind: formUrlencoded
+  fields:
+    - { key: title, value: "Doloremque maiores adipisci veritatis magnam adipisci", enabled: true }
+    - { key: body, value: "ut autem molestiae beatae maiores architecto distinctio minus doloremque architecto totam accusantium.\ndeserunt laborum adipisci molestiae fugiat qui.\nlaboriosam molestiae optio esse voluptatem magnam voluptatem minus soluta impedit.", enabled: true }
+    - { key: userId, value: "2", enabled: true }
+postScript: |-
+  im.test("post was created", function () {
+    im.expect(im.response.code).to.equal(201);
+  });

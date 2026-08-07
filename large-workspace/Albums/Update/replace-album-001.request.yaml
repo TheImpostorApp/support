@@ -1,0 +1,12 @@
+id: 9c499e95-e498-437d-a5fa-f3bb3c714c6c
+name: Replace album 001
+method: PUT
+url: "{{baseUrl}}/albums/8"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "userId": 10,
+      "title": "Tempora numquam veritatis eaque"
+    }

@@ -1,0 +1,13 @@
+id: d6c293c5-0b91-4fc4-ab40-7ee864689f99
+name: Create post 099
+method: POST
+url: "{{baseUrl}}/posts"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "title": "Et architecto provident optio deserunt aperiam voluptas animi",
+      "body": "est eaque quos laborum laboriosam provident.\ndolorem cupidatat accusantium aliquid voluptas numquam laboriosam quidem adipisci voluptas.\nlaborum maiores eius eligendi accusantium consequatur architecto dolorem quidem.\nvitae porro sunt porro tempora laborum nihil omnis.",
+      "userId": 6
+    }

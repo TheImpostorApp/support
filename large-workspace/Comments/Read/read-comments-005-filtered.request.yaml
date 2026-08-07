@@ -1,0 +1,6 @@
+id: cb63229c-fedc-4cc8-a2a9-51cf6cf3f384
+name: "Read comments 005 — filtered"
+method: GET
+url: "{{baseUrl}}/comments"
+query:
+  - { key: postId, value: "6", enabled: true }

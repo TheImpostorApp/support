@@ -1,0 +1,12 @@
+id: 857db2de-206c-4dae-804f-2c259cf25ba1
+name: Patch photo 006
+method: PATCH
+url: "{{baseUrl}}/photos/{{photoId}}"
+body:
+  kind: raw
+  contentType: application/json
+  content: |-
+    {
+      "albumId": 55,
+      "title": "Inventore animi dicta quidem nostrum distinctio eius"
+    }
