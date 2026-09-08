@@ -1,0 +1,34 @@
+info:
+  name: Echo GET (query + path params)
+  type: http
+  seq: 1
+http:
+  method: GET
+  url: "{{baseUrl}}/anything/:resource?page={{defaultPage}}&limit=10&draft=true"
+  params:
+    - name: resource
+      value: widgets
+      type: path
+      description: Substituted into the URL — Impostor has no path-parameter table.
+    - name: page
+      value: "{{defaultPage}}"
+      type: query
+    - name: limit
+      value: "10"
+      type: query
+    - name: draft
+      value: "true"
+      type: query
+      disabled: true
+  headers:
+    - name: Accept
+      value: application/json
+    - name: X-Disabled
+      value: "1"
+      disabled: true
+  auth: inherit
+settings:
+  encodeUrl: true
+  timeout: 15000
+  followRedirects: true
+  maxRedirects: 3

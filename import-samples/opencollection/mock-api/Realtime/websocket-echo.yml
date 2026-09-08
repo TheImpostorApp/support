@@ -1,0 +1,13 @@
+info:
+  name: WebSocket echo
+  type: websocket
+  seq: 1
+websocket:
+  url: ws://localhost:8080/websocket/echo
+  headers:
+    - name: Origin
+      value: http://localhost
+  # Draft messages have no Impostor equivalent — expect a warning.
+  message:
+    type: text
+    data: hello

@@ -1,0 +1,24 @@
+name: Local (OpenCollection)
+color: "#9ec1ff"
+variables:
+  - name: baseUrl
+    value: http://localhost:8080
+  - name: authToken
+    value: local-dev-token
+  - name: apiKey
+    value: local-api-key-123
+  - name: basicPassword
+    value: passwd
+  - name: defaultPage
+    value: "1"
+  # A typed value: the importer reads `data`, not the wrapper.
+  - name: retryCount
+    value:
+      type: number
+      data: "3"
+  # A declared-but-empty secret: the name imports, the value stays in the vault.
+  - secret: true
+    name: vaultOnlySecret
+  - name: disabledVar
+    value: never-used
+    disabled: true

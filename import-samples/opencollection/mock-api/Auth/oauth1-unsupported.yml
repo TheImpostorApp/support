@@ -1,0 +1,14 @@
+info:
+  name: OAuth1 (unsupported — expect a warning)
+  type: http
+  seq: 10
+http:
+  method: GET
+  url: "{{baseUrl}}/get"
+  auth:
+    type: oauth1
+    consumerKey: key
+    consumerSecret: secret
+    signatureMethod: HMAC-SHA1
+    version: "1.0"
+    placement: header

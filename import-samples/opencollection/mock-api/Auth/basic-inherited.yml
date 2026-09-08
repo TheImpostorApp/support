@@ -1,0 +1,8 @@
+info:
+  name: Basic (inherited from folder)
+  type: http
+  seq: 1
+http:
+  method: GET
+  url: "{{baseUrl}}/basic-auth/user/passwd"
+  auth: inherit

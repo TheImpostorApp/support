@@ -1,0 +1,7 @@
+info:
+  name: Headers echo
+  type: http
+  seq: 2
+http:
+  method: GET
+  url: "{{baseUrl}}/headers"

@@ -1,0 +1,8 @@
+info:
+  name: Bodies
+  type: folder
+  seq: 2
+request:
+  # An explicit No Auth stops the collection's bearer from reaching these requests.
+  auth:
+    type: none

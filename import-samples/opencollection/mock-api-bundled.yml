@@ -1,0 +1,67 @@
+# The bundled shape: one file carrying the whole tree in nested `items`, with the
+# environments inline under `config`. Impostor detects this by content, so the file
+# name doesn't matter — and, unlike a picked `opencollection.yml`, its directory is
+# never walked.
+opencollection: "1.0.0"
+bundled: true
+info:
+  name: Mock API (bundled)
+  version: "1.0.0"
+request:
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+  variables:
+    - name: baseUrl
+      value: http://localhost:8080
+config:
+  environments:
+    - name: Bundled Local
+      color: "#a6e3a1"
+      variables:
+        - name: baseUrl
+          value: http://localhost:8080
+        - name: authToken
+          value: local-dev-token
+items:
+  - info:
+      name: Basics
+      type: folder
+      seq: 1
+    items:
+      - info:
+          name: Echo GET
+          type: http
+          seq: 1
+        http:
+          method: GET
+          url: "{{baseUrl}}/get"
+          auth: inherit
+      - info:
+          name: Teapot status
+          type: http
+          seq: 2
+        http:
+          method: GET
+          url: "{{baseUrl}}/status/418"
+          auth:
+            type: none
+  - info:
+      name: Post JSON
+      type: http
+      seq: 2
+    http:
+      method: POST
+      url: "{{baseUrl}}/post"
+      body:
+        type: json
+        data: |-
+          {"hello": "world"}
+      auth: inherit
+    runtime:
+      scripts:
+        - type: tests
+          code: |-
+            test("created", function () {
+              expect(res.status).to.equal(200);
+            });

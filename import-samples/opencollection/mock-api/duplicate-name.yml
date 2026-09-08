@@ -1,0 +1,7 @@
+info:
+  name: Duplicate name
+  type: http
+  seq: 6
+http:
+  method: GET
+  url: "{{baseUrl}}/get"

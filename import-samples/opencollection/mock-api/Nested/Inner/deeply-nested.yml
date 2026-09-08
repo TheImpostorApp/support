@@ -1,0 +1,8 @@
+info:
+  name: Deeply nested request
+  type: http
+  seq: 1
+http:
+  method: DELETE
+  url: "{{baseUrl}}/delete"
+  auth: inherit

@@ -1,0 +1,11 @@
+info:
+  name: Raw XML
+  type: http
+  seq: 2
+http:
+  method: POST
+  url: "{{baseUrl}}/post"
+  body:
+    type: xml
+    data: |-
+      <user><name>Ada</name></user>
