@@ -1,0 +1,9 @@
+name: Production (OpenCollection)
+color: "#ffb3b3"
+variables:
+  - name: baseUrl
+    value: https://api.example.com
+  - name: authToken
+    value: "{{vaultOnlySecret}}"
+  - name: defaultPage
+    value: "1"

@@ -1,0 +1,18 @@
+info:
+  name: Multipart form-data
+  type: http
+  seq: 4
+http:
+  method: POST
+  url: "{{baseUrl}}/post"
+  body:
+    type: multipart-form
+    data:
+      - name: caption
+        type: text
+        value: A picture
+      - name: upload
+        type: file
+        value:
+          - ./fixtures/hello.txt
+        contentType: text/plain

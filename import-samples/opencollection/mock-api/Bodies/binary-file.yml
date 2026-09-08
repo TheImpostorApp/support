@@ -1,0 +1,16 @@
+info:
+  name: Binary file body
+  type: http
+  seq: 6
+http:
+  method: PUT
+  url: "{{baseUrl}}/put"
+  body:
+    type: file
+    data:
+      - filePath: ./fixtures/hello.txt
+        contentType: text/plain
+        selected: true
+      - filePath: ./fixtures/other.bin
+        contentType: application/octet-stream
+        selected: false

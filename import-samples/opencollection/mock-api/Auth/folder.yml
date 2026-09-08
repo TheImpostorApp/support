@@ -1,0 +1,10 @@
+info:
+  name: Auth
+  type: folder
+  seq: 3
+request:
+  # Folder auth overrides the collection's bearer for every child that inherits.
+  auth:
+    type: basic
+    username: user
+    password: "{{basicPassword}}"

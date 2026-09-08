@@ -1,0 +1,17 @@
+info:
+  name: Form urlencoded
+  type: http
+  seq: 3
+http:
+  method: POST
+  url: "{{baseUrl}}/post"
+  body:
+    type: form-urlencoded
+    data:
+      - name: username
+        value: ada
+      - name: password
+        value: "{{basicPassword}}"
+      - name: remember
+        value: "1"
+        disabled: true

@@ -1,0 +1,27 @@
+info:
+  name: Raw JSON
+  type: http
+  seq: 1
+http:
+  method: POST
+  url: "{{baseUrl}}/post"
+  body:
+    type: json
+    data: |-
+      {
+        "name": "Ada",
+        "page": {{defaultPage}}
+      }
+runtime:
+  scripts:
+    - type: before-request
+      code: |-
+        // Bruno's API — imported verbatim; port `bru`/`req`/`res` to `im.*`.
+        bru.setVar("requestedAt", Date.now());
+    - type: after-response
+      code: bru.setVar("echoedName", res.body.json.name);
+    - type: tests
+      code: |-
+        test("echoes the body", function () {
+          expect(res.status).to.equal(200);
+        });

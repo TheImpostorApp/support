@@ -1,0 +1,29 @@
+opencollection: "1.0.0"
+info:
+  name: Mock API (OpenCollection)
+  summary: Impostor importer fixture — the OpenCollection/Bruno YAML surface.
+  version: "1.0.0"
+  authors:
+    - name: Impostor
+      url: https://impostor.uk
+request:
+  # Collection-level defaults: descendants with `auth: inherit` pick this up.
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+  headers:
+    - name: X-Collection-Header
+      value: opencollection
+  variables:
+    - name: baseUrl
+      value: http://localhost:8080
+    - name: defaultPage
+      value: "1"
+    - name: disabledVar
+      value: never-used
+      disabled: true
+  settings:
+    http:
+      timeout: 30000
+      followRedirects: true
+      maxRedirects: 5

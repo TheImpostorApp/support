@@ -1,0 +1,14 @@
+info:
+  name: GraphQL query
+  type: graphql
+  seq: 5
+graphql:
+  method: POST
+  url: https://countries.trevorblades.com/
+  body:
+    query: |-
+      query Country($code: ID!) {
+        country(code: $code) { name emoji currency }
+      }
+    variables: |-
+      { "code": "GB" }

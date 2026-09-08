@@ -1,0 +1,14 @@
+info:
+  name: AWS SigV4
+  type: http
+  seq: 6
+http:
+  method: GET
+  url: "{{baseUrl}}/anything"
+  auth:
+    type: awsv4
+    accessKeyId: AKIAIOSFODNN7EXAMPLE
+    secretAccessKey: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+    sessionToken: ""
+    service: execute-api
+    region: eu-west-2

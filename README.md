@@ -11,7 +11,9 @@ sending requests. There are two:
 [`mock-workspace/`](mock-workspace/) for a tour of every feature (it needs the Docker mock
 backend bundled here in [`mock-server/`](mock-server/), so this repo is fully
 self-contained), and [`large-workspace/`](large-workspace/) for 1000 requests against a
-public API with no setup at all.
+public API with no setup at all. There are also
+[`import-samples/`](import-samples/) — collections in other tools' formats, for trying
+out Impostor's importer.
 
 ## `mock-workspace/`
 
@@ -163,6 +165,20 @@ and gRPC. Built from pinned upstream images plus a small nginx for the mTLS endp
 Everything is throwaway and safe to run anywhere — no secrets or real data. See
 [`mock-server/README.md`](mock-server/README.md) for the complete endpoint → feature map.
 
+## `import-samples/` — try the importer
+
+Sample collections in the formats Impostor imports, so you can exercise the
+**Import** flow without exporting from another tool first.
+
+| Sample | Format |
+|--------|--------|
+| [`import-samples/opencollection/`](import-samples/opencollection/) | [**OpenCollection**](https://spec.opencollection.com) — the open YAML format Bruno 3.x writes natively. Covers all four shapes Impostor accepts: an on-disk collection tree, a bundled single file, a lone request file, and a standalone environment file. |
+
+The requests target the same [`mock-server/`](mock-server/) stack as `mock-workspace/`,
+so an imported collection is immediately runnable. Each sample's README lists what it
+covers and the counts and warnings a correct import reports. See the
+[Importing docs](https://docs.impostor.uk/import) for the full mapping.
+
 ## Repo layout
 
 ```
@@ -186,6 +202,11 @@ large-workspace/              # 1000-request workspace (JSONPlaceholder, no setu
 ├── Posts/  Comments/  Albums/  Photos/  Todos/  Users/
 │   └── Create/ (Batch 01…) · Read/ · Update/ · Delete/
 └── Diagnostics/
+import-samples/               # sample collections for the importer — not workspaces
+└── opencollection/           # OpenCollection (Bruno) YAML
+    ├── mock-api/             # on-disk tree: opencollection.yml + one .yml per request
+    ├── mock-api-bundled.yml  # the same collection as one bundled file
+    └── staging.env.yml       # a standalone environment file
 ```
 
 Each `*.request.yaml` is a single request (method, URL, headers, body, auth, scripts).
