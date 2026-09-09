@@ -1,0 +1,343 @@
+{
+  "info": {
+    "_postman_id": "5f2b6d1e-7c4a-4d0b-9f3e-2a8c1b4d6e90",
+    "name": "Mock API (Postman import test)",
+    "description": "Test collection for Impostor's Postman importer. Exercises nested folders, auth inheritance (collection bearer → folder basic → request-level overrides incl. noauth), every supported body mode, string/object URL shapes, disabled headers & query params, and pre-request/test scripts. Targets the local mock stack (mock/docker-compose).",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      { "key": "token", "value": "{{authToken}}", "type": "string" }
+    ]
+  },
+  "variable": [
+    { "key": "baseUrl", "value": "http://localhost:8080" },
+    { "key": "defaultPage", "value": "1" },
+    { "key": "legacyHost", "value": "http://localhost:9999", "disabled": true }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          "// Collection-level pre-request script",
+          "pm.variables.set('runId', Date.now().toString());"
+        ]
+      }
+    }
+  ],
+  "item": [
+    {
+      "name": "Basics",
+      "item": [
+        {
+          "name": "Echo GET (url as object)",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.variables.set('stamp', new Date().toISOString());"
+                ]
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('status is 200', function () {",
+                  "  pm.expect(pm.response.code).to.equal(200);",
+                  "});",
+                  "pm.test('echoes query args', function () {",
+                  "  var json = pm.response.json();",
+                  "  pm.expect(json.args.page).to.exist;",
+                  "});"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [
+              { "key": "Accept", "value": "application/json" },
+              { "key": "X-Debug", "value": "1", "disabled": true }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/get?page={{defaultPage}}&limit=10&draft=true",
+              "host": ["{{baseUrl}}"],
+              "path": ["get"],
+              "query": [
+                { "key": "page", "value": "{{defaultPage}}" },
+                { "key": "limit", "value": "10" },
+                { "key": "draft", "value": "true", "disabled": true }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Bare URL shorthand",
+          "request": "{{baseUrl}}/headers"
+        },
+        {
+          "name": "Teapot status",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/status/418"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Bodies",
+      "item": [
+        {
+          "name": "Raw JSON",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Ada Lovelace\",\n  \"role\": \"admin\",\n  \"runId\": \"{{runId}}\"\n}",
+              "options": { "raw": { "language": "json" } }
+            },
+            "url": "{{baseUrl}}/post"
+          },
+          "response": []
+        },
+        {
+          "name": "Raw XML",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "<user><name>Ada</name></user>",
+              "options": { "raw": { "language": "xml" } }
+            },
+            "url": "{{baseUrl}}/post"
+          },
+          "response": []
+        },
+        {
+          "name": "Form urlencoded",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                { "key": "username", "value": "ada" },
+                { "key": "remember", "value": "true" },
+                { "key": "legacy", "value": "1", "disabled": true }
+              ]
+            },
+            "url": "{{baseUrl}}/post"
+          },
+          "response": []
+        },
+        {
+          "name": "Multipart form-data",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                { "key": "caption", "value": "test upload", "type": "text" },
+                { "key": "attachment", "type": "file", "src": "/tmp/example.txt" }
+              ]
+            },
+            "url": "{{baseUrl}}/post"
+          },
+          "response": []
+        },
+        {
+          "name": "GraphQL query",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "graphql",
+              "graphql": {
+                "query": "query User($id: ID!) {\n  user(id: $id) {\n    name\n    email\n  }\n}",
+                "variables": "{\n  \"id\": \"42\"\n}"
+              }
+            },
+            "url": "{{baseUrl}}/post"
+          },
+          "response": []
+        },
+        {
+          "name": "Binary file body",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "file",
+              "file": { "src": "/tmp/payload.bin" }
+            },
+            "url": "{{baseUrl}}/post"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Auth",
+      "auth": {
+        "type": "basic",
+        "basic": [
+          { "key": "username", "value": "user", "type": "string" },
+          { "key": "password", "value": "{{basicPassword}}", "type": "string" }
+        ]
+      },
+      "item": [
+        {
+          "name": "Basic (inherited from folder)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('authorized', function () {",
+                  "  pm.expect(pm.response.json().authorized).to.be.true;",
+                  "});"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/basic-auth/user/passwd"
+          },
+          "response": []
+        },
+        {
+          "name": "Bearer (request-level override)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                { "key": "token", "value": "{{authToken}}", "type": "string" }
+              ]
+            },
+            "url": "{{baseUrl}}/bearer"
+          },
+          "response": []
+        },
+        {
+          "name": "API key in header",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "auth": {
+              "type": "apikey",
+              "apikey": [
+                { "key": "key", "value": "X-Api-Key", "type": "string" },
+                { "key": "value", "value": "{{apiKey}}", "type": "string" },
+                { "key": "in", "value": "header", "type": "string" }
+              ]
+            },
+            "url": "{{baseUrl}}/anything"
+          },
+          "response": []
+        },
+        {
+          "name": "API key in query",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "auth": {
+              "type": "apikey",
+              "apikey": [
+                { "key": "key", "value": "api_key", "type": "string" },
+                { "key": "value", "value": "{{apiKey}}", "type": "string" },
+                { "key": "in", "value": "query", "type": "string" }
+              ]
+            },
+            "url": "{{baseUrl}}/anything"
+          },
+          "response": []
+        },
+        {
+          "name": "Explicit no auth",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "auth": { "type": "noauth" },
+            "url": "{{baseUrl}}/get"
+          },
+          "response": []
+        },
+        {
+          "name": "OAuth1 (unsupported type)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "auth": {
+              "type": "oauth1",
+              "oauth1": [
+                { "key": "consumerKey", "value": "ck", "type": "string" }
+              ]
+            },
+            "url": "{{baseUrl}}/get"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Nested",
+      "item": [
+        {
+          "name": "Inner",
+          "item": [
+            {
+              "name": "Deeply nested request",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": "{{baseUrl}}/delete"
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Redirect chain",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/redirect/3",
+              "host": ["{{baseUrl}}"],
+              "path": ["redirect", "3"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Duplicate name",
+      "request": { "method": "GET", "header": [], "url": "{{baseUrl}}/get" },
+      "response": []
+    },
+    {
+      "name": "Duplicate name",
+      "request": { "method": "GET", "header": [], "url": "{{baseUrl}}/uuid" },
+      "response": []
+    }
+  ]
+}
