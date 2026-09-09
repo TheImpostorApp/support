@@ -172,6 +172,7 @@ Sample collections in the formats Impostor imports, so you can exercise the
 
 | Sample | Format |
 |--------|--------|
+| [`import-samples/postman/`](import-samples/postman/) | **Postman v2.1** — a collection and two environments, the same files Postman's *Export* produces. |
 | [`import-samples/opencollection/`](import-samples/opencollection/) | [**OpenCollection**](https://spec.opencollection.com) — the open YAML format Bruno 3.x writes natively. Covers all four shapes Impostor accepts: an on-disk collection tree, a bundled single file, a lone request file, and a standalone environment file. |
 
 The requests target the same [`mock-server/`](mock-server/) stack as `mock-workspace/`,
@@ -203,6 +204,7 @@ large-workspace/              # 1000-request workspace (JSONPlaceholder, no setu
 │   └── Create/ (Batch 01…) · Read/ · Update/ · Delete/
 └── Diagnostics/
 import-samples/               # sample collections for the importer — not workspaces
+├── postman/                  # Postman v2.1 collection + two environments
 └── opencollection/           # OpenCollection (Bruno) YAML
     ├── mock-api/             # on-disk tree: opencollection.yml + one .yml per request
     ├── mock-api-bundled.yml  # the same collection as one bundled file
