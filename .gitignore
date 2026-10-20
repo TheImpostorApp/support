@@ -4,7 +4,9 @@
 .idea/
 .vscode/
 
-# Per-workspace run history / local-only state (mock-workspace/.impostor/history.jsonl)
+# Per-workspace run history / local-only state (mock-workspace/.mitey/history.jsonl)
+.mitey/
+# …and its pre-rename (Impostor) name
 .impostor/
 
 # Secrets — but keep the bundled workspaces' environments, which hold only localhost /

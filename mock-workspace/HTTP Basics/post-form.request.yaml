@@ -5,5 +5,5 @@ url: "{{baseUrl}}/post"
 body:
   kind: formUrlencoded
   fields:
-    - { key: name, value: impostor, enabled: true }
+    - { key: name, value: mitey, enabled: true }
     - { key: kind, value: form,     enabled: true }

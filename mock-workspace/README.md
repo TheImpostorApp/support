@@ -1,12 +1,12 @@
-# Impostor — Mock API Samples
+# Mitey — Mock API Samples
 
-A ready-to-open Impostor **workspace** demonstrating every protocol and feature
+A ready-to-open Mitey **workspace** demonstrating every protocol and feature
 against the local mock API stack: HTTP basics, auth (API key / Bearer / Basic /
 OAuth2), folder inheritance, TLS / mTLS, WebSocket, gRPC, MCP, raw / form /
-multipart / binary-file / GraphQL request bodies, and pre/post-request scripting (`im.*`).
+multipart / binary-file / GraphQL request bodies, and pre/post-request scripting (`mt.*`).
 
 This folder is a self-contained, **relocatable** workspace — clone it anywhere and
-open it in Impostor (File → Open folder). It contains no machine-specific paths.
+open it in Mitey (File → Open folder). It contains no machine-specific paths.
 
 ## Prerequisites
 
@@ -17,7 +17,7 @@ etc.). Start it first — see the [`mock/`](../../mock/README.md) stack:
 cd mock && docker compose up -d
 ```
 
-Then in Impostor: **Open folder** → select this `mock-workspace` directory, pick the
+Then in Mitey: **Open folder** → select this `mock-workspace` directory, pick the
 **Local** environment, and send any request.
 
 **Exception:** `Realtime/MCP` doesn't use the mock stack at all — it spawns the
@@ -65,19 +65,19 @@ object, sent as an `application/json` POST of `{ "query": …, "variables": … 
   `{{variable}}` substitution as the rest of a request, so the value comes from the **Local**
   environment (`US`); change it there (or override per-environment) to query another country.
 
-## Scripting (pre/post-request `im.*`)
+## Scripting (pre/post-request `mt.*`)
 
-The **`Scripting/`** folder shows Impostor's scripting. Scripts use the Impostor-native
-`im.*` API; the Postman-style `pm.*` is also available as an alias for compatibility. Open
+The **`Scripting/`** folder shows Mitey's scripting. Scripts use the Mitey-native
+`mt.*` API; the Postman-style `pm.*` is also available as an alias for compatibility. Open
 a request and look at its **Pre-request** / **Post-request** script tabs; the Tests tab shows
-`im.test(...)` results after sending.
+`mt.test(...)` results after sending.
 
 - **Pre-request — set variables** — a pre-request script computes a timestamp + nonce and
-  `im.variables.set(...)`s them, so the request templates them in via `{{ts}}` / `{{nonce}}`.
-- **Post-request — tests** — `im.test(...)` + `im.expect(...)` assertions on status, timing,
+  `mt.variables.set(...)`s them, so the request templates them in via `{{ts}}` / `{{nonce}}`.
+- **Post-request — tests** — `mt.test(...)` + `mt.expect(...)` assertions on status, timing,
   JSON body, and response headers.
 - **Chain 1 — capture a value** → **Chain 2 — reuse the captured value** — Chain 1 extracts a
-  value from the response and `im.environment.set("requestId", …)`; Chain 2 reads it back as
+  value from the response and `mt.environment.set("requestId", …)`; Chain 2 reads it back as
   `{{requestId}}` (run them in order). Chain 2's pre-request script fails fast if it's run
   first.
 

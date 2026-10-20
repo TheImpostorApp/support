@@ -9,7 +9,7 @@ http:
     - name: resource
       value: widgets
       type: path
-      description: Substituted into the URL — Impostor has no path-parameter table.
+      description: Substituted into the URL — Mitey has no path-parameter table.
     - name: page
       value: "{{defaultPage}}"
       type: query

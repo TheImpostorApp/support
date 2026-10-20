@@ -1,11 +1,11 @@
 opencollection: "1.0.0"
 info:
   name: Mock API (OpenCollection)
-  summary: Impostor importer fixture — the OpenCollection/Bruno YAML surface.
+  summary: Mitey importer fixture — the OpenCollection/Bruno YAML surface.
   version: "1.0.0"
   authors:
-    - name: Impostor
-      url: https://impostor.uk
+    - name: Mitey
+      url: https://mitey.app
 request:
   # Collection-level defaults: descendants with `auth: inherit` pick this up.
   auth:

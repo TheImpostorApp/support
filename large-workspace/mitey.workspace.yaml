@@ -1,7 +1,7 @@
 name: Large Workspace — JSONPlaceholder
 globals:
 - key: apiClient
-  value: "impostor"
+  value: "mitey"
   enabled: true
   secret: false
   script: false
