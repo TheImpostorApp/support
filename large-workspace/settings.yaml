@@ -1,2 +1,2 @@
 headers:
-  - { key: X-Impostor-Workspace, value: "large-workspace", enabled: true }
+  - { key: X-Mitey-Workspace, value: "large-workspace", enabled: true }

@@ -5,6 +5,6 @@ url: "{{baseUrl}}/post"
 body:
   kind: multipart
   fields:
-    - { kind: text, key: name, value: impostor }
+    - { kind: text, key: name, value: mitey }
     - { kind: text, key: kind, value: multipart }
     - { kind: file, key: file, path: "{{workspaceDir}}/.assets/sample.txt", contentType: text/plain }

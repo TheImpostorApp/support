@@ -1,7 +1,7 @@
 # OpenCollection (Bruno) import samples
 
 Sample [OpenCollection](https://spec.opencollection.com) documents for trying out
-Impostor's **Import** flow. OpenCollection is the open YAML format Bruno 3.x writes
+Mitey's **Import** flow. OpenCollection is the open YAML format Bruno 3.x writes
 natively (the successor to its `.bru` DSL), and a collection comes in two shapes — both
 are here, along with the two single-file shapes.
 
@@ -11,7 +11,7 @@ runnable.
 
 ## Try it
 
-1. In Impostor, open (or create) a workspace.
+1. In Mitey, open (or create) a workspace.
 2. **Import…** from the sidebar's **⋮** menu.
 3. Add `import-samples/opencollection/mock-api/opencollection.yml` and import.
 4. Pick the imported **Local (OpenCollection)** environment and send a request.
@@ -37,11 +37,11 @@ YAML never sweeps that folder up.
   overrides, plus an explicit folder-level `none` (`Bodies/`) that stops inheritance.
 - **Every auth type** — `inherit`, `none`, basic, bearer, apikey (header & query), digest,
   awsv4, oauth2 (client credentials and authorization code + PKCE), and an `oauth1` that
-  Impostor doesn't support, so it surfaces as a warning.
+  Mitey doesn't support, so it surfaces as a warning.
 - **Every body type** — `json`, `xml`, `form-urlencoded`, `multipart-form` (with a file
   field), `graphql`, and a `file` body with several `selected` variants.
 - **Params** — query params (including a disabled one) and a **path** param, which is
-  substituted into the URL because Impostor has no path-parameter table.
+  substituted into the URL because Mitey has no path-parameter table.
 - **Protocols** — HTTP, GraphQL, WebSocket, and gRPC (reflection, `grpc://` target).
 - **Scripts and assertions** — `before-request` / `after-response` / `tests` hooks, and
   declarative `runtime.assertions`.
@@ -60,7 +60,7 @@ Importing `mock-api/opencollection.yml` reports **25 requests, 6 folders, 3 vari
 
 1. path parameters substituted into the URL
 2. declarative assertions kept as a comment
-3. scripts imported verbatim (Bruno's `bru`/`req`/`res` API needs porting to `im.*`)
+3. scripts imported verbatim (Bruno's `bru`/`req`/`res` API needs porting to `mt.*`)
 4. `oauth1` auth not supported
 5. WebSocket draft messages not imported
 
@@ -71,4 +71,4 @@ The two "Duplicate name" requests don't overwrite each other
 `mock-api-bundled.yml` reports **3 requests, 1 folder, 1 variable, 1 environment** and
 the scripts warning. `staging.env.yml` reports **4 variables**.
 
-See the [Importing docs](https://docs.impostor.uk/import) for the full mapping.
+See the [Importing docs](https://docs.mitey.app/import) for the full mapping.

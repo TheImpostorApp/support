@@ -1,6 +1,6 @@
-name: impostor-mock
+name: mitey-mock
 
-# A one-command mock backend for testing & demoing Impostor. See README.md for the
+# A one-command mock backend for testing & demoing Mitey. See README.md for the
 # endpoint → feature map. Bring up: `docker compose up -d` (or `docker-compose`).
 
 services:

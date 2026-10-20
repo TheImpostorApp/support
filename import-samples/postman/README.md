@@ -1,6 +1,6 @@
 # Postman import samples
 
-Sample **Postman v2.1** exports for trying out Impostor's **Import** flow — a collection
+Sample **Postman v2.1** exports for trying out Mitey's **Import** flow — a collection
 and two environments, the same files you'd get from Postman's own *Export* command.
 
 The requests target the local [mock API stack](../../mock-server/README.md)
@@ -9,7 +9,7 @@ runnable.
 
 ## Try it
 
-1. In Impostor, open (or create) a workspace.
+1. In Mitey, open (or create) a workspace.
 2. **Import…** from the sidebar's **⋮** menu.
 3. Add all three files at once — each one's type is auto-detected — and import.
 4. Pick the imported **Local (Postman import test)** environment and send a request.
@@ -30,7 +30,7 @@ runnable.
 - **Both URL shapes** — Postman's object form (`host`/`path`/`query`) and the bare
   string shorthand.
 - **Disabled** headers, query params and variables, which import as disabled rows.
-- **Pre-request and test scripts** — these run as-is, since Impostor's `im.*` script API
+- **Pre-request and test scripts** — these run as-is, since Mitey's `mt.*` script API
   is `pm.*`-compatible.
 - **Duplicate request names**, which must not overwrite each other.
 - **A deliberately unsupported `oauth1` auth**, so you can see how unmappable pieces are
@@ -50,4 +50,4 @@ Importing an environment reports **7 variables** (Local) / **6** (Production). T
 `secret`-typed values go into the OS keychain, with only references written to the
 `.env/*.env.yaml` file.
 
-See the [Importing docs](https://docs.impostor.uk/import) for the full mapping.
+See the [Importing docs](https://docs.mitey.app/import) for the full mapping.

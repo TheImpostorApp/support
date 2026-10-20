@@ -12,16 +12,16 @@ preScript: |-
   const ts = Math.floor(Date.now() / 1000);
   const nonce = Math.random().toString(36).slice(2);
 
-  im.variables.set("ts", ts);
-  im.variables.set("nonce", nonce);
+  mt.variables.set("ts", ts);
+  mt.variables.set("nonce", nonce);
 
   console.log("prepared request: ts=" + ts + " nonce=" + nonce);
 postScript: |-
   // Confirm the values we set in the pre-request script actually reached the
   // server (go-httpbin echoes the query string back under "args").
-  im.test("status is 200", function () {
-    im.expect(im.response.code).to.equal(200);
+  mt.test("status is 200", function () {
+    mt.expect(mt.response.code).to.equal(200);
   });
-  im.test("nonce was sent to the server", function () {
-    im.expect(im.response.text()).to.include(im.variables.get("nonce"));
+  mt.test("nonce was sent to the server", function () {
+    mt.expect(mt.response.text()).to.include(mt.variables.get("nonce"));
   });

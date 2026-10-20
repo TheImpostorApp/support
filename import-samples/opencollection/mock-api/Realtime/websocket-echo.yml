@@ -7,7 +7,7 @@ websocket:
   headers:
     - name: Origin
       value: http://localhost
-  # Draft messages have no Impostor equivalent — expect a warning.
+  # Draft messages have no Mitey equivalent — expect a warning.
   message:
     type: text
     data: hello

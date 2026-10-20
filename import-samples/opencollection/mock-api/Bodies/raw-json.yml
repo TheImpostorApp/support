@@ -16,7 +16,7 @@ runtime:
   scripts:
     - type: before-request
       code: |-
-        // Bruno's API — imported verbatim; port `bru`/`req`/`res` to `im.*`.
+        // Bruno's API — imported verbatim; port `bru`/`req`/`res` to `mt.*`.
         bru.setVar("requestedAt", Date.now());
     - type: after-response
       code: bru.setVar("echoedName", res.body.json.name);

@@ -1,5 +1,5 @@
 # The bundled shape: one file carrying the whole tree in nested `items`, with the
-# environments inline under `config`. Impostor detects this by content, so the file
+# environments inline under `config`. Mitey detects this by content, so the file
 # name doesn't matter — and, unlike a picked `opencollection.yml`, its directory is
 # never walked.
 opencollection: "1.0.0"

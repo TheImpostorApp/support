@@ -1,2 +1,2 @@
 headers:
-  - { key: X-Client, value: impostor-demo, enabled: true }
+  - { key: X-Client, value: mitey-demo, enabled: true }

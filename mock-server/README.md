@@ -1,6 +1,6 @@
-# Impostor mock API stack
+# Mitey mock API stack
 
-A one-command mock backend that exercises **every** Impostor feature: REST, the auth
+A one-command mock backend that exercises **every** Mitey feature: REST, the auth
 schemes, OAuth2, mTLS, WebSocket, and gRPC. Built from proven upstream images plus a
 small nginx for the mTLS endpoint. For local testing & demos only.
 
@@ -10,7 +10,7 @@ small nginx for the mTLS endpoint. For local testing & demos only.
 cd mock
 docker compose up -d        # or: docker-compose up -d
 docker compose ps           # all services healthy?
-# …demo in Impostor…
+# …demo in Mitey…
 docker compose down         # stop
 ```
 
@@ -34,10 +34,10 @@ bundle's `.assets/certs/` (the script prints this reminder).
 | `https://localhost:8443` | nginx (mTLS) | client-cert-required TLS → httpbin |
 | `https://localhost:8444` | nginx (TLS only) | plain TLS w/ custom CA → httpbin |
 
-## Endpoint → Impostor feature map
+## Endpoint → Mitey feature map
 
 ### HTTP basics
-| Try in Impostor | Endpoint |
+| Try in Mitey | Endpoint |
 |---------------|----------|
 | Methods / echo | `GET http://localhost:8080/get`, `POST …/post` (raw / form / multipart), `PUT …/put` (binary file body) |
 | Status codes | `GET http://localhost:8080/status/418` |
@@ -62,7 +62,7 @@ Open the **WS** panel → `ws://localhost:8080/websocket/echo` → send a messag
   optional scope. Get Token → use it against `http://localhost:8080/bearer`.
 - **Authorization code + PKCE:** Auth URL `http://localhost:8081/default/authorize`,
   Token URL `http://localhost:8081/default/token`, any client id, PKCE on. The mock
-  auto-issues the code to Impostor's loopback redirect. (Debugger UI:
+  auto-issues the code to Mitey's loopback redirect. (Debugger UI:
   `http://localhost:8081/default/debugger`.)
 
 ### mTLS (Cert/TLS tab)
@@ -79,7 +79,7 @@ Open the **WS** panel → `ws://localhost:8080/websocket/echo` → send a messag
 - `localhost:9001` is the same over TLS (set CA / insecure as needed).
 
 > **Reflection note:** grpcbin exposes only the **v1alpha** reflection service
-> (`grpc.reflection.v1alpha.ServerReflection`). Impostor's gRPC client tries reflection
+> (`grpc.reflection.v1alpha.ServerReflection`). Mitey's gRPC client tries reflection
 > **v1** first and **falls back to v1alpha** (`src-tauri/src/grpc.rs`), so **Reflect works
 > against grpcbin**. (You can still use **Load .proto** with grpcbin's
 > [`grpcbin.proto`](https://github.com/moul/grpcbin/blob/master/grpcbin.proto) if you prefer.)

@@ -28,4 +28,4 @@ mcp:
   - '@modelcontextprotocol/server-everything'
   env: []
   tool: echo
-  arguments: '{ "message": "hello from Impostor" }'
+  arguments: '{ "message": "hello from Mitey" }'

@@ -2,7 +2,7 @@
   "info": {
     "_postman_id": "5f2b6d1e-7c4a-4d0b-9f3e-2a8c1b4d6e90",
     "name": "Mock API (Postman import test)",
-    "description": "Test collection for Impostor's Postman importer. Exercises nested folders, auth inheritance (collection bearer → folder basic → request-level overrides incl. noauth), every supported body mode, string/object URL shapes, disabled headers & query params, and pre-request/test scripts. Targets the local mock stack (mock/docker-compose).",
+    "description": "Test collection for Mitey's Postman importer. Exercises nested folders, auth inheritance (collection bearer → folder basic → request-level overrides incl. noauth), every supported body mode, string/object URL shapes, disabled headers & query params, and pre-request/test scripts. Targets the local mock stack (mock/docker-compose).",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
   "auth": {

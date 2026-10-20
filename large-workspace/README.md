@@ -1,6 +1,6 @@
-# Impostor — Large Workspace (1000 requests)
+# Mitey — Large Workspace (1000 requests)
 
-A ready-to-open Impostor **workspace** holding **1000 HTTP requests** across **49 folders**,
+A ready-to-open Mitey **workspace** holding **1000 HTTP requests** across **49 folders**,
 targeting [typicode's **JSONPlaceholder**](https://jsonplaceholder.typicode.com) — a free,
 public fake REST API. Nothing to install, nothing to start: pick the **JSONPlaceholder**
 environment and send.
@@ -63,8 +63,8 @@ POSTs will really create records. Point it at a throwaway `db.json`.
 
 ```
 large-workspace/
-├── impostor.workspace.yaml      # workspace name + global variables
-├── settings.yaml                # workspace-level header (X-Impostor-Workspace)
+├── mitey.workspace.yaml      # workspace name + global variables
+├── settings.yaml                # workspace-level header (X-Mitey-Workspace)
 ├── .env/
 │   ├── JSONPlaceholder.env.yaml
 │   └── Local json-server.env.yaml
@@ -99,26 +99,26 @@ exercises folder inheritance at depth.
   always raw JSON.
 - **Dynamic variables.** ~30% of requests send `X-Trace-Id: {{$guid}}`, resolved fresh per
   send.
-- **Post-request tests.** ~12% of requests assert their status code with `im.test` /
-  `im.expect`, so a folder run produces a meaningful pass/fail column.
+- **Post-request tests.** ~12% of requests assert their status code with `mt.test` /
+  `mt.expect`, so a folder run produces a meaningful pass/fail column.
 - **Inherited headers and variables** from the workspace root and each resource folder.
 
 ## Driving it headlessly
 
-The `impostor` binary is also a CLI, which makes this workspace a convenient load
-generator (macOS path shown; on Windows use `impostor.exe`):
+The `mitey` binary is also a CLI, which makes this workspace a convenient load
+generator (macOS path shown; on Windows use `mitey.exe`):
 
 ```sh
-impostor ls  --workspace ./large-workspace                      # 1000 requests
-impostor run "Create post 001" --workspace ./large-workspace --env JSONPlaceholder
-impostor run "Read posts 001 — list all" --workspace ./large-workspace --json
+mitey ls  --workspace ./large-workspace                      # 1000 requests
+mitey run "Create post 001" --workspace ./large-workspace --env JSONPlaceholder
+mitey run "Read posts 001 — list all" --workspace ./large-workspace --json
 ```
 
-Scripts don't run headless, so the `im.test` assertions above are a GUI-only affordance.
+Scripts don't run headless, so the `mt.test` assertions above are a GUI-only affordance.
 
 ## Regenerating
 
-This workspace is generated, not hand-written. The generator lives in the main Impostor
+This workspace is generated, not hand-written. The generator lives in the main Mitey
 repo at `scripts/gen-large-workspace.mjs` and is deterministic — a re-run with an
 unchanged script reproduces the tree byte for byte:
 
